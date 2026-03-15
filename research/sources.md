@@ -7,6 +7,11 @@
 
 | ID | Title | Publisher | Edition/Amendment | URL | Access Date | Local Copy |
 |----|-------|-----------|------------------|-----|-------------|------------|
+| SRC-001 | RYA Day Skipper Shorebased Theory Syllabus | Royal Yachting Association | 2023 | https://www.rya.org.uk/training/courses/Day-Skipper-Theory-Course-DSSCC | 2026-03-15 | rya-syllabus-topics.md |
+| SRC-002 | The Merchant Shipping (Distress Signals and Prevention of Collisions) Regulations 1996 — MSN 1781 (M+F) | Maritime and Coastguard Agency, UK Government | IMO Resolution A.910(22), in force 29 Nov 2003 | https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/281965/msn1781.pdf | 2026-03-15 | colregs-irpcs-text.md |
+| SRC-003 | IALA Maritime Buoyage System — Region A | IALA (International Association of Marine Aids to Navigation and Lighthouse Authorities) | Current edition | https://www.iala-aism.org | 2026-03-15 | iala-buoyage-text.md |
+| SRC-004 | NP 5011 — Symbols and Abbreviations used on Admiralty Charts | UK Hydrographic Office (UKHO) | Current edition | https://www.admiralty.co.uk/publications/np5011 | 2026-03-15 | chart-5011-symbols.md |
+| SRC-005 | MGN 280 (M+F) — Safety Equipment for Pleasure Vessels | Maritime and Coastguard Agency, UK Government | 2003 | https://www.gov.uk/government/publications/mgn-280-mf-safety-equipment-for-pleasure-vessels | 2026-03-15 | none |
 
 ## Supplementary Sources (Agent F)
 

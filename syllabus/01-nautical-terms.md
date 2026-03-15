@@ -2,7 +2,7 @@
 rya_topic: "Nautical terms — parts of a boat, hull, and general maritime vocabulary"
 rya_syllabus_ref: "Topic 1"
 iala_region: "N/A"
-source_images: ["resources/2-ed9750bea3.jpg", "resources/3-b4cef309ef.jpg", "resources/4-84b3c954a0.jpg", "resources/5-b4ced4e04a.jpg"]
+source_images: ["resources/2-ed9750bea3.jpg", "resources/3-b4cef309ef.jpg", "resources/4-84b3c954a0.jpg", "resources/5-b4ced4e04a.jpg", "resources/7-22db851368.jpg", "resources/8-2cba5473fb.jpg"]
 verification_status: "pending"
 verification_date: ""
 ---
@@ -121,6 +121,46 @@ This topic covers the essential vocabulary of a sailing yacht: hull geometry, st
 | Bilge | Space below the cabin sole | SRC-001; transcript p.3 |
 | Head | Onboard toilet compartment | SRC-001; transcript p.3 |
 | Binnacle | Pedestal housing the steering compass | SRC-001; transcript p.2 |
+| Warp | Mooring or anchor rope | SRC-001; transcript p.7 |
+| Bow line | Mooring line from the bow to a point ashore | SRC-001; transcript p.7 & p.8 |
+| Stern line | Mooring line from the stern to a point ashore | SRC-001; transcript p.7 & p.8 |
+| Spring (bow/stern) | Diagonal mooring line that prevents the vessel moving ahead or astern | SRC-001; transcript p.7 & p.8 |
+| Breast rope | Short line holding a vessel directly alongside another vessel in a raft | SRC-001; transcript p.7 |
+| Fairlead | Deck fitting that guides a rope in the correct direction | SRC-001; transcript p.7 |
+| Fender | Inflatable or foam buffer hung over the side to protect the hull | SRC-001; transcript p.7 |
+| Bollard | Shore-side post to which mooring lines are secured | SRC-001; transcript p.7 |
+| Raft | Two or more boats moored alongside each other | SRC-001; transcript p.7 |
+| Pen | Berth between two piles with the bow or stern to a pontoon | SRC-001; transcript p.8 |
+| Finger pontoon | Short pontoon projecting from the main pontoon alongside which one boat moors | SRC-001; transcript p.8 |
+| Pick-up line | Line hanging from a pile to assist retrieval of the mooring line | SRC-001; transcript p.8 |
+
+### Mooring Alongside and in a Pen
+
+#### Alongside a Wall or Quay
+- Be aware of the **rise and fall of tide** when mooring alongside a wall — lines must be long enough and adjustable as the tide changes. [Source: SRC-001; transcript p.7]
+- Use **stretchy nylon warps** alongside a wall to absorb the movement of the boat. [Source: SRC-001; transcript p.7]
+- Length of warps should be at least **4× the rise and fall of tide** to allow adjustment without re-rigging. [Source: SRC-001; transcript p.7]
+- When you attach a warp to a bollard or mooring ring ashore, bring the rest of the line back on board and attach it to a cleat so that each warp can be **independently adjusted from on board** as the tide rises and falls. [Source: SRC-001; transcript p.7]
+- Run lines through a **fairlead** and then onto a cleat. Use **separate lines for each different task** (bow line, stern line, springs). [Source: SRC-001; transcript p.7]
+- Standard mooring lines: **bow line** (forward), **stern line** (aft), **bow spring** (runs aft from bow to prevent forward movement), **stern spring** (runs forward from stern to prevent aft movement). [Source: SRC-001; transcript p.7 & p.8]
+- A **bowline** knot is used to make a loop for placing over a bollard or ring. **Round turn and two half hitches** is used to secure a line to a ring or rail. [Source: SRC-001; transcript p.7]
+
+#### Mooring in a Raft
+- When two or more boats moor alongside each other (a **raft**), attach **breast ropes** and **springs** between vessels at bow and stern. [Source: SRC-001; transcript p.7]
+- The **outside boat** should take bow and stern lines ashore to minimise the strain on the inside boat's shore lines. [Source: SRC-001; transcript p.7]
+- Fenders should be deployed between all vessels in the raft. [Source: SRC-001; transcript p.7]
+
+#### On a Floating Pontoon
+- When mooring on a floating pontoon, lines do **not** need to be adjusted as the tide rises and falls because the pontoon rises with the tide. [Source: SRC-001; transcript p.8]
+- A single long line can serve double duty (e.g., as both bow line and forespring). [Source: SRC-001; transcript p.8]
+- Standard pontoon mooring uses: **stern line**, **stern spring** (back spring), **bow line**, **bow spring** (forespring). [Source: SRC-001; transcript p.8]
+- A **finger pontoon** is a short pontoon projecting from the main pontoon alongside which a single vessel moors. [Source: SRC-001; transcript p.8]
+
+#### In a Pen (Between Piles)
+- In a **pen**, stern lines are attached to piles and bow lines are attached to the pontoon or dock at the shore end. [Source: SRC-001; transcript p.8]
+- Usually the **windward lines are attached first**. [Source: SRC-001; transcript p.8]
+- **Pick-up lines** are usually supplied on the piles to aid retrieval of the mooring lines from the water. [Source: SRC-001; transcript p.8]
+- Some pens have a **ring on the pile that rises and falls with the tide** — the line passes through this ring so no adjustment is needed. [Source: SRC-001; transcript p.8]
 
 ## Flashcard Candidates
 - Q: What is the term for the left side of the vessel when facing forward? | A: Port | Source: SRC-001; transcript p.2
@@ -131,6 +171,10 @@ This topic covers the essential vocabulary of a sailing yacht: hull geometry, st
 - Q: What is a jackstay? | A: A strong fore-and-aft wire or webbing on deck used to attach safety tethers | Source: SRC-001; transcript p.2
 - Q: What is the function of the kicking strap (vang)? | A: Prevents the boom from rising and controls sail shape, particularly when running | Source: SRC-001; transcript p.2 & p.5
 - Q: What is the difference between a fin keel and a long keel? | A: A fin keel is short and deep (modern cruising); a long keel runs most of the hull length (traditional) | Source: SRC-001; transcript p.5
+- Q: How long should mooring warps be when securing alongside a tidal wall? | A: At least 4× the rise and fall of tide | Source: SRC-001; transcript p.7
+- Q: When mooring in a raft, which boat should take its own lines ashore? | A: The outside boat — to minimise strain on the inside boat's shore lines | Source: SRC-001; transcript p.7
+- Q: Why do pontoon mooring lines not need to be adjusted as the tide rises and falls? | A: Because the floating pontoon rises and falls with the tide | Source: SRC-001; transcript p.8
+- Q: What is a spring line used for? | A: A diagonal mooring line that prevents the vessel from moving ahead (bow spring) or astern (stern spring) | Source: SRC-001; transcript p.7 & p.8
 
 ## MCQ Candidates
 
@@ -190,9 +234,33 @@ Q: What is the bilge?
 Correct: b
 Source: SRC-001; transcript p.3
 
+Q: When mooring alongside a tidal wall, what is the minimum recommended length for mooring warps?
+(a) 2× the rise and fall of tide
+(b) 3× the rise and fall of tide
+(c) 4× the rise and fall of tide
+(d) 6× the rise and fall of tide
+Correct: c
+Source: SRC-001; transcript p.7
+
+Q: When moored in a raft, the outside boat should:
+(a) Rely entirely on breast ropes to the inside boat
+(b) Take its own bow and stern lines ashore to minimise strain on the inside boat
+(c) Use a single long warp running from bow to stern
+(d) Attach lines only to the inside boat, not ashore
+Correct: b
+Source: SRC-001; transcript p.7
+
+Q: What is the purpose of a bow spring (forespring)?
+(a) To hold the bow close to the dock
+(b) To prevent the vessel from moving astern
+(c) To prevent the vessel from moving forward
+(d) To stop the vessel heeling at the berth
+Correct: c
+Source: SRC-001; transcript p.7 & p.8
+
 ## Sources
 - SRC-001: RYA Day Skipper Shorebased Theory Syllabus (Royal Yachting Association, 2023)
-- Source images: page-01-cover.md, page-02-boat-anatomy-above-deck.md, page-03-below-deck-layout.md, page-04-sailing-theory-and-points-of-sailing.md, page-05-types-of-yacht.md
+- Source images: page-01-cover.md, page-02-boat-anatomy-above-deck.md, page-03-below-deck-layout.md, page-04-sailing-theory-and-points-of-sailing.md, page-05-types-of-yacht.md, page-07-mooring-alongside-wall-and-raft.md, page-08-mooring-alongside-pontoon-and-pen.md
 
 ## Unverified / Needs Citation
 [UNVERIFIED] Precise angular values for each named point of sailing (e.g. beam reach = exactly 90°, broad reach = ~135°) — the transcripts give approximate values only; exact definitions should be verified against RYA G113 shorebased notes.

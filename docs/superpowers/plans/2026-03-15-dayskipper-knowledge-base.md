@@ -479,7 +479,7 @@ git commit -m "docs: add supplementary research sources"
 
 ## Chunk 4: Stream 3 Gate Check
 
-> This task runs AFTER Chunks 2 and 3 are both fully complete. Do not proceed until all conditions below pass.
+> ~~This was a blocking gate — it has been amended.~~ Synthesis (Chunk 5) proceeds immediately. This gate check should be run before the verification pass (Chunk 6) to confirm local source files are available for verification. If `colregs-irpcs-text.md` is missing, synthesis may use `[PENDING VERIFICATION: SRC-002]` markers and the gate passes for synthesis purposes.
 
 ### Task 4: Verify Stream 3 Prerequisites
 
@@ -603,6 +603,7 @@ For each file:
 - Set `verification_status: "pending"` — never "passed" at this stage
 - Leave `verification_date: ""` — set ONLY by the verification agent
 - Populate `Key Facts` from primary sources (`research/colregs-irpcs-text.md`, `research/iala-buoyage-text.md`, `research/chart-5011-symbols.md`) — every fact gets `[Source: SRC-XXX, Rule/Section ref]`
+- If a primary source local file is not yet available, write the fact into `Key Facts` with marker `[PENDING VERIFICATION: SRC-XXX]` rather than placing it in `Unverified / Needs Citation`. Unverified / Needs Citation is reserved for facts that FAIL verification, not facts awaiting it.
 - Populate `Summary` from transcript content and supplementary sources where helpful
 - Populate `Flashcard Candidates` and `MCQ Candidates` (4 options each, correct answer position varies, plausible distractors)
 - Place any fact without a locatable primary source in `Unverified / Needs Citation` — never in `Key Facts`
@@ -799,3 +800,15 @@ Agents E and F write to separate sections of `research/sources.md`. Each agent m
 - Lights, shapes, and sound signals (IRPCS)
 - Rules of the Road / collision avoidance (IRPCS Rules 1–38)
 - Passage planning (tidal calculations, chart reading)
+
+---
+
+## Amendment Note — 2026-03-16
+
+**Write-first, verify-second workflow adopted.**
+
+Original rule: Key Facts could not be written without primary source in hand at write time. Gate check blocked synthesis if any local source file was missing.
+
+Amended rule: Key Facts may be written with `[PENDING VERIFICATION: SRC-XXX]` markers at synthesis time. Verification confirms or moves them. The output standard is unchanged — no file reaches `verification_status: passed` until all Key Facts are confirmed against local source copies.
+
+Trigger: `research/colregs-irpcs-text.md` was unavailable during synthesis, blocking IRPCS facts from all topic files. Amendment allows synthesis to proceed; verification will confirm facts once the file is created.

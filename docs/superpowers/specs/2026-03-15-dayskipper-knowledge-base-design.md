@@ -14,7 +14,9 @@ European sailors studying for the RYA Day Skipper theory qualification. All buoy
 
 This knowledge base may be used to train people who will navigate real vessels in real waters. **A factual error in navigation, buoyage, or collision avoidance content could result in grounding, collision, injury, or death.**
 
-**The rule:** No fact enters a syllabus file `Key Facts` or `Key Terms` section unless it has a named, verifiable, authoritative **primary source** cited inline. If a primary source cannot be found, the content does not go in. No exceptions.
+**The rule — write first, verify second:** Facts may be written into `Key Facts` and `Key Terms` with the marker `[PENDING VERIFICATION: SRC-XXX]` at synthesis time, where SRC-XXX is the source ID registered in `research/sources.md`. The safety guarantee is enforced at the OUTPUT stage: no file reaches `verification_status: passed` until the verification agent has confirmed every `Key Facts` and `Key Terms` entry against the local source copy. If verification fails (source contradicts or cannot confirm the claim), the entry is moved to `Unverified / Needs Citation` — never silently retained.
+
+This replaces the earlier gate that blocked synthesis until all local source copies existed. The output standard is unchanged; only the write-time gate is relaxed.
 
 Safety-critical topics requiring primary-source-only citations:
 - **Buoyage:** IALA Publication O-1 (Maritime Buoyage System) — local copy required (see Stream 2)
@@ -242,7 +244,7 @@ Each agent produces one transcript file per image using the Transcript Schema ab
 
 ### Stream 3 Gate — Explicit Start Condition
 
-Stream 3 **must not begin** until all of the following are true:
+Stream 3 starts immediately after Streams 1 and 2 complete. The following are prerequisites for **verification** (not synthesis) — synthesis may proceed and write `[PENDING VERIFICATION]`-marked facts even if some local source files are missing:
 1. All 36 transcript files exist in `transcripts/` (illegible files acceptable, missing files are not)
 2. `research/rya-syllabus-topics.md` exists and contains at least one verified topic row
 3. `research/sources.md` contains at least one confirmed entry for each of: IRPCS, IALA O-1, Chart 5011, RYA Day Skipper syllabus

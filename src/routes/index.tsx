@@ -1,5 +1,32 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { AppShell } from '../components/templates/AppShell'
+import { TabBar } from '../components/organisms/TabBar'
+import { OverallProgressCard } from '../components/organisms/OverallProgressCard'
+import { ResumeCard } from '../components/organisms/ResumeCard'
+import { TopicList } from '../components/organisms/TopicList'
+import { Label } from '../components/atoms/Label'
+import styles from '../styles/screens/home.module.css'
 
 export const Route = createFileRoute('/')({
-  component: () => <div>Home — coming soon</div>,
+  component: HomeScreen,
 })
+
+export function HomeScreenComponent() {
+  const navigate = useNavigate()
+
+  return (
+    <AppShell tabBar={<TabBar active="home" />}>
+      <div className={styles.content}>
+        <h1 className={styles.hero}>Day Skipper<br />Theory</h1>
+        <OverallProgressCard />
+        <ResumeCard />
+        <Label>All Topics</Label>
+        <TopicList onTopicClick={id => navigate({ to: '/topics/$topicId', params: { topicId: id } })} />
+      </div>
+    </AppShell>
+  )
+}
+
+function HomeScreen() {
+  return <HomeScreenComponent />
+}

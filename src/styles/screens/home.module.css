@@ -1,0 +1,2 @@
+.content { padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 24px; }
+.hero { font-family: var(--font-heading); font-size: var(--font-size-2xl); font-weight: 500; color: var(--color-navy); letter-spacing: -1px; line-height: 1.05; }

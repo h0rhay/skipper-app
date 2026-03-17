@@ -14,6 +14,7 @@ export function OptionButton({ label, text, state, onClick }: OptionButtonProps)
   return (
     <button
       className={`${styles.option} ${styles[state]}`}
+      data-state={state}
       onClick={onClick}
       disabled={isLocked}
     >

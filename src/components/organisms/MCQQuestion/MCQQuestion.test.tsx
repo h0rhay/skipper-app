@@ -40,8 +40,8 @@ describe('MCQQuestion', () => {
 
   it('marks selected wrong option with wrong class', () => {
     render(<MCQQuestion question={Q} selectedIndex={0} isRevealed={true} isCorrect={false} explanation={Q.explanation} onSelect={() => {}} onSubmit={() => {}} onNext={() => {}} />)
-    expect(screen.getByText(Q.options[0]).closest('button')).toHaveClass('wrong')
-    expect(screen.getByText(Q.options[2]).closest('button')).toHaveClass('correct')
+    expect(screen.getByText(Q.options[0]).closest('button')).toHaveAttribute('data-state', 'wrong')
+    expect(screen.getByText(Q.options[2]).closest('button')).toHaveAttribute('data-state', 'correct')
   })
 
   it('shows Next button after reveal', () => {

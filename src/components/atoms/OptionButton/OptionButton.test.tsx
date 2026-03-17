@@ -9,17 +9,17 @@ describe('OptionButton', () => {
 
   it('shows selected state', () => {
     render(<OptionButton label="A" text="Port side" state="selected" onClick={() => {}} />)
-    expect(screen.getByRole('button')).toHaveClass('selected')
+    expect(screen.getByRole('button')).toHaveAttribute('data-state', 'selected')
   })
 
   it('shows correct state', () => {
     render(<OptionButton label="A" text="Port side" state="correct" onClick={() => {}} />)
-    expect(screen.getByRole('button')).toHaveClass('correct')
+    expect(screen.getByRole('button')).toHaveAttribute('data-state', 'correct')
   })
 
   it('shows wrong state', () => {
     render(<OptionButton label="A" text="Port side" state="wrong" onClick={() => {}} />)
-    expect(screen.getByRole('button')).toHaveClass('wrong')
+    expect(screen.getByRole('button')).toHaveAttribute('data-state', 'wrong')
   })
 
   it('is disabled when state is correct or wrong', () => {

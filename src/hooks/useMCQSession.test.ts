@@ -68,8 +68,9 @@ describe('useMCQSession', () => {
     expect(result.current.wrongIds).toEqual(['q-1'])
   })
 
-  it('accepts optional questionIds to filter', () => {
-    const { result } = renderHook(() => useMCQSession('topic-1', QUESTIONS, ['q-2']))
+  it('works with a pre-filtered questions array', () => {
+    const filtered = QUESTIONS.filter(q => q.id === 'q-2')
+    const { result } = renderHook(() => useMCQSession('topic-1', filtered))
     expect(result.current.currentQuestion).toEqual(QUESTIONS[1])
   })
 })

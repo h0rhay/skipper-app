@@ -3,15 +3,9 @@ import type { MCQQuestion } from '../types'
 
 export function useMCQSession(
   _topicId: string,
-  allQuestions: MCQQuestion[],
-  questionIds?: string[]
+  allQuestions: MCQQuestion[]
 ) {
-  const questions = useMemo(() => {
-    if (questionIds && questionIds.length > 0) {
-      return allQuestions.filter(q => questionIds.includes(q.id))
-    }
-    return allQuestions
-  }, [allQuestions, questionIds])
+  const questions = useMemo(() => allQuestions, [allQuestions])
 
   const [index, setIndex] = useState(0)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)

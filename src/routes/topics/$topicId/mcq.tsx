@@ -67,10 +67,11 @@ export function MCQSessionScreenComponent({ topicId, questionIds }: MCQSessionSc
       total: topicQuestionsLengthRef.current,
       wrongIds: wrongIdsRef.current,
     })
-    const timer = setTimeout(() => {
-      navigate({ to: '/topics/$topicId', params: { topicId } })
-    }, 1500)
-    return () => clearTimeout(timer)
+    navigate({
+      to: '/topics/$topicId/$mode/complete',
+      params: { topicId, mode: 'mcq' },
+      search: { score: scoreRef.current, total: topicQuestionsLengthRef.current, wrongIds: wrongIdsRef.current.join(',') },
+    })
   }, [isComplete, updateMCQ, appendSession, navigate, topicId, startedAt])
 
   if (!topic) return <div>Topic not found</div>

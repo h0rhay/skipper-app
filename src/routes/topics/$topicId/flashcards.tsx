@@ -1,11 +1,12 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { z } from 'zod'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useTopics } from '../../../hooks/useTopics'
 import { useTopicProgress } from '../../../hooks/useTopicProgress'
 import { useSessionHistory } from '../../../hooks/useSessionHistory'
 import { SessionPage } from '../../../components/templates/SessionPage'
 import { FlashcardDeck } from '../../../components/organisms/FlashcardDeck'
+import { Counter } from '../../../components/atoms/Counter'
 
 const searchSchema = z.object({
   mode: z.literal('review').optional(),
@@ -23,11 +24,11 @@ export function FlashcardSessionScreenComponent({ topicId, cardIds }: { topicId:
   const { updateFlashcards } = useTopicProgress(topicId)
   const { appendSession } = useSessionHistory()
   const [progress, setProgress] = useState(0)
+  const [cardIndex, setCardIndex] = useState(0)
+  const startedAt = useRef(new Date().toISOString()).current
 
   const topic = topics.find(t => t.id === topicId)
   if (!topic) return <div>Topic not found</div>
-
-  const startedAt = new Date().toISOString()
 
   function handleComplete(result: { masteredIds: string[]; score: number; total: number }) {
     const completedAt = new Date().toISOString()
@@ -53,18 +54,25 @@ export function FlashcardSessionScreenComponent({ topicId, cardIds }: { topicId:
     })
   }
 
+  const totalCards = topic.flashcards.length
+
+  function handleProgressChange(p: number) {
+    setProgress(p)
+    setCardIndex(Math.round(p * totalCards))
+  }
+
   return (
     <SessionPage
       progress={progress}
       onExit={() => navigate({ to: `/topics/${topicId}` })}
-      counter={null}
+      counter={<Counter current={cardIndex + 1} total={totalCards} prefix="Card" />}
     >
       <FlashcardDeck
         topicId={topicId}
         cards={topic.flashcards}
         cardIds={cardIds}
         onComplete={handleComplete}
-        onProgressChange={setProgress}
+        onProgressChange={handleProgressChange}
       />
     </SessionPage>
   )

@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react'
 import { FlashCard } from '../../molecules/FlashCard'
 import { Button } from '../../atoms/Button'
 import { ProgressBar } from '../../atoms/ProgressBar'
-import { Counter } from '../../atoms/Counter'
 import { useFlashcardSession } from '../../../hooks/useFlashcardSession'
 import type { Flashcard } from '../../../types'
 import styles from './FlashcardDeck.module.css'
@@ -35,7 +34,6 @@ export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressC
   return (
     <div className={styles.deck}>
       <ProgressBar value={progress} />
-      <Counter current={Math.round(progress * cards.length)} total={cards.length} prefix="Card" />
       <FlashCard
         front={currentCard.front}
         back={currentCard.back}

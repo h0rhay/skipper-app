@@ -1,5 +1,93 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { useTopics } from '../../../hooks/useTopics'
+import { useTopicProgress } from '../../../hooks/useTopicProgress'
+import { ScrollPage } from '../../../components/templates/ScrollPage'
+import { BackHeader } from '../../../components/molecules/BackHeader'
+import { KeyTermRow } from '../../../components/molecules/KeyTermRow'
+import { SafetyNote } from '../../../components/molecules/SafetyNote'
+import { Button } from '../../../components/atoms/Button'
+import { Label } from '../../../components/atoms/Label'
+import { Divider } from '../../../components/atoms/Divider'
+import styles from '../../../styles/screens/key-facts.module.css'
 
 export const Route = createFileRoute('/topics/$topicId/facts')({
-  component: () => <div>Key Facts — coming soon</div>,
+  component: KeyFactsScreen,
 })
+
+interface KeyFactsScreenComponentProps { topicId: string }
+
+export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProps) {
+  const navigate = useNavigate()
+  const { topics } = useTopics()
+  const { progress, markFactsRead } = useTopicProgress(topicId)
+
+  const topic = topics.find(t => t.id === topicId)
+  if (!topic) return <div>Topic not found</div>
+
+  return (
+    <ScrollPage header={<BackHeader label={topic.title} to={`/topics/${topicId}`} />}>
+      <div className={styles.content}>
+
+        {/* Summary */}
+        <section className={styles.section}>
+          <Label>Summary</Label>
+          <p className={styles.summary}>{topic.summary}</p>
+        </section>
+
+        <Divider />
+
+        {/* Key Terms */}
+        {topic.keyTerms.length > 0 && (
+          <section className={styles.section}>
+            <Label>Key Terms</Label>
+            <div className={styles.termsList}>
+              {topic.keyTerms.map((kt, i) => (
+                <KeyTermRow key={i} term={kt.term} definition={kt.definition} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Safety Notes */}
+        {topic.safetyNotes.length > 0 && (
+          <>
+            <Divider />
+            <section className={styles.section}>
+              <Label>Safety-Critical Notes</Label>
+              <div className={styles.safetyList}>
+                {topic.safetyNotes.map((note, i) => (
+                  <SafetyNote key={i} note={note} />
+                ))}
+              </div>
+            </section>
+          </>
+        )}
+
+        <Divider />
+
+        {/* Mark as read */}
+        <div className={styles.markReadSection}>
+          <Button
+            onClick={() => {
+              markFactsRead()
+              try {
+                navigate({ to: `/topics/${topicId}` })
+              } catch {
+                // navigate may not be available in test environment
+              }
+            }}
+            fullWidth
+          >
+            {progress?.factsRead ? 'Read ✓' : 'Mark as Read'}
+          </Button>
+        </div>
+
+      </div>
+    </ScrollPage>
+  )
+}
+
+function KeyFactsScreen() {
+  const { topicId } = Route.useParams()
+  return <KeyFactsScreenComponent topicId={topicId} />
+}

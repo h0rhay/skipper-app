@@ -1,0 +1,6 @@
+.content { display: flex; flex-direction: column; gap: 24px; }
+.section { display: flex; flex-direction: column; gap: 12px; }
+.summary { font-size: var(--font-size-base); color: var(--color-text-secondary); line-height: 1.7; margin: 0; }
+.termsList { display: flex; flex-direction: column; border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
+.safetyList { display: flex; flex-direction: column; gap: 8px; }
+.markReadSection { padding-bottom: 16px; }

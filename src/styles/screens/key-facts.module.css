@@ -4,3 +4,4 @@
 .termsList { display: flex; flex-direction: column; border: 1px solid var(--color-border); overflow: hidden; }
 .safetyList { display: flex; flex-direction: column; gap: 8px; }
 .markReadSection { padding-bottom: 16px; }
+.diagramWrapper { border: 1px solid var(--color-border); padding: 16px; background: var(--color-bg-card); }

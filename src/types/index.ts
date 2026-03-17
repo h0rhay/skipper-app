@@ -29,6 +29,7 @@ export interface Topic {
   flashcards: Flashcard[]
   mcqQuestions: MCQQuestion[]
   navTools: string[]
+  svgDiagramId?: string
 }
 
 export type TopicCompletionStatus = 'none' | 'partial' | 'complete'

@@ -8,6 +8,7 @@ import { SafetyNote } from '../../../components/molecules/SafetyNote'
 import { Button } from '../../../components/atoms/Button'
 import { Label } from '../../../components/atoms/Label'
 import { Divider } from '../../../components/atoms/Divider'
+import { DiagramRenderer } from '../../../components/diagrams'
 import styles from '../../../styles/screens/key-facts.module.css'
 
 export const Route = createFileRoute('/topics/$topicId/facts')({
@@ -27,6 +28,18 @@ export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProp
   return (
     <ScrollPage header={<BackHeader label={topic.title} to={`/topics/${topicId}`} />}>
       <div className={styles.content}>
+
+        {/* Diagram */}
+        {topic.svgDiagramId && (
+          <section className={styles.section}>
+            <Label>Diagram</Label>
+            <div className={styles.diagramWrapper}>
+              <DiagramRenderer diagramId={topic.svgDiagramId} />
+            </div>
+          </section>
+        )}
+
+        {topic.svgDiagramId && <Divider />}
 
         {/* Summary */}
         <section className={styles.section}>

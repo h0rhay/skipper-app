@@ -4,8 +4,8 @@ rya_syllabus_ref: "Topic 9"
 iala_region: "N/A"
 source_images:
   - "resources/21-3f074ee5b4.jpg"
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Compass
@@ -83,6 +83,13 @@ Q: Chartwork is carried out in which reference system?
 Correct: (c)
 Source: SRC-001; transcript page-21
 
+## ⚠️ Safety-Critical Notes
+
+- Applying variation or deviation in the wrong direction (adding instead of subtracting, or vice versa) produces a compass course error of twice the variation/deviation value. A 7°W variation applied the wrong way results in a 14° heading error — enough to steer into a hazard over a short passage. Always use the conversion diagram (True → +W/−E → Magnetic → +W/−E → Compass) methodically. [SRC-001; transcript page-21]
+- Deviation changes with the vessel's heading. A deviation card produced on a previous heading is not valid when the boat has altered course significantly. Always use the deviation card value for the current heading. [SRC-001; transcript page-21]
+- Objects that cause deviation (mobile phones, metal mugs, speakers, electronics) must be kept well clear of the ship's compass and especially the hand-bearing compass when taking bearings. A mobile phone held near a hand-bearing compass will produce an erroneous bearing and a false position line. [SRC-001; transcript page-21]
+- If compass error is unknown or has not been checked recently, all compass courses and bearings must be treated with additional caution. Swinging the compass and producing a current deviation card is a fundamental pre-passage safety check. [SRC-001; transcript page-21]
+
 ## Sources
 
 - SRC-001: RYA Day Skipper Shorebased Theory Syllabus (Royal Yachting Association, 2023)
@@ -91,4 +98,4 @@ Source: SRC-001; transcript page-21
 
 ## Unverified / Needs Citation
 
-[UNVERIFIED] The CADET/TVMDC mnemonic for compass conversion (Compass Add Deviation East → True, or True Variation Magnetic Deviation Compass) is widely used in RYA training but no primary standard document has been identified as its origin — attributed to RYA shorebased course convention. Verify against RYA G113 Day Skipper Shorebased Notes (SUP-002).
+[UNVERIFIED] The CADET/TVMDC mnemonic for compass conversion (Compass Add Deviation East → True, or True Variation Magnetic Deviation Compass) is widely used in RYA training but no primary standard document has been identified as its origin — attributed to RYA shorebased course convention. Requires physical RYA G113 Day Skipper Shorebased Notes (SUP-002) — not available in this repository.

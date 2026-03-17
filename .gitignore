@@ -15,6 +15,12 @@ dist/
 # OS
 .DS_Store
 
+# Archived / local-only directories
+archived-resources/
+transcripts/
+.superpowers/
+research/
+
 # Editor
 .vscode/
 .idea/

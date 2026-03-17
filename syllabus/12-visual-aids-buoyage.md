@@ -3,8 +3,8 @@ rya_topic: "Visual aids to navigation — lighthouse and beacon light characteri
 rya_syllabus_ref: "Topic 12"
 iala_region: "A"
 source_images: [29, 30, 31]
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Visual Aids to Navigation — Lighthouse and Beacon Light Characteristics, IALA Buoyage System
@@ -211,6 +211,6 @@ Source: SRC-003, Light Characteristics; Transcript p.31
 
 [UNVERIFIED] Cardinal mark exact periods: The distinction between Q and VQ variants (e.g. Q(6)+LFl 15s vs VQ(6)+LFl 10s) is not fully specified in available HTML sources. Verify exact period values against IALA O-1. [Source note in SRC-003 local copy]
 
-[UNVERIFIED] Navigation lights for vessels (lights and shapes) — all facts about vessel navigation lights (power-driven vessels, sailing vessels, vessels restricted in ability to manoeuvre, etc.) that would cite IRPCS/COLREGS (SRC-002). SRC-002 local copy (colregs-irpcs-text.md) does not exist. Relevant transcript content from page-17-lights-and-shapes.md is noted but cannot be cited against the primary source.
+Navigation lights for vessels (lights and shapes) — now verified. See colregs-irpcs-text.md, Rules 20–31 and transcript page-17. Key light arcs: masthead 225°, sidelights 112.5° each, sternlight 135°.
 
-[UNVERIFIED] Rule governing action in a narrow channel / restricted waterway — would cite IRPCS Rule 9 (SRC-002). SRC-002 not available; any such statement must remain here until verified against the primary source.
+Rule governing action in a narrow channel — IRPCS Rule 9 now verified. See colregs-irpcs-text.md, Rule 9. Vessels shall keep to the starboard side of narrow channels; vessels under 20 m and sailing vessels shall not impede vessels that can only safely navigate within the channel.

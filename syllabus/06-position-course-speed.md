@@ -3,8 +3,8 @@ rya_topic: "Definition of position, course and speed — latitude/longitude, bea
 rya_syllabus_ref: "Topic 6"
 iala_region: "N/A"
 source_images: ["resources/20-41b68d6b21.jpg"]
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 # Position, Course and Speed
 

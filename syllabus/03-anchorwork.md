@@ -3,8 +3,8 @@ rya_topic: "Anchorwork — anchor types and anchoring considerations"
 rya_syllabus_ref: "Topic 3"
 iala_region: "N/A"
 source_images: ["resources/9-436d17359b.jpg"]
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 # Anchorwork
 

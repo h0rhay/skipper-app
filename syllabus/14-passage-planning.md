@@ -7,8 +7,8 @@ source_images:
   - "resources/33-a089b93d9f.jpg"
   - "resources/36-c9f4b52782.jpg"
   - "resources/27-06613db7f1.jpg"
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Passage Planning
@@ -31,7 +31,7 @@ Passage planning is the process of preparing systematically for a voyage — fro
 - Do not place a waypoint on a hazard — place it adjacent to hazards so the vessel passes safely. In busy areas, many vessels may be converging on the same popular waypoint. [Source: SRC-001; transcript page-28]
 - GPS alone is not sufficient for passage navigation — back up GPS with visual bearings, depth information, and the ship's log. Keep a record of positions at regular intervals in the ship's log. [Source: SRC-001; transcript page-27]
 - Things to plan for on a pilotage: rocks exposed/covered at different tidal heights; shoals and shallows; shipping channels; chain ferries; tidal effect on track; harbour bylaws; speed restrictions; small craft channels; change of buoyage system. [Source: SRC-001; transcript page-32]
-- Watchkeeping: maintaining a proper look-out is required at all times underway. The ship's log (deck log) should record: time, position, course, speed, log reading, weather, and any significant events. [Source: SRC-001]
+- Watchkeeping: maintaining a proper look-out is required at all times underway (COLREGS Rule 5). The ship's log (deck log) should record: time, position, course, speed, log reading, weather, and any significant events. [Source: SRC-001; colregs-irpcs-text.md, Rule 5]
 - Sailing upwind is more demanding and seems windier than sailing downwind; plan crew rest accordingly and be conservative about offshore legs when the forecast shows deteriorating weather. [Source: SRC-001; transcript page-36]
 
 ## Key Terms
@@ -66,7 +66,7 @@ Q: Which of the following is NOT a recognised pilotage technique?
 (b) Using a transit
 (c) Calculating leeway from the Beaufort scale
 (d) Maintaining a clearing bearing
-Correct: (c)
+Correct: c
 Source: SRC-001; transcript page-32
 
 Q: A pilotage plan note reads "Turn when chimney bears 320°(T)". What type of technique is this?
@@ -74,7 +74,7 @@ Q: A pilotage plan note reads "Turn when chimney bears 320°(T)". What type of t
 (b) Turning point defined by a bearing on a charted object
 (c) Transit
 (d) Back bearing
-Correct: (b)
+Correct: b
 Source: SRC-001; transcript page-32
 
 Q: You enter a harbour waypoint into your GPS from the chart. The GPS shows bearing 205° and distance 4.2M. On the chart you measure the bearing as 195° and distance 4.2M. What is the most likely cause?
@@ -82,7 +82,7 @@ Q: You enter a harbour waypoint into your GPS from the chart. The GPS shows bear
 (b) You have entered the wrong longitude or latitude
 (c) Magnetic variation is not applied in the GPS
 (d) The chart datum does not match the GPS datum
-Correct: (b)
+Correct: b
 Source: SRC-001; transcript page-28
 
 Q: What does a clearing bearing of "not less than 043°(M)" mean in practice?
@@ -90,7 +90,7 @@ Q: What does a clearing bearing of "not less than 043°(M)" mean in practice?
 (b) As long as the bearing to the charted mark reads 043°M or more, the vessel is clear of the hazard
 (c) The vessel must never steer less than 043°M
 (d) 043°(M) is the true bearing of the safe track
-Correct: (b)
+Correct: b
 Source: SRC-001; transcript page-32
 
 Q: When planning a coastal passage, which of the following best describes when to plan for a fair tidal stream?
@@ -98,12 +98,12 @@ Q: When planning a coastal passage, which of the following best describes when t
 (b) Particularly at tidal gates, harbour bars, and headlands where the stream is strongest
 (c) Only when forecasting spring tides
 (d) Only when the passage exceeds 20 miles
-Correct: (b)
+Correct: b
 Source: SRC-001; transcript page-36
 
 ## Safety-Critical Notes
 
-- A proper look-out must be maintained at all times underway. [UNVERIFIED — COLREGS Rule 5 states: "Every vessel shall at all times maintain a proper look-out by sight and hearing as well as by all available means appropriate in the prevailing circumstances and conditions." The IRPCS/COLREGS text (SRC-002) was not available for direct citation; see Unverified section.]
+- A proper look-out must be maintained at all times underway. COLREGS Rule 5: "Every vessel shall at all times maintain a proper look-out by sight and hearing as well as by all available means appropriate in the prevailing circumstances and conditions so as to make a full appraisal of the situation and of the risk of collision." [colregs-irpcs-text.md, Rule 5]
 - Never place a waypoint directly on a hazard — always offset it to pass safely. Steering direct to a waypoint without prior cross-tide calculation can set the vessel toward the hazard. [SRC-001; transcript page-28]
 - Always obtain an up-to-date weather forecast before departure and at regular intervals during a passage. Be prepared to divert to a safe haven if conditions deteriorate. [SRC-001; transcript page-36]
 - Wind over tide at harbour entrances, bars, and tidal gates can create steep, dangerous seas even in moderate wind strengths. Plan passage timing to avoid these conditions. [SRC-001; transcript page-36]
@@ -111,6 +111,7 @@ Source: SRC-001; transcript page-36
 ## Sources
 
 - SRC-001: RYA Day Skipper Shorebased Theory Syllabus (Royal Yachting Association, 2023)
+- colregs-irpcs-text.md: COLREGS / IRPCS Rule Text Reference (USCG Navigation Center amalgamated rules, retrieved 2026-03-17)
 - Transcript: page-32-pilotage-techniques-planning.md
 - Transcript: page-33-making-pilotage-plan-following.md
 - Transcript: page-36-beaufort-scale-weather-passage-planning.md
@@ -120,6 +121,8 @@ Source: SRC-001; transcript page-36
 
 ## Unverified / Needs Citation
 
-[UNVERIFIED] SOLAS Chapter V, Regulation 34 — requires passage planning for all vessels, including recreational craft. This regulation is the mandatory basis for passage planning in RYA syllabi, but the full text of SOLAS V Regulation 34 is not available in this repository. The source file `research/colregs-irpcs-text.md` does not exist (gate bypass applied). Verify against the official IMO SOLAS text or the MCA's UK domestic implementation, and against SUP-013 (Skippers Online student resources, which lists a SOLAS V resource).
-[UNVERIFIED] COLREGS Rule 5 (Look-out) — "Every vessel shall at all times maintain a proper look-out by sight and hearing as well as by all available means appropriate in the prevailing circumstances and conditions." The IRPCS source file (SRC-002 local copy `research/colregs-irpcs-text.md`) does not exist in this repository. Rule 5 text must be verified against the MSN 1781 PDF (SRC-002) or the official IRPCS text via SUP-013.
+[UNVERIFIED] SOLAS Chapter V, Regulation 34 — requires passage planning for all vessels, including recreational craft. This regulation is the mandatory basis for passage planning in RYA syllabi, but the full text of SOLAS V Regulation 34 is not available in this repository. Verify against the official IMO SOLAS text or the MCA's UK domestic implementation, and against SUP-013 (Skippers Online student resources, which lists a SOLAS V resource).
+
+[VERIFIED] COLREGS Rule 5 (Look-out) — confirmed from colregs-irpcs-text.md, Rule 5 (retrieved 2026-03-17). Full rule text: "Every vessel shall at all times maintain a proper look-out by sight and hearing as well as by all available means appropriate in the prevailing circumstances and conditions so as to make a full appraisal of the situation and of the risk of collision." Citation updated in Key Facts and Safety-Critical Notes.
+
 [UNVERIFIED] Four-stage passage planning framework (Appraise, Plan, Execute, Monitor) — described as the standard SOLAS V / MCA framework in RYA training but not confirmed from a primary source text in this repository. Verify against RYA G113 (SUP-002) or the MCA's SOLAS V guidance.

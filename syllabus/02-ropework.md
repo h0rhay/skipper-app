@@ -3,8 +3,8 @@ rya_topic: "Ropework — synthetic rope characteristics, knots, and applications
 rya_syllabus_ref: "Topic 2"
 iala_region: "N/A"
 source_images: ["resources/6-a22151fa93.jpg"]
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 # Ropework
 

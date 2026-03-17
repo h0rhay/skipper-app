@@ -3,8 +3,8 @@ rya_topic: "Navigational drawing instruments — parallel rulers, dividers, prop
 rya_syllabus_ref: "Topic 8"
 iala_region: "N/A"
 source_images: ["resources/19-6fcd8876ba.jpg", "resources/20-41b68d6b21.jpg"]
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 # Navigational Drawing Instruments
 
@@ -38,6 +38,19 @@ This topic covers the instruments used at the chart table for plotting positions
 - Example: position given as "246°(T) from Skerries Point 1.6M". [Source: SRC-001; transcript p.20]
 - Using a plotter: dial in 246°(T), align with Skerries Point, align grid to chart latitude/longitude lines, draw the line, then measure 1.6M from Skerries Point along that line. [Source: SRC-001; transcript p.20]
 - Using parallel rulers: line up one edge with the compass rose centre and 246°(T), walk rules to Skerries Point, draw the bearing line, then measure 1.6M along it. [Source: SRC-001; transcript p.20]
+
+## Key Terms
+
+| Term | Definition | Source |
+|------|-----------|--------|
+| Parallel rulers | Linked straight edges that remain parallel while walking across a chart; used to transfer bearings | SRC-001; transcript p.20 |
+| Rolling parallel rulers | Parallel rulers operating on a rolling cylinder; same function as linked rulers | SRC-001 |
+| Portland plotter | Transparent protractor-grid plotter that eliminates the need for a compass rose | SRC-001; transcript p.20 |
+| Breton plotter | Alternative name for a Portland-style plotter | SRC-001; transcript p.20 |
+| Dividers | Two-legged instrument used to measure distances on a chart | SRC-001; transcript p.20 |
+| Compass rose | Printed circle on a chart showing true and magnetic north, used to read off bearings | SRC-001; transcript p.20 |
+| Latitude scale | The vertical scale on the sides of a chart; used to measure distance | SRC-001; transcript p.20 |
+| Walking a ruler | Moving parallel rulers across the chart step by step while maintaining alignment | SRC-001; transcript p.20 |
 
 ## Flashcard Candidates
 - Q: What are parallel rulers used for in chartwork? | A: Transferring a bearing from the compass rose to a point on the chart, or from a feature to the compass rose | Source: SRC-001; transcript p.20

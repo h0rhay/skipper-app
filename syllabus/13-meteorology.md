@@ -6,8 +6,8 @@ source_images:
   - "resources/34-8368317236.jpg"
   - "resources/35-84d56be6bf.jpg"
   - "resources/36-c9f4b52782.jpg"
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Meteorology
@@ -74,7 +74,7 @@ Q: In the Northern Hemisphere, a depression is approaching from the west. As the
 (b) It veers (shifts clockwise)
 (c) It remains steady
 (d) It increases to gale force
-Correct: (b)
+Correct: b
 Source: SRC-001; transcript page-34
 
 Q: A weather forecast describes conditions as "Imminent." How soon is the forecast event expected?
@@ -82,7 +82,7 @@ Q: A weather forecast describes conditions as "Imminent." How soon is the foreca
 (b) Within 6–12 hours of issue
 (c) Within 6 hours of issue
 (d) Immediately, already occurring
-Correct: (c)
+Correct: c
 Source: SRC-001; transcript page-35
 
 Q: Which Beaufort Force is associated with "large waves, white foam crests" and is the threshold usually described as "Strong breeze"?
@@ -90,7 +90,7 @@ Q: Which Beaufort Force is associated with "large waves, white foam crests" and 
 (b) Force 6
 (c) Force 7
 (d) Force 8
-Correct: (b)
+Correct: b
 Source: SRC-001; transcript page-36
 
 Q: You are planning to enter a bay in the afternoon. The forecast shows a light northerly offshore wind, sunshine, and no frontal activity. What local weather effect should you anticipate?
@@ -98,7 +98,7 @@ Q: You are planning to enter a bay in the afternoon. The forecast shows a light 
 (b) Sea breeze — warm air rising over land, onshore flow up to Force 4
 (c) A trough bringing rain and backing winds
 (d) No local effect — the synoptic pattern dominates
-Correct: (b)
+Correct: b
 Source: SRC-001; transcript page-35
 
 Q: Isobars are closely spaced on a synoptic chart. What does this indicate?
@@ -106,7 +106,7 @@ Q: Isobars are closely spaced on a synoptic chart. What does this indicate?
 (b) Light and variable winds
 (c) Strong winds in that area
 (d) Dense fog is likely
-Correct: (c)
+Correct: c
 Source: SRC-001; transcript page-34
 
 ## Safety-Critical Notes

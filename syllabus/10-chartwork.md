@@ -8,8 +8,8 @@ source_images:
   - "resources/26-7a2457522a.jpg"
   - "resources/27-06613db7f1.jpg"
   - "resources/28-de1c685387.jpg"
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Chartwork
@@ -109,6 +109,14 @@ Q: You input a waypoint into your GPS from the chart. The GPS shows BRG 010° DI
 Correct: (b)
 Source: SRC-001; transcript page-28
 
+## ⚠️ Safety-Critical Notes
+
+- A DR position assumes no tidal set or drift — in areas with strong tidal streams it can diverge rapidly from the vessel's actual position. Always progress to an EP (applying leeway and tidal vector) and confirm with a visual fix or GPS at regular intervals. Never rely on a DR position alone in pilotage waters or near hazards. [SRC-001; transcript page-25]
+- When three bearing lines form a cocked hat, always assume your position is at the corner of the cocked hat closest to the nearest danger. Do not place yourself at the centre of the cocked hat. This conservative approach is a fundamental safety rule. [SRC-001; transcript page-27]
+- GPS gives Course Over Ground (COG) and Speed Over Ground (SOG) relative to the seabed, but the bearing it shows to a waypoint does not account for tidal set. If you steer the GPS waypoint bearing in a cross-tide, you will be set sideways — potentially onto a hazard. Always pre-calculate a course to steer that incorporates the tidal vector. [SRC-001; transcript page-28]
+- GPS can fail without warning. Power or aerial failure, mobile phone interference, or changes to the satellite system can all produce a loss of fix or an incorrect position with no alarm. Maintain an independent position record on the paper chart throughout every passage. [SRC-001; transcript page-27]
+- Waypoints must always be plotted on the chart and checked before entry into the GPS. A single transposed digit in latitude or longitude can place a waypoint miles from the intended position. The GPS distance and bearing to the waypoint must be cross-checked against the chart-measured values before proceeding. [SRC-001; transcript page-28]
+
 ## Sources
 
 - SRC-001: RYA Day Skipper Shorebased Theory Syllabus (Royal Yachting Association, 2023)
@@ -121,4 +129,4 @@ Source: SRC-001; transcript page-28
 
 ## Unverified / Needs Citation
 
-[UNVERIFIED] GPS accuracy of "approximately 15 metres" — stated in transcript page-27 but the source of this specific figure is not cited in the transcript. Modern GPS under SBAS/DGPS correction achieves better accuracy; confirm current accuracy statement against RYA G113 or Admiralty publication.
+GPS accuracy figure of "approximately 15 metres" is stated verbatim in transcript page-27 (the RYA handbook text reads "accurate to about 15 metres") and is therefore confirmed by that source. Note: under SBAS/DGPS augmentation, modern receivers achieve better accuracy; the 15 m figure reflects standard (non-augmented) civilian GPS as presented in the RYA Day Skipper handbook. [Source: transcript page-27-visual-fix-and-gps.md — confirmed]

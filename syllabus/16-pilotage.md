@@ -3,8 +3,8 @@ rya_topic: "Pilotage — transits, leading lines, IALA buoyage, sailing directio
 rya_syllabus_ref: "Topic 16"
 iala_region: "A"
 source_images: [29, 32, 33]
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Pilotage — Transits, Leading Lines, IALA Buoyage, Sailing Directions, Harbour Entry
@@ -21,7 +21,7 @@ A pilotage plan sequences the navigational marks, bearings, depths, and turning 
 
 - Pilotage is inshore navigation using visual references (marks, transits, bearings, buoys, depth contours) to navigate safely in coastal and harbour waters. [Source: Transcript p.32]
 - Because hazards are close, time available to react is short; a pilotage plan prepared in advance allows deck-based navigation without going below. [Source: Transcript p.32]
-- A different port may use a different buoyage system — e.g. a vessel moving between IALA A and IALA B regions must treat all lateral marks as reversed. [Source: Transcript p.32; SRC-003]
+- A different port may use a different buoyage system — e.g. a vessel moving between IALA Region A and IALA Region B must treat all lateral marks as reversed. [Source: Transcript p.32; SRC-003]
 
 ### Transits
 
@@ -74,7 +74,7 @@ A pilotage plan sequences the navigational marks, bearings, depths, and turning 
 
 - In a buoyed channel, lateral marks identify the edges of navigable water; the pilotage plan should list each mark in sequence with its type (port/starboard), colour, and expected light characteristic so each can be positively identified before the turn. [Source: SRC-003; Transcript p.33]
 - Positive identification of marks before acting is an explicit step in the pilotage plan: do not act on a mark until it has been positively identified by colour, shape, topmark, and light. [Source: Transcript p.33]
-- In Region A: leave red can buoys to port and green conical buoys to starboard when entering harbour. [Source: SRC-003, Lateral Marks; Transcript p.29]
+- In IALA Region A: leave red can buoys to port and green conical buoys to starboard when entering harbour. [Source: SRC-003, Lateral Marks; Transcript p.29]
 - Cardinal marks indicate the boundary of a danger; approach from the named safe side and pass on that side. [Source: SRC-003, Cardinal Marks; Transcript p.29]
 - Special marks (yellow, X topmark) often mark recreational or special-use areas within or near channels; they are not navigational channel marks. [Source: SRC-003, Special Mark]
 
@@ -151,7 +151,7 @@ Source: Transcript p.33
 - **Region A / Region B lateral mark reversal:** A vessel transiting from European (Region A) to American or Japanese (Region B) waters, or vice versa, must reverse its treatment of all lateral marks. Misidentifying the applicable region puts the vessel on the wrong side of every channel mark.
 - **Tidal clearance is time-critical:** A positive clearance calculation applies only at the time it was computed. If the pilotage is delayed, recalculate bar clearance for the revised time of passage — particularly on a falling tide.
 - **Contour following requires continuous echo-sounder watch:** Tidal height changes the actual depth continuously. A contour followed at HW may not be followable at LW. Always apply the predicted height of tide to the charted depth before committing to a contour track.
-- **Shipping channels and chain ferries:** Vessels in confined waters may be constrained and unable to manoeuvre. A pilotage plan must identify any crossing points with commercial traffic and decide on timing and VHF contact strategy before entering the channel. (Note: specific IRPCS rules for narrow channels are listed under Unverified below pending SRC-002.)
+- **Shipping channels and chain ferries:** Vessels in confined waters may be constrained and unable to manoeuvre. A pilotage plan must identify any crossing points with commercial traffic and decide on timing and VHF contact strategy before entering the channel. Rule 9 (Narrow Channels) requires keeping to the starboard side of the channel and not impeding vessels that can only navigate safely within it. [colregs-irpcs-text.md, Rule 9]
 
 ## Sources
 
@@ -161,10 +161,8 @@ Source: Transcript p.33
 
 ## Unverified / Needs Citation
 
-[UNVERIFIED] IRPCS Rule 9 — Narrow channels: specific rules about vessels proceeding along a narrow channel keeping to the starboard side, vessels under 20 m not impeding larger vessels, and sailing vessels not impeding power-driven vessels in a narrow channel. Would cite SRC-002 (IRPCS). SRC-002 local copy (colregs-irpcs-text.md) does not exist; rule text cannot be verified. Add to Key Facts once SRC-002 is available.
-
 [UNVERIFIED] VHF procedure for harbour entry — specific requirements to call harbour control on a designated VHF working channel before entering certain commercial or controlled harbours. Source would be harbour-specific sailing directions or an MCA notice. No primary source available in this knowledge base.
 
 [UNVERIFIED] Sailing directions / pilot book usage — the role of almanac pilot sections, specific harbour entry instructions, tidal stream information, and waypoint data as part of pilotage planning. No primary source (e.g. Reeds Almanac or an ADMIRALTY pilot) has been captured in the research sources. Add citation when a pilot source is verified.
 
-[UNVERIFIED] Lights and shapes for vessels in a narrow channel (e.g. vessels constrained by draught displaying a black cylinder by day) — would cite IRPCS (SRC-002). SRC-002 not available; relevant transcript content from page-17-lights-and-shapes.md is noted but not cited against the primary source.
+Lights and shapes for vessels in a narrow channel: vessels constrained by draught display a black cylinder by day and three vertical red all-round lights by night. [colregs-irpcs-text.md, Rule 28; transcript page-17]

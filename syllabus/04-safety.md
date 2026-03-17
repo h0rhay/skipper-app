@@ -8,8 +8,8 @@ source_images:
   - "resources/12-edc33fa486.jpg"
   - "resources/13-270af22d23.jpg"
   - "resources/14-0c0e0c45b9.jpg"
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Topic 4 — Safety

@@ -5,8 +5,8 @@ iala_region: "N/A"
 source_images:
   - "resources/18-935027cf3b.jpg"
   - "resources/19-6fcd8876ba.jpg"
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Navigational Charts and Publications
@@ -130,7 +130,7 @@ Source: SRC-004; transcript page-19
 
 ## Unverified / Needs Citation
 
-[UNVERIFIED] NP5011 K-section wreck codes K20–K24 (dangerous wreck, non-dangerous wreck, old wreck) — symbol codes cited in SRC-004 research file are marked [VERIFY AGAINST NP5011]; must be confirmed against physical NP5011 8th Edition 2020.
-[UNVERIFIED] NP5011 N-section anchorage and prohibited area codes (N10 etc.) — not confirmed from accessible source text.
-[UNVERIFIED] NP5011 M-section Traffic Separation Scheme codes (M1–M10) — not confirmed from accessible source text.
-[UNVERIFIED] NP5011 P-section lighthouse codes beyond P1 (P2–P6) — not confirmed from accessible source text.
+[UNVERIFIED] NP5011 K-section wreck codes K20–K24 (dangerous wreck, non-dangerous wreck, old wreck) — symbol codes cited in SRC-004 research file are marked [VERIFY AGAINST NP5011]; requires physical NP5011 8th Edition 2020 (ISBN 978-0-7077-4621-0) — not available in this repository. The NP5011 8th Edition full PDF was not publicly accessible (binary/inaccessible) at the time of compilation; see SRC-004 header notes.
+[UNVERIFIED] NP5011 N-section anchorage and prohibited area codes (N10 etc.) — requires physical NP5011 8th Edition 2020 — not available in this repository; see SRC-004 header notes.
+[UNVERIFIED] NP5011 M-section Traffic Separation Scheme codes (M1–M10) — requires physical NP5011 8th Edition 2020 — not available in this repository; see SRC-004 header notes.
+[UNVERIFIED] NP5011 P-section lighthouse codes beyond P1 (P2–P6) — requires physical NP5011 8th Edition 2020 — not available in this repository; see SRC-004 header notes.

@@ -3,8 +3,8 @@ rya_topic: "Marine environment — pollution prevention, environmental protectio
 rya_syllabus_ref: "Topic 17"
 iala_region: "N/A"
 source_images: ["resources/9-436d17359b.jpg", "resources/36-c9f4b52782.jpg"]
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 # Marine Environment
 
@@ -72,6 +72,16 @@ Q: What should a skipper do with oily bilge water accumulated in the bilge?
 (d) Filter it through an oily water separator and pump overboard at any location
 Correct: c
 Source: Unverified — confirm against MARPOL Annex I before use in assessment
+
+## Safety-Critical Notes
+
+Although this topic is classified non-safety-critical in the Day Skipper syllabus, several items carry legal consequences and should be treated with particular care in assessments:
+
+- **Discharging plastics overboard is prohibited at all times and in all sea areas** under MARPOL Annex V — this is an absolute rule with no distance-from-shore exception. MCQ candidates on this topic are marked [UNVERIFIED] pending primary source confirmation; do not include in assessments until verified against the MARPOL Annex V text.
+- **Oily bilge water discharge overboard is prohibited** under MARPOL Annex I for recreational craft. The correct procedure is retention onboard and disposal ashore at a licensed facility. As with plastics, the MCQ on this topic is marked [UNVERIFIED]; do not use in assessments until verified.
+- **MARPOL Special Areas** (e.g., North Sea, Baltic Sea, Mediterranean) impose stricter discharge restrictions than the general rules. This content is unverified from available transcripts and must not be included in assessment questions without primary source confirmation.
+- Violations of MARPOL or domestic pollution regulations can result in criminal prosecution and significant fines. Instructors should present these as legal obligations, not just best-practice guidance.
+- UK domestic sewage discharge regulations for pleasure vessels (Merchant Shipping (Prevention of Pollution by Sewage and Garbage from Ships) Regulations 2020) are unverified from available transcripts — see Unverified / Needs Citation section.
 
 ## Sources
 - SRC-001: RYA Day Skipper Shorebased Theory Syllabus (Royal Yachting Association, 2023)

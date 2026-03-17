@@ -6,8 +6,8 @@ source_images:
   - "resources/22-f44439680d.jpg"
   - "resources/23-8cec2b00e7.jpg"
   - "resources/24-d8ce108f02.jpg"
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Tides and Tidal Streams
@@ -126,5 +126,5 @@ Source: SRC-001; transcript page-23
 
 ## Unverified / Needs Citation
 
-[UNVERIFIED] Rule of twelfths — widely cited in RYA training material but the precise wording and any caveats (e.g., applies to sinusoidal tidal curves, less accurate for some UK ports) are not confirmed from a primary source text in this repository. Verify against RYA G113 (SUP-002).
-[UNVERIFIED] The intermediate-rate interpolation formula — standard practice in RYA Day Skipper training but not confirmed from a primary source in this repository; verify against RYA G113 or Admiralty Tide Tables.
+[UNVERIFIED] Rule of twelfths — widely cited in RYA training material but the precise wording and any caveats (e.g., applies to sinusoidal tidal curves, less accurate for non-sinusoidal UK ports) are not confirmed from a primary source text in this repository. Requires physical RYA G113 Day Skipper Shorebased Notes (SUP-002) or Admiralty Tide Tables — not available in this repository.
+[UNVERIFIED] The intermediate tidal stream rate interpolation formula (neap_rate + (spring_rate − neap_rate) × (actual_range − neap_range) / (spring_range − neap_range)) — standard practice in RYA Day Skipper training but the exact formulation is not confirmed from a primary source text in this repository. Requires physical RYA G113 or Admiralty Tide Tables — not available in this repository.

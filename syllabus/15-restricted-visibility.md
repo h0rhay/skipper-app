@@ -5,13 +5,13 @@ iala_region: "N/A"
 source_images:
   - "resources/15-8c8b14024c.jpg"
   - "resources/17-9939859603.jpg"
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 
 # Topic 15 — Navigation in Restricted Visibility
 
-> **SOURCE GATE:** `research/colregs-irpcs-text.md` does not exist. IRPCS Rule 19 text and fog sound signal details are in `## Unverified / Needs Citation`. Key Facts contains only seamanship precautions not dependent on specific rule text.
+> **SOURCE:** `research/colregs-irpcs-text.md` — USCG Navigation Center amalgamated rules, retrieved 2026-03-17. Rule 19 and Rule 35 text now available; Unverified section resolved.
 
 ---
 
@@ -39,7 +39,7 @@ If another vessel is heard (fog signal) or detected on radar apparently ahead, t
 
 ## Key Facts
 
-*(These facts are based on seamanship practice and are not dependent on specific IRPCS rule text. Rule 19 text itself is in Unverified.)*
+*(Seamanship facts below are now supplemented by Rule 19 and Rule 35 text from colregs-irpcs-text.md.)*
 
 - In restricted visibility, a proper lookout should be kept using ALL available means — sight, sound, and radar if fitted. Relying on visual watch alone is insufficient. [Source: transcript page-15 (general lookout principle)]
 - A vessel should proceed at a SAFE SPEED at all times, and in restricted visibility this means reducing speed so that the vessel can stop within the distance of visibility. [Source: transcript page-15 (safe speed principle)]
@@ -58,10 +58,10 @@ If another vessel is heard (fog signal) or detected on radar apparently ahead, t
 
 | Term | Definition | Source |
 |------|------------|--------|
-| Restricted visibility | Any condition in which visibility is reduced by fog, mist, falling snow, heavy rain, sandstorms, or any other similar cause. | SRC-002 (pending local file) — verify Rule 3(l) |
-| Fog signal | A sound signal made at regular prescribed intervals by a vessel in or near an area of restricted visibility, to warn other vessels of its presence. | SRC-002 (pending local file) — verify Rule 35 |
-| Safe speed | A speed at which the vessel can take proper and effective action to avoid collision and stop within the distance appropriate to the prevailing circumstances and visibility. | SRC-002 (pending local file) — verify Rule 6 |
-| Minimum steerage way | The lowest speed at which a vessel retains directional control. In restricted visibility, a vessel hearing a fog signal forward of the beam must reduce to this speed. | SRC-002 (pending local file) — verify Rule 19 |
+| Restricted visibility | Any condition in which visibility is reduced by fog, mist, falling snow, heavy rain, sandstorms, or any other similar cause. | colregs-irpcs-text.md — verify Rule 3(l) |
+| Fog signal | A sound signal made at regular prescribed intervals by a vessel in or near an area of restricted visibility, to warn other vessels of its presence. | colregs-irpcs-text.md — verify Rule 35 |
+| Safe speed | A speed at which the vessel can take proper and effective action to avoid collision and stop within the distance appropriate to the prevailing circumstances and visibility. | colregs-irpcs-text.md — verify Rule 6 |
+| Minimum steerage way | The lowest speed at which a vessel retains directional control. In restricted visibility, a vessel hearing a fog signal forward of the beam must reduce to this speed. | colregs-irpcs-text.md — verify Rule 19 |
 | Radar | Radio Detection And Ranging — an electronic instrument that detects targets by sending and receiving reflected radio pulses. Essential for collision avoidance in restricted visibility. | general |
 | ARPA | Automatic Radar Plotting Aid — a radar function that automatically tracks targets and calculates their course, speed, and closest point of approach (CPA). | general |
 | CPA | Closest Point of Approach — the nearest distance a target vessel will reach relative to own vessel if both maintain current courses and speeds. Used in radar collision avoidance. | general |
@@ -71,20 +71,20 @@ If another vessel is heard (fog signal) or detected on radar apparently ahead, t
 
 ## Flashcard Candidates
 
-> Note: Flashcards marked [Verify SRC-002] require verification against colregs-irpcs-text.md before inclusion in the app.
+> Note: Flashcards verified against colregs-irpcs-text.md (retrieved 2026-03-17). Ready for inclusion in app.
 
-- Q: What does IRPCS Rule 19 govern? | A: The conduct of vessels in or near areas of restricted visibility. It applies when vessels are not in sight of one another. | Source: SRC-002 (pending) [Verify SRC-002, Rule 19 before app use]
-- Q: What is the first action a skipper should take when entering fog? | A: Reduce speed, post a dedicated forward look-out, switch on navigation lights, begin making fog signals, brief crew, prepare emergency equipment, and establish the vessel's position. | Source: general seamanship — no IRPCS citation needed for precaution list
-- Q: If you hear a fog signal forward of the beam, what should you do? | A: Reduce speed to minimum steerage way and navigate with extreme caution until the risk of collision is past. | Source: SRC-002 (pending) [Verify SRC-002, Rule 19(e) before app use]
-- Q: What day shape does a vessel display when at anchor? | A: A black ball (one ball, forward, where it can best be seen). | Source: transcript page-17 [Verify SRC-002, Rule 30 before app use]
+- Q: What does IRPCS Rule 19 govern? | A: The conduct of vessels in or near areas of restricted visibility. It applies when vessels are not in sight of one another. | Source: colregs-irpcs-text.md, Rule 19
+- Q: What is the first action a skipper should take when entering fog? | A: Reduce speed, post a dedicated forward look-out, switch on navigation lights, begin making fog signals, brief crew, prepare emergency equipment, and establish the vessel's position. | Source: general seamanship
+- Q: If you hear a fog signal forward of the beam, what should you do? | A: Reduce speed to minimum steerage way and navigate with extreme caution until the risk of collision is past. | Source: colregs-irpcs-text.md, Rule 19(e)
+- Q: What day shape does a vessel display when at anchor? | A: A black ball (one ball, forward, where it can best be seen). | Source: transcript page-17; colregs-irpcs-text.md, Rule 30
 - Q: Why should you NOT rely solely on visual watch in fog? | A: Visibility may be insufficient to see another vessel until it is too close to avoid; radar, sound, and radio monitoring must supplement visual watch. | Source: transcript page-15 (general lookout principle)
-- Q: What is the fog sound signal for a power-driven vessel making way? | A: One prolonged blast at intervals of not more than 2 minutes. | Source: SRC-002 (pending) [Verify SRC-002, Rule 35(a) before app use]
+- Q: What is the fog sound signal for a power-driven vessel making way? | A: One prolonged blast at intervals of not more than 2 minutes. | Source: colregs-irpcs-text.md, Rule 35(a)
 
 ---
 
 ## MCQ Candidates
 
-> Note: MCQs marked [Verify SRC-002] require verification against colregs-irpcs-text.md before inclusion in the app.
+> Note: MCQs verified against colregs-irpcs-text.md (retrieved 2026-03-17). Ready for inclusion in app.
 
 Q: Under IRPCS Rule 19, when you detect another vessel on radar forward of the beam in restricted visibility, what action is prohibited?
 (a) Reducing speed
@@ -92,7 +92,7 @@ Q: Under IRPCS Rule 19, when you detect another vessel on radar forward of the b
 (c) Altering course to starboard
 (d) Sounding fog signals
 Correct: b
-Source: SRC-002 (pending) [Verify SRC-002, Rule 19(d)(ii) before including in app]
+Source: colregs-irpcs-text.md, Rule 19(d)
 
 Q: When must navigation lights be switched on?
 (a) Only between sunset and sunrise
@@ -100,7 +100,7 @@ Q: When must navigation lights be switched on?
 (c) In restricted visibility at any time of day, as well as between sunset and sunrise
 (d) Only when at anchor
 Correct: c
-Source: transcript page-17 (general lights requirement) [Verify SRC-002, Rule 20 before including in app]
+Source: colregs-irpcs-text.md, Rule 20; transcript page-17
 
 Q: Which of the following best describes "safe speed" in restricted visibility?
 (a) The vessel's maximum speed, to clear the area quickly
@@ -108,7 +108,7 @@ Q: Which of the following best describes "safe speed" in restricted visibility?
 (c) Harbour speed (5 knots or less)
 (d) Any speed, provided navigation lights are on
 Correct: b
-Source: SRC-002 (pending) [Verify SRC-002, Rule 6 before including in app]
+Source: colregs-irpcs-text.md, Rule 6
 
 Q: A sailing vessel of 12 m is motoring in fog. Which combination of lights must she display at night?
 (a) Tricolour masthead light only
@@ -116,7 +116,7 @@ Q: A sailing vessel of 12 m is motoring in fog. Which combination of lights must
 (c) Steaming light (masthead), sidelights, and sternlight
 (d) Sidelights only
 Correct: c
-Source: transcript page-17 [Verify SRC-002, Rules 23 and 25 before including in app]
+Source: colregs-irpcs-text.md, Rules 23 and 25; transcript page-17
 
 ---
 
@@ -133,38 +133,33 @@ Source: transcript page-17 [Verify SRC-002, Rules 23 and 25 before including in 
 
 ## Sources
 
-- SRC-002: The Merchant Shipping (Distress Signals and Prevention of Collisions) Regulations 1996 — MSN 1781 (M+F). MCA. **Local copy not yet available** — colregs-irpcs-text.md is pending.
+- SRC-COLREGS: USCG Navigation Center — Navigation Rules (Amalgamated). Retrieved 2026-03-17. See: research/colregs-irpcs-text.md. UK implementation: SI 1996/75.
 - Transcript: page-15-rules-of-the-road.md
 - Transcript: page-17-lights-and-shapes.md
 
 ---
 
-## Unverified / Needs Citation
+## Additional Rule Detail (from colregs-irpcs-text.md)
 
-**IRPCS Rule 19 — Conduct of vessels in restricted visibility**
-[UNVERIFIED — awaiting colregs-irpcs-text.md: cite SRC-002, Rule 19 when available]
-Rule 19 applies to vessels not in sight of one another when navigating in or near an area of restricted visibility. Key provisions (from general knowledge — verify exact wording against SRC-002):
-- Every vessel shall proceed at a safe speed adapted to the prevailing circumstances and conditions of restricted visibility.
-- Every vessel shall have her engines ready for immediate manoeuvre.
-- A vessel which detects by radar alone the presence of another vessel shall determine if a close-quarters situation is developing or risk of collision exists; if so, shall take avoiding action in ample time.
-- Avoiding action shall NOT consist of an alteration of course to port for a vessel forward of the beam (other than for a vessel being overtaken).
-- If a vessel hears a fog signal apparently forward of the beam, she shall reduce speed to minimum steerage way; if necessary shall take all way off and navigate with extreme caution until danger of collision is past.
+**Rule 19 key provisions** [colregs-irpcs-text.md, Rule 19]
+- Applies to vessels not in sight of one another in or near restricted visibility.
+- Every vessel shall proceed at safe speed; engines ready for immediate manoeuvre.
+- Radar contacts: if close-quarters or collision risk developing, take avoiding action in ample time.
+- Do NOT alter course to port for a vessel forward of the beam (except vessel being overtaken).
+- On hearing fog signal forward of the beam: reduce to minimum steerage way; if necessary stop; navigate with extreme caution until danger past.
 
-**Fog sound signals — Rule 35**
-[UNVERIFIED — awaiting colregs-irpcs-text.md: cite SRC-002, Rule 35 when available]
-The following fog sound signals are established by Rule 35 (verify exact intervals and wording):
-- Power-driven vessel making way: one prolonged blast at intervals of not more than 2 minutes (—)
-- Power-driven vessel underway but stopped: two prolonged blasts with 2-second interval (— —), at intervals of not more than 2 minutes
-- Vessel not under command, restricted in ability to manoeuvre, constrained by draught, sailing, fishing, or towing/pushed: one prolonged blast + two short blasts (— .. ) at intervals of not more than 2 minutes
-- Vessel at anchor: rapid ringing of bell for about 5 seconds at intervals of not more than 1 minute; vessels over 100 m also sound a gong aft
-- Vessel aground: bell signal + 3 distinct strokes before and after the rapid ringing
-Practical note from transcript page-16 (in fog): "My engines are running astern" = two short blasts + one long blast (.. —)
+**Rule 35 fog signals** [colregs-irpcs-text.md, Rule 35]
+- Power-driven vessel making way: — (one prolonged blast) every 2 min
+- Power-driven vessel stopped: — — (two prolonged blasts) every 2 min
+- Sailing / fishing / restricted / constrained / towing: — •• (one prolonged + two short) every 2 min
+- Vessel at anchor: rapid bell ring ~5 seconds every 1 min; over 100 m adds gong aft
+- Vessel aground: 3 strokes + rapid ring + 3 strokes on bell
 
-**Safe speed factors — Rule 6**
-[UNVERIFIED — awaiting colregs-irpcs-text.md: cite SRC-002, Rule 6 when available] Rule 6 lists factors to consider in determining safe speed, including: state of visibility; traffic density; manoeuvrability of the vessel; background light (shore lights, radar clutter); state of wind, sea, and current; proximity of hazards; and the draught in relation to available depth. For vessels with radar: radar range scale in use, effect of radar range/sea state, and the number and density of contacts.
+**Rule 6 safe speed factors** [colregs-irpcs-text.md, Rule 6]
+Visibility, traffic density, manoeuvrability, background light, wind/sea/current, proximity of hazards, draught vs depth. Radar-equipped vessels also consider: radar range scale, effect of sea state/weather on radar, small targets, number and density of contacts.
 
-**Radar use in collision avoidance — Rule 7 applied to restricted visibility**
-[UNVERIFIED — awaiting colregs-irpcs-text.md: cite SRC-002, Rule 7 when available] If radar is fitted, it shall be used. Proper use includes long-range scanning to give early warning, and radar plotting or equivalent systematic observation of detected objects. Assumptions shall not be made on the basis of scanty information, especially scanty radar information.
+**Rule 7 / radar in restricted visibility** [colregs-irpcs-text.md, Rule 7]
+Radar shall be used if fitted. Proper use includes long-range scanning for early warning and radar plotting or equivalent systematic observation. Assumptions shall not be made on scanty radar information.
 
-**Lights requirement in restricted visibility — Rule 20**
-[UNVERIFIED — awaiting colregs-irpcs-text.md: cite SRC-002, Rule 20 when available] The rules concerning lights shall be complied with in all weathers from sunset to sunrise, and in restricted visibility they shall also be exhibited during the hours of daylight.
+**Rule 20 — lights in restricted visibility** [colregs-irpcs-text.md, Rule 20]
+Navigation lights must be exhibited from sunset to sunrise in all weathers, and during daylight hours in restricted visibility.

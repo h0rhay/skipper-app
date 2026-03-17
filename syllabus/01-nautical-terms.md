@@ -3,8 +3,8 @@ rya_topic: "Nautical terms — parts of a boat, hull, and general maritime vocab
 rya_syllabus_ref: "Topic 1"
 iala_region: "N/A"
 source_images: ["resources/2-ed9750bea3.jpg", "resources/3-b4cef309ef.jpg", "resources/4-84b3c954a0.jpg", "resources/5-b4ced4e04a.jpg", "resources/7-22db851368.jpg", "resources/8-2cba5473fb.jpg"]
-verification_status: "pending"
-verification_date: ""
+verification_status: "verified"
+verification_date: "2026-03-17"
 ---
 # Nautical Terms
 

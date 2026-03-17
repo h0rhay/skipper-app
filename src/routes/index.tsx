@@ -1,6 +1,7 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { AppShell } from '../components/templates/AppShell'
 import { TabBar } from '../components/organisms/TabBar'
+import { TopNav } from '../components/organisms/TopNav'
 import { OverallProgressCard } from '../components/organisms/OverallProgressCard'
 import { ResumeCard } from '../components/organisms/ResumeCard'
 import { TopicList } from '../components/organisms/TopicList'
@@ -15,7 +16,7 @@ export function HomeScreenComponent() {
   const navigate = useNavigate()
 
   return (
-    <AppShell tabBar={<TabBar active="study" />}>
+    <AppShell topNav={<TopNav />} tabBar={<TabBar active="study" />}>
       <div className={styles.content}>
         <h1 className={styles.hero}>Day Skipper<br />Theory</h1>
         <OverallProgressCard />

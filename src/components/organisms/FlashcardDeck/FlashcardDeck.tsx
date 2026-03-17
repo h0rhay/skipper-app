@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { FlashCard } from '../../molecules/FlashCard'
 import { Button } from '../../atoms/Button'
 import { ProgressBar } from '../../atoms/ProgressBar'
@@ -19,13 +19,16 @@ export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressC
   const { currentCard, isFlipped, flip, markGotIt, markAgain, progress, isComplete, score, masteredIds } =
     useFlashcardSession(topicId, cards, cardIds)
 
+  const onCompleteRef = useRef(onComplete)
+  useEffect(() => { onCompleteRef.current = onComplete }, [onComplete])
+
   useEffect(() => { onProgressChange?.(progress) }, [progress, onProgressChange])
 
   useEffect(() => {
     if (isComplete) {
-      onComplete({ masteredIds, score, total: cards.length })
+      onCompleteRef.current({ masteredIds, score, total: cards.length })
     }
-  }, [isComplete]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [isComplete, masteredIds, score, cards.length])
 
   if (!currentCard) return null
 

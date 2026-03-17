@@ -23,7 +23,7 @@ describe('StudyModeList', () => {
   it('shows "Read" status for Key Facts when factsRead is true', () => {
     const progress = makeProgress({ factsRead: true })
     render(<StudyModeList topicId="05-irpcs-colregs" navTools={[]} onModeSelect={() => {}} progress={progress} />)
-    expect(screen.getByText(/read/i)).toBeInTheDocument()
+    expect(screen.getByText('Read')).toBeInTheDocument()
   })
 
   it('calls onModeSelect with mode when row clicked', async () => {

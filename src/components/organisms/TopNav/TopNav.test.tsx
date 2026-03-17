@@ -7,8 +7,8 @@ describe('TopNav', () => {
     expect(screen.getByText('Skipper')).toBeInTheDocument()
   })
 
-  it('renders the notifications button', () => {
+  it('renders the theme toggle button', () => {
     render(<TopNav />)
-    expect(screen.getByRole('button', { name: /notifications/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /toggle dark mode/i })).toBeInTheDocument()
   })
 })

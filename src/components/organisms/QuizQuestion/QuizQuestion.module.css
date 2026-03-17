@@ -1,0 +1,35 @@
+.container { display: flex; flex-direction: column; gap: 20px; padding: 20px 24px 32px; }
+
+.questionBlock { background: var(--color-bg); border: 1px solid var(--color-border); padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.questionLabel { font-family: var(--font-body); font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text-muted); letter-spacing: 1.5px; text-transform: uppercase; }
+.questionText { font-family: var(--font-heading); font-size: var(--font-size-lg); font-weight: 500; color: var(--color-text); line-height: 1.35; margin: 0; }
+
+.optionsList { display: flex; flex-direction: column; border: 1px solid var(--color-border); }
+.option { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--color-bg-card); border: none; border-bottom: 1px solid var(--color-border); text-align: left; cursor: pointer; width: 100%; transition: background 0.1s; }
+.option:last-child { border-bottom: none; }
+.option:hover:not(:disabled) { background: var(--color-bg-muted); }
+.option.selected { background: var(--color-primary-bg); }
+.option.correct { background: var(--color-success-bg); }
+.option.wrong { background: var(--color-error-bg); }
+.option:disabled { cursor: default; }
+
+.badge { width: 28px; height: 28px; min-width: 28px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-text-secondary); font-family: var(--font-heading); font-size: var(--font-size-md); font-weight: 500; color: var(--color-text-secondary); }
+.badgeSelected { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
+.badgeCorrect { background: var(--color-success); border-color: var(--color-success); color: #fff; }
+.badgeWrong { background: var(--color-error); border-color: var(--color-error); color: #fff; }
+.optionText { font-family: var(--font-body); font-size: var(--font-size-md); color: var(--color-text); line-height: 1.4; }
+
+.explanation { padding: 16px; display: flex; flex-direction: column; gap: 4px; }
+.explanationCorrect { background: var(--color-success-bg); border: 2px solid var(--color-success); }
+.explanationWrong { background: var(--color-error-bg); border: 2px solid var(--color-error); }
+.explanationLabel { font-family: var(--font-body); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+.explanationCorrect .explanationLabel { color: var(--color-success); }
+.explanationWrong .explanationLabel { color: var(--color-error); }
+.explanationText { font-family: var(--font-body); font-size: var(--font-size-md); color: var(--color-text-body); line-height: 1.5; margin: 0; }
+
+.actions { padding: 0; }
+.submitBtn { width: 100%; height: 52px; background: var(--color-bg-card); border: 1px solid var(--color-border); font-family: var(--font-body); font-size: var(--font-size-base); font-weight: 700; color: var(--color-text); cursor: pointer; transition: background 0.15s; }
+.submitBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+.submitBtn:hover:not(:disabled) { background: var(--color-bg-muted); }
+.nextBtn { width: 100%; height: 52px; background: var(--color-primary); border: none; font-family: var(--font-body); font-size: var(--font-size-base); font-weight: 700; color: #fff; cursor: pointer; transition: background 0.15s; }
+.nextBtn:hover { background: var(--color-primary-hover); }

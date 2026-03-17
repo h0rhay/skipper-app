@@ -4,14 +4,14 @@ import { OverallProgressCard } from './OverallProgressCard'
 describe('OverallProgressCard', () => {
   beforeEach(() => localStorage.clear())
 
-  it('shows 0 complete topics when no progress', () => {
+  it('shows 0% when no progress', () => {
     render(<OverallProgressCard />)
     expect(screen.getByText('0')).toBeInTheDocument()
-    expect(screen.getByText('/ 17 topics')).toBeInTheDocument()
+    expect(screen.getByText(/% complete/i)).toBeInTheDocument()
   })
 
-  it('shows the streak label', () => {
+  it('shows overall completion label', () => {
     render(<OverallProgressCard />)
-    expect(screen.getByText(/streak/i)).toBeInTheDocument()
+    expect(screen.getByText(/overall completion/i)).toBeInTheDocument()
   })
 })

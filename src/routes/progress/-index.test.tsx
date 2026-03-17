@@ -22,6 +22,6 @@ describe('ProgressScreen', () => {
 
   it('renders the overall progress card', async () => {
     renderWithRouter(<ProgressScreenComponent />)
-    expect(await screen.findByText(/17 topics/i)).toBeInTheDocument()
+    expect(await screen.findByText(/overall completion/i)).toBeInTheDocument()
   })
 })

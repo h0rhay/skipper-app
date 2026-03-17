@@ -4,18 +4,8 @@ import { TopicProgressRow } from './TopicProgressRow'
 
 describe('TopicProgressRow', () => {
   it('renders topic title', () => {
-    render(<TopicProgressRow title="IRPCS / COLREGS" mcqScore={67} onClick={() => {}} />)
+    render(<TopicProgressRow title="IRPCS / COLREGS" onClick={() => {}} />)
     expect(screen.getByText('IRPCS / COLREGS')).toBeInTheDocument()
-  })
-
-  it('renders MCQ score when provided', () => {
-    render(<TopicProgressRow title="IRPCS" mcqScore={67} onClick={() => {}} />)
-    expect(screen.getByText('67%')).toBeInTheDocument()
-  })
-
-  it('shows "—" when no MCQ score', () => {
-    render(<TopicProgressRow title="IRPCS" onClick={() => {}} />)
-    expect(screen.getByText('—')).toBeInTheDocument()
   })
 
   it('calls onClick when clicked', async () => {

@@ -2,18 +2,17 @@ import styles from './TopicProgressRow.module.css'
 
 interface TopicProgressRowProps {
   title: string
-  mcqScore?: number
+  percent?: number
   onClick: () => void
 }
 
-export function TopicProgressRow({ title, mcqScore, onClick }: TopicProgressRowProps) {
+export function TopicProgressRow({ title, percent = 0, onClick }: TopicProgressRowProps) {
   return (
     <button className={styles.row} onClick={onClick}>
       <span className={styles.title}>{title}</span>
-      <span className={styles.score}>
-        {mcqScore !== undefined ? `${mcqScore}%` : '—'}
-      </span>
-      <span className={styles.chevron}>›</span>
+      <div className={styles.barBg}>
+        <div className={styles.barFill} style={{ width: `${percent}%` }} />
+      </div>
     </button>
   )
 }

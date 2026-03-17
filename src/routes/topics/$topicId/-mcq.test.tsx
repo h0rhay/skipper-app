@@ -40,15 +40,6 @@ describe('MCQSessionScreen', () => {
     await waitFor(() => expect(screen.getByRole('button', { name: /next/i })).toBeInTheDocument())
   })
 
-  it('reveals answer — explanation is visible after submit', async () => {
-    const user = userEvent.setup()
-    renderWithRouter(<MCQSessionScreenComponent topicId="05-irpcs-colregs" />)
-    await waitFor(() => expect(screen.getByRole('button', { name: /submit/i })).toBeInTheDocument())
-    await user.click(screen.getByText('A').closest('button')!)
-    await user.click(screen.getByRole('button', { name: /submit/i }))
-    await waitFor(() => expect(screen.getByRole('button', { name: /next/i })).toBeInTheDocument())
-  })
-
   it('exits to topic — exit button triggers navigation (no error thrown)', async () => {
     const user = userEvent.setup()
     renderWithRouter(<MCQSessionScreenComponent topicId="05-irpcs-colregs" />)

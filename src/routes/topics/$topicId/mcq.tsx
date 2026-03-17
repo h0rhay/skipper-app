@@ -31,7 +31,10 @@ export function MCQSessionScreenComponent({ topicId, questionIds }: MCQSessionSc
   const { appendSession } = useSessionHistory()
 
   const topic = topics.find(t => t.id === topicId)
-  if (!topic) return <div>Topic not found</div>
+
+  const questions = (questionIds
+    ? topic?.mcqQuestions.filter(q => questionIds.includes(q.id))
+    : topic?.mcqQuestions) ?? []
 
   const startedAt = useRef(new Date().toISOString()).current
 
@@ -39,12 +42,20 @@ export function MCQSessionScreenComponent({ topicId, questionIds }: MCQSessionSc
     currentQuestion, selectedIndex, select, submit, next,
     isRevealed, isCorrect, explanation,
     progress, isComplete, score, wrongIds,
-  } = useMCQSession(topicId, topic.mcqQuestions, questionIds)
+  } = useMCQSession(topicId, questions)
+
+  // Keep refs up to date so the completion effect can read stable values
+  const scoreRef = useRef(score)
+  const wrongIdsRef = useRef(wrongIds)
+  const topicQuestionsLengthRef = useRef(topic?.mcqQuestions.length ?? 0)
+  useEffect(() => { scoreRef.current = score }, [score])
+  useEffect(() => { wrongIdsRef.current = wrongIds }, [wrongIds])
+  useEffect(() => { topicQuestionsLengthRef.current = topic?.mcqQuestions.length ?? 0 }, [topic?.mcqQuestions.length])
 
   useEffect(() => {
     if (!isComplete) return
     const completedAt = new Date().toISOString()
-    updateMCQ({ bestScore: score, totalQuestions: topic.mcqQuestions.length, wrongIds })
+    updateMCQ({ bestScore: scoreRef.current, totalQuestions: topicQuestionsLengthRef.current, wrongIds: wrongIdsRef.current })
     appendSession({
       id: `sess-${Date.now()}`,
       topicId,
@@ -52,16 +63,17 @@ export function MCQSessionScreenComponent({ topicId, questionIds }: MCQSessionSc
       toolId: null,
       startedAt,
       completedAt,
-      score,
-      total: topic.mcqQuestions.length,
-      wrongIds,
+      score: scoreRef.current,
+      total: topicQuestionsLengthRef.current,
+      wrongIds: wrongIdsRef.current,
     })
     const timer = setTimeout(() => {
       navigate({ to: '/topics/$topicId', params: { topicId } })
     }, 1500)
     return () => clearTimeout(timer)
-  }, [isComplete]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [isComplete, updateMCQ, appendSession, navigate, topicId, startedAt])
 
+  if (!topic) return <div>Topic not found</div>
   if (!currentQuestion) return <div>No questions available</div>
 
   const currentIndex = Math.round(progress * topic.mcqQuestions.length)
@@ -69,7 +81,7 @@ export function MCQSessionScreenComponent({ topicId, questionIds }: MCQSessionSc
   return (
     <SessionPage
       progress={progress}
-      onExit={() => navigate({ to: `/topics/${topicId}` })}
+      onExit={() => navigate({ to: '/topics/$topicId', params: { topicId } })}
       counter={<Counter current={currentIndex + 1} total={topic.mcqQuestions.length} />}
     >
       <MCQQuestion

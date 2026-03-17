@@ -81,13 +81,13 @@ describe('MCQQuestion', () => {
     expect(onSelect).not.toHaveBeenCalled()
   })
 
-  it('explanation box has correct class when isCorrect=true and wrong class when isCorrect=false', () => {
+  it('explanation box has correct data-state when isCorrect=true and wrong data-state when isCorrect=false', () => {
     const { rerender } = render(<MCQQuestion question={Q} selectedIndex={2} isRevealed={true} isCorrect={true} explanation="Some explanation" onSelect={() => {}} onSubmit={() => {}} onNext={() => {}} />)
     const box = screen.getByText('Some explanation').closest('div')!
-    expect(box.className).toMatch(/correct/i)
+    expect(box).toHaveAttribute('data-state', 'correct')
 
     rerender(<MCQQuestion question={Q} selectedIndex={0} isRevealed={true} isCorrect={false} explanation="Some explanation" onSelect={() => {}} onSubmit={() => {}} onNext={() => {}} />)
     const box2 = screen.getByText('Some explanation').closest('div')!
-    expect(box2.className).toMatch(/wrong/i)
+    expect(box2).toHaveAttribute('data-state', 'wrong')
   })
 })

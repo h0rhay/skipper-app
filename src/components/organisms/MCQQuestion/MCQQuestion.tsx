@@ -39,7 +39,10 @@ export function MCQQuestion({ question, selectedIndex, isRevealed, isCorrect, ex
         ))}
       </div>
       {isRevealed && explanation && (
-        <div className={`${styles.explanation} ${isCorrect ? styles.correct : styles.wrong}`}>
+        <div
+          className={`${styles.explanation} ${isCorrect ? styles.correct : styles.wrong}`}
+          data-state={isCorrect ? 'correct' : 'wrong'}
+        >
           <p>{explanation}</p>
         </div>
       )}

@@ -1,8 +1,8 @@
 .container { display: flex; flex-direction: column; gap: 16px; }
-.questionCard { background: var(--color-bg-muted); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 20px; }
+.questionCard { background: var(--color-bg-muted); border: 1px solid var(--color-border); padding: 20px; }
 .question { font-family: var(--font-heading); font-size: var(--font-size-lg); font-weight: 500; line-height: 1.35; color: var(--color-navy); margin: 0; }
-.options { display: flex; flex-direction: column; border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
-.explanation { border-radius: var(--radius-md); padding: 16px; }
+.options { display: flex; flex-direction: column; border: 1px solid var(--color-border); overflow: hidden; }
+.explanation { padding: 16px; }
 .explanation p { margin: 0; font-size: var(--font-size-sm); line-height: 1.6; color: var(--color-text); }
 .correct { background: var(--color-success-bg); border: 2px solid var(--color-success); }
 .wrong { background: var(--color-error-bg); border: 2px solid var(--color-error); }

@@ -1,4 +1,4 @@
-.card { display: flex; align-items: center; gap: 12px; background: var(--color-sand); border-radius: var(--radius-lg); padding: 16px var(--content-padding-h); text-decoration: none; }
+.card { display: flex; align-items: center; gap: 12px; background: var(--color-sand); padding: 16px var(--content-padding-h); text-decoration: none; }
 .body { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
 .label { font-size: var(--font-size-xs); font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; }
 .title { font-size: var(--font-size-base); font-weight: 700; color: var(--color-navy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

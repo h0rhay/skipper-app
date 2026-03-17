@@ -8,7 +8,7 @@
 .barFill { height: 100%; background: var(--color-primary); border-radius: var(--radius-full); transition: width 0.3s ease; min-width: 0; }
 
 /* Compact variant (home screen) */
-.compact { display: flex; align-items: center; justify-content: space-between; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; }
+.compact { display: flex; align-items: center; justify-content: space-between; border: 1px solid var(--color-border); padding: 16px; }
 .compactLeft { display: flex; flex-direction: column; gap: 4px; }
 .count { margin: 0; }
 .countValue { font-family: var(--font-heading); font-size: 24px; font-weight: 500; color: var(--color-navy); }

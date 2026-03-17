@@ -1,24 +1,13 @@
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-.output/
-
-# Environment
-.env
-.env.local
-
-# Worktrees
-.worktrees/
-
-# OS
+node_modules
 .DS_Store
-
-# Editor
-.vscode/
-.idea/
-
-# Test coverage
-coverage/
-.worktrees/
+dist
+dist-ssr
+*.local
+.env
+.nitro
+.tanstack
+.wrangler
+.output
+.vinxi
+__unconfig*
+todos.json

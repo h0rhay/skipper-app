@@ -1,0 +1,11 @@
+.sessionWrapper { display: flex; flex-direction: column; height: 100%; }
+.progressTrack { height: 4px; background: var(--color-bg-muted); flex-shrink: 0; }
+.progressFill { height: 100%; background: var(--color-primary); transition: width 0.3s ease; }
+.sessionHeader { display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 56px; flex-shrink: 0; }
+.closeBtn { background: none; border: none; padding: 4px; cursor: pointer; color: var(--color-text); display: flex; align-items: center; }
+.sessionMeta { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.topicLabel { font-family: var(--font-body); font-size: var(--font-size-xs); font-weight: 600; color: var(--color-text-muted); letter-spacing: 1px; text-transform: uppercase; max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.modeLabel { font-family: var(--font-body); font-size: var(--font-size-xs); font-weight: 700; color: var(--color-text); letter-spacing: 1.5px; }
+.counter { font-family: var(--font-heading); font-size: var(--font-size-md); font-weight: 500; color: var(--color-text-secondary); }
+.scrollContent { flex: 1; overflow-y: auto; }
+.loading { padding: 40px 24px; color: var(--color-text-muted); font-family: var(--font-body); }

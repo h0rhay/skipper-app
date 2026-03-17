@@ -1,10 +1,11 @@
-.option { display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg-card); text-align: left; font-size: var(--font-size-base); }
-.label { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: var(--font-size-sm); background: var(--color-bg-secondary); flex-shrink: 0; }
-.text { flex: 1; }
-.idle:hover { border-color: var(--color-primary); }
-.selected { border-color: var(--color-primary); background: color-mix(in srgb, var(--color-primary) 8%, transparent); }
-.selected .label { background: var(--color-primary); color: #fff; }
-.correct { border-color: var(--color-success); background: color-mix(in srgb, var(--color-success) 8%, transparent); }
-.correct .label { background: var(--color-success); color: #fff; }
-.wrong { border-color: var(--color-danger); background: color-mix(in srgb, var(--color-danger) 8%, transparent); }
-.wrong .label { background: var(--color-danger); color: #fff; }
+.option { display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 16px; border: none; border-bottom: 1px solid var(--color-border); background: var(--color-bg-card); text-align: left; cursor: pointer; }
+.option:last-child { border-bottom: none; }
+.label { width: 28px; height: 28px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: var(--font-size-sm); color: var(--color-text); border: 1px solid var(--color-text); flex-shrink: 0; }
+.text { flex: 1; font-size: var(--font-size-md); color: var(--color-text); }
+.idle:hover { background: var(--color-bg-muted); }
+.selected { background: var(--color-sea-light); }
+.selected .label { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+.correct { background: var(--color-success-bg); }
+.correct .label { background: var(--color-success); color: #fff; border-color: var(--color-success); }
+.wrong { background: var(--color-error-bg); }
+.wrong .label { background: var(--color-danger); color: #fff; border-color: var(--color-danger); }

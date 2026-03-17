@@ -41,8 +41,8 @@ export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProp
           <section className={styles.section}>
             <Label>Key Terms</Label>
             <div className={styles.termsList}>
-              {topic.keyTerms.map((kt, i) => (
-                <KeyTermRow key={i} term={kt.term} definition={kt.definition} />
+              {topic.keyTerms.map((kt) => (
+                <KeyTermRow key={kt.term} term={kt.term} definition={kt.definition} />
               ))}
             </div>
           </section>
@@ -55,8 +55,8 @@ export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProp
             <section className={styles.section}>
               <Label>Safety-Critical Notes</Label>
               <div className={styles.safetyList}>
-                {topic.safetyNotes.map((note, i) => (
-                  <SafetyNote key={i} note={note} />
+                {topic.safetyNotes.map((note) => (
+                  <SafetyNote key={note} note={note} />
                 ))}
               </div>
             </section>
@@ -70,11 +70,7 @@ export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProp
           <Button
             onClick={() => {
               markFactsRead()
-              try {
-                navigate({ to: `/topics/${topicId}` })
-              } catch {
-                // navigate may not be available in test environment
-              }
+              navigate({ to: `/topics/${topicId}` })
             }}
             fullWidth
           >

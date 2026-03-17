@@ -11,14 +11,24 @@ interface TopicRowProps {
 }
 
 export function TopicRow({ number, title, status, isSafetyCritical, onClick }: TopicRowProps) {
+  const isInProgress = status === 'partial'
+
   return (
-    <button className={styles.row} onClick={onClick}>
-      <Badge label={String(number).padStart(2, '0')} variant="topic" />
+    <button
+      className={`${styles.row} ${isInProgress ? styles.inProgress : ''}`}
+      onClick={onClick}
+    >
+      <span className={styles.number}>{String(number).padStart(2, '0')}</span>
       <span className={styles.title}>{title}</span>
-      {isSafetyCritical && <Badge label="Safety" variant="danger" />}
-      {status === 'complete' && <Badge label="Complete" variant="default" />}
-      {status === 'partial' && <Badge label="In progress" variant="default" />}
-      <span className={styles.chevron}>›</span>
+      <span className={styles.meta}>
+        {status === 'partial' && <span className={styles.statusInProgress}>In Progress</span>}
+        {status === 'complete' && <span className={styles.statusComplete}>Complete</span>}
+        {status === 'none' && isSafetyCritical && <Badge label="Critical" variant="danger" />}
+        {status === 'none' && !isSafetyCritical && <span className={styles.statusNone}>Not Started</span>}
+      </span>
+      <svg className={styles.chevron} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
     </button>
   )
 }

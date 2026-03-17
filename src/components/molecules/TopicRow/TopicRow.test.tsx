@@ -9,9 +9,9 @@ describe('TopicRow', () => {
     expect(screen.getByText('IRPCS / COLREGS')).toBeInTheDocument()
   })
 
-  it('shows safety-critical badge when isSafetyCritical', () => {
+  it('shows critical badge when isSafetyCritical and not started', () => {
     render(<TopicRow number={5} title="IRPCS" status="none" isSafetyCritical onClick={() => {}} />)
-    expect(screen.getByText(/safety/i)).toBeInTheDocument()
+    expect(screen.getByText(/critical/i)).toBeInTheDocument()
   })
 
   it('calls onClick when clicked', async () => {

@@ -46,7 +46,7 @@ describe('MCQSessionScreen', () => {
     await waitFor(() => expect(screen.getByRole('button', { name: /submit/i })).toBeInTheDocument())
     await user.click(screen.getByText('A').closest('button')!)
     await user.click(screen.getByRole('button', { name: /submit/i }))
-    await waitFor(() => expect(screen.getByText(/correct answer/i)).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByRole('button', { name: /next/i })).toBeInTheDocument())
   })
 
   it('exits to topic — exit button triggers navigation (no error thrown)', async () => {

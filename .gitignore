@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.output/
+
+# Environment
+.env
+.env.local
+
+# Worktrees
+.worktrees/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Test coverage
+coverage/

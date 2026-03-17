@@ -1,0 +1,4 @@
+.bar { display: flex; padding: 12px 21px 34px; gap: 8px; background: var(--color-bg); }
+.tab { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; font-family: var(--font-body); font-size: var(--font-size-xs); font-weight: 600; color: var(--color-text-muted); text-decoration: none; padding: 8px; border-radius: var(--radius-lg); }
+.active { color: var(--color-primary); background: color-mix(in srgb, var(--color-primary) 10%, transparent); }
+.icon { font-size: 18px; }

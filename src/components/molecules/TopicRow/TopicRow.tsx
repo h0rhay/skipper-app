@@ -19,7 +19,7 @@ export function TopicRow({ number, title, status, isSafetyCritical, onClick }: T
       onClick={onClick}
     >
       <span className={styles.number}>{String(number).padStart(2, '0')}</span>
-      <span className={styles.title}>{title}</span>
+      <span className={`${styles.title} ${isInProgress ? styles.titleBold : ''}`}>{title}</span>
       <span className={styles.meta}>
         {status === 'partial' && <span className={styles.statusInProgress}>In Progress</span>}
         {status === 'complete' && <span className={styles.statusComplete}>Complete</span>}

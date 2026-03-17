@@ -19,7 +19,7 @@ export function HomeScreenComponent() {
     <AppShell topNav={<TopNav />} tabBar={<TabBar active="study" />}>
       <div className={styles.content}>
         <h1 className={styles.hero}>Day Skipper<br />Theory</h1>
-        <OverallProgressCard />
+        <OverallProgressCard variant="compact" />
         <ResumeCard />
         <Label>All Topics</Label>
         <TopicList onTopicClick={id => navigate({ to: '/topics/$topicId', params: { topicId: id } })} />

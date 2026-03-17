@@ -1,47 +1,40 @@
 import { useState, useCallback, useMemo } from 'react'
 import type { Flashcard } from '../types'
 
-export function useFlashcardSession(cards: Flashcard[]) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isFlipped, setIsFlipped] = useState(false)
+export function useFlashcardSession(
+  _topicId: string,
+  allCards: Flashcard[],
+  cardIds?: string[]
+) {
+  const initialDeck = useMemo(() => {
+    if (cardIds && cardIds.length > 0) {
+      return allCards.filter(c => cardIds.includes(c.id))
+    }
+    return allCards
+  }, [allCards, cardIds])
+
+  const [deck, setDeck] = useState<Flashcard[]>(initialDeck)
   const [masteredIds, setMasteredIds] = useState<string[]>([])
+  const [isFlipped, setIsFlipped] = useState(false)
 
-  const currentCard = useMemo(
-    () => (currentIndex < cards.length ? cards[currentIndex] : null),
-    [cards, currentIndex]
-  )
+  const currentCard = deck[0] ?? null
+  const isComplete = deck.length === 0
+  const progress = initialDeck.length === 0 ? 0 : masteredIds.length / initialDeck.length
+  const score = masteredIds.length
 
-  const isComplete = currentIndex >= cards.length
+  const flip = useCallback(() => setIsFlipped(f => !f), [])
 
-  const flip = useCallback(() => {
-    setIsFlipped(prev => !prev)
-  }, [])
+  const markGotIt = useCallback(() => {
+    if (!currentCard) return
+    setMasteredIds(prev => [...prev, currentCard.id])
+    setDeck(prev => prev.slice(1))
+    setIsFlipped(false)
+  }, [currentCard])
 
-  const advance = useCallback(() => {
-    setCurrentIndex(prev => prev + 1)
+  const markAgain = useCallback(() => {
+    setDeck(prev => [...prev.slice(1), prev[0]])
     setIsFlipped(false)
   }, [])
 
-  const markMastered = useCallback(() => {
-    if (currentCard) {
-      setMasteredIds(prev => [...prev, currentCard.id])
-    }
-    advance()
-  }, [currentCard, advance])
-
-  const markNotMastered = useCallback(() => {
-    advance()
-  }, [advance])
-
-  return {
-    currentIndex,
-    currentCard,
-    isFlipped,
-    isComplete,
-    masteredIds,
-    totalCards: cards.length,
-    flip,
-    markMastered,
-    markNotMastered,
-  }
+  return { currentCard, isFlipped, flip, markGotIt, markAgain, progress, isComplete, score, masteredIds }
 }

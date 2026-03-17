@@ -1,59 +1,67 @@
-import { useState, useCallback, useMemo } from 'react'
+import { useState, useCallback, useMemo, useRef } from 'react'
 import type { MCQQuestion } from '../types'
 
-export function useMCQSession(_topicId: string, questions: MCQQuestion[]) {
-  const [currentIndex, setCurrentIndex] = useState(0)
+export function useMCQSession(
+  _topicId: string,
+  allQuestions: MCQQuestion[],
+  questionIds?: string[]
+) {
+  const questions = useMemo(() => {
+    if (questionIds && questionIds.length > 0) {
+      return allQuestions.filter(q => questionIds.includes(q.id))
+    }
+    return allQuestions
+  }, [allQuestions, questionIds])
+
+  const [index, setIndex] = useState(0)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
-  const [isAnswered, setIsAnswered] = useState(false)
-  const [score, setScore] = useState(0)
+  const [isRevealed, setIsRevealed] = useState(false)
   const [wrongIds, setWrongIds] = useState<string[]>([])
 
-  const currentQuestion = useMemo(
-    () => (currentIndex < questions.length ? questions[currentIndex] : null),
-    [questions, currentIndex]
-  )
+  // Refs to always have current values in callbacks
+  const selectedIndexRef = useRef<number | null>(null)
+  const isRevealedRef = useRef(false)
+  const indexRef = useRef(0)
 
-  const isComplete = currentIndex >= questions.length
+  const currentQuestion = questions[index] ?? null
+  const isComplete = index >= questions.length
+  const progress = questions.length === 0 ? 0 : index / questions.length
+  const score = index - wrongIds.length
+  const isCorrect = isRevealed && selectedIndex === currentQuestion?.correctIndex
+  const explanation = isRevealed ? (currentQuestion?.explanation ?? '') : ''
 
-  const isCorrect = useMemo(() => {
-    if (!isAnswered || !currentQuestion) return null
-    return selectedIndex === currentQuestion.correctIndex
-  }, [isAnswered, currentQuestion, selectedIndex])
-
-  const selectAnswer = useCallback((index: number) => {
-    if (!isAnswered) {
-      setSelectedIndex(index)
+  const select = useCallback((i: number) => {
+    if (!isRevealedRef.current) {
+      setSelectedIndex(i)
+      selectedIndexRef.current = i
     }
-  }, [isAnswered])
+  }, [])
 
-  const confirmAnswer = useCallback(() => {
-    if (selectedIndex === null || !currentQuestion || isAnswered) return
-    setIsAnswered(true)
-    if (selectedIndex === currentQuestion.correctIndex) {
-      setScore(prev => prev + 1)
-    } else {
-      setWrongIds(prev => [...prev, currentQuestion.id])
+  const submit = useCallback(() => {
+    if (selectedIndexRef.current === null || isRevealedRef.current) return
+    setIsRevealed(true)
+    isRevealedRef.current = true
+    const currentQ = questions[indexRef.current] ?? null
+    if (selectedIndexRef.current !== currentQ?.correctIndex) {
+      setWrongIds(prev => [...prev, currentQ!.id])
     }
-  }, [selectedIndex, currentQuestion, isAnswered])
+  }, [questions])
 
-  const nextQuestion = useCallback(() => {
-    setCurrentIndex(prev => prev + 1)
+  const next = useCallback(() => {
+    setIndex(i => {
+      const newIndex = i + 1
+      indexRef.current = newIndex
+      return newIndex
+    })
     setSelectedIndex(null)
-    setIsAnswered(false)
+    selectedIndexRef.current = null
+    setIsRevealed(false)
+    isRevealedRef.current = false
   }, [])
 
   return {
-    currentIndex,
-    currentQuestion,
-    selectedIndex,
-    isAnswered,
-    isCorrect,
-    isComplete,
-    score,
-    wrongIds,
-    totalQuestions: questions.length,
-    selectAnswer,
-    confirmAnswer,
-    nextQuestion,
+    currentQuestion, selectedIndex, select, submit, next,
+    isRevealed, isCorrect, explanation,
+    progress, isComplete, score, wrongIds,
   }
 }

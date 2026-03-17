@@ -9,8 +9,7 @@ function isTopicComplete(tp: TopicProgress): boolean {
     tp.flashcards.masteredIds.length >= tp.flashcards.totalCards &&
     tp.flashcards.totalCards > 0 &&
     tp.mcq.totalQuestions > 0 &&
-    tp.mcq.wrongIds.length === 0 &&
-    tp.mcq.bestScore > 0
+    (tp.mcq.bestScore / tp.mcq.totalQuestions) >= 0.7
   )
 }
 

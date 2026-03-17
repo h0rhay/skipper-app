@@ -1,6 +1,6 @@
 import styles from './OptionButton.module.css'
 
-type OptionState = 'idle' | 'selected' | 'correct' | 'wrong'
+export type OptionState = 'idle' | 'selected' | 'correct' | 'wrong'
 
 interface OptionButtonProps {
   label: string

@@ -11,7 +11,7 @@ const ICONS = {
   close: X,
 } as const
 
-type IconName = keyof typeof ICONS
+export type IconName = keyof typeof ICONS
 
 interface IconProps { name: IconName; size?: number; color?: string }
 

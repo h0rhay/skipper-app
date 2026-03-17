@@ -17,6 +17,7 @@ export function TopicRow({ number, title, status, isSafetyCritical, onClick }: T
       <span className={styles.title}>{title}</span>
       {isSafetyCritical && <Badge label="Safety" variant="danger" />}
       {status === 'complete' && <Badge label="Complete" variant="default" />}
+      {status === 'partial' && <Badge label="In progress" variant="default" />}
       <span className={styles.chevron}>›</span>
     </button>
   )

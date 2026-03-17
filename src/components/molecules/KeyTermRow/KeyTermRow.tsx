@@ -13,11 +13,11 @@ export function KeyTermRow({ term, definition }: KeyTermRowProps) {
     <div className={styles.row}>
       <button className={styles.term} onClick={() => setIsOpen(!isOpen)}>
         {term}
-        <span className={styles.chevron}>{isOpen ? '›' : '›'}</span>
+        <span className={styles.chevron}>{isOpen ? '˅' : '›'}</span>
       </button>
-      <p className={styles.definition} style={{ visibility: isOpen ? 'visible' : 'hidden' }}>
-        {definition}
-      </p>
+      <div className={styles.definition} hidden={!isOpen}>
+        <p>{definition}</p>
+      </div>
     </div>
   )
 }

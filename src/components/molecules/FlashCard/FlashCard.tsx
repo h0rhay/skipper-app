@@ -9,7 +9,7 @@ interface FlashCardProps {
 
 export function FlashCard({ front, back, isFlipped, onClick }: FlashCardProps) {
   return (
-    <div className={`${styles.scene}`} onClick={onClick}>
+    <button type="button" className={styles.scene} onClick={onClick} aria-label={isFlipped ? 'Show front' : 'Show back'}>
       <div className={`${styles.card} ${isFlipped ? styles.flipped : ''}`}>
         <div className={`${styles.face} ${styles.front}`}>
           <p>{front}</p>
@@ -18,6 +18,6 @@ export function FlashCard({ front, back, isFlipped, onClick }: FlashCardProps) {
           <p>{back}</p>
         </div>
       </div>
-    </div>
+    </button>
   )
 }

@@ -2,7 +2,7 @@ import styles from './StudyModeRow.module.css'
 
 interface StudyModeRowProps {
   label: string
-  progressText: string
+  progressText?: string
   onClick: () => void
 }
 

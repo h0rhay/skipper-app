@@ -26,4 +26,9 @@ describe('TopicRow', () => {
     render(<TopicRow number={1} title="Nautical Terms" status="complete" onClick={() => {}} />)
     expect(screen.getByText(/complete/i)).toBeInTheDocument()
   })
+
+  it('shows in-progress indicator for partial status', () => {
+    render(<TopicRow number={1} title="Nautical Terms" status="partial" onClick={() => {}} />)
+    expect(screen.getByText(/progress/i)).toBeInTheDocument()
+  })
 })

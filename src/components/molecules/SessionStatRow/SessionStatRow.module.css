@@ -1,0 +1,4 @@
+.row { display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; border-bottom: 1px solid var(--color-border); }
+.row:last-child { border-bottom: none; }
+.label { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+.value { font-size: var(--font-size-sm); font-weight: 600; color: var(--color-text); }

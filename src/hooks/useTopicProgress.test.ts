@@ -32,4 +32,11 @@ describe('useTopicProgress', () => {
     expect(result.current.progress.mcq.wrongIds).toEqual(['q-2'])
     expect(result.current.progress.mcq.bestScore).toBe(9)
   })
+
+  it('updateMCQ does not regress bestScore', () => {
+    const { result } = renderHook(() => useTopicProgress('05-irpcs-colregs'))
+    act(() => result.current.updateMCQ({ bestScore: 10, totalQuestions: 12, wrongIds: [] }))
+    act(() => result.current.updateMCQ({ bestScore: 6, totalQuestions: 12, wrongIds: ['q-1'] }))
+    expect(result.current.progress.mcq.bestScore).toBe(10)
+  })
 })

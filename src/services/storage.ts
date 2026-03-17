@@ -13,6 +13,10 @@ export const storage = {
     }
   },
   set<T>(key: StorageKey, value: T): void {
-    localStorage.setItem(PREFIX + key, JSON.stringify(value))
+    try {
+      localStorage.setItem(PREFIX + key, JSON.stringify(value))
+    } catch {
+      // QuotaExceededError or private browsing — fail silently
+    }
   },
 }

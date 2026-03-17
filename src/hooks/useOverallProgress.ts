@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { storage } from '../services/storage'
 import topicsData from '../data/topics.json'
 import type { TopicCompletionStatus, UserProgress, TopicProgress } from '../types'
@@ -22,10 +22,9 @@ function isTopicPartial(tp: TopicProgress): boolean {
 }
 
 export function useOverallProgress() {
-  const userProgress = useMemo(() => {
-    return storage.get<UserProgress>('progress', { userId: 'local', topics: {} })
-      ?? { userId: 'local', topics: {} }
-  }, [])
+  const [userProgress] = useState<UserProgress>(
+    () => storage.get<UserProgress>('progress', { userId: 'local', topics: {} }) ?? { userId: 'local', topics: {} }
+  )
 
   const topicStatuses = useMemo(() => {
     const statuses: Record<string, TopicCompletionStatus> = {}

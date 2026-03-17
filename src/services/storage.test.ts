@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { storage } from './storage'
 
 describe('storage', () => {
@@ -17,5 +17,14 @@ describe('storage', () => {
     localStorage.setItem('skipper:progress', 'not-json')
     expect(storage.get('progress', { userId: 'local', topics: {} }))
       .toEqual({ userId: 'local', topics: {} })
+  })
+
+  it('does not throw if localStorage is full', () => {
+    const originalSetItem = localStorage.setItem.bind(localStorage)
+    vi.spyOn(localStorage, 'setItem').mockImplementationOnce(() => {
+      throw new DOMException('QuotaExceededError')
+    })
+    expect(() => storage.set('progress', { userId: 'local' })).not.toThrow()
+    localStorage.setItem = originalSetItem
   })
 })

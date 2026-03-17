@@ -42,10 +42,16 @@ export function useTopicProgress(topicId: string) {
   }, [update])
 
   const updateMCQ = useCallback((data: { bestScore: number; totalQuestions: number; wrongIds: string[] }) => {
+    const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
     update({
-      mcq: { ...data, lastStudied: new Date().toISOString() },
+      mcq: {
+        bestScore: Math.max(current.mcq.bestScore, data.bestScore),
+        totalQuestions: data.totalQuestions,
+        wrongIds: data.wrongIds,
+        lastStudied: new Date().toISOString(),
+      },
     })
-  }, [update])
+  }, [update, userProgress, topicId])
 
   return { progress, markFactsRead, updateFlashcards, updateMCQ }
 }

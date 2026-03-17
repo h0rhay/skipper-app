@@ -1,13 +1,14 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { storage } from '../services/storage'
 import topicsData from '../data/topics.json'
 import type { UserProgress, Topic } from '../types'
 
 export function useWeakTopics() {
-  const weakTopics = useMemo(() => {
-    const userProgress = storage.get<UserProgress>('progress', { userId: 'local', topics: {} })
-      ?? { userId: 'local', topics: {} }
+  const [userProgress] = useState<UserProgress>(
+    () => storage.get<UserProgress>('progress', { userId: 'local', topics: {} }) ?? { userId: 'local', topics: {} }
+  )
 
+  const weakTopics = useMemo(() => {
     const weak: Array<{ id: string; title: string; score: number; total: number }> = []
 
     for (const topic of topicsData as unknown as Topic[]) {
@@ -28,7 +29,7 @@ export function useWeakTopics() {
     }
 
     return weak
-  }, [])
+  }, [userProgress])
 
   return { weakTopics }
 }

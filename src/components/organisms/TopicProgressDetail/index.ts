@@ -1,0 +1,1 @@
+export { TopicProgressDetail } from './TopicProgressDetail'

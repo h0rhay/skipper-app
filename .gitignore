@@ -21,3 +21,4 @@ dist/
 
 # Test coverage
 coverage/
+.worktrees/

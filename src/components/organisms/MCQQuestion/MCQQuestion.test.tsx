@@ -64,4 +64,30 @@ describe('MCQQuestion', () => {
     await user.click(screen.getByRole('button', { name: /next/i }))
     expect(onNext).toHaveBeenCalledOnce()
   })
+
+  it('onSelect is called with the correct index when option clicked before reveal', async () => {
+    const user = userEvent.setup()
+    const onSelect = vi.fn()
+    render(<MCQQuestion question={Q} selectedIndex={null} isRevealed={false} isCorrect={false} explanation="" onSelect={onSelect} onSubmit={() => {}} onNext={() => {}} />)
+    await user.click(screen.getByText(Q.options[1]).closest('button')!)
+    expect(onSelect).toHaveBeenCalledWith(1)
+  })
+
+  it('onSelect is NOT called when option clicked after reveal', async () => {
+    const user = userEvent.setup()
+    const onSelect = vi.fn()
+    render(<MCQQuestion question={Q} selectedIndex={0} isRevealed={true} isCorrect={false} explanation="" onSelect={onSelect} onSubmit={() => {}} onNext={() => {}} />)
+    await user.click(screen.getByText(Q.options[1]).closest('button')!)
+    expect(onSelect).not.toHaveBeenCalled()
+  })
+
+  it('explanation box has correct class when isCorrect=true and wrong class when isCorrect=false', () => {
+    const { rerender } = render(<MCQQuestion question={Q} selectedIndex={2} isRevealed={true} isCorrect={true} explanation="Some explanation" onSelect={() => {}} onSubmit={() => {}} onNext={() => {}} />)
+    const box = screen.getByText('Some explanation').closest('div')!
+    expect(box.className).toMatch(/correct/i)
+
+    rerender(<MCQQuestion question={Q} selectedIndex={0} isRevealed={true} isCorrect={false} explanation="Some explanation" onSelect={() => {}} onSubmit={() => {}} onNext={() => {}} />)
+    const box2 = screen.getByText('Some explanation').closest('div')!
+    expect(box2.className).toMatch(/wrong/i)
+  })
 })

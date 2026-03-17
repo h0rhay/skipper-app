@@ -57,11 +57,7 @@ export function MCQSessionScreenComponent({ topicId, questionIds }: MCQSessionSc
       wrongIds,
     })
     const timer = setTimeout(() => {
-      navigate({
-        to: '/topics/$topicId/$mode/complete',
-        params: { topicId, mode: 'mcq' },
-        search: { score, total: topic.mcqQuestions.length, wrongIds: wrongIds.join(',') },
-      })
+      navigate({ to: '/topics/$topicId', params: { topicId } })
     }, 1500)
     return () => clearTimeout(timer)
   }, [isComplete]) // eslint-disable-line react-hooks/exhaustive-deps

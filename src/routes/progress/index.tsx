@@ -26,8 +26,10 @@ export function ProgressScreenComponent() {
 
   return (
     <AppShell tabBar={<TabBar active="progress" />}>
+      <div className={styles.pageHeader}>
+        <h1 className={styles.pageTitle}>Your Progress</h1>
+      </div>
       <div className={styles.content}>
-        <h2 className={styles.heading}>Your Progress</h2>
         <OverallProgressCard />
         <WeakTopicsList onTopicClick={id => navigate({ to: '/progress/$topicId', params: { topicId: id } })} />
         <div className={styles.section}>

@@ -1,16 +1,15 @@
-import { useTopicProgress } from '../../../hooks/useTopicProgress'
 import { StudyModeRow } from '../../molecules/StudyModeRow'
+import type { TopicProgress } from '../../../types'
 import styles from './StudyModeList.module.css'
 
 interface StudyModeListProps {
   topicId: string
   navTools: string[]
   onModeSelect: (mode: string) => void
+  progress: TopicProgress | null
 }
 
-export function StudyModeList({ topicId, navTools, onModeSelect }: StudyModeListProps) {
-  const { progress } = useTopicProgress(topicId)
-
+export function StudyModeList({ topicId, navTools, onModeSelect, progress }: StudyModeListProps) {
   const masteredCards = progress?.flashcards.masteredIds.length ?? 0
   const totalCards = progress?.flashcards.totalCards ?? 0
   const mcqBest = progress?.mcq.bestScore ?? 0

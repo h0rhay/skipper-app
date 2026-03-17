@@ -34,7 +34,7 @@ export function TopicDetailScreenComponent({ topicId }: TopicDetailScreenCompone
       <ScrollPage header={<BackHeader label="All Topics" to="/" />}>
         <TopicHeader topic={topic} progress={progress} />
         <div className={styles.label}>STUDY MODES</div>
-        <StudyModeList topicId={topicId} navTools={topic.navTools} onModeSelect={handleModeSelect} />
+        <StudyModeList topicId={topicId} navTools={topic.navTools} onModeSelect={handleModeSelect} progress={progress} />
       </ScrollPage>
     </AppShell>
   )

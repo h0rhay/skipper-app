@@ -6,7 +6,6 @@ describe('WeakTopicsList', () => {
   beforeEach(() => localStorage.clear())
 
   it('renders nothing when no weak topics', () => {
-    localStorage.clear()
     const { container } = render(<WeakTopicsList onTopicClick={() => {}} />)
     expect(container.firstChild).toBeNull()
   })

@@ -9,7 +9,7 @@ export function useWeakTopics() {
   )
 
   const weakTopics = useMemo(() => {
-    const weak: Array<{ id: string; title: string; score: number; total: number }> = []
+    const weak: Array<{ id: string; title: string; number: number; isSafetyCritical: boolean; score: number; total: number }> = []
 
     for (const topic of topicsData as unknown as Topic[]) {
       const tp = userProgress.topics[topic.id]
@@ -22,6 +22,8 @@ export function useWeakTopics() {
         weak.push({
           id: topic.id,
           title: topic.title,
+          number: topic.number,
+          isSafetyCritical: topic.isSafetyCritical,
           score: tp.mcq.bestScore,
           total: tp.mcq.totalQuestions,
         })

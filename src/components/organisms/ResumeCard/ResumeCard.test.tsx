@@ -26,8 +26,8 @@ describe('ResumeCard', () => {
       startedAt: '', completedAt: '', score: 8, total: 12, wrongIds: []
     }])
     renderWithRouter(<ResumeCard />)
-    await waitFor(() => expect(screen.getByText(/irpcs/i)).toBeInTheDocument())
-    expect(screen.getByText(/mcq/i)).toBeInTheDocument()
-    expect(screen.getByText(/8.*12/)).toBeInTheDocument()
+    await waitFor(() => expect(screen.getAllByText(/irpcs/i).length).toBeGreaterThan(0))
+    expect(screen.getByText(/continue where you left off/i)).toBeInTheDocument()
+    expect(screen.getByText(/questions/i)).toBeInTheDocument()
   })
 })

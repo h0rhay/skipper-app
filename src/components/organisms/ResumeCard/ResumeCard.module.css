@@ -1,6 +1,6 @@
-.card { display: flex; align-items: center; justify-content: space-between; gap: 12px; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; }
-.info { display: flex; flex-direction: column; gap: 2px; }
-.label { font-size: var(--font-size-xs); color: var(--color-text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-.title { font-size: var(--font-size-base); font-weight: 600; color: var(--color-text); }
-.meta { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
-.btn { font-size: var(--font-size-sm); font-weight: 600; color: var(--color-primary); text-decoration: none; padding: 8px 12px; border-radius: var(--radius-md); background: color-mix(in srgb, var(--color-primary) 10%, transparent); white-space: nowrap; }
+.card { display: flex; align-items: center; gap: 12px; background: var(--color-sand); border-radius: var(--radius-lg); padding: 16px var(--content-padding-h); text-decoration: none; }
+.body { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+.label { font-size: var(--font-size-xs); font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 1px; }
+.title { font-size: var(--font-size-base); font-weight: 700; color: var(--color-navy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meta { font-size: var(--font-size-sm); color: var(--color-text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.arrow { color: var(--color-primary); flex-shrink: 0; }

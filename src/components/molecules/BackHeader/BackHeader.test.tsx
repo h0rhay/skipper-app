@@ -17,8 +17,8 @@ describe('BackHeader', () => {
     await waitFor(() => expect(screen.getByText(/all topics/i)).toBeInTheDocument())
   })
 
-  it('renders a back arrow', async () => {
+  it('renders a link to the target route', async () => {
     renderWithRouter(<BackHeader label="All Topics" to="/" />)
-    await waitFor(() => expect(screen.getByText('‹')).toBeInTheDocument())
+    await waitFor(() => expect(screen.getByRole('link')).toBeInTheDocument())
   })
 })

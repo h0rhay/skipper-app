@@ -1,0 +1,11 @@
+.page { display: flex; flex-direction: column; height: 100dvh; max-width: 430px; margin: 0 auto; background: var(--color-bg); }
+.topBar { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--color-border); flex-shrink: 0; }
+.exitBtn { background: none; border: none; font-size: 20px; color: var(--color-text-secondary); padding: var(--space-1); line-height: 1; cursor: pointer; }
+.exitBtn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.progressWrap { flex: 1; }
+.counter { font-size: var(--font-size-sm); color: var(--color-text-muted); white-space: nowrap; }
+.body { flex: 1; overflow-y: auto; padding: var(--space-5) var(--space-6) var(--space-8); }

@@ -1,19 +1,19 @@
-# Dependencies
-node_modules/
+node_modules
+.DS_Store
 
 # Build output
-dist/
-.output/
+dist
+dist-ssr
+.output
+.vinxi
+.nitro
+.tanstack
+.wrangler
+__unconfig*
 
 # Environment
+*.local
 .env
-.env.local
-
-# Worktrees
-.worktrees/
-
-# OS
-.DS_Store
 
 # Archived / local-only directories
 archived-resources/
@@ -27,4 +27,9 @@ research/
 
 # Test coverage
 coverage/
+
+# Worktrees
 .worktrees/
+
+# Misc
+todos.json

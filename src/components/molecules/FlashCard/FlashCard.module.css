@@ -1,0 +1,5 @@
+.scene { perspective: 1000px; width: 100%; background: none; border: none; padding: 0; cursor: pointer; }
+.card { position: relative; width: 100%; min-height: 280px; transform-style: preserve-3d; transition: transform 0.4s ease; }
+.card.flipped { transform: rotateY(180deg); }
+.face { position: absolute; inset: 0; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; padding: 32px 24px; border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-bg-card); text-align: center; font-size: var(--font-size-md); line-height: 1.6; }
+.back { transform: rotateY(180deg); background: var(--color-bg-secondary); }

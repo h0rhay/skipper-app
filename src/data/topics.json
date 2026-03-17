@@ -1,0 +1,2962 @@
+[
+  {
+    "id": "01-nautical-terms",
+    "number": 1,
+    "title": "Nautical Terms",
+    "description": "This topic covers the essential vocabulary of a sailing yacht: hull geometry, structural parts above and below deck, the standing and running rigging, points of sailing relative to the wind, and the main rig types encountered on cruising and racing yachts.",
+    "isSafetyCritical": false,
+    "summary": "This topic covers the essential vocabulary of a sailing yacht: hull geometry, structural parts above and below deck, the standing and running rigging, points of sailing relative to the wind, and the main rig types encountered on cruising and racing yachts. Proficiency with these terms is a prerequisite for every other aspect of the Day Skipper syllabus.",
+    "keyTerms": [
+      {
+        "term": "Bow",
+        "definition": "Forward end of the vessel"
+      },
+      {
+        "term": "Stern",
+        "definition": "Aft (rear) end of the vessel"
+      },
+      {
+        "term": "Port",
+        "definition": "Left side when facing forward"
+      },
+      {
+        "term": "Starboard",
+        "definition": "Right side when facing forward"
+      },
+      {
+        "term": "Beam",
+        "definition": "Widest point of the hull; also the athwartships direction"
+      },
+      {
+        "term": "Amidships",
+        "definition": "Middle of the vessel, fore-and-aft or athwartships"
+      },
+      {
+        "term": "Freeboard",
+        "definition": "Height of hull side above the waterline"
+      },
+      {
+        "term": "Draught",
+        "definition": "Depth of hull below the waterline"
+      },
+      {
+        "term": "Keel",
+        "definition": "Underwater fin providing ballast and lateral resistance"
+      },
+      {
+        "term": "Transom",
+        "definition": "Flat or curved panel forming the stern"
+      },
+      {
+        "term": "Topsides",
+        "definition": "Hull sides between waterline and deck"
+      },
+      {
+        "term": "Companionway",
+        "definition": "Main entrance hatch from cockpit to below deck"
+      },
+      {
+        "term": "Forestay",
+        "definition": "Wire from masthead to bow, supports mast forward"
+      },
+      {
+        "term": "Shrouds",
+        "definition": "Side wires supporting the mast athwartships"
+      },
+      {
+        "term": "Boom",
+        "definition": "Horizontal spar attached to mast at gooseneck"
+      },
+      {
+        "term": "Halyard",
+        "definition": "Rope used to hoist a sail"
+      },
+      {
+        "term": "Sheet",
+        "definition": "Rope used to control a sail's angle to the wind"
+      },
+      {
+        "term": "Luff",
+        "definition": "Leading edge of a sail"
+      },
+      {
+        "term": "Leech",
+        "definition": "Trailing edge of a sail"
+      },
+      {
+        "term": "Close-hauled",
+        "definition": "Point of sail closest to the wind (~45\u00b0)"
+      },
+      {
+        "term": "Beam reach",
+        "definition": "Sailing with wind at 90\u00b0 to the centreline"
+      },
+      {
+        "term": "Broad reach",
+        "definition": "Sailing with wind from behind and to the side"
+      },
+      {
+        "term": "Dead run",
+        "definition": "Sailing with wind directly from astern"
+      },
+      {
+        "term": "Tacking",
+        "definition": "Turning bow through the wind to change tacks"
+      },
+      {
+        "term": "Gybing",
+        "definition": "Turning stern through the wind to change tacks"
+      },
+      {
+        "term": "In irons",
+        "definition": "Boat is head to wind and stalled in no-go zone"
+      },
+      {
+        "term": "Jackstay",
+        "definition": "Fore-and-aft wire/webbing on deck for safety tether clip-on"
+      },
+      {
+        "term": "Bilge",
+        "definition": "Space below the cabin sole"
+      },
+      {
+        "term": "Head",
+        "definition": "Onboard toilet compartment"
+      },
+      {
+        "term": "Binnacle",
+        "definition": "Pedestal housing the steering compass"
+      },
+      {
+        "term": "Warp",
+        "definition": "Mooring or anchor rope"
+      },
+      {
+        "term": "Bow line",
+        "definition": "Mooring line from the bow to a point ashore"
+      },
+      {
+        "term": "Stern line",
+        "definition": "Mooring line from the stern to a point ashore"
+      },
+      {
+        "term": "Spring (bow/stern)",
+        "definition": "Diagonal mooring line that prevents the vessel moving ahead or astern"
+      },
+      {
+        "term": "Breast rope",
+        "definition": "Short line holding a vessel directly alongside another vessel in a raft"
+      },
+      {
+        "term": "Fairlead",
+        "definition": "Deck fitting that guides a rope in the correct direction"
+      },
+      {
+        "term": "Fender",
+        "definition": "Inflatable or foam buffer hung over the side to protect the hull"
+      },
+      {
+        "term": "Bollard",
+        "definition": "Shore-side post to which mooring lines are secured"
+      },
+      {
+        "term": "Raft",
+        "definition": "Two or more boats moored alongside each other"
+      },
+      {
+        "term": "Pen",
+        "definition": "Berth between two piles with the bow or stern to a pontoon"
+      },
+      {
+        "term": "Finger pontoon",
+        "definition": "Short pontoon projecting from the main pontoon alongside which one boat moors"
+      },
+      {
+        "term": "Pick-up line",
+        "definition": "Line hanging from a pile to assist retrieval of the mooring line"
+      }
+    ],
+    "safetyNotes": [],
+    "flashcards": [
+      {
+        "id": "01-nautical-terms-fc-0",
+        "front": "What is the term for the left side of the vessel when facing forward?",
+        "back": "Port"
+      },
+      {
+        "id": "01-nautical-terms-fc-1",
+        "front": "What is the no-go zone and approximately how wide is it?",
+        "back": "The arc directly into the wind where sails cannot fill; approximately 45\u00b0 either side of the wind direction"
+      },
+      {
+        "id": "01-nautical-terms-fc-2",
+        "front": "What does \"draught\" mean?",
+        "back": "The depth of the keel below the waterline \u2014 the minimum water depth needed to float the vessel"
+      },
+      {
+        "id": "01-nautical-terms-fc-3",
+        "front": "Name the three edges of a sail",
+        "back": "Luff (leading edge), leech (trailing edge), foot (bottom edge)"
+      },
+      {
+        "id": "01-nautical-terms-fc-4",
+        "front": "What is the difference between tacking and gybing?",
+        "back": "Tacking turns the bow through the wind; gybing turns the stern through the wind"
+      },
+      {
+        "id": "01-nautical-terms-fc-5",
+        "front": "What is a jackstay?",
+        "back": "A strong fore-and-aft wire or webbing on deck used to attach safety tethers"
+      },
+      {
+        "id": "01-nautical-terms-fc-6",
+        "front": "What is the function of the kicking strap (vang)?",
+        "back": "Prevents the boom from rising and controls sail shape, particularly when running"
+      },
+      {
+        "id": "01-nautical-terms-fc-7",
+        "front": "What is the difference between a fin keel and a long keel?",
+        "back": "A fin keel is short and deep (modern cruising); a long keel runs most of the hull length (traditional)"
+      },
+      {
+        "id": "01-nautical-terms-fc-8",
+        "front": "How long should mooring warps be when securing alongside a tidal wall?",
+        "back": "At least 4\u00d7 the rise and fall of tide"
+      },
+      {
+        "id": "01-nautical-terms-fc-9",
+        "front": "When mooring in a raft, which boat should take its own lines ashore?",
+        "back": "The outside boat \u2014 to minimise strain on the inside boat's shore lines"
+      },
+      {
+        "id": "01-nautical-terms-fc-10",
+        "front": "Why do pontoon mooring lines not need to be adjusted as the tide rises and falls?",
+        "back": "Because the floating pontoon rises and falls with the tide"
+      },
+      {
+        "id": "01-nautical-terms-fc-11",
+        "front": "What is a spring line used for?",
+        "back": "A diagonal mooring line that prevents the vessel from moving ahead (bow spring) or astern (stern spring)"
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "01-nautical-terms-q-0",
+        "question": "Q: Which point of sail has the wind coming directly from abeam (90\u00b0 to the centreline)?",
+        "options": [
+          "Close-hauled",
+          "Broad reach",
+          "Beam reach",
+          "Dead run"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "01-nautical-terms-q-1",
+        "question": "What is the maximum angle a boat can generally sail relative to the true wind without the sails collapsing?",
+        "options": [
+          "30\u00b0",
+          "45\u00b0",
+          "60\u00b0",
+          "90\u00b0"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "01-nautical-terms-q-2",
+        "question": "What term describes the depth of a vessel's keel below the waterline?",
+        "options": [
+          "Freeboard",
+          "Beam",
+          "Draught",
+          "LOA"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "01-nautical-terms-q-3",
+        "question": "The forestay supports the mast in which direction?",
+        "options": [
+          "Aft",
+          "Athwartships",
+          "Forward",
+          "Downward"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "01-nautical-terms-q-4",
+        "question": "What is the term for the fitting at the base of the mast where the boom is attached?",
+        "options": [
+          "Bottle screw",
+          "Gooseneck",
+          "Kicking strap",
+          "Mainsheet traveller"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "01-nautical-terms-q-5",
+        "question": "On which tack does the wind come over the port side?",
+        "options": [
+          "Starboard tack",
+          "Port tack",
+          "On a run",
+          "In irons"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "01-nautical-terms-q-6",
+        "question": "What is the bilge?",
+        "options": [
+          "The interior ceiling of the yacht",
+          "The space below the cabin sole",
+          "The forward sleeping cabin",
+          "The main entrance hatch"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "01-nautical-terms-q-7",
+        "question": "When mooring alongside a tidal wall, what is the minimum recommended length for mooring warps?",
+        "options": [
+          "2\u00d7 the rise and fall of tide",
+          "3\u00d7 the rise and fall of tide",
+          "4\u00d7 the rise and fall of tide",
+          "6\u00d7 the rise and fall of tide"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "01-nautical-terms-q-8",
+        "question": "When moored in a raft, the outside boat should:",
+        "options": [
+          "Rely entirely on breast ropes to the inside boat",
+          "Take its own bow and stern lines ashore to minimise strain on the inside boat",
+          "Use a single long warp running from bow to stern",
+          "Attach lines only to the inside boat, not ashore"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "01-nautical-terms-q-9",
+        "question": "What is the purpose of a bow spring (forespring)?",
+        "options": [
+          "To hold the bow close to the dock",
+          "To prevent the vessel from moving astern",
+          "To prevent the vessel from moving forward",
+          "To stop the vessel heeling at the berth"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "02-ropework",
+    "number": 2,
+    "title": "Ropework",
+    "description": "This topic covers the properties and construction of synthetic ropes used aboard sailing yachts, the correct techniques for securing ropes to cleats and winches, and the principal knots used in sailing with their specific applications.",
+    "isSafetyCritical": false,
+    "summary": "This topic covers the properties and construction of synthetic ropes used aboard sailing yachts, the correct techniques for securing ropes to cleats and winches, and the principal knots used in sailing with their specific applications. Understanding which knot to use in which situation is a practical safety skill as well as a knowledge-test topic.",
+    "keyTerms": [
+      {
+        "term": "Polyester",
+        "definition": "Low-stretch synthetic rope material; standard for sheets and halyards"
+      },
+      {
+        "term": "Nylon",
+        "definition": "Stretchy synthetic rope; absorbs shock loads \u2014 used for warps and anchor rodes"
+      },
+      {
+        "term": "Polypropylene",
+        "definition": "Lightweight, floating synthetic rope; limited UV resistance"
+      },
+      {
+        "term": "Laid rope",
+        "definition": "Three-strand twisted rope construction"
+      },
+      {
+        "term": "Braided rope",
+        "definition": "Rope with woven outer sheath and inner core"
+      },
+      {
+        "term": "Bowline",
+        "definition": "Knot forming a fixed, secure loop at the end of a rope"
+      },
+      {
+        "term": "Round turn and two half hitches",
+        "definition": "Hitch to a ring/rail; can be released under load"
+      },
+      {
+        "term": "Reef knot",
+        "definition": "Flat knot for joining two ends of the same rope (e.g. reef points)"
+      },
+      {
+        "term": "Clove hitch",
+        "definition": "Quick-to-tie hitch; used for securing fenders"
+      },
+      {
+        "term": "Rolling hitch",
+        "definition": "Non-slip hitch used to take the strain off a loaded rope or spar"
+      },
+      {
+        "term": "Figure of eight",
+        "definition": "Stopper knot preventing a rope end running through a block"
+      },
+      {
+        "term": "Sheet bend",
+        "definition": "Knot for joining two ropes, especially of different diameters"
+      },
+      {
+        "term": "Selftailer",
+        "definition": "Automatic gripping device on a winch drum"
+      },
+      {
+        "term": "Riding turn",
+        "definition": "A dangerous crossed turn on a winch drum, difficult to release under load"
+      },
+      {
+        "term": "Jammer",
+        "definition": "Mechanical device that holds a rope under load, like a cleat"
+      }
+    ],
+    "safetyNotes": [],
+    "flashcards": [
+      {
+        "id": "02-ropework-fc-0",
+        "front": "Which rope material is best for mooring lines and anchor warps, and why?",
+        "back": "Nylon \u2014 its elasticity absorbs shock loads"
+      },
+      {
+        "id": "02-ropework-fc-1",
+        "front": "What knot is used to make a fixed, non-slipping loop in a rope?",
+        "back": "Bowline"
+      },
+      {
+        "id": "02-ropework-fc-2",
+        "front": "Which knot should be used to secure a fender to a guard rail?",
+        "back": "Clove hitch \u2014 quick to tie and easy to adjust"
+      },
+      {
+        "id": "02-ropework-fc-3",
+        "front": "What is a rolling hitch used for?",
+        "back": "Taking the strain off a loaded rope or spar when the pull is at an angle"
+      },
+      {
+        "id": "02-ropework-fc-4",
+        "front": "Why is a reef knot not suitable for joining two ropes of different diameters?",
+        "back": "It is not secure when used for two ropes of different sizes or under varying load; it can capsize"
+      },
+      {
+        "id": "02-ropework-fc-5",
+        "front": "What must you do before releasing a rope under load from a jammer?",
+        "back": "Take the strain on a winch first \u2014 never hold the rope close to the jammer"
+      },
+      {
+        "id": "02-ropework-fc-6",
+        "front": "In which direction must rope be wound around a winch drum?",
+        "back": "Clockwise"
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "02-ropework-q-0",
+        "question": "Q: Which rope material floats and is therefore useful for throw lines?",
+        "options": [
+          "Polyester",
+          "Nylon",
+          "Polypropylene",
+          "Dyneema"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "02-ropework-q-1",
+        "question": "Which knot creates a fixed eye in a rope and remains secure under tension?",
+        "options": [
+          "Reef knot",
+          "Bowline",
+          "Clove hitch",
+          "Sheet bend"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "02-ropework-q-2",
+        "question": "A rolling hitch is most useful when:",
+        "options": [
+          "Joining two ropes of different diameters",
+          "Making fast to a cleat quickly",
+          "Taking the strain off a loaded rope pulled at an angle",
+          "Stopping a rope from running through a block"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "02-ropework-q-3",
+        "question": "What is a riding turn on a winch, and how is it best prevented?",
+        "options": [
+          "A figure-of-eight wrap; prevented by using a jammer",
+          "A crossed turn that jams under load; prevented by keeping the rope lead low",
+          "A turn used to secure the selftailer; prevented by using nylon rope",
+          "An extra half hitch; prevented by winding anticlockwise"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "02-ropework-q-4",
+        "question": "Which knot is used to join two ropes, particularly ropes of different diameters?",
+        "options": [
+          "Reef knot",
+          "Rolling hitch",
+          "Sheet bend",
+          "Clove hitch"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "03-anchorwork",
+    "number": 3,
+    "title": "Anchorwork",
+    "description": "This topic covers the main anchor types used on cruising yachts, the principles of scope calculation for chain and warp, how to select a suitable anchorage, and the practical considerations for anchoring safely including swinging room, seabed type, and tidal awareness.",
+    "isSafetyCritical": false,
+    "summary": "This topic covers the main anchor types used on cruising yachts, the principles of scope calculation for chain and warp, how to select a suitable anchorage, and the practical considerations for anchoring safely including swinging room, seabed type, and tidal awareness. Correct anchoring technique is important both for safety and for environmental reasons.",
+    "keyTerms": [
+      {
+        "term": "Scope",
+        "definition": "Length of anchor rode (chain or warp) paid out"
+      },
+      {
+        "term": "Anchor rode",
+        "definition": "The chain or warp connecting the anchor to the vessel"
+      },
+      {
+        "term": "Warp",
+        "definition": "Rope used as an anchor rode (as opposed to chain)"
+      },
+      {
+        "term": "Chain",
+        "definition": "Metal link cable used as anchor rode; heavy, helps hold angle low"
+      },
+      {
+        "term": "Bruce anchor",
+        "definition": "Three-claw anchor with good holding power; difficult to stow"
+      },
+      {
+        "term": "Delta anchor",
+        "definition": "Rigid plough-type anchor suitable for bow roller; self-launches"
+      },
+      {
+        "term": "Danforth anchor",
+        "definition": "Twin-fluke flat anchor; stows easily; can foul in mud"
+      },
+      {
+        "term": "CQR anchor",
+        "definition": "Hinged plough-type anchor; can capsize due to moving parts"
+      },
+      {
+        "term": "Fisherman's anchor",
+        "definition": "Traditional stock anchor; suits rocky/weedy seabeds"
+      },
+      {
+        "term": "Swinging room",
+        "definition": "Clear water radius needed for the vessel to swing around its anchor"
+      },
+      {
+        "term": "Holding ground",
+        "definition": "The quality of the seabed for anchor holding (sand/mud good; rock/shingle poor)"
+      },
+      {
+        "term": "Breaking out",
+        "definition": "Recovering (weighing) an anchor from the seabed"
+      }
+    ],
+    "safetyNotes": [],
+    "flashcards": [
+      {
+        "id": "03-anchorwork-fc-0",
+        "front": "What scope is recommended for a chain anchor rode?",
+        "back": "Minimum 4 \u00d7 the maximum depth of water during the stay"
+      },
+      {
+        "id": "03-anchorwork-fc-1",
+        "front": "What scope is recommended for a warp anchor rode?",
+        "back": "Minimum 6 \u00d7 the maximum depth of water during the stay"
+      },
+      {
+        "id": "03-anchorwork-fc-2",
+        "front": "Which anchor type is best suited to rocky or weedy seabeds?",
+        "back": "Fisherman's anchor"
+      },
+      {
+        "id": "03-anchorwork-fc-3",
+        "front": "Why is the Danforth anchor sometimes difficult to recover?",
+        "back": "It can be hard to break out of mud"
+      },
+      {
+        "id": "03-anchorwork-fc-4",
+        "front": "What two seabed types give the best holding for most anchors?",
+        "back": "Mud and sand"
+      },
+      {
+        "id": "03-anchorwork-fc-5",
+        "front": "Why must maximum tidal depth (not current depth) be used for scope calculation?",
+        "back": "The depth increases with the rising tide; insufficient scope at high water could cause the anchor to drag"
+      },
+      {
+        "id": "03-anchorwork-fc-6",
+        "front": "Why should you not anchor on a leading line?",
+        "back": "Other vessels may be using it to navigate into harbour and could run you down"
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "03-anchorwork-q-0",
+        "question": "Q: A boat anchors in 3 metres of water using chain. What is the minimum scope recommended?",
+        "options": [
+          "6 metres",
+          "9 metres",
+          "12 metres",
+          "18 metres"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "03-anchorwork-q-1",
+        "question": "A boat anchors in 4 metres using warp. What minimum length of warp should be paid out?",
+        "options": [
+          "12 metres",
+          "16 metres",
+          "20 metres",
+          "24 metres"
+        ],
+        "correctIndex": 3,
+        "explanation": "The correct answer is (d)."
+      },
+      {
+        "id": "03-anchorwork-q-2",
+        "question": "Which anchor is designed to remain on the bow roller for self-launching and has no moving parts?",
+        "options": [
+          "CQR plough",
+          "Fisherman's",
+          "Delta",
+          "Danforth"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "03-anchorwork-q-3",
+        "question": "Which type of holding ground gives the poorest anchor hold for most modern anchors?",
+        "options": [
+          "Sand",
+          "Mud",
+          "Rock",
+          "Silt"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "03-anchorwork-q-4",
+        "question": "When anchoring in a mixed anchorage, why might boats of different types collide even when none drag their anchors?",
+        "options": [
+          "They use different scope ratios",
+          "Boats with high windage swing differently from deep-draught, low-windage boats",
+          "Chain rodes are shorter than warp rodes",
+          "All boats face the same direction in all conditions"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "04-safety",
+    "number": 4,
+    "title": "Safety",
+    "description": "Safety is a foundational topic in the RYA Day Skipper syllabus.",
+    "isSafetyCritical": true,
+    "summary": "Safety is a foundational topic in the RYA Day Skipper syllabus. It covers the equipment required on board a pleasure vessel, personal protective gear for the crew, fire prevention and fighting, and what to do in an emergency.",
+    "keyTerms": [
+      {
+        "term": "Lifejacket",
+        "definition": "Personal buoyancy device designed to turn an unconscious person face-up in the water and keep the airway clear. Usually gas-inflation type."
+      },
+      {
+        "term": "Buoyancy aid",
+        "definition": "Lower-buoyancy device (typically foam) that assists a conscious swimmer but does not turn an unconscious person face-up. Suitable for inshore/dinghy sailing."
+      },
+      {
+        "term": "Harness",
+        "definition": "Webbing worn over the body with strong attachment points; connected by a tether (harness line) to a jackstay or strong point to prevent a crew member going overboard."
+      },
+      {
+        "term": "Jackstay",
+        "definition": "A wire or webbing line rigged along the deck (port and starboard) to which harness tethers are clipped, allowing crew to move safely on deck in heavy weather."
+      },
+      {
+        "term": "EPIRB",
+        "definition": "Emergency Position-Indicating Radio Beacon. A vessel-mounted device that, when activated (automatically on immersion or manually), transmits a distress signal with GPS position via satellite to COSPAS-SARSAT."
+      },
+      {
+        "term": "PLB",
+        "definition": "Personal Locator Beacon. A smaller, personal version of an EPIRB, carried by an individual crew member."
+      },
+      {
+        "term": "Liferaft",
+        "definition": "An inflatable survival raft, stored in a canister on deck, deployed if the vessel must be abandoned. Equipped with a canopy, drogue, and survival equipment."
+      },
+      {
+        "term": "Painter (liferaft)",
+        "definition": "The line connecting the liferaft canister to the vessel; when pulled, it triggers the inflation mechanism."
+      },
+      {
+        "term": "Drogue",
+        "definition": "A sea anchor or drag device streamed from the liferaft to slow drift and reduce the risk of capsizing."
+      },
+      {
+        "term": "AFFF",
+        "definition": "Aqueous Film-Forming Foam \u2014 fire extinguisher medium effective against flammable liquid fires (Class B)."
+      },
+      {
+        "term": "CO\u2082/Halocarbon extinguisher",
+        "definition": "Fire extinguisher that smothers flames by displacing oxygen; effective in enclosed spaces such as the engine bay; leaves no residue."
+      },
+      {
+        "term": "Mayday",
+        "definition": "International voice distress signal (from French \"m'aidez\" \u2014 help me) indicating grave and imminent danger to life or vessel. Transmitted on VHF Ch 16."
+      },
+      {
+        "term": "Pan Pan",
+        "definition": "International urgency signal indicating a serious situation requiring assistance but not immediate danger to life."
+      },
+      {
+        "term": "DSC",
+        "definition": "Digital Selective Calling \u2014 a feature of modern VHF radios allowing a digital distress alert (including MMSI and, if GPS-linked, position) to be sent at the press of a button."
+      },
+      {
+        "term": "MMSI",
+        "definition": "Maritime Mobile Service Identity \u2014 a unique 9-digit number assigned to a DSC-equipped vessel; included in DSC distress calls."
+      },
+      {
+        "term": "Parachute flare",
+        "definition": "A rocket-launched red flare that deploys a parachute, burning for approximately 40 seconds at altitude for maximum range and visibility; long-range distress signal."
+      },
+      {
+        "term": "Hand flare (red)",
+        "definition": "A handheld red flare used to pinpoint the vessel's position at short range, inshore or when rescuers are already in sight."
+      },
+      {
+        "term": "Orange smoke",
+        "definition": "Daytime distress/position signal \u2014 canister (floating or handheld) producing dense orange smoke visible from air and sea."
+      },
+      {
+        "term": "Skin fitting",
+        "definition": "A through-hull fitting below the waterline; if it fails, the vessel will flood. Should be adjacent to a softwood bung of matching size."
+      }
+    ],
+    "safetyNotes": [
+      "NEVER fire a parachute flare if a helicopter is approaching \u2014 it could strike the aircraft and cause a catastrophe.",
+      "NEVER fire a flare into the wind.",
+      "Do NOT attach a helicopter's weighted guide line to any part of the vessel.",
+      "Do NOT open the engine compartment to fight a fire \u2014 this introduces oxygen. Use an automatic or remotely activated extinguisher.",
+      "A lifejacket must be worn, not just carried. In an emergency there may be no time to don it.",
+      "Abandonment should be a last resort: the vessel is usually easier for rescuers to find than a liferaft. Only abandon ship when the vessel is clearly going to sink or is on fire and uncontrollable.",
+      "Gas (LPG) is heavier than air \u2014 it accumulates unseen in the bilges. Always ventilate before starting the engine or using naked flames below decks.",
+      "A mobile phone CANNOT replace VHF for distress communications \u2014 it alerts only one person and cannot be used for two-way communication with a helicopter."
+    ],
+    "flashcards": [
+      {
+        "id": "04-safety-fc-0",
+        "front": "When should a harness be worn on deck?",
+        "back": "In bad weather and when going forward on deck at night."
+      },
+      {
+        "id": "04-safety-fc-1",
+        "front": "What is the correct sequence for a Mayday voice call?",
+        "back": "\"Mayday, Mayday, Mayday \u2014 This is [vessel name] \u00d7 3 \u2014 Mayday [vessel name] \u2014 position \u2014 nature of distress \u2014 persons on board \u2014 Over.\""
+      },
+      {
+        "id": "04-safety-fc-2",
+        "front": "What is the difference between a Mayday and a Pan Pan call?",
+        "back": "Mayday = grave and imminent danger to life or vessel. Pan Pan = urgent situation requiring assistance, but not immediately life-threatening."
+      },
+      {
+        "id": "04-safety-fc-3",
+        "front": "What type of fire extinguisher is best for an engine space?",
+        "back": "CO\u2082 or halocarbon \u2014 effective in enclosed spaces; ideally automatic or remotely activated so the compartment is not opened and oxygen is not introduced."
+      },
+      {
+        "id": "04-safety-fc-4",
+        "front": "Why is VHF better than a mobile phone in a distress situation?",
+        "back": "VHF alerts all vessels within range, can be used by coastguard to take a direction-finding fix, and allows direct communication with lifeboat and helicopter."
+      },
+      {
+        "id": "04-safety-fc-5",
+        "front": "How do you clear petrol/LPG vapour from below decks?",
+        "back": "Open hatches and turn downwind to vent fresh air through the boat. Do NOT use the bilge pump \u2014 it will not clear gas effectively."
+      },
+      {
+        "id": "04-safety-fc-6",
+        "front": "When abandoning to a liferaft, which crew member should board first?",
+        "back": "The heaviest and strongest, to stabilise the raft and assist others in boarding."
+      },
+      {
+        "id": "04-safety-fc-7",
+        "front": "What course should the helm steer during a helicopter rescue?",
+        "back": "A very steady course, typically with the wind 30\u00b0 on the port bow."
+      },
+      {
+        "id": "04-safety-fc-8",
+        "front": "What are the three types of fire extinguisher described for use on yachts, and what is each used for?",
+        "back": "(1) Dry powder \u2014 general use, not for flammable liquids. (2) CO\u2082/halocarbon \u2014 enclosed spaces/engine. (3) AFFF foam \u2014 flammable liquids."
+      },
+      {
+        "id": "04-safety-fc-9",
+        "front": "What distress signal should NEVER be fired if a helicopter is approaching?",
+        "back": "A parachute (rocket) flare \u2014 it could strike the aircraft."
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "04-safety-q-0",
+        "question": "Q: Which distress signal is used when life or vessel are in grave and imminent danger?",
+        "options": [
+          "Pan Pan",
+          "Securit\u00e9",
+          "Mayday",
+          "SOS by foghorn"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "04-safety-q-1",
+        "question": "What is the advantage of a DSC-equipped VHF radio in an emergency?",
+        "options": [
+          "It operates on a different frequency to avoid interference",
+          "It can send a digital distress alert including vessel position at the press of a button",
+          "It gives longer range than a standard VHF",
+          "It is linked directly to the RNLI"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "04-safety-q-2",
+        "question": "Where should fire extinguishers be positioned on a yacht?",
+        "options": [
+          "All stored in one accessible location in the cockpit",
+          "Near the exit to each accommodation space; engine space to have its own automatic or remotely activated unit",
+          "Only in the engine compartment",
+          "Stored below the chart table for security"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "04-safety-q-3",
+        "question": "When should the engine space be vented before starting an inboard petrol engine?",
+        "options": [
+          "Only if the bilge alarm has sounded",
+          "Only in hot weather",
+          "Always \u2014 to clear any accumulated petrol vapour before ignition",
+          "Never \u2014 ventilation is not required for petrol engines"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "04-safety-q-4",
+        "question": "Which flare type provides the longest-range distress signal and is most suitable for offshore use at night?",
+        "options": [
+          "Orange smoke canister",
+          "White collision-warning flare",
+          "Red handheld pinpoint flare",
+          "Red parachute rocket flare"
+        ],
+        "correctIndex": 3,
+        "explanation": "The correct answer is (d)."
+      },
+      {
+        "id": "04-safety-q-5",
+        "question": "What should you do immediately if you find you cannot control a fire on board?",
+        "options": [
+          "Continue fighting \u2014 fires always burn out",
+          "Get everyone on deck with lifejackets and be prepared to abandon ship",
+          "Open all hatches to ventilate",
+          "Start the engine to reach harbour quickly"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "04-safety-q-6",
+        "question": "Which of the following is the correct action when a weighted line is lowered from a rescue helicopter?",
+        "options": [
+          "Attach it to the mast to stabilise the helicopter's position",
+          "Gather in the slack but do not attach it to the boat",
+          "Attach it to the anchor chain",
+          "Pull it towards the boat to guide the rescue swimmer"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "05-irpcs-colregs",
+    "number": 5,
+    "title": "IRPCS/COLREGS: International Regulations for Preventing Collisions at Sea",
+    "description": "The International Regulations for Preventing Collisions at Sea (IRPCS) \u2014 commonly called COLREGS \u2014 are a set of internationally agreed rules that govern how vessels must behave to avoid collisions.",
+    "isSafetyCritical": true,
+    "summary": "The International Regulations for Preventing Collisions at Sea (IRPCS) \u2014 commonly called COLREGS \u2014 are a set of internationally agreed rules that govern how vessels must behave to avoid collisions. They are given force in UK law by the Merchant Shipping (Distress Signals and Prevention of Collisions) Regulations 1996 (MSN 1781 M+F).",
+    "keyTerms": [
+      {
+        "term": "IRPCS",
+        "definition": "International Regulations for Preventing Collisions at Sea \u2014 the internationally agreed collision avoidance rules. Also called COLREGS."
+      },
+      {
+        "term": "COLREGS",
+        "definition": "Common abbreviation for the Convention on the International Regulations for Preventing Collisions at Sea, 1972. Synonymous with IRPCS in practical use."
+      },
+      {
+        "term": "Give-way vessel",
+        "definition": "The vessel required by the rules to take avoiding action to keep clear of another."
+      },
+      {
+        "term": "Stand-on vessel",
+        "definition": "The vessel required to maintain its course and speed while the give-way vessel takes action."
+      },
+      {
+        "term": "Crossing situation",
+        "definition": "Two power-driven vessels crossing so as to involve risk of collision \u2014 the vessel that has the other on her starboard side is the give-way vessel."
+      },
+      {
+        "term": "Head-on situation",
+        "definition": "Two power-driven vessels meeting on reciprocal (or near-reciprocal) courses \u2014 both must alter course to starboard."
+      },
+      {
+        "term": "Overtaking situation",
+        "definition": "A vessel coming up on another from a direction more than 22.5\u00b0 abaft the beam is overtaking and must keep clear."
+      },
+      {
+        "term": "Narrow channel",
+        "definition": "A defined navigable waterway where large vessels can only safely navigate within the channel. Specific rules apply (Rule 9)."
+      },
+      {
+        "term": "Traffic Separation Scheme (TSS)",
+        "definition": "An IMO-approved routing measure that separates opposing streams of vessel traffic in heavily used sea lanes. Rule 10 applies."
+      },
+      {
+        "term": "Day shape",
+        "definition": "A black shape (ball, cone, cylinder, diamond, etc.) hoisted by day to indicate a vessel's type or activity. The daytime equivalent of navigation lights."
+      },
+      {
+        "term": "Steaming light",
+        "definition": "A white masthead light visible over an arc of 225\u00b0, carried by power-driven vessels underway."
+      },
+      {
+        "term": "Tricolour light",
+        "definition": "A single combined red/green/white navigation light fitted at the masthead of a sailing vessel under 20 m; used as an alternative to separate sidelights and sternlight. Must NOT be used simultaneously with a steaming light."
+      },
+      {
+        "term": "Motoring cone",
+        "definition": "A black cone, apex down, hoisted by a sailing vessel when also using her engine \u2014 the vessel is then treated as power-driven."
+      },
+      {
+        "term": "Risk of collision",
+        "definition": "Exists if the compass bearing to another vessel does not appreciably change \u2014 assessed by taking a series of bearings or by observing whether another vessel remains lined up against a fixed point on your own vessel."
+      }
+    ],
+    "safetyNotes": [
+      "The IRPCS apply to ALL vessels at all times on all waters navigable by seagoing vessels. Ignorance of the rules is not a defence.",
+      "Being the \"stand-on\" vessel does not mean doing nothing \u2014 if the give-way vessel fails to act, the stand-on vessel must ultimately manoeuvre to avoid collision.",
+      "Give-way action must be early and bold \u2014 a small, late alteration of course may be misread by the other vessel and make the situation worse.",
+      "In a narrow channel, do not assume right of way over large vessels \u2014 they may have no room to manoeuvre and a collision would be catastrophic.",
+      "A vessel overtaking another remains the give-way vessel until well past and clear \u2014 even if the other vessel appears to slow down.",
+      "Sound signals are mandatory \u2014 five short blasts means danger or doubt; if you hear it, something is wrong."
+    ],
+    "flashcards": [
+      {
+        "id": "05-irpcs-colregs-fc-0",
+        "front": "How do you assess whether a risk of collision exists?",
+        "back": "Take compass bearings of the approaching vessel. If the bearing does not change (or the vessel stays lined up with a fixed reference on your boat), a risk of collision exists."
+      },
+      {
+        "id": "05-irpcs-colregs-fc-1",
+        "front": "In a crossing situation between two power vessels, which gives way?",
+        "back": "The vessel that has the other on her starboard side gives way."
+      },
+      {
+        "id": "05-irpcs-colregs-fc-2",
+        "front": "What must both vessels do in a head-on situation?",
+        "back": "Both must alter course to starboard."
+      },
+      {
+        "id": "05-irpcs-colregs-fc-3",
+        "front": "In the order of priority, which vessel type has the highest right of way?",
+        "back": "A vessel restricted in ability to manoeuvre (e.g. laying marks, dredging)."
+      },
+      {
+        "id": "05-irpcs-colregs-fc-4",
+        "front": "What does a sailing vessel display by day when also motoring?",
+        "back": "A black cone, apex downwards (the motoring cone)."
+      },
+      {
+        "id": "05-irpcs-colregs-fc-5",
+        "front": "What does the term \"stand-on vessel\" mean?",
+        "back": "The vessel required to maintain its course and speed while the give-way vessel takes avoiding action."
+      },
+      {
+        "id": "05-irpcs-colregs-fc-6",
+        "front": "In a narrow channel, does power automatically give way to sail?",
+        "back": "No \u2014 in a narrow channel, a vessel constrained to remain in the channel must not be impeded by small craft that can safely navigate outside it."
+      },
+      {
+        "id": "05-irpcs-colregs-fc-7",
+        "front": "What is the five-short-blasts sound signal?",
+        "back": "The danger/doubt signal \u2014 indicating that another vessel's intentions are unclear or that it is not taking sufficient action to avoid collision."
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "05-irpcs-colregs-q-0",
+        "question": "In a crossing situation between two power-driven vessels, which vessel is the give-way vessel?",
+        "options": [
+          "The faster vessel",
+          "The larger vessel",
+          "The vessel that has the other on her port side",
+          "The vessel that has the other on her starboard side"
+        ],
+        "correctIndex": 3,
+        "explanation": "The correct answer is (d)."
+      },
+      {
+        "id": "05-irpcs-colregs-q-1",
+        "question": "What is the correct action for both vessels in a power-to-power head-on situation?",
+        "options": [
+          "Both vessels slow down and wait",
+          "Both vessels alter course to port",
+          "Both vessels alter course to starboard",
+          "The vessel on the right gives way"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "05-irpcs-colregs-q-2",
+        "question": "Which of the following vessel types has the highest priority in the IRPCS order of precedence?",
+        "options": [
+          "Vessel under sail",
+          "Vessel engaged in fishing",
+          "Power-driven vessel",
+          "Vessel restricted in ability to manoeuvre"
+        ],
+        "correctIndex": 3,
+        "explanation": "The correct answer is (d)."
+      },
+      {
+        "id": "05-irpcs-colregs-q-3",
+        "question": "A sailing vessel of 15 m is motoring. What must she display by day?",
+        "options": [
+          "A black ball",
+          "A black cylinder",
+          "A black cone, apex downwards",
+          "Nothing \u2014 day shapes are only required for vessels over 20 m"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "05-irpcs-colregs-q-4",
+        "question": "In a narrow channel, when may a small sailing vessel be given right of way over a large power-driven vessel?",
+        "options": [
+          "Always \u2014 sail has priority over power",
+          "Only if the sailing vessel is overtaking",
+          "Never \u2014 in a narrow channel, vessels constrained to the channel must not be impeded",
+          "Only at night"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "06-position-course-speed",
+    "number": 6,
+    "title": "Position, Course and Speed",
+    "description": "This topic defines the fundamental units and concepts of marine navigation: how position is expressed using latitude and longitude, how the nautical mile and the knot relate to the Earth's geometry, and the four types of bearing (true, magnetic, compass, and relative).",
+    "isSafetyCritical": false,
+    "summary": "This topic defines the fundamental units and concepts of marine navigation: how position is expressed using latitude and longitude, how the nautical mile and the knot relate to the Earth's geometry, and the four types of bearing (true, magnetic, compass, and relative). These definitions underpin all chartwork and passage planning.",
+    "keyTerms": [
+      {
+        "term": "Latitude",
+        "definition": "Angular distance north or south of the Equator, measured in degrees and minutes"
+      },
+      {
+        "term": "Longitude",
+        "definition": "Angular distance east or west of the Greenwich Meridian, measured in degrees and minutes"
+      },
+      {
+        "term": "Nautical mile",
+        "definition": "Unit of distance at sea = 1 minute of latitude = 1852 m"
+      },
+      {
+        "term": "Knot",
+        "definition": "Unit of speed = 1 nautical mile per hour"
+      },
+      {
+        "term": "True bearing",
+        "definition": "Bearing measured clockwise from True North"
+      },
+      {
+        "term": "Magnetic bearing",
+        "definition": "Bearing measured from Magnetic North"
+      },
+      {
+        "term": "Compass bearing",
+        "definition": "Reading from the vessel's compass (includes deviation)"
+      },
+      {
+        "term": "Relative bearing",
+        "definition": "Bearing measured from the vessel's bow"
+      },
+      {
+        "term": "Variation",
+        "definition": "Difference between True North and Magnetic North at a given location"
+      },
+      {
+        "term": "Deviation",
+        "definition": "Error in compass reading caused by the vessel's own magnetic field"
+      },
+      {
+        "term": "Meridian",
+        "definition": "Line of longitude \u2014 runs pole to pole"
+      },
+      {
+        "term": "Parallel of latitude",
+        "definition": "Line of latitude \u2014 runs parallel to the Equator"
+      }
+    ],
+    "safetyNotes": [],
+    "flashcards": [
+      {
+        "id": "06-position-course-speed-fc-0",
+        "front": "How many metres are in one nautical mile?",
+        "back": "1852 metres"
+      },
+      {
+        "id": "06-position-course-speed-fc-1",
+        "front": "What is a knot?",
+        "back": "One nautical mile per hour"
+      },
+      {
+        "id": "06-position-course-speed-fc-2",
+        "front": "One minute of latitude equals what distance?",
+        "back": "One nautical mile"
+      },
+      {
+        "id": "06-position-course-speed-fc-3",
+        "front": "Why must you never measure distance on the longitude scale?",
+        "back": "Meridians converge towards the poles, so the spacing varies with latitude and gives incorrect distances"
+      },
+      {
+        "id": "06-position-course-speed-fc-4",
+        "front": "What do the letters (T), (M), and (C) mean after a bearing?",
+        "back": "(T) = True, (M) = Magnetic, (C) = Compass"
+      },
+      {
+        "id": "06-position-course-speed-fc-5",
+        "front": "When recording a position, which is written first \u2014 latitude or longitude?",
+        "back": "Latitude first, then longitude"
+      },
+      {
+        "id": "06-position-course-speed-fc-6",
+        "front": "What is a relative bearing?",
+        "back": "A bearing measured from the vessel's bow (not from north)"
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "06-position-course-speed-q-0",
+        "question": "Q: What is the unit of speed used at sea?",
+        "options": [
+          "Miles per hour",
+          "Knots",
+          "Kilometres per hour",
+          "Metres per second"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "06-position-course-speed-q-1",
+        "question": "One nautical mile is equal to how many minutes of latitude?",
+        "options": [
+          "10",
+          "5",
+          "2",
+          "1"
+        ],
+        "correctIndex": 3,
+        "explanation": "The correct answer is (d)."
+      },
+      {
+        "id": "06-position-course-speed-q-2",
+        "question": "When measuring distance on a chart, which scale must be used?",
+        "options": [
+          "The longitude scale at the top or bottom of the chart",
+          "The latitude scale on the sides of the chart",
+          "Either scale \u2014 they are interchangeable",
+          "A separate distance bar scale only"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "06-position-course-speed-q-3",
+        "question": "A bearing of 246\u00b0(T) means:",
+        "options": [
+          "246\u00b0 measured clockwise from Magnetic North",
+          "246\u00b0 measured from the vessel's bow",
+          "246\u00b0 measured clockwise from True North",
+          "246\u00b0 measured anticlockwise from True North"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "06-position-course-speed-q-4",
+        "question": "A vessel is travelling at 6 knots. How far will it travel in 30 minutes?",
+        "options": [
+          "6 nautical miles",
+          "3 nautical miles",
+          "12 nautical miles",
+          "2 nautical miles"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "07-charts-and-publications",
+    "number": 7,
+    "title": "Navigational Charts and Publications",
+    "description": "Navigational charts are the fundamental tool of coastal navigation.",
+    "isSafetyCritical": true,
+    "summary": "Navigational charts are the fundamental tool of coastal navigation. British Admiralty (UKHO) charts use standardised symbols and abbreviations defined in NP5011 (Chart 5011).",
+    "keyTerms": [
+      {
+        "term": "Chart Datum (CD)",
+        "definition": "The datum to which all charted depths and drying heights are referred; approximates to Lowest Astronomical Tide (LAT)"
+      },
+      {
+        "term": "Sounding",
+        "definition": "A depth measurement shown on the chart in metres and decimetres, measured below Chart Datum"
+      },
+      {
+        "term": "Drying height",
+        "definition": "The height above Chart Datum of a feature that covers at high water and uncovers at low water; shown as an underlined figure"
+      },
+      {
+        "term": "Rock awash",
+        "definition": "A rock whose highest point is at or very near Chart Datum (always at the waterline at lowest tide); shown with K12 symbol"
+      },
+      {
+        "term": "Wreck",
+        "definition": "A sunken or stranded vessel; dangerous wrecks are enclosed in a dotted danger line on the chart"
+      },
+      {
+        "term": "Leading line",
+        "definition": "A line created by two charted marks in transit, indicating a safe track into harbour or through a channel"
+      },
+      {
+        "term": "Transit",
+        "definition": "Two charted objects observed in line from the vessel; provides a precise position line or track"
+      },
+      {
+        "term": "Geodetic datum",
+        "definition": "The mathematical model of the earth's shape on which a chart's coordinate system is based; must match GPS settings"
+      },
+      {
+        "term": "Isobar",
+        "definition": "A line on a synoptic chart connecting points of equal atmospheric pressure (not a chart symbol per se, but appears on meteorological charts)"
+      },
+      {
+        "term": "NtM",
+        "definition": "Notice to Mariners \u2014 official publication of chart corrections issued by the UKHO"
+      }
+    ],
+    "safetyNotes": [
+      "A wreck symbol enclosed in a dotted (danger) line means the wreck is a hazard to surface navigation. Do not attempt to pass over without confirmed, current depth information.",
+      "Rocks marked K13 (submerged, depth unknown) must be treated as potentially dangerous regardless of the charted depth in the vicinity. Always give such symbols a generous clearance.",
+      "Depth qualifiers ED (Existence Doubtful), SD (Sounding Doubtful), Rep (Reported), and PA (Position Approximate) indicate reduced survey reliability \u2014 treat these areas with extra caution.",
+      "The geodetic datum on the chart must match the GPS datum setting. A mismatch can displace a plotted position by tens or hundreds of metres \u2014 enough to place a vessel on a charted hazard."
+    ],
+    "flashcards": [
+      {
+        "id": "07-charts-and-publications-fc-0",
+        "front": "What does an underlined sounding figure on a chart indicate?",
+        "back": "A drying height \u2014 the feature is above Chart Datum and dries at low water; the figure is the height above CD in metres."
+      },
+      {
+        "id": "07-charts-and-publications-fc-1",
+        "front": "What is the difference between the K12 and K13 rock symbols?",
+        "back": "K12 (plus in circle with dots) = rock awash at Chart Datum \u2014 always at or very near the surface. K13 (plus with dots, no circle) = submerged rock, depth unknown \u2014 always underwater but potentially shallow."
+      },
+      {
+        "id": "07-charts-and-publications-fc-2",
+        "front": "What format is used for a light description on an Admiralty chart?",
+        "back": "Characteristic, Colour, Period, Elevation, Range \u2014 e.g., Fl(3) R 10s 13m 5M."
+      },
+      {
+        "id": "07-charts-and-publications-fc-3",
+        "front": "Why must you never use the longitude scale to measure distance on a chart?",
+        "back": "Because lines of longitude converge toward the poles \u2014 the spacing in millimetres varies with latitude. Only the latitude scale (1' = 1 nautical mile) gives consistent distance measurement."
+      },
+      {
+        "id": "07-charts-and-publications-fc-4",
+        "front": "What does a magenta diamond with a letter (\u25c7A) on a chart represent?",
+        "back": "A tidal diamond \u2014 it refers to a table in the chart's title block giving tidal stream direction and rate for each hour relative to HW at a standard port."
+      },
+      {
+        "id": "07-charts-and-publications-fc-5",
+        "front": "How are chart corrections promulgated and recorded?",
+        "back": "Through Notices to Mariners (NtM) issued by the UKHO; correction dates are recorded in the chart's title block. Block corrections are applied when a new edition or new print is issued."
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "07-charts-and-publications-q-0",
+        "question": "Q: On a metric Admiralty chart, a sounding reads 4\u2082. What depth does this represent?",
+        "options": [
+          "42 metres",
+          "4 metres 2 centimetres",
+          "4.2 metres",
+          "4 feet 2 inches"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "07-charts-and-publications-q-1",
+        "question": "Which colour indicates a drying area (covers and uncovers with tide) on a standard British Admiralty chart?",
+        "options": [
+          "Yellow",
+          "White",
+          "Dark blue",
+          "Green"
+        ],
+        "correctIndex": 3,
+        "explanation": "The correct answer is (d)."
+      },
+      {
+        "id": "07-charts-and-publications-q-2",
+        "question": "A chart symbol shows a plus sign (+) enclosed in a circle with a dotted surround. What does this indicate?",
+        "options": [
+          "A dangerous wreck",
+          "A submerged rock of unknown depth",
+          "A rock awash at Chart Datum",
+          "A drying rock"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "07-charts-and-publications-q-3",
+        "question": "What is the correct scale to use when measuring distance on a chart?",
+        "options": [
+          "The longitude scale on the top or bottom margin",
+          "The latitude scale on the side margin at the same latitude as your position",
+          "Any scale on the chart title block",
+          "The compass rose scale"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "07-charts-and-publications-q-4",
+        "question": "A light is described as Fl(3) R 10s 13m 5M. What does \"13m\" refer to?",
+        "options": [
+          "The depth of water below the lighthouse",
+          "The height of the light above Chart Datum",
+          "The height of the light above Mean High Water Springs (MHWS)",
+          "The nominal range in metres"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "07-charts-and-publications-q-5",
+        "question": "What publication contains the full key to symbols and abbreviations used on Admiralty charts?",
+        "options": [
+          "The Admiralty List of Lights (NP74)",
+          "The Admiralty Tide Tables",
+          "NP5011 Chart 5011",
+          "The Mariners Handbook (NP100)"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "08-navigational-instruments",
+    "number": 8,
+    "title": "Navigational Drawing Instruments",
+    "description": "This topic covers the instruments used at the chart table for plotting positions, transferring bearings, and measuring distance on a nautical chart.",
+    "isSafetyCritical": false,
+    "summary": "This topic covers the instruments used at the chart table for plotting positions, transferring bearings, and measuring distance on a nautical chart. The principal tools are parallel rulers (walking or rolling), dividers, and proprietary plotters (such as the Portland or Breton plotter).",
+    "keyTerms": [
+      {
+        "term": "Parallel rulers",
+        "definition": "Linked straight edges that remain parallel while walking across a chart; used to transfer bearings"
+      },
+      {
+        "term": "Rolling parallel rulers",
+        "definition": "Parallel rulers operating on a rolling cylinder; same function as linked rulers"
+      },
+      {
+        "term": "Portland plotter",
+        "definition": "Transparent protractor-grid plotter that eliminates the need for a compass rose"
+      },
+      {
+        "term": "Breton plotter",
+        "definition": "Alternative name for a Portland-style plotter"
+      },
+      {
+        "term": "Dividers",
+        "definition": "Two-legged instrument used to measure distances on a chart"
+      },
+      {
+        "term": "Compass rose",
+        "definition": "Printed circle on a chart showing true and magnetic north, used to read off bearings"
+      },
+      {
+        "term": "Latitude scale",
+        "definition": "The vertical scale on the sides of a chart; used to measure distance"
+      },
+      {
+        "term": "Walking a ruler",
+        "definition": "Moving parallel rulers across the chart step by step while maintaining alignment"
+      }
+    ],
+    "safetyNotes": [],
+    "flashcards": [
+      {
+        "id": "08-navigational-instruments-fc-0",
+        "front": "What are parallel rulers used for in chartwork?",
+        "back": "Transferring a bearing from the compass rose to a point on the chart, or from a feature to the compass rose"
+      },
+      {
+        "id": "08-navigational-instruments-fc-1",
+        "front": "Why must you never use the longitude scale to measure distance?",
+        "back": "Meridians converge towards the poles, making longitude spacing vary with latitude and giving incorrect distances"
+      },
+      {
+        "id": "08-navigational-instruments-fc-2",
+        "front": "What advantage does a Portland/Breton plotter have over parallel rulers?",
+        "back": "It does not require access to the compass rose \u2014 the protractor grid is built in"
+      },
+      {
+        "id": "08-navigational-instruments-fc-3",
+        "front": "What is always used for chartwork \u2014 pencil or pen?",
+        "back": "Pencil \u2014 so workings can be erased"
+      },
+      {
+        "id": "08-navigational-instruments-fc-4",
+        "front": "When using dividers to measure distance, at which level should you read the latitude scale?",
+        "back": "At the same latitude as your position"
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "08-navigational-instruments-q-0",
+        "question": "Q: What is the primary purpose of dividers in chart navigation?",
+        "options": [
+          "Transferring bearings from the compass rose",
+          "Measuring distances on the chart",
+          "Drawing course lines",
+          "Reading chart datum levels"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "08-navigational-instruments-q-1",
+        "question": "When using parallel rulers to transfer a bearing, what is the main practical risk?",
+        "options": [
+          "Measuring on the longitude scale",
+          "The rulers slipping and losing alignment while walking across the chart",
+          "Setting the wrong bearing on the compass rose",
+          "Drawing the line in the wrong direction"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "08-navigational-instruments-q-2",
+        "question": "A plotter is set to 246\u00b0(T) and aligned with a chart feature. What must be done next before drawing the bearing line?",
+        "options": [
+          "Transfer the plotter to the compass rose",
+          "Line up the plotter's grid with the chart's latitude and longitude lines",
+          "Set the dividers to the bearing distance",
+          "Walk the plotter to the nearest depth contour"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "08-navigational-instruments-q-3",
+        "question": "Which scale on a nautical chart must be used to measure distance with dividers?",
+        "options": [
+          "The longitude scale",
+          "The depth scale",
+          "The latitude scale on the sides of the chart",
+          "The distance bar scale at the chart's margin"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "09-compass",
+    "number": 9,
+    "title": "Compass",
+    "description": "The compass is the primary instrument for steering and taking bearings at sea.",
+    "isSafetyCritical": true,
+    "summary": "The compass is the primary instrument for steering and taking bearings at sea. Navigators must understand three north references \u2014 True North (geographic), Magnetic North (compass rose), and Compass North (the ship's compass reading) \u2014 and be able to convert between them.",
+    "keyTerms": [
+      {
+        "term": "True North",
+        "definition": "The direction of the geographic North Pole; the reference for chart directions"
+      },
+      {
+        "term": "Magnetic North",
+        "definition": "The direction toward the Earth's magnetic north pole; the reference to which a compass needle points"
+      },
+      {
+        "term": "Compass North",
+        "definition": "The direction indicated by the ship's compass on a given heading, after the effects of onboard magnetic influences (deviation)"
+      },
+      {
+        "term": "Variation",
+        "definition": "The angular difference between True North and Magnetic North at a given position; expressed as East or West"
+      },
+      {
+        "term": "Deviation",
+        "definition": "The angular difference between Magnetic North and Compass North on a given vessel heading, caused by onboard magnetic influences"
+      },
+      {
+        "term": "Compass error",
+        "definition": "The combined total of variation and deviation; the total angular difference between True North and the compass reading"
+      },
+      {
+        "term": "Deviation card",
+        "definition": "A table or curve listing the deviation of the ship's compass for each heading, produced by swinging the compass"
+      }
+    ],
+    "safetyNotes": [
+      "Applying variation or deviation in the wrong direction (adding instead of subtracting, or vice versa) produces a compass course error of twice the variation/deviation value. A 7\u00b0W variation applied the wrong way results in a 14\u00b0 heading error \u2014 enough to steer into a hazard over a short passage. Always use the conversion diagram (True \u2192 +W/\u2212E \u2192 Magnetic \u2192 +W/\u2212E \u2192 Compass) methodically.",
+      "Deviation changes with the vessel's heading. A deviation card produced on a previous heading is not valid when the boat has altered course significantly. Always use the deviation card value for the current heading.",
+      "Objects that cause deviation (mobile phones, metal mugs, speakers, electronics) must be kept well clear of the ship's compass and especially the hand-bearing compass when taking bearings. A mobile phone held near a hand-bearing compass will produce an erroneous bearing and a false position line.",
+      "If compass error is unknown or has not been checked recently, all compass courses and bearings must be treated with additional caution. Swinging the compass and producing a current deviation card is a fundamental pre-passage safety check."
+    ],
+    "flashcards": [
+      {
+        "id": "09-compass-fc-0",
+        "front": "What is variation?",
+        "back": "The angular difference between True North and Magnetic North at a given position. It is printed on the chart compass rose and changes slowly over time."
+      },
+      {
+        "id": "09-compass-fc-1",
+        "front": "What is deviation?",
+        "back": "The angular difference between Magnetic North and Compass North, caused by ferrous metals and electromagnetic fields onboard. It varies with the vessel's heading."
+      },
+      {
+        "id": "09-compass-fc-2",
+        "front": "If variation is 5\u00b0W and you have a true bearing of 080\u00b0(T), what is the magnetic bearing?",
+        "back": "085\u00b0(M). West variation means magnetic is greater \u2014 add 5\u00b0."
+      },
+      {
+        "id": "09-compass-fc-3",
+        "front": "How do you convert a True bearing to a Compass course?",
+        "back": "Apply variation: True + W variation (or \u2212 E) = Magnetic. Then apply deviation: Magnetic + W deviation (or \u2212 E) = Compass."
+      },
+      {
+        "id": "09-compass-fc-4",
+        "front": "Where do you find the value of variation for your position?",
+        "back": "On the compass rose of the relevant chart. It also shows the annual rate of change so you can apply an update for the current year."
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "09-compass-q-0",
+        "question": "Q: A chart shows a compass rose with variation 7\u00b0W. You have plotted a True course of 055\u00b0(T). What is the equivalent Magnetic course?",
+        "options": [
+          "048\u00b0(M)",
+          "062\u00b0(M)",
+          "055\u00b0(M)",
+          "070\u00b0(M)"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "09-compass-q-1",
+        "question": "What causes deviation in a ship's compass?",
+        "options": [
+          "The difference between True North and Magnetic North",
+          "Onboard ferrous metals and electromagnetic fields",
+          "The annual change in the Earth's magnetic field",
+          "Incorrect chart datum settings"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "09-compass-q-2",
+        "question": "The ship's compass reads 070\u00b0(C). The transit you are pointed at bears 068\u00b0(M). What is the deviation on this heading?",
+        "options": [
+          "2\u00b0E",
+          "2\u00b0W",
+          "138\u00b0E",
+          "0\u00b0 (no deviation)"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "09-compass-q-3",
+        "question": "Chartwork is carried out in which reference system?",
+        "options": [
+          "Compass (\u00b0C)",
+          "Magnetic (\u00b0M)",
+          "True (\u00b0T)",
+          "Grid (\u00b0G)"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "10-chartwork",
+    "number": 10,
+    "title": "Chartwork",
+    "description": "Chartwork is the practical application of navigation on the chart.",
+    "isSafetyCritical": true,
+    "summary": "Chartwork is the practical application of navigation on the chart. It encompasses plotting positions (by latitude/longitude, by bearing and distance, or by GPS), tracking the vessel's progress using dead reckoning and estimated position, fixing position visually using cross bearings and transits, and planning a course to steer that accounts for tidal stream and leeway.",
+    "keyTerms": [
+      {
+        "term": "DR (Dead Reckoning)",
+        "definition": "An approximate position calculated from course steered and distance run, without correction for tide or leeway"
+      },
+      {
+        "term": "EP (Estimated Position)",
+        "definition": "A position derived from a DR position by additionally applying leeway (water track) and tidal set and drift"
+      },
+      {
+        "term": "Fix",
+        "definition": "A position determined by external observations (bearings, GPS, transit) rather than calculation"
+      },
+      {
+        "term": "COG (Course Over Ground)",
+        "definition": "The actual direction of travel of the vessel across the seabed, accounting for tide and leeway"
+      },
+      {
+        "term": "SOG (Speed Over Ground)",
+        "definition": "The actual speed of the vessel over the seabed, accounting for tidal stream"
+      },
+      {
+        "term": "CTS (Course to Steer)",
+        "definition": "The compass course to steer (water track) that, when combined with the tidal stream, results in the desired ground track"
+      },
+      {
+        "term": "Leeway",
+        "definition": "The angular difference between the course steered (direction the bow points) and the water track (direction through the water), caused by wind"
+      },
+      {
+        "term": "Set",
+        "definition": "The direction in which the tidal stream flows (in degrees True)"
+      },
+      {
+        "term": "Drift",
+        "definition": "The distance a vessel is carried by the tidal stream in a given time (or the rate in knots)"
+      },
+      {
+        "term": "Water track",
+        "definition": "The direction and distance the vessel moves through the water, after allowing for leeway but before applying tidal stream"
+      },
+      {
+        "term": "Ground track",
+        "definition": "The actual path of the vessel over the seabed, after the combined effects of course steered, leeway, and tidal stream"
+      },
+      {
+        "term": "Waypoint (WPT)",
+        "definition": "A position stored in the GPS memory for navigation reference"
+      },
+      {
+        "term": "Cocked hat",
+        "definition": "The small triangle formed when three position lines from a visual fix do not meet at a single point"
+      }
+    ],
+    "safetyNotes": [
+      "A DR position assumes no tidal set or drift \u2014 in areas with strong tidal streams it can diverge rapidly from the vessel's actual position. Always progress to an EP (applying leeway and tidal vector) and confirm with a visual fix or GPS at regular intervals. Never rely on a DR position alone in pilotage waters or near hazards.",
+      "When three bearing lines form a cocked hat, always assume your position is at the corner of the cocked hat closest to the nearest danger. Do not place yourself at the centre of the cocked hat. This conservative approach is a fundamental safety rule.",
+      "GPS gives Course Over Ground (COG) and Speed Over Ground (SOG) relative to the seabed, but the bearing it shows to a waypoint does not account for tidal set. If you steer the GPS waypoint bearing in a cross-tide, you will be set sideways \u2014 potentially onto a hazard. Always pre-calculate a course to steer that incorporates the tidal vector.",
+      "GPS can fail without warning. Power or aerial failure, mobile phone interference, or changes to the satellite system can all produce a loss of fix or an incorrect position with no alarm. Maintain an independent position record on the paper chart throughout every passage.",
+      "Waypoints must always be plotted on the chart and checked before entry into the GPS. A single transposed digit in latitude or longitude can place a waypoint miles from the intended position. The GPS distance and bearing to the waypoint must be cross-checked against the chart-measured values before proceeding."
+    ],
+    "flashcards": [
+      {
+        "id": "10-chartwork-fc-0",
+        "front": "What is the difference between a DR position and an EP?",
+        "back": "A DR position uses only course steered and distance run. An EP additionally applies leeway (to get water track) and the tidal vector \u2014 making it a better approximation of actual position."
+      },
+      {
+        "id": "10-chartwork-fc-1",
+        "front": "What chartwork symbol is used for (a) a DR position, (b) an EP, and (c) a fix?",
+        "back": "(a) Triangle \u25b3; (b) half-triangle (open triangle) \u25c1; (c) circle \u25cb."
+      },
+      {
+        "id": "10-chartwork-fc-2",
+        "front": "How do you construct a Course to Steer graphically on the chart?",
+        "back": "Plot ground track from A to B. From A, plot tidal vector. From the end of the tidal vector, swing an arc equal to boat speed to cut the ground track. The bearing of the line from tidal vector end to the cutting point is the water track = CTS."
+      },
+      {
+        "id": "10-chartwork-fc-3",
+        "front": "What is a cocked hat and where do you place your position within it?",
+        "back": "The small triangle formed when three bearing lines in a visual fix do not intersect at a single point. Place your estimated position at the corner of the cocked hat closest to any nearby hazard."
+      },
+      {
+        "id": "10-chartwork-fc-4",
+        "front": "Why must GPS be backed up with other position information?",
+        "back": "GPS can fail (power/aerial failure, interference, satellite issues) and gives no warning when it provides an incorrect position. An independent backup prevents navigational error."
+      },
+      {
+        "id": "10-chartwork-fc-5",
+        "front": "What is the danger of steering the bearing that a GPS gives you directly to a waypoint when there is cross-tide?",
+        "back": "The tidal stream will push you off the straight-line track \u2014 you will sail a longer route and may be set toward a hazard. Always calculate a course to steer that accounts for the tide."
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "10-chartwork-q-0",
+        "question": "Q: A vessel steers 070\u00b0(T) for 1 hour at 5 knots and the log records 5 miles. The tidal stream is 120\u00b0(T) at 1.5 knots. What is the vessel's approximate position?",
+        "options": [
+          "5 miles on 070\u00b0(T) from start",
+          "5 miles on 120\u00b0(T) from start",
+          "The resultant of 5 miles on 070\u00b0(T) plus 1.5 miles on 120\u00b0(T)",
+          "6.5 miles on 070\u00b0(T) from start"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "10-chartwork-q-1",
+        "question": "What does the symbol \u25c1 (half-triangle) represent on a chart?",
+        "options": [
+          "A fix",
+          "A waypoint",
+          "A dead reckoning position",
+          "An estimated position"
+        ],
+        "correctIndex": 3,
+        "explanation": "The correct answer is (d)."
+      },
+      {
+        "id": "10-chartwork-q-2",
+        "question": "Three bearing lines on a chart form a small triangle. Where should you assume your position to be?",
+        "options": [
+          "At the centroid (centre) of the triangle",
+          "At the corner of the triangle closest to the nearest hazard",
+          "At the corner of the triangle farthest from land",
+          "At the point where two of the three lines cross"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "10-chartwork-q-3",
+        "question": "When using a transit as a position line, what is the ideal angle for the second bearing to intersect the transit?",
+        "options": [
+          "10\u201320\u00b0",
+          "30\u201345\u00b0",
+          "Approximately 90\u00b0",
+          "180\u00b0 (back bearing)"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "10-chartwork-q-4",
+        "question": "You input a waypoint into your GPS from the chart. The GPS shows BRG 010\u00b0 DIST 6.7M. You plot the waypoint on the chart and measure the bearing as 012\u00b0 at 6.9M. What does this discrepancy suggest?",
+        "options": [
+          "The GPS is broken",
+          "You probably entered the wrong latitude or longitude",
+          "Tidal stream is affecting the display",
+          "The chart datum is incorrect"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "11-tides",
+    "number": 11,
+    "title": "Tides and Tidal Streams",
+    "description": "Tides are the regular rise and fall of sea level caused primarily by the gravitational pull of the Moon and Sun.",
+    "isSafetyCritical": true,
+    "summary": "Tides are the regular rise and fall of sea level caused primarily by the gravitational pull of the Moon and Sun. Understanding tidal heights is essential for calculating the depth of water over shoals, under bridges, and at harbour entrances.",
+    "keyTerms": [
+      {
+        "term": "Chart Datum (CD)",
+        "definition": "The datum below which depths are charted; approximates to Lowest Astronomical Tide"
+      },
+      {
+        "term": "LAT",
+        "definition": "Lowest Astronomical Tide \u2014 the lowest predicted tidal level under average meteorological conditions"
+      },
+      {
+        "term": "HAT",
+        "definition": "Highest Astronomical Tide \u2014 the highest predicted tidal level under average meteorological conditions"
+      },
+      {
+        "term": "MHWS",
+        "definition": "Mean High Water Springs \u2014 the average height of all spring high waters"
+      },
+      {
+        "term": "MHWN",
+        "definition": "Mean High Water Neaps \u2014 the average height of all neap high waters"
+      },
+      {
+        "term": "MLWN",
+        "definition": "Mean Low Water Neaps \u2014 the average height of all neap low waters"
+      },
+      {
+        "term": "MLWS",
+        "definition": "Mean Low Water Springs \u2014 the average height of all spring low waters"
+      },
+      {
+        "term": "HW",
+        "definition": "High Water \u2014 the highest level reached during a tidal cycle"
+      },
+      {
+        "term": "LW",
+        "definition": "Low Water \u2014 the lowest level reached during a tidal cycle"
+      },
+      {
+        "term": "Range",
+        "definition": "The difference between HW height and LW height for a given tidal cycle"
+      },
+      {
+        "term": "Spring tide",
+        "definition": "A tide with a greater-than-average range, occurring near new and full moon"
+      },
+      {
+        "term": "Neap tide",
+        "definition": "A tide with a smaller-than-average range, occurring near first and third quarter moon"
+      },
+      {
+        "term": "Tidal diamond",
+        "definition": "A magenta diamond symbol (\u25c7 + letter) on the chart referring to a tidal stream data table in the chart's title block"
+      },
+      {
+        "term": "Set",
+        "definition": "The direction in which the tidal stream is flowing (\u00b0True)"
+      },
+      {
+        "term": "Rate",
+        "definition": "The speed of the tidal stream in knots"
+      },
+      {
+        "term": "Height of tide",
+        "definition": "The vertical distance of the water surface above Chart Datum at any given time"
+      }
+    ],
+    "safetyNotes": [
+      "Tidal height calculations directly determine whether there is sufficient water under the keel. An error of even 0.5 m can result in grounding on a shallow bar, a drying rock, or in the approach to a drying harbour. Always verify calculations and allow an adequate safety margin.",
+      "Heights of lights on charts are above MHWS \u2014 not Chart Datum. Do not use light elevation as a guide to clearance under bridges or overhead cables; refer to the charted clearance height (which is above MHWS or HAT, as specified).",
+      "When calculating secondary port heights, interpolation between tabulated differences is required when the standard port HW time falls between reference times. Failure to interpolate correctly will produce an incorrect height of tide.",
+      "Tidal stream strength affects all aspects of passage planning: failing to allow for a foul stream can leave a vessel short of a destination at nightfall or in deteriorating weather, or can set it onto a lee shore or into a hazardous area."
+    ],
+    "flashcards": [
+      {
+        "id": "11-tides-fc-0",
+        "front": "What is the rule of twelfths?",
+        "back": "The tide rises or falls approximately 1/12, 2/12, 3/12, 3/12, 2/12, 1/12 of the total range in each successive hour from LW to HW. The tide moves fastest in the middle two hours."
+      },
+      {
+        "id": "11-tides-fc-1",
+        "front": "How do you calculate the depth of water over a charted shoal at a given time?",
+        "back": "Depth of water = charted depth + height of tide. (For a drying feature: depth of water = height of tide \u2212 drying height.)"
+      },
+      {
+        "id": "11-tides-fc-2",
+        "front": "What is the difference between a standard port and a secondary port?",
+        "back": "A standard port has full daily tide tables. A secondary port does not \u2014 you apply time and height differences (from an almanac) to the nearest standard port to find its tidal information."
+      },
+      {
+        "id": "11-tides-fc-3",
+        "front": "How do you determine whether conditions are springs or neaps?",
+        "back": "Calculate the range (HW height \u2212 LW height) and compare with the mean spring range and mean neap range printed on the tidal curve for that port."
+      },
+      {
+        "id": "11-tides-fc-4",
+        "front": "What information does a tidal diamond table give you?",
+        "back": "For each hour before and after HW at a reference port: the direction (\u00b0T) and rate (knots) of the tidal stream at that position, for both spring and neap conditions."
+      },
+      {
+        "id": "11-tides-fc-5",
+        "front": "What is the reference datum for light elevation on a chart, and how does it differ from Chart Datum?",
+        "back": "Light elevation is given above MHWS (Mean High Water Springs). Chart Datum is approximately LAT \u2014 well below MHWS. They are different references and must not be confused."
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "11-tides-q-0",
+        "question": "Q: At a given time the height of tide is 3.2 m. The chart shows a drying height of 1.4 m for a rock. Is the rock covered or uncovered, and by how much water?",
+        "options": [
+          "Uncovered \u2014 the rock dries 1.4 m above the surface",
+          "Covered by 1.8 m of water",
+          "Covered by 4.6 m of water",
+          "Covered by 1.4 m of water"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "11-tides-q-1",
+        "question": "When should you use the solid curve (rather than the dotted curve) on a tidal curve diagram?",
+        "options": [
+          "For neap tides",
+          "For spring tides",
+          "When the range is less than the mean range",
+          "At all times unless the port is a secondary port"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "11-tides-q-2",
+        "question": "A tidal stream arrow on the chart shows the figures 14,28. What do these numbers represent?",
+        "options": [
+          "Direction 14\u00b0, range 28 miles",
+          "Spring rate 1.4 kn, neap rate 2.8 kn",
+          "Spring rate 14 kn, neap rate 28 kn",
+          "HW \u221214 hours, HW +28 minutes"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "11-tides-q-3",
+        "question": "You need to find the height of tide at 0820 at Plymouth. Which instrument / publication would you use?",
+        "options": [
+          "The compass rose on the chart",
+          "A tidal stream atlas",
+          "The Plymouth tidal curve, using the day's HW and LW heights from the tide tables",
+          "The tidal diamond table on the chart"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "11-tides-q-4",
+        "question": "HW at a standard port is 5.6 m, LW is 0.8 m. The mean spring range for that port is 4.8 m and mean neap range is 2.4 m. Is today's tide closer to springs or neaps?",
+        "options": [
+          "Neaps \u2014 the range of 4.8 m equals the mean spring range exactly",
+          "Springs \u2014 the range of 4.8 m matches the mean spring range",
+          "Neaps \u2014 the range of 4.8 m is midway between the two",
+          "Cannot be determined without checking the moon phase"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "12-visual-aids-buoyage",
+    "number": 12,
+    "title": "Visual Aids to Navigation \u2014 Lighthouse and Beacon Light Characteristics, IALA Buoyage System",
+    "description": "The IALA Maritime Buoyage System divides the world into two regions.",
+    "isSafetyCritical": true,
+    "summary": "The IALA Maritime Buoyage System divides the world into two regions. Region A covers Europe, Africa, Russia, India, Australia, and New Zealand; Region B covers the Americas, Japan, South Korea, the Philippines, and Canada.",
+    "keyTerms": [
+      {
+        "term": "IALA Region A",
+        "definition": "Buoyage region covering Europe, Africa, Russia, India, Australia, New Zealand \u2014 red to port"
+      },
+      {
+        "term": "IALA Region B",
+        "definition": "Buoyage region covering the Americas, Japan, South Korea, Philippines \u2014 green to port (reversed)"
+      },
+      {
+        "term": "Lateral mark",
+        "definition": "A buoy or beacon marking the sides of a navigable channel; colour and shape depend on IALA region"
+      },
+      {
+        "term": "Cardinal mark",
+        "definition": "A black-and-yellow mark indicating the safe side to pass relative to a danger; four types: N, S, E, W"
+      },
+      {
+        "term": "Isolated danger mark",
+        "definition": "A black-and-red mark placed over a danger surrounded by navigable water; topmark two black spheres"
+      },
+      {
+        "term": "Safe water mark",
+        "definition": "A red-and-white vertically striped mark indicating navigable water all around; used as fairway/landfall buoy"
+      },
+      {
+        "term": "Special mark",
+        "definition": "A yellow mark indicating a special area or feature not used for general navigation"
+      },
+      {
+        "term": "Emergency wreck marking buoy",
+        "definition": "A blue-and-yellow vertically striped mark deployed over a newly discovered uncharted wreck"
+      },
+      {
+        "term": "Preferred channel mark",
+        "definition": "A junction mark with Fl(2+1) light indicating the principal (preferred) channel at a bifurcation"
+      },
+      {
+        "term": "Light period",
+        "definition": "The time in seconds for one complete cycle of a light characteristic, e.g. \"Fl G 5s\" has a 5-second period"
+      },
+      {
+        "term": "Sector light",
+        "definition": "A light exhibiting different colours in different arcs; used to define safe/dangerous approach sectors"
+      },
+      {
+        "term": "Leading lights",
+        "definition": "Two lights arranged so vertical alignment places the vessel on the correct leading line into harbour"
+      },
+      {
+        "term": "Topmark",
+        "definition": "A distinctive shape fixed to the top of a buoy or beacon to aid daytime identification"
+      },
+      {
+        "term": "Direction of buoyage",
+        "definition": "The conventional direction in which lateral marks are assigned: generally from seaward into harbour"
+      },
+      {
+        "term": "Q (Quick)",
+        "definition": "Light rhythm of 50\u201379 flashes per minute; used on cardinal marks"
+      },
+      {
+        "term": "VQ (Very Quick)",
+        "definition": "Light rhythm of 80\u2013159 flashes per minute; used on cardinal marks"
+      }
+    ],
+    "safetyNotes": [
+      "Region B reversal \u2014 critical hazard: In IALA Region B (Americas, Japan, South Korea, Philippines), the lateral mark colours are reversed relative to Region A. A navigator trained in Region A who treats red marks as port-hand and green as starboard-hand in Region B waters will be navigating on the wrong side of every channel. Always confirm the applicable IALA region before entering unfamiliar waters.",
+      "Cardinal mark confusion \u2014 South vs West: Both South and West cardinals show yellow/black banding. The distinguishing feature at night is the long flash (LFl) appended to the South cardinal's six quick flashes. Confusing the two could lead a vessel toward danger rather than away from it.",
+      "Isolated danger mark \u2014 do not approach: The isolated danger mark is placed directly over the danger. \"Navigable water all around\" means the surrounding water is clear, not that the mark itself is safe to approach. Pass well clear.",
+      "Topmarks degraded by weather: Weed, guano, and solar panels can obscure or alter the appearance of topmarks in real conditions. Do not rely solely on topmark identification; cross-check with light characteristics and chart.",
+      "Emergency wreck marking buoy \u2014 not on chart: By definition, an emergency wreck marking buoy marks a danger that is not yet charted. If one is encountered, the wreck beneath or nearby is uncharted and the immediate area should be avoided.",
+      "Fl(2+1) reserved for preferred channel marks: The composite group flashing rhythm is used exclusively for junction marks. Any other mark showing Fl(2+1) would be anomalous; investigate before proceeding."
+    ],
+    "flashcards": [
+      {
+        "id": "12-visual-aids-buoyage-fc-0",
+        "front": "What colour, shape, and light does a port-hand lateral mark show in IALA Region A?",
+        "back": "Red, can/pillar/spar, any red rhythm except Fl(2+1)"
+      },
+      {
+        "id": "12-visual-aids-buoyage-fc-1",
+        "front": "What colour, shape, and light does a starboard-hand lateral mark show in IALA Region A?",
+        "back": "Green, conical/pillar/spar, any green rhythm except Fl(2+1)"
+      },
+      {
+        "id": "12-visual-aids-buoyage-fc-2",
+        "front": "What is the light characteristic unique to preferred channel (junction) marks?",
+        "back": "Fl(2+1) \u2014 composite group flashing (two flashes, pause, one flash)"
+      },
+      {
+        "id": "12-visual-aids-buoyage-fc-3",
+        "front": "How do you identify a North cardinal mark by day and by night?",
+        "back": "Day \u2014 black over yellow body, two cones pointing up; Night \u2014 Q or VQ continuous quick white"
+      },
+      {
+        "id": "12-visual-aids-buoyage-fc-4",
+        "front": "What is the light characteristic of a South cardinal mark, and how does it differ from a West cardinal?",
+        "back": "South = Q(6)+LFl or VQ(6)+LFl \u2014 the long flash distinguishes it from West (Q(9) or VQ(9), no long flash)"
+      },
+      {
+        "id": "12-visual-aids-buoyage-fc-5",
+        "front": "What topmark is mandatory on an isolated danger mark, and what is its light?",
+        "back": "Two black spheres; Fl(2) white"
+      },
+      {
+        "id": "12-visual-aids-buoyage-fc-6",
+        "front": "What is the only mark that uses Mo(A) or LFl 10s as a light characteristic?",
+        "back": "Safe water mark (red and white vertical stripes)"
+      },
+      {
+        "id": "12-visual-aids-buoyage-fc-7",
+        "front": "What colour and light does a special mark show?",
+        "back": "Yellow body; yellow light, any rhythm (often Fl Y)"
+      },
+      {
+        "id": "12-visual-aids-buoyage-fc-8",
+        "front": "What is the key visual difference between an emergency wreck marking buoy and all other marks?",
+        "back": "Blue and yellow vertical stripes plus unique upright yellow cross topmark"
+      },
+      {
+        "id": "12-visual-aids-buoyage-fc-9",
+        "front": "When two leading lights are vertically aligned, what does this indicate?",
+        "back": "The vessel is on the correct leading line (on track)"
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "12-visual-aids-buoyage-q-0",
+        "question": "Q: In IALA Region A, what colour is the port-hand lateral mark?",
+        "options": [
+          "Green",
+          "Red",
+          "Yellow",
+          "Black and yellow"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "12-visual-aids-buoyage-q-1",
+        "question": "A buoy has black and yellow horizontal bands, two cones pointing downward, and shows Q(6)+LFl white. What type of mark is it?",
+        "options": [
+          "North cardinal",
+          "East cardinal",
+          "South cardinal",
+          "West cardinal"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "12-visual-aids-buoyage-q-2",
+        "question": "What is the unique light characteristic of a preferred channel (junction) mark?",
+        "options": [
+          "Fl(2) white",
+          "Fl(2+1) \u2014 composite group flashing",
+          "Mo(A) white",
+          "Q or VQ white"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "12-visual-aids-buoyage-q-3",
+        "question": "A vessel approaching a harbour in IALA Region B should treat lateral mark colours as:",
+        "options": [
+          "Identical to Region A \u2014 red to port, green to starboard",
+          "Reversed from Region A \u2014 green to port, red to starboard",
+          "All yellow",
+          "Only cardinal marks apply"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "12-visual-aids-buoyage-q-4",
+        "question": "What is the topmark of an isolated danger mark?",
+        "options": [
+          "Single red sphere",
+          "Two black spheres, one above the other",
+          "Yellow X (St Andrew's cross)",
+          "Two black cones pointing upward"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "12-visual-aids-buoyage-q-5",
+        "question": "A safe water mark can be identified by its:",
+        "options": [
+          "Black and red horizontal bands",
+          "All-yellow body with X topmark",
+          "Red and white vertical stripes with a red spherical topmark",
+          "Green and white horizontal bands"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "12-visual-aids-buoyage-q-6",
+        "question": "An emergency wreck marking buoy is deployed to mark:",
+        "options": [
+          "A permanent, charted navigational hazard",
+          "A newly discovered uncharted wreck awaiting permanent marking",
+          "The boundary of a military exercise area",
+          "A safe water fairway entrance"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "12-visual-aids-buoyage-q-7",
+        "question": "A sector light shows white to vessels in the safe sector and red in the danger sector. The characteristic is Iso.WR.4s 20m 10M/7M. What does \"Iso\" tell you?",
+        "options": [
+          "The light is fixed and continuous",
+          "The light flashes rapidly (50+ times per minute)",
+          "The periods of light and darkness are equal",
+          "The light occults (darkness shorter than light)"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "13-meteorology",
+    "number": 13,
+    "title": "Meteorology",
+    "description": "Understanding weather is fundamental to safe passage planning.",
+    "isSafetyCritical": true,
+    "summary": "Understanding weather is fundamental to safe passage planning. Day Skipper students must be able to obtain and interpret marine weather forecasts (including the Shipping Forecast), understand pressure systems, fronts, and their associated weather, interpret the Beaufort wind scale, recognise land and sea breeze effects, and understand the significance of deteriorating weather for a vessel underway.",
+    "keyTerms": [
+      {
+        "term": "Isobar",
+        "definition": "A line on a synoptic chart connecting points of equal atmospheric pressure"
+      },
+      {
+        "term": "Front",
+        "definition": "The boundary between two air masses of different temperature and humidity"
+      },
+      {
+        "term": "Warm front",
+        "definition": "The leading edge of a warm air mass advancing over colder air; shown as red line with semicircles"
+      },
+      {
+        "term": "Cold front",
+        "definition": "The leading edge of a cold air mass advancing under warm air; shown as blue line with triangles; brings squally weather"
+      },
+      {
+        "term": "Occlusion",
+        "definition": "A front formed when a cold front catches and lifts a warm front off the surface"
+      },
+      {
+        "term": "Trough",
+        "definition": "An elongated area of lower pressure extending from a depression; often associated with a line of cloud, showers, or squally winds"
+      },
+      {
+        "term": "Ridge",
+        "definition": "An elongated area of higher pressure between two depressions; typically brings a brief improvement"
+      },
+      {
+        "term": "Beaufort force",
+        "definition": "A standardised scale (0\u201312) describing wind speed and sea state"
+      },
+      {
+        "term": "Synoptic chart",
+        "definition": "A weather map showing isobars, fronts, and pressure systems at a given time"
+      },
+      {
+        "term": "Backing",
+        "definition": "Wind changing direction anticlockwise (e.g., NW to SW)"
+      },
+      {
+        "term": "Veering",
+        "definition": "Wind changing direction clockwise (e.g., NE to SE)"
+      },
+      {
+        "term": "Wind over tide",
+        "definition": "A condition where wind direction opposes the tidal stream direction, creating short steep dangerous waves"
+      }
+    ],
+    "safetyNotes": [
+      "Wind over tide (opposing wind and tidal stream) creates short, steep, breaking waves significantly more dangerous than the wind force alone would suggest. When wind is against a strong spring tide, even Force 4\u20135 can produce hazardous sea states. Plan passages to avoid wind-over-tide at key headlands or tidal gates.",
+      "At the first sign of deteriorating weather: obtain an updated forecast; consider altering course for a safe haven; inform crew; brief them on safety procedures; reduce sail early. It is always easier to make decisions early than in worsening conditions.",
+      "A gale warning (Force 6+) issued for a sea area means conditions are likely to be unsuitable for small craft. Day Skipper students should not put to sea when a gale warning is in force for their intended area."
+    ],
+    "flashcards": [
+      {
+        "id": "13-meteorology-fc-0",
+        "front": "In the Northern Hemisphere, which direction does wind circulate around a low pressure system, and which around a high?",
+        "back": "Low (depression): anticlockwise. High (anticyclone): clockwise."
+      },
+      {
+        "id": "13-meteorology-fc-1",
+        "front": "What are the Beaufort Force 5 characteristics?",
+        "back": "Fresh breeze, 17\u201321 knots; moderate waves with many white crests; sailing vessels should reef the mainsail."
+      },
+      {
+        "id": "13-meteorology-fc-2",
+        "front": "What is the difference between \"backing\" and \"veering\"?",
+        "back": "Backing = wind changing anticlockwise (e.g., NW \u2192 SW). Veering = wind changing clockwise (e.g., NE \u2192 SE)."
+      },
+      {
+        "id": "13-meteorology-fc-3",
+        "front": "What is the visibility category \"Poor\" in a shipping forecast?",
+        "back": "1,000 m to 2 nautical miles. (Fog = less than 1,000 m.)"
+      },
+      {
+        "id": "13-meteorology-fc-4",
+        "front": "What is \"wind over tide\" and why is it dangerous?",
+        "back": "When the wind opposes the tidal stream, creating short, steep waves out of proportion to the wind strength \u2014 more hazardous than equivalent wind-with-tide conditions."
+      },
+      {
+        "id": "13-meteorology-fc-5",
+        "front": "What triggers a gale warning?",
+        "back": "Average wind Force 6 or above, or gusts of 43\u201351 knots. Force 6 is sometimes called a \"yachtsman's gale\"."
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "13-meteorology-q-0",
+        "question": "Q: In the Northern Hemisphere, a depression is approaching from the west. As the warm front passes over your position, what typically happens to the wind direction?",
+        "options": [
+          "It backs (shifts anticlockwise)",
+          "It veers (shifts clockwise)",
+          "It remains steady",
+          "It increases to gale force"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "13-meteorology-q-1",
+        "question": "A weather forecast describes conditions as \"Imminent.\" How soon is the forecast event expected?",
+        "options": [
+          "More than 12 hours from the time of issue",
+          "Within 6\u201312 hours of issue",
+          "Within 6 hours of issue",
+          "Immediately, already occurring"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "13-meteorology-q-2",
+        "question": "Which Beaufort Force is associated with \"large waves, white foam crests\" and is the threshold usually described as \"Strong breeze\"?",
+        "options": [
+          "Force 5",
+          "Force 6",
+          "Force 7",
+          "Force 8"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "13-meteorology-q-3",
+        "question": "You are planning to enter a bay in the afternoon. The forecast shows a light northerly offshore wind, sunshine, and no frontal activity. What local weather effect should you anticipate?",
+        "options": [
+          "Land breeze \u2014 cool air flowing out to sea",
+          "Sea breeze \u2014 warm air rising over land, onshore flow up to Force 4",
+          "A trough bringing rain and backing winds",
+          "No local effect \u2014 the synoptic pattern dominates"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "13-meteorology-q-4",
+        "question": "Isobars are closely spaced on a synoptic chart. What does this indicate?",
+        "options": [
+          "A large high pressure system bringing settled weather",
+          "Light and variable winds",
+          "Strong winds in that area",
+          "Dense fog is likely"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "14-passage-planning",
+    "number": 14,
+    "title": "Passage Planning",
+    "description": "Passage planning is the process of preparing systematically for a voyage \u2014 from initial appraisal through to arrival.",
+    "isSafetyCritical": true,
+    "summary": "Passage planning is the process of preparing systematically for a voyage \u2014 from initial appraisal through to arrival. Good passage planning considers the navigational environment, weather, tidal windows, hazards, and contingency options.",
+    "keyTerms": [
+      {
+        "term": "Waypoint (WPT)",
+        "definition": "A position stored in the GPS, used to define the planned track"
+      },
+      {
+        "term": "Track",
+        "definition": "The planned line on the chart from departure to destination (or between waypoints)"
+      },
+      {
+        "term": "XTE",
+        "definition": "Cross-Track Error \u2014 the GPS-derived perpendicular distance the vessel is from the planned track"
+      },
+      {
+        "term": "ETA",
+        "definition": "Estimated Time of Arrival at a destination or waypoint"
+      },
+      {
+        "term": "ETD",
+        "definition": "Estimated Time of Departure"
+      },
+      {
+        "term": "ETE",
+        "definition": "Estimated Time En route"
+      },
+      {
+        "term": "Watch system",
+        "definition": "A rota system for dividing the crew into groups that take turns on deck, ensuring the vessel is always manned while some crew rest"
+      },
+      {
+        "term": "Deck log",
+        "definition": "The navigational record kept underway; records position, course, speed, log reading, weather, and significant events"
+      },
+      {
+        "term": "Clearing bearing",
+        "definition": "A bearing that, when maintained (e.g., \"not less than 043\u00b0M\"), keeps the vessel clear of a specific hazard"
+      },
+      {
+        "term": "Transit",
+        "definition": "Two charted objects observed in line from the vessel; provides an accurate position line or turning point"
+      },
+      {
+        "term": "Pilotage",
+        "definition": "Inshore navigation using visual references (transits, buoys, clearing bearings, depth contours)"
+      }
+    ],
+    "safetyNotes": [
+      "A proper look-out must be maintained at all times underway. COLREGS Rule 5: \"Every vessel shall at all times maintain a proper look-out by sight and hearing as well as by all available means appropriate in the prevailing circumstances and conditions so as to make a full appraisal of the situation and of the risk of collision.\" [colregs-irpcs-text.md, Rule 5]",
+      "Never place a waypoint directly on a hazard \u2014 always offset it to pass safely. Steering direct to a waypoint without prior cross-tide calculation can set the vessel toward the hazard.",
+      "Always obtain an up-to-date weather forecast before departure and at regular intervals during a passage. Be prepared to divert to a safe haven if conditions deteriorate.",
+      "Wind over tide at harbour entrances, bars, and tidal gates can create steep, dangerous seas even in moderate wind strengths. Plan passage timing to avoid these conditions."
+    ],
+    "flashcards": [
+      {
+        "id": "14-passage-planning-fc-0",
+        "front": "What are the six pilotage techniques described in the RYA Day Skipper material?",
+        "back": "(1) Transits; (2) following depth contours; (3) back bearings; (4) clearing bearings; (5) bearing and distance from a mark; (6) turning points defined by a bearing."
+      },
+      {
+        "id": "14-passage-planning-fc-1",
+        "front": "What is a clearing bearing and how is it used?",
+        "back": "A bearing that, when maintained (e.g., \"keep not less than 043\u00b0M\"), ensures the vessel remains clear of a specified hazard. Two clearing bearings can define a safe corridor between two hazards."
+      },
+      {
+        "id": "14-passage-planning-fc-2",
+        "front": "What should you check immediately after entering a waypoint into a GPS?",
+        "back": "Compare the bearing and distance shown by the GPS with the bearing and distance you have measured on the chart. Any discrepancy means the waypoint was probably entered incorrectly."
+      },
+      {
+        "id": "14-passage-planning-fc-3",
+        "front": "Why should bearings in a pilotage plan be written in Magnetic or Compass rather than True?",
+        "back": "Because the skipper and helmsman use these bearings directly on deck with the ship's compass or hand-bearing compass, which work in Magnetic or Compass \u2014 converting True at sea under pressure leads to errors."
+      },
+      {
+        "id": "14-passage-planning-fc-4",
+        "front": "Name four things a Day Skipper should plan for when making a pilotage plan.",
+        "back": "Any four from: rocks exposed at different states of tide; shoals and shallows; shipping channels; chain ferries; tidal effect on track; harbour bylaws; speed restrictions in channels; small craft channels; change of buoyage system."
+      },
+      {
+        "id": "14-passage-planning-fc-5",
+        "front": "What does XTE stand for, and what does it tell you?",
+        "back": "Cross-Track Error \u2014 the perpendicular distance from the vessel's GPS position to the planned track. A large XTE means the vessel has been pushed off track, e.g., by tide or leeway."
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "14-passage-planning-q-0",
+        "question": "Q: Which of the following is NOT a recognised pilotage technique?",
+        "options": [
+          "Following a depth contour",
+          "Using a transit",
+          "Calculating leeway from the Beaufort scale",
+          "Maintaining a clearing bearing"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "14-passage-planning-q-1",
+        "question": "A pilotage plan note reads \"Turn when chimney bears 320\u00b0(T)\". What type of technique is this?",
+        "options": [
+          "Clearing bearing",
+          "Turning point defined by a bearing on a charted object",
+          "Transit",
+          "Back bearing"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "14-passage-planning-q-2",
+        "question": "You enter a harbour waypoint into your GPS from the chart. The GPS shows bearing 205\u00b0 and distance 4.2M. On the chart you measure the bearing as 195\u00b0 and distance 4.2M. What is the most likely cause?",
+        "options": [
+          "The tidal stream is affecting the GPS display",
+          "You have entered the wrong longitude or latitude",
+          "Magnetic variation is not applied in the GPS",
+          "The chart datum does not match the GPS datum"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "14-passage-planning-q-3",
+        "question": "What does a clearing bearing of \"not less than 043\u00b0(M)\" mean in practice?",
+        "options": [
+          "The vessel must steer 043\u00b0(M) to be safe",
+          "As long as the bearing to the charted mark reads 043\u00b0M or more, the vessel is clear of the hazard",
+          "The vessel must never steer less than 043\u00b0M",
+          "043\u00b0(M) is the true bearing of the safe track"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "14-passage-planning-q-4",
+        "question": "When planning a coastal passage, which of the following best describes when to plan for a fair tidal stream?",
+        "options": [
+          "At the start of the passage only",
+          "Particularly at tidal gates, harbour bars, and headlands where the stream is strongest",
+          "Only when forecasting spring tides",
+          "Only when the passage exceeds 20 miles"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "15-restricted-visibility",
+    "number": 15,
+    "title": "Navigation in Restricted Visibility",
+    "description": "Restricted visibility occurs whenever visibility is reduced by fog, mist, falling snow, heavy rain, sandstorms, or any other similar cause.",
+    "isSafetyCritical": true,
+    "summary": "Restricted visibility occurs whenever visibility is reduced by fog, mist, falling snow, heavy rain, sandstorms, or any other similar cause. It is one of the most hazardous conditions a skipper can encounter because: - Other vessels may not be seen until dangerously close.",
+    "keyTerms": [
+      {
+        "term": "Restricted visibility",
+        "definition": "Any condition in which visibility is reduced by fog, mist, falling snow, heavy rain, sandstorms, or any other similar cause."
+      },
+      {
+        "term": "Fog signal",
+        "definition": "A sound signal made at regular prescribed intervals by a vessel in or near an area of restricted visibility, to warn other vessels of its presence."
+      },
+      {
+        "term": "Safe speed",
+        "definition": "A speed at which the vessel can take proper and effective action to avoid collision and stop within the distance appropriate to the prevailing circumstances and visibility."
+      },
+      {
+        "term": "Minimum steerage way",
+        "definition": "The lowest speed at which a vessel retains directional control. In restricted visibility, a vessel hearing a fog signal forward of the beam must reduce to this speed."
+      },
+      {
+        "term": "Radar",
+        "definition": "Radio Detection And Ranging \u2014 an electronic instrument that detects targets by sending and receiving reflected radio pulses. Essential for collision avoidance in restricted visibility."
+      },
+      {
+        "term": "ARPA",
+        "definition": "Automatic Radar Plotting Aid \u2014 a radar function that automatically tracks targets and calculates their course, speed, and closest point of approach (CPA)."
+      },
+      {
+        "term": "CPA",
+        "definition": "Closest Point of Approach \u2014 the nearest distance a target vessel will reach relative to own vessel if both maintain current courses and speeds. Used in radar collision avoidance."
+      },
+      {
+        "term": "Estimated Position (EP)",
+        "definition": "The vessel's best estimate of its position based on dead reckoning from the last known fix, accounting for course, speed, and tidal stream. More uncertain than a fix; critical to maintain in fog."
+      }
+    ],
+    "safetyNotes": [
+      "In fog, do NOT increase speed to \"get clear quickly\" \u2014 this is one of the most common and dangerous errors. Speed must be REDUCED.",
+      "Never assume that because you cannot see another vessel, it cannot see or hit you \u2014 a large ship may appear within seconds of its fog signal being audible.",
+      "Sound signals in fog are mandatory. Failing to make fog signals, or making them incorrectly, can contribute directly to a collision.",
+      "A radar is only as useful as the person interpreting it \u2014 a beginner should seek additional training in radar collision avoidance (ARPA and plotting).",
+      "Do NOT alter course to port for a vessel detected forward of the beam in restricted visibility (Rule 19 prohibition).",
+      "If in any doubt about safety in fog, the prudent action is to anchor clear of shipping lanes, make the correct sound signals, and wait for conditions to improve."
+    ],
+    "flashcards": [
+      {
+        "id": "15-restricted-visibility-fc-0",
+        "front": "What does IRPCS Rule 19 govern?",
+        "back": "The conduct of vessels in or near areas of restricted visibility. It applies when vessels are not in sight of one another."
+      },
+      {
+        "id": "15-restricted-visibility-fc-1",
+        "front": "What is the first action a skipper should take when entering fog?",
+        "back": "Reduce speed, post a dedicated forward look-out, switch on navigation lights, begin making fog signals, brief crew, prepare emergency equipment, and establish the vessel's position."
+      },
+      {
+        "id": "15-restricted-visibility-fc-2",
+        "front": "If you hear a fog signal forward of the beam, what should you do?",
+        "back": "Reduce speed to minimum steerage way and navigate with extreme caution until the risk of collision is past."
+      },
+      {
+        "id": "15-restricted-visibility-fc-3",
+        "front": "What day shape does a vessel display when at anchor?",
+        "back": "A black ball (one ball, forward, where it can best be seen)."
+      },
+      {
+        "id": "15-restricted-visibility-fc-4",
+        "front": "Why should you NOT rely solely on visual watch in fog?",
+        "back": "Visibility may be insufficient to see another vessel until it is too close to avoid; radar, sound, and radio monitoring must supplement visual watch."
+      },
+      {
+        "id": "15-restricted-visibility-fc-5",
+        "front": "What is the fog sound signal for a power-driven vessel making way?",
+        "back": "One prolonged blast at intervals of not more than 2 minutes."
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "15-restricted-visibility-q-0",
+        "question": "Under IRPCS Rule 19, when you detect another vessel on radar forward of the beam in restricted visibility, what action is prohibited?",
+        "options": [
+          "Reducing speed",
+          "Altering course to port",
+          "Altering course to starboard",
+          "Sounding fog signals"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "15-restricted-visibility-q-1",
+        "question": "When must navigation lights be switched on?",
+        "options": [
+          "Only between sunset and sunrise",
+          "Only when in a shipping lane",
+          "In restricted visibility at any time of day, as well as between sunset and sunrise",
+          "Only when at anchor"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "15-restricted-visibility-q-2",
+        "question": "Which of the following best describes \"safe speed\" in restricted visibility?",
+        "options": [
+          "The vessel's maximum speed, to clear the area quickly",
+          "A speed at which the vessel can stop within the range of visibility and take effective action to avoid collision",
+          "Harbour speed (5 knots or less)",
+          "Any speed, provided navigation lights are on"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "15-restricted-visibility-q-3",
+        "question": "A sailing vessel of 12 m is motoring in fog. Which combination of lights must she display at night?",
+        "options": [
+          "Tricolour masthead light only",
+          "Tricolour masthead light AND steaming light",
+          "Steaming light (masthead), sidelights, and sternlight",
+          "Sidelights only"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "16-pilotage",
+    "number": 16,
+    "title": "Pilotage \u2014 Transits, Leading Lines, IALA Buoyage, Sailing Directions, Harbour Entry",
+    "description": "Pilotage is the art of inshore navigation using visual references \u2014 marks, transits, depth contours, bearings, and buoys \u2014 to navigate safely along the coast and in and out of harbour.",
+    "isSafetyCritical": true,
+    "summary": "Pilotage is the art of inshore navigation using visual references \u2014 marks, transits, depth contours, bearings, and buoys \u2014 to navigate safely along the coast and in and out of harbour. Because the navigator is close to hazards, good advance planning is essential: a well-constructed pilotage plan allows the skipper to navigate from the deck without having to go below to work out the next move.",
+    "keyTerms": [
+      {
+        "term": "Transit",
+        "definition": "Two charted objects observed in line from a vessel, defining a precise bearing line on the chart"
+      },
+      {
+        "term": "Leading line",
+        "definition": "A transit specifically designed to guide a vessel safely through a channel or harbour entrance; often marked by official leading marks or lights"
+      },
+      {
+        "term": "Clearing bearing",
+        "definition": "A bearing of a charted object that, when maintained at not less than (or not more than) a stated value, keeps the vessel clear of a specific danger"
+      },
+      {
+        "term": "Pilotage plan",
+        "definition": "A written sequential record of marks, bearings, depths, and turning actions for a passage through pilotage waters, prepared in advance"
+      },
+      {
+        "term": "Waypoint",
+        "definition": "A defined position along a pilotage route at which the navigator expects a specific action (course change, mark identification, bearing check)"
+      },
+      {
+        "term": "Back bearing",
+        "definition": "A compass bearing taken to a charted object astern, used as a position check or to confirm the vessel remains on track"
+      },
+      {
+        "term": "Contour",
+        "definition": "A line of equal charted depth; can be followed as a track or used to obtain a position line via the echo sounder"
+      },
+      {
+        "term": "Direction of buoyage",
+        "definition": "The conventional direction in which IALA lateral marks are assigned; generally from seaward toward harbour"
+      },
+      {
+        "term": "Height of tide",
+        "definition": "The vertical distance of the water surface above chart datum at a given time; added to charted depth to determine actual depth"
+      }
+    ],
+    "safetyNotes": [
+      "Never go below during pilotage: A core principle is deck-based navigation. Going below to consult the chart removes the navigator's situational awareness precisely when it is most needed. All plan elements must be pre-prepared and accessible on deck.",
+      "Positive identification before acting: Do not turn or alter course on a buoy until it has been positively identified by colour, shape, topmark, and light characteristic. Acting on the wrong mark in a buoyed channel can lead a vessel onto the hazard the mark was warning about.",
+      "Region A / Region B lateral mark reversal: A vessel transiting from European (Region A) to American or Japanese (Region B) waters, or vice versa, must reverse its treatment of all lateral marks. Misidentifying the applicable region puts the vessel on the wrong side of every channel mark.",
+      "Tidal clearance is time-critical: A positive clearance calculation applies only at the time it was computed. If the pilotage is delayed, recalculate bar clearance for the revised time of passage \u2014 particularly on a falling tide.",
+      "Contour following requires continuous echo-sounder watch: Tidal height changes the actual depth continuously. A contour followed at HW may not be followable at LW. Always apply the predicted height of tide to the charted depth before committing to a contour track.",
+      "Shipping channels and chain ferries: Vessels in confined waters may be constrained and unable to manoeuvre. A pilotage plan must identify any crossing points with commercial traffic and decide on timing and VHF contact strategy before entering the channel. Rule 9 (Narrow Channels) requires keeping to the starboard side of the channel and not impeding vessels that can only navigate safely within it. [colregs-irpcs-text.md, Rule 9]"
+    ],
+    "flashcards": [
+      {
+        "id": "16-pilotage-fc-0",
+        "front": "What is a transit, and why is it the most accurate pilotage technique?",
+        "back": "Two charted objects in line; no instrument needed \u2014 when objects are aligned the vessel is exactly on the transit bearing"
+      },
+      {
+        "id": "16-pilotage-fc-1",
+        "front": "When using leading lights, what does vertical alignment of the upper and lower lights indicate?",
+        "back": "The vessel is on the correct leading line (on track)"
+      },
+      {
+        "id": "16-pilotage-fc-2",
+        "front": "What is a clearing bearing, and how is it used?",
+        "back": "A bearing of a charted object that, when maintained not less than (or not more than) a given value, keeps the vessel clear of a danger"
+      },
+      {
+        "id": "16-pilotage-fc-3",
+        "front": "List the six elements of a pilotage plan as shown in the RYA training material.",
+        "back": "(1) Transit, (2) Depth contour, (3) Clearance over bar, (4) Positive ID of IALA marks, (5) Back bearing, (6) Clearing lines"
+      },
+      {
+        "id": "16-pilotage-fc-4",
+        "front": "Why should a pilotage plan be written on a notepad rather than kept only on the chart?",
+        "back": "So the skipper can navigate from the deck without going below, keeping a visual watch at all times"
+      },
+      {
+        "id": "16-pilotage-fc-5",
+        "front": "In IALA Region A, a pilotage plan directs you to \"leave the green conical buoy to starboard.\" What does this tell you about your direction of travel?",
+        "back": "You are entering harbour (or proceeding upstream) in Region A"
+      },
+      {
+        "id": "16-pilotage-fc-6",
+        "front": "How is minimum depth clearance over a bar calculated?",
+        "back": "Charted depth plus height of tide at time of passage (or, if given as a net calculation: height of tide minus any safety margin)"
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "16-pilotage-q-0",
+        "question": "Q: Which of the following best describes a transit in pilotage?",
+        "options": [
+          "A compass bearing taken to a single charted object",
+          "Two charted objects observed in line from the vessel's position",
+          "A depth contour followed on the echo sounder",
+          "A waypoint entered into the chart plotter"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "16-pilotage-q-1",
+        "question": "A vessel approaching harbour in IALA Region A should keep green conical buoys to:",
+        "options": [
+          "Port",
+          "Either side \u2014 colour does not matter",
+          "Starboard",
+          "The vessel's centreline"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "16-pilotage-q-2",
+        "question": "When the upper leading light appears to the right of the lower leading light, the vessel is:",
+        "options": [
+          "On the correct leading line",
+          "Too far to port",
+          "Too far to starboard",
+          "Approaching from astern"
+        ],
+        "correctIndex": 1,
+        "explanation": "The correct answer is (b)."
+      },
+      {
+        "id": "16-pilotage-q-3",
+        "question": "A clearing bearing of \"not less than 043\u00b0(M)\" on a charted lighthouse means:",
+        "options": [
+          "Steer 043\u00b0(M) to avoid the danger",
+          "Keep the lighthouse bearing less than 043\u00b0(M)",
+          "Keep the lighthouse bearing at or greater than 043\u00b0(M) to remain clear of the danger",
+          "The lighthouse is 043\u00b0(M) from the danger"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "16-pilotage-q-4",
+        "question": "Which of the following items should be included in a pilotage plan?",
+        "options": [
+          "Transit bearings and turning points only",
+          "Only the compass course to steer",
+          "Transits, contour depths, tidal bar clearance, IALA mark identification, back bearings, and clearing bearings",
+          "GPS waypoints alone are sufficient"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  },
+  {
+    "id": "17-marine-environment",
+    "number": 17,
+    "title": "Marine Environment",
+    "description": "This topic covers the responsibilities of the skipper and crew to protect the marine environment: pollution prevention (oil, garbage, sewage), environmentally responsible anchoring, and an awareness of the international framework (MARPOL) governing vessel discharges.",
+    "isSafetyCritical": true,
+    "summary": "This topic covers the responsibilities of the skipper and crew to protect the marine environment: pollution prevention (oil, garbage, sewage), environmentally responsible anchoring, and an awareness of the international framework (MARPOL) governing vessel discharges. The Day Skipper syllabus expects a working knowledge of what is and is not permitted to discharge at sea under UK/international law.",
+    "keyTerms": [
+      {
+        "term": "MARPOL",
+        "definition": "International Convention for the Prevention of Pollution from Ships; governs vessel discharge rules"
+      },
+      {
+        "term": "Annex V",
+        "definition": "MARPOL Annex V \u2014 covers garbage disposal regulations"
+      },
+      {
+        "term": "Oily bilge water",
+        "definition": "Bilge water contaminated with oil or fuel residue \u2014 must not be pumped overboard"
+      },
+      {
+        "term": "Sewage",
+        "definition": "Human waste \u2014 discharge regulations vary by distance from shore and jurisdiction"
+      },
+      {
+        "term": "Holding tank",
+        "definition": "Onboard tank for retaining sewage until it can be properly discharged ashore or at sea in permitted areas"
+      }
+    ],
+    "safetyNotes": [
+      "Discharging plastics overboard is prohibited at all times and in all sea areas under MARPOL Annex V \u2014 this is an absolute rule with no distance-from-shore exception. MCQ candidates on this topic are marked [UNVERIFIED] pending primary source confirmation; do not include in assessments until verified against the MARPOL Annex V text.",
+      "Oily bilge water discharge overboard is prohibited under MARPOL Annex I for recreational craft. The correct procedure is retention onboard and disposal ashore at a licensed facility. As with plastics, the MCQ on this topic is marked [UNVERIFIED]; do not use in assessments until verified.",
+      "MARPOL Special Areas (e.g., North Sea, Baltic Sea, Mediterranean) impose stricter discharge restrictions than the general rules. This content is unverified from available transcripts and must not be included in assessment questions without primary source confirmation.",
+      "Violations of MARPOL or domestic pollution regulations can result in criminal prosecution and significant fines. Instructors should present these as legal obligations, not just best-practice guidance.",
+      "UK domestic sewage discharge regulations for pleasure vessels (Merchant Shipping (Prevention of Pollution by Sewage and Garbage from Ships) Regulations 2020) are unverified from available transcripts \u2014 see Unverified / Needs Citation section."
+    ],
+    "flashcards": [
+      {
+        "id": "17-marine-environment-fc-0",
+        "front": "What international convention governs pollution prevention from vessels?",
+        "back": "MARPOL \u2014 the International Convention for the Prevention of Pollution from Ships"
+      },
+      {
+        "id": "17-marine-environment-fc-1",
+        "front": "Which MARPOL Annex covers garbage disposal from vessels?",
+        "back": "Annex V"
+      },
+      {
+        "id": "17-marine-environment-fc-2",
+        "front": "May oily bilge water be pumped overboard?",
+        "back": "No \u2014 it must not be discharged overboard; it must be retained and disposed of ashore or via a licensed waste facility"
+      },
+      {
+        "id": "17-marine-environment-fc-3",
+        "front": "What environmental consideration should guide anchor site selection?",
+        "back": "Avoid anchoring on sensitive or protected seabed habitats; prefer sand or mud over reefs"
+      },
+      {
+        "id": "17-marine-environment-fc-4",
+        "front": "What is a holding tank used for?",
+        "back": "Retaining sewage onboard for disposal in permitted areas or ashore, rather than discharging it directly into the sea"
+      }
+    ],
+    "mcqQuestions": [
+      {
+        "id": "17-marine-environment-q-0",
+        "question": "Q: Which MARPOL Annex specifically governs the disposal of garbage (including plastics) from vessels?",
+        "options": [
+          "Annex I",
+          "Annex II",
+          "Annex IV",
+          "Annex V"
+        ],
+        "correctIndex": 3,
+        "explanation": "The correct answer is (d)."
+      },
+      {
+        "id": "17-marine-environment-q-1",
+        "question": "When is it generally prohibited to discharge plastics overboard from a recreational vessel?",
+        "options": [
+          "Only within 3 nautical miles of land",
+          "Only in port",
+          "At all times, regardless of location",
+          "Only in designated special areas"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "17-marine-environment-q-2",
+        "question": "From an environmental standpoint, which seabed type is preferable for anchoring?",
+        "options": [
+          "Rock",
+          "Coral",
+          "Sand or mud",
+          "Shingle"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      },
+      {
+        "id": "17-marine-environment-q-3",
+        "question": "What should a skipper do with oily bilge water accumulated in the bilge?",
+        "options": [
+          "Pump it overboard if more than 3nm offshore",
+          "Dilute it with fresh water before pumping",
+          "Retain it and dispose of it ashore at a proper facility",
+          "Filter it through an oily water separator and pump overboard at any location"
+        ],
+        "correctIndex": 2,
+        "explanation": "The correct answer is (c)."
+      }
+    ],
+    "navTools": []
+  }
+]

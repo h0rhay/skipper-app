@@ -1,0 +1,1 @@
+export { SafetyNote } from './SafetyNote'

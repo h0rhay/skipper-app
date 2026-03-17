@@ -15,7 +15,7 @@ export function HomeScreenComponent() {
   const navigate = useNavigate()
 
   return (
-    <AppShell tabBar={<TabBar active="home" />}>
+    <AppShell tabBar={<TabBar active="study" />}>
       <div className={styles.content}>
         <h1 className={styles.hero}>Day Skipper<br />Theory</h1>
         <OverallProgressCard />

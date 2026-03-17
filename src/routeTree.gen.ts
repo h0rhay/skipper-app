@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as QuizIndexRouteImport } from './routes/quiz/index'
 import { Route as ProgressIndexRouteImport } from './routes/progress/index'
 import { Route as ProgressTopicIdRouteImport } from './routes/progress/$topicId'
 import { Route as TopicsTopicIdIndexRouteImport } from './routes/topics/$topicId/index'
@@ -22,6 +23,11 @@ import { Route as TopicsTopicIdModeCompleteRouteImport } from './routes/topics/$
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuizIndexRoute = QuizIndexRouteImport.update({
+  id: '/quiz/',
+  path: '/quiz/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProgressIndexRoute = ProgressIndexRouteImport.update({
@@ -70,6 +76,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/progress/$topicId': typeof ProgressTopicIdRoute
   '/progress/': typeof ProgressIndexRoute
+  '/quiz/': typeof QuizIndexRoute
   '/topics/$topicId/facts': typeof TopicsTopicIdFactsRoute
   '/topics/$topicId/flashcards': typeof TopicsTopicIdFlashcardsRoute
   '/topics/$topicId/mcq': typeof TopicsTopicIdMcqRoute
@@ -81,6 +88,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/progress/$topicId': typeof ProgressTopicIdRoute
   '/progress': typeof ProgressIndexRoute
+  '/quiz': typeof QuizIndexRoute
   '/topics/$topicId/facts': typeof TopicsTopicIdFactsRoute
   '/topics/$topicId/flashcards': typeof TopicsTopicIdFlashcardsRoute
   '/topics/$topicId/mcq': typeof TopicsTopicIdMcqRoute
@@ -93,6 +101,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/progress/$topicId': typeof ProgressTopicIdRoute
   '/progress/': typeof ProgressIndexRoute
+  '/quiz/': typeof QuizIndexRoute
   '/topics/$topicId/facts': typeof TopicsTopicIdFactsRoute
   '/topics/$topicId/flashcards': typeof TopicsTopicIdFlashcardsRoute
   '/topics/$topicId/mcq': typeof TopicsTopicIdMcqRoute
@@ -106,6 +115,7 @@ export interface FileRouteTypes {
     | '/'
     | '/progress/$topicId'
     | '/progress/'
+    | '/quiz/'
     | '/topics/$topicId/facts'
     | '/topics/$topicId/flashcards'
     | '/topics/$topicId/mcq'
@@ -117,6 +127,7 @@ export interface FileRouteTypes {
     | '/'
     | '/progress/$topicId'
     | '/progress'
+    | '/quiz'
     | '/topics/$topicId/facts'
     | '/topics/$topicId/flashcards'
     | '/topics/$topicId/mcq'
@@ -128,6 +139,7 @@ export interface FileRouteTypes {
     | '/'
     | '/progress/$topicId'
     | '/progress/'
+    | '/quiz/'
     | '/topics/$topicId/facts'
     | '/topics/$topicId/flashcards'
     | '/topics/$topicId/mcq'
@@ -140,6 +152,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ProgressTopicIdRoute: typeof ProgressTopicIdRoute
   ProgressIndexRoute: typeof ProgressIndexRoute
+  QuizIndexRoute: typeof QuizIndexRoute
   TopicsTopicIdFactsRoute: typeof TopicsTopicIdFactsRoute
   TopicsTopicIdFlashcardsRoute: typeof TopicsTopicIdFlashcardsRoute
   TopicsTopicIdMcqRoute: typeof TopicsTopicIdMcqRoute
@@ -155,6 +168,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quiz/': {
+      id: '/quiz/'
+      path: '/quiz'
+      fullPath: '/quiz/'
+      preLoaderRoute: typeof QuizIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/progress/': {
@@ -220,6 +240,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ProgressTopicIdRoute: ProgressTopicIdRoute,
   ProgressIndexRoute: ProgressIndexRoute,
+  QuizIndexRoute: QuizIndexRoute,
   TopicsTopicIdFactsRoute: TopicsTopicIdFactsRoute,
   TopicsTopicIdFlashcardsRoute: TopicsTopicIdFlashcardsRoute,
   TopicsTopicIdMcqRoute: TopicsTopicIdMcqRoute,

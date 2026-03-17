@@ -12,9 +12,10 @@ function renderWithRouter(ui: React.ReactElement) {
 }
 
 describe('TabBar', () => {
-  it('renders Home and Progress tabs', async () => {
-    renderWithRouter(<TabBar active="home" />)
-    await waitFor(() => expect(screen.getByText('Home')).toBeInTheDocument())
+  it('renders Study, Quiz and Progress tabs', async () => {
+    renderWithRouter(<TabBar active="study" />)
+    await waitFor(() => expect(screen.getByText('Study')).toBeInTheDocument())
+    expect(screen.getByText('Quiz')).toBeInTheDocument()
     expect(screen.getByText('Progress')).toBeInTheDocument()
   })
 
@@ -22,6 +23,6 @@ describe('TabBar', () => {
     renderWithRouter(<TabBar active="progress" />)
     await waitFor(() => expect(screen.getByText('Progress')).toBeInTheDocument())
     expect(screen.getByText('Progress').closest('a')).toHaveClass('active')
-    expect(screen.getByText('Home').closest('a')).not.toHaveClass('active')
+    expect(screen.getByText('Study').closest('a')).not.toHaveClass('active')
   })
 })

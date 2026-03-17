@@ -30,7 +30,7 @@ export function TopicDetailScreenComponent({ topicId }: TopicDetailScreenCompone
   }
 
   return (
-    <AppShell tabBar={<TabBar active="home" />}>
+    <AppShell tabBar={<TabBar active="study" />}>
       <ScrollPage header={<BackHeader label="All Topics" to="/" />}>
         <TopicHeader topic={topic} progress={progress} />
         <div className={styles.label}>STUDY MODES</div>

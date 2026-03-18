@@ -1,29 +1,33 @@
 import React from 'react'
+import { X } from 'lucide-react'
 import { ProgressBar } from '../../atoms/ProgressBar'
-import styles from './SessionPage.module.css'
 
 interface SessionPageProps {
   progress: number // 0–1
   onExit: () => void
   counter: React.ReactNode
   children: React.ReactNode
+  tabBar?: React.ReactNode
 }
 
-export function SessionPage({ progress, onExit, counter, children }: SessionPageProps) {
+export function SessionPage({ progress, onExit, counter, children, tabBar }: SessionPageProps) {
   return (
-    <div className={styles.page}>
-      <div className={styles.progressStrip}>
+    <div className="flex flex-col h-dvh max-w-[768px] mx-auto bg-bg">
+      <div className="shrink-0">
         <ProgressBar value={progress} height={4} />
       </div>
-      <div className={styles.topBar}>
-        <button className={styles.exitBtn} onClick={onExit} aria-label="exit session">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-          </svg>
+      <div className="flex items-center justify-between px-6 py-4 border-b border-border shrink-0">
+        <button
+          className="bg-transparent border-0 text-text p-1 leading-none cursor-pointer flex items-center focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
+          onClick={onExit}
+          aria-label="exit session"
+        >
+          <X size={20} aria-hidden="true" />
         </button>
-        <div className={styles.counter}>{counter}</div>
+        <div className="font-heading text-md font-medium text-text-secondary">{counter}</div>
       </div>
-      <div className={styles.body}>{children}</div>
+      <div className="flex-1 overflow-y-auto px-6 pt-5 pb-8">{children}</div>
+      {tabBar && <footer className="shrink-0 bg-bg-card">{tabBar}</footer>}
     </div>
   )
 }

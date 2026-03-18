@@ -8,6 +8,7 @@ import { useMCQSession } from '../../../hooks/useMCQSession'
 import { SessionPage } from '../../../components/templates/SessionPage'
 import { MCQQuestion } from '../../../components/organisms/MCQQuestion'
 import { Counter } from '../../../components/atoms/Counter'
+import { TabBar } from '../../../components/organisms/TabBar'
 
 const searchSchema = z.object({
   mode: z.literal('review').optional(),
@@ -84,6 +85,7 @@ export function MCQSessionScreenComponent({ topicId, questionIds }: MCQSessionSc
       progress={progress}
       onExit={() => navigate({ to: '/topics/$topicId', params: { topicId } })}
       counter={<Counter current={currentIndex + 1} total={topic.mcqQuestions.length} />}
+      tabBar={<TabBar active="study" />}
     >
       <MCQQuestion
         key={currentQuestion.id}

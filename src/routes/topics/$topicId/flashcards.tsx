@@ -7,6 +7,7 @@ import { useSessionHistory } from '../../../hooks/useSessionHistory'
 import { SessionPage } from '../../../components/templates/SessionPage'
 import { FlashcardDeck } from '../../../components/organisms/FlashcardDeck'
 import { Counter } from '../../../components/atoms/Counter'
+import { TabBar } from '../../../components/organisms/TabBar'
 
 const searchSchema = z.object({
   mode: z.literal('review').optional(),
@@ -66,6 +67,7 @@ export function FlashcardSessionScreenComponent({ topicId, cardIds }: { topicId:
       progress={progress}
       onExit={() => navigate({ to: `/topics/${topicId}` })}
       counter={<Counter current={cardIndex + 1} total={totalCards} prefix="Card" />}
+      tabBar={<TabBar active="study" />}
     >
       <FlashcardDeck
         topicId={topicId}

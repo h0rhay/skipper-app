@@ -22,7 +22,7 @@ interface KeyFactsScreenComponentProps { topicId: string }
 export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProps) {
   const navigate = useNavigate()
   const { topics } = useTopics()
-  const { progress, markFactsRead } = useTopicProgress(topicId)
+  const { progress, update } = useTopicProgress(topicId)
 
   const [openTerm, setOpenTerm] = useState<string | null>(null)
 
@@ -31,7 +31,7 @@ export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProp
 
   return (
     <AppShell tabBar={<TabBar active="study" />}>
-    <ScrollPage header={<BackHeader label={topic.title} to={`/topics/${topicId}`} />}>
+    <ScrollPage header={<BackHeader label={topic.title} to="/topics/$topicId" params={{ topicId }} />}>
       <div className="flex flex-col gap-6">
 
         {/* Hero illustration */}
@@ -90,7 +90,7 @@ export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProp
         <div className="pb-4">
           <Button
             onClick={() => {
-              markFactsRead()
+              update({ factsRead: true })
               navigate({ to: '/topics/$topicId/facts/complete', params: { topicId } })
             }}
             fullWidth

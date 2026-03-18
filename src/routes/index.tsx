@@ -7,17 +7,16 @@ import { OverallProgressCard } from '../components/organisms/OverallProgressCard
 import { ResumeCard } from '../components/organisms/ResumeCard'
 import { TopicList } from '../components/organisms/TopicList'
 import { Label } from '../components/atoms/Label'
-import { useWeightedProgress } from '../hooks/useWeightedProgress'
+import { Divider } from '../components/atoms/Divider'
 import { useStudyStreak } from '../hooks/useStudyStreak'
 
 export const Route = createFileRoute('/')({
   component: HomeScreen,
 })
 
-export function HomeScreenComponent() {
+function HomeScreen() {
   const navigate = useNavigate()
-  const { percentComplete, topicTiers } = useWeightedProgress()
-  const { currentStreak, recordStudyDay } = useStudyStreak()
+  const { recordStudyDay } = useStudyStreak()
 
   useEffect(() => { recordStudyDay() }, [recordStudyDay])
 
@@ -25,15 +24,12 @@ export function HomeScreenComponent() {
     <AppShell topNav={<TopNav />} tabBar={<TabBar active="study" />}>
       <div className="px-6 pt-5 pb-6 flex flex-col gap-6">
         <h1 className="font-heading text-3xl font-medium text-navy tracking-[-1px] leading-[1.05]">Day Skipper<br />Theory</h1>
-        <OverallProgressCard variant="compact" percentComplete={percentComplete} currentStreak={currentStreak} />
+        <OverallProgressCard variant="compact" />
+        <Divider />
         <ResumeCard />
         <Label>All Topics</Label>
-        <TopicList onTopicClick={id => navigate({ to: '/topics/$topicId', params: { topicId: id } })} topicTiers={topicTiers} />
+        <TopicList onTopicClick={id => navigate({ to: '/topics/$topicId', params: { topicId: id } })} />
       </div>
     </AppShell>
   )
-}
-
-function HomeScreen() {
-  return <HomeScreenComponent />
 }

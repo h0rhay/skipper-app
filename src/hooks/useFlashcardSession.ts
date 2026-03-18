@@ -1,40 +1,29 @@
-import { useState, useCallback, useMemo } from 'react'
+import { useState } from 'react'
 import type { Flashcard } from '../types'
 
-export function useFlashcardSession(
-  _topicId: string,
-  allCards: Flashcard[],
-  cardIds?: string[]
-) {
-  const initialDeck = useMemo(() => {
-    if (cardIds && cardIds.length > 0) {
-      return allCards.filter(c => cardIds.includes(c.id))
-    }
-    return allCards
-  }, [allCards, cardIds])
+export function useFlashcardSession(_topicId: string, allCards: Flashcard[], cardIds?: string[]) {
+  const cards = cardIds?.length
+    ? allCards.filter(c => cardIds.includes(c.id))
+    : allCards
 
-  const [deck, setDeck] = useState<Flashcard[]>(initialDeck)
-  const [masteredIds, setMasteredIds] = useState<string[]>([])
+  const [index, setIndex] = useState(0)
   const [isFlipped, setIsFlipped] = useState(false)
 
-  const currentCard = deck[0] ?? null
-  const isComplete = deck.length === 0
-  const progress = initialDeck.length === 0 ? 0 : masteredIds.length / initialDeck.length
-  const score = masteredIds.length
+  const currentCard = cards[index] ?? null
+  const isComplete = index >= cards.length
+  const progress = cards.length === 0 ? 0 : index / cards.length
 
-  const flip = useCallback(() => setIsFlipped(f => !f), [])
+  function flip() { setIsFlipped(f => !f) }
 
-  const markGotIt = useCallback(() => {
-    if (!currentCard) return
-    setMasteredIds(prev => [...prev, currentCard.id])
-    setDeck(prev => prev.slice(1))
+  function next() {
+    setIndex(i => i + 1)
     setIsFlipped(false)
-  }, [currentCard])
+  }
 
-  const markAgain = useCallback(() => {
-    setDeck(prev => [...prev.slice(1), prev[0]])
+  function prev() {
+    setIndex(i => Math.max(0, i - 1))
     setIsFlipped(false)
-  }, [])
+  }
 
-  return { currentCard, isFlipped, flip, markGotIt, markAgain, progress, isComplete, score, masteredIds }
+  return { currentCard, isFlipped, flip, next, prev, progress, isComplete, index, total: cards.length }
 }

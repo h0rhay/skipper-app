@@ -152,6 +152,12 @@ export const IMAGES = [
     subject: "A seabed cross-section divided in two halves. Left half: sandy bottom with fine dots texture, anchor set firmly with good holding. Right half: muddy bottom with wavy line texture, anchor also holding well. Both are good holding ground." },
 
   // Topic 04 — Safety
+  { id: "card-04-safety-fc-0", type: "card", ratio: "1:1",
+    subject: "A sailor on the deck of a heeling yacht in rough weather, clipped on with a safety harness and tether. The tether is attached to a jackstay running along the deck. Heavy seas in the background. The harness webbing and chest clip clearly visible." },
+
+  { id: "card-04-safety-fc-2", type: "card", ratio: "1:1",
+    subject: "Two VHF radios side by side. Left radio has bold urgent sound arcs and the word channel 16 shown on its display — a Pan Pan call, urgent situation. Right radio shows a more extreme distress scene with a boat hull sinking in the waves — a Mayday, grave and imminent danger. Contrasting severity shown by the two scenes." },
+
   { id: "card-04-safety-fc-1", type: "card", ratio: "1:1",
     subject: "A VHF radio handset held close to a mouth with speech lines radiating from it. Three bold signal arc bursts in sequence represent the three MAYDAY calls transmitted. Maritime distress communication scene." },
 
@@ -175,10 +181,22 @@ export const IMAGES = [
     subject: "A narrow channel with steep banks. A large container ship filling almost the full width of the channel with no room to deviate. A small sailing dinghy tucked right against the bank, getting out of the way. Shows why power does not automatically give way to sail in narrow channels." },
 
   // Topic 06 — Position, Course and Speed
+  { id: "card-06-position-course-speed-fc-0", type: "card", ratio: "1:1",
+    subject: "A ruler or scale bar showing exactly 1852 metres divided into equal segments. Below it, the same length labelled as one nautical mile. Clean measurement diagram — the exact length of a nautical mile." },
+
+  { id: "card-06-position-course-speed-fc-1", type: "card", ratio: "1:1",
+    subject: "A speedometer dial showing a reading. Below it, a clock face showing one hour. An arrow pointing to a label showing 1 nautical mile. One knot = one nautical mile per hour. Simple diagram of the unit of speed." },
+
+  { id: "card-06-position-course-speed-fc-2", type: "card", ratio: "1:1",
+    subject: "A globe with latitude lines circling it. One degree of latitude arc highlighted with a bold bracket on the surface. Below it, a zoomed-in view showing that one minute of arc along the latitude scale equals one nautical mile. The latitude scale on the side of the globe with tick marks." },
+
   { id: "card-06-position-course-speed-fc-4", type: "card", ratio: "1:1",
     subject: "Three compass needles or arrows from a single centre point, fanning out slightly: True north pointing straight up, Magnetic north slightly offset by the variation angle, Compass further offset by deviation. Three distinct arrows with small angle arcs between them." },
 
   // Topic 07 — Charts and Publications
+  { id: "card-07-charts-and-publications-fc-1", type: "card", ratio: "1:1",
+    subject: "Two rock symbols from a nautical chart shown side by side. Left: a plus sign inside a circle surrounded by dots — rock awash at chart datum (K12). Right: an asterisk or star symbol — rock with less than 2 metres of water over it at chart datum (K13). Clear distinction between the two critical rock hazard symbols." },
+
   { id: "card-07-charts-and-publications-fc-0", type: "card", ratio: "1:1",
     subject: "A nautical chart extract showing several depth soundings in fathoms or metres. One sounding has an underline beneath the number, indicating it is a drying height above chart datum — the rock uncovers at low water." },
 
@@ -186,6 +204,9 @@ export const IMAGES = [
     subject: "A lighthouse symbol on a nautical chart with a light description label showing the standard Admiralty format: Fl.R.4s — flash character, colour abbreviation, period in seconds. Clean chart notation illustration." },
 
   // Topic 08 — Navigational Instruments
+  { id: "card-08-navigational-instruments-fc-1", type: "card", ratio: "1:1",
+    subject: "A Mercator projection world map showing latitude lines getting further apart toward the poles. A large prohibition circle-and-cross sign over the longitude (vertical) scale. A tick-mark arrow pointing to the latitude (horizontal) scale on the side — this is the correct scale for measuring distance." },
+
   { id: "card-08-navigational-instruments-fc-0", type: "card", ratio: "1:1",
     subject: "Parallel rulers on a nautical chart, walking across from a compass rose. The two connected rulers shown stepping sideways to transfer a bearing across the chart. The hinge mechanism clearly visible between the two ruler bars." },
 
@@ -193,6 +214,9 @@ export const IMAGES = [
     subject: "A Portland plotter (rectangular protractor with a rotating compass rose disc) laid flat on a chart. The rotating disc clearly shown with north mark. A course line drawn through it. Much simpler to use than parallel rulers." },
 
   // Topic 09 — Compass
+  { id: "card-09-compass-fc-1", type: "card", ratio: "1:1",
+    subject: "A boat hull cross-section viewed from above. A compass card visible inside the boat. True north arrow pointing straight up. Magnetic north arrow offset by a small angle. Compass north arrow offset further still by an additional deviation angle — caused by the boat's steel and electrical equipment. Three north arrows showing the cumulative angular offsets." },
+
   { id: "card-09-compass-fc-0", type: "card", ratio: "1:1",
     subject: "A compass rose with two north arrows from the centre: one pointing straight up (True North, geographic), one pointing slightly to the left (Magnetic North). A curved arc between them with 'Var' indicating the variation angle." },
 
@@ -264,6 +288,9 @@ export const IMAGES = [
     subject: "A tidal stream arrow running from left to right at the bottom of the image. A wind arrow coming from the right (pointing left and downward) — opposing the tide direction. Between them: steep, short, choppy waves with nearly vertical faces. Wind over tide creates dangerous conditions." },
 
   // Topic 14 — Passage Planning
+  { id: "card-14-passage-planning-fc-0", type: "card", ratio: "1:1",
+    subject: "A coastline with six small numbered pilotage technique icons around it: (1) two objects aligned as a transit line, (2) a depth contour line hugging the coast, (3) a bearing line looking back to a mark behind, (4) a clearing bearing line just outside rocks, (5) a distance-off circle around a headland, (6) a position fix cross from two bearings. Six distinct diagrams arranged around the coastline." },
+
   { id: "card-14-passage-planning-fc-1", type: "card", ratio: "1:1",
     subject: "A headland with submerged rocks. A lighthouse on the headland. A bold bearing line from the lighthouse running just clear of the outermost rocks — the clearing bearing. Hatching on the dangerous side of the line. A sailboat on the safe side." },
 
@@ -281,6 +308,9 @@ export const IMAGES = [
     subject: "A large foghorn or ship's whistle sending one long bold sound wave arc out ahead. A clock face showing the 2-minute interval between blasts. Power vessel in fog sound signal: one prolonged blast every 2 minutes." },
 
   // Topic 16 — Pilotage
+  { id: "card-16-pilotage-fc-3", type: "card", ratio: "1:1",
+    subject: "A pilotage plan diagram showing six numbered elements arranged on a simple harbour entrance: (1) a transit alignment mark, (2) a depth contour line, (3) a bar with depth arrow and clearance measurement, (4) an IALA buoy with its identification label, (5) a harbour entry angle arrow, (6) a VHF channel number label. All six elements of a formal pilotage plan." },
+
   { id: "card-16-pilotage-fc-0", type: "card", ratio: "1:1",
     subject: "Two shore objects in perfect vertical alignment as seen from the approaching boat: a white post in the foreground exactly in front of a church steeple behind it. The boat on the correct transit line. When two objects align, you are exactly on the transit." },
 
@@ -291,6 +321,9 @@ export const IMAGES = [
     subject: "A headland with rocks extending from it. A lighthouse as the clearing mark. A bearing line running just clear of the outermost rocks. Boat on the safe side. Hazard marking on the dangerous side. Classic clearing bearing pilotage." },
 
   // Topic 17 — Marine Environment
+  { id: "card-17-marine-environment-fc-0", type: "card", ratio: "1:1",
+    subject: "A large cargo ship viewed from the side. A bold shield or banner above it shows 'MARPOL'. Below the ship, a crossed-out oil barrel symbol with prohibition lines — no oil discharge. Clean sea alongside the vessel." },
+
   { id: "card-17-marine-environment-fc-2", type: "card", ratio: "1:1",
     subject: "A boat hull cross-section with bilge pump visible below the waterline. A large prohibition circle-and-cross sign over the pump discharge outlet. No oily bilge water may be pumped overboard. Clean sea beside the vessel." },
 

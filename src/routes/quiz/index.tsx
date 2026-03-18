@@ -6,7 +6,7 @@ import { QuizQuestion } from '../../components/organisms/QuizQuestion'
 import { QuizCompleteView } from '../../components/organisms/QuizCompleteView'
 import { useTopics } from '../../hooks/useTopics'
 import { useQuizSession, type QuizItem } from '../../hooks'
-import styles from '../../styles/screens/quiz.module.css'
+import { X } from 'lucide-react'
 
 export const Route = createFileRoute('/quiz/')({
   component: QuizScreen,
@@ -55,7 +55,7 @@ function QuizScreen() {
   if (topics.length === 0) {
     return (
       <AppShell tabBar={<TabBar active="quiz" />}>
-        <div className={styles.loading}>Loading quiz…</div>
+        <div className="px-6 py-10 text-text-muted font-body">Loading quiz…</div>
       </AppShell>
     )
   }
@@ -63,46 +63,40 @@ function QuizScreen() {
   if (isComplete || currentIndex >= total) {
     return (
       <AppShell tabBar={<TabBar active="quiz" />}>
-        <div className={styles.scrollContent}>
-          <QuizCompleteView score={score} total={total} onRestart={handleRestart} onHome={handleHome} />
-        </div>
+        <QuizCompleteView score={score} total={total} onRestart={handleRestart} onHome={handleHome} />
       </AppShell>
     )
   }
 
   return (
     <AppShell tabBar={<TabBar active="quiz" />}>
-      <div className={styles.sessionWrapper}>
+      <div className="flex flex-col h-full">
         {/* Progress bar */}
-        <div className={styles.progressTrack}>
-          <div className={styles.progressFill} style={{ width: `${progress * 100}%` }} />
+        <div className="h-1 bg-bg-muted shrink-0">
+          <div className="h-full bg-primary transition-[width] duration-300 ease-in-out" style={{ width: `${progress * 100}%` }} />
         </div>
         {/* Session header */}
-        <div className={styles.sessionHeader}>
-          <button className={styles.closeBtn} onClick={handleHome} aria-label="Exit quiz">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
+        <div className="flex items-center justify-between px-6 py-4 border-b border-border shrink-0">
+          <button className="bg-none border-none p-1 cursor-pointer text-text flex items-center" onClick={handleHome} aria-label="Exit quiz">
+            <X size={20} />
           </button>
-          <div className={styles.sessionMeta}>
-            <span className={styles.topicLabel}>{current.topicTitle.split('—')[0].trim().substring(0, 30)}</span>
-            <span className={styles.modeLabel}>MIXED QUIZ</span>
+          <div className="flex flex-col items-center gap-0.5">
+            <span className="font-body text-xs font-semibold text-text-muted tracking-[1px] uppercase max-w-[180px] overflow-hidden text-ellipsis whitespace-nowrap">{current.topicTitle.split('—')[0].trim().substring(0, 30)}</span>
+            <span className="font-body text-xs font-bold text-text tracking-[1.5px]">MIXED QUIZ</span>
           </div>
-          <span className={styles.counter}>{currentIndex + 1} / {total}</span>
+          <span className="font-heading text-md font-medium text-text-secondary">{currentIndex + 1} / {total}</span>
         </div>
         {/* Question */}
-        <div className={styles.scrollContent}>
+        <div className="flex-1 overflow-y-auto">
           <QuizQuestion
             question={current.question}
             questionNumber={currentIndex + 1}
-            total={total}
             selectedIndex={selectedIndex}
             revealed={revealed}
             onSelect={selectOption}
             onSubmit={submitAnswer}
             onNext={nextQuestion}
             isLast={isLastQuestion}
-            topicLabel={current.topicTitle}
           />
         </div>
       </div>

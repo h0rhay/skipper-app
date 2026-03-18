@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
-import styles from './StudyModeRow.module.css'
+import { ChevronRight } from 'lucide-react'
+import { cn } from '#/lib/utils'
 
 interface StudyModeRowProps {
   label: string
@@ -14,25 +15,45 @@ export function StudyModeRow({ label, description, progressText, icon, variant =
   const featured = variant === 'featured'
 
   return (
-    <button className={`${styles.row} ${featured ? styles.featured : ''}`} onClick={onClick}>
+    <button
+      className={cn(
+        'flex items-center gap-3.5 w-full px-4 py-4 border-none text-left cursor-pointer transition-opacity duration-100 mb-2 active:opacity-85',
+        featured ? 'bg-navy' : 'bg-bg-card'
+      )}
+      onClick={onClick}
+    >
       {icon && (
-        <span className={`${styles.iconWrap} ${featured ? styles.iconWrapFeatured : ''}`}>
+        <span
+          className={cn(
+            'w-10 h-10 flex items-center justify-center flex-shrink-0',
+            featured ? 'bg-white/12 text-white' : 'bg-primary/10 text-primary'
+          )}
+        >
           {icon}
         </span>
       )}
-      <span className={styles.center}>
-        <span className={`${styles.label} ${featured ? styles.labelFeatured : ''}`}>{label}</span>
+      <span className="flex-1 flex flex-col gap-0.5 min-w-0">
+        <span className={cn('text-base font-semibold', featured ? 'text-white' : 'text-text')}>
+          {label}
+        </span>
         {description && (
-          <span className={`${styles.description} ${featured ? styles.descriptionFeatured : ''}`}>{description}</span>
+          <span className={cn('text-sm', featured ? 'text-white/65' : 'text-text-secondary')}>
+            {description}
+          </span>
         )}
       </span>
-      <span className={styles.right}>
+      <span className="flex items-center gap-1.5 flex-shrink-0">
         {progressText && (
-          <span className={`${styles.progressText} ${featured ? styles.progressTextFeatured : ''}`}>{progressText}</span>
+          <span className={cn('text-xs font-semibold', featured ? 'text-white/55' : 'text-text-muted')}>
+            {progressText}
+          </span>
         )}
-        <svg className={`${styles.chevron} ${featured ? styles.chevronFeatured : ''}`} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <ChevronRight
+          size={16}
+          className={cn(featured ? 'text-white/60' : 'text-text-muted')}
+          strokeWidth={2.5}
+          aria-hidden="true"
+        />
       </span>
     </button>
   )

@@ -2,15 +2,9 @@ import { useTopics } from '../../../hooks/useTopics'
 import { useWeightedProgress } from '../../../hooks/useWeightedProgress'
 import { TopicRow } from '../../molecules/TopicRow'
 
-interface TopicListProps {
-  onTopicClick: (topicId: string) => void
-  topicTiers?: Record<string, import('../../../types').MasteryTier>
-}
-
-export function TopicList({ onTopicClick, topicTiers: topicTiersProp }: TopicListProps) {
+export function TopicList({ onTopicClick }: { onTopicClick: (topicId: string) => void }) {
   const { topics } = useTopics()
-  const { topicTiers: computedTiers } = useWeightedProgress()
-  const topicTiers = topicTiersProp ?? computedTiers
+  const { topicTiers } = useWeightedProgress()
 
   return (
     <div className="flex flex-col border border-border overflow-hidden">

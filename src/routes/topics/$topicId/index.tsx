@@ -7,7 +7,7 @@ import { TabBar } from '../../../components/organisms/TabBar'
 import { TopicHeader } from '../../../components/organisms/TopicHeader'
 import { StudyModeList } from '../../../components/organisms/StudyModeList'
 import { BackHeader } from '../../../components/molecules/BackHeader'
-import styles from '../../../styles/screens/topic-detail.module.css'
+import { Divider } from '../../../components/atoms/Divider'
 
 export const Route = createFileRoute('/topics/$topicId/')({
   component: TopicDetailScreen,
@@ -32,9 +32,14 @@ export function TopicDetailScreenComponent({ topicId }: TopicDetailScreenCompone
   return (
     <AppShell tabBar={<TabBar active="study" />}>
       <ScrollPage header={<BackHeader label="All Topics" to="/" />}>
-        <TopicHeader topic={topic} progress={progress} />
-        <div className={styles.label}>STUDY MODES</div>
-        <StudyModeList topicId={topicId} navTools={topic.navTools} onModeSelect={handleModeSelect} progress={progress} />
+        <div className="flex flex-col gap-6">
+          <TopicHeader topic={topic} progress={progress} />
+          <Divider />
+          <div className="flex flex-col gap-3">
+            <div className="text-xs font-semibold text-text-muted uppercase tracking-[0.5px]">STUDY MODES</div>
+            <StudyModeList topicId={topicId} navTools={topic.navTools} onModeSelect={handleModeSelect} progress={progress} />
+          </div>
+        </div>
       </ScrollPage>
     </AppShell>
   )

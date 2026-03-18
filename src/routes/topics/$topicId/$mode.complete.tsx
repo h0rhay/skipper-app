@@ -59,7 +59,7 @@ function SessionCompleteScreen() {
 
   return (
     <AppShell tabBar={<TabBar active="study" />}>
-      <ScrollPage>
+      <ScrollPage header={null}>
         <SessionSummary
           mode={sessionMode}
           topicTitle={topic.title}

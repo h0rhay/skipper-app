@@ -25,7 +25,7 @@ export function FlashcardSessionScreenComponent({ topicId, cardIds }: { topicId:
   const { updateFlashcards } = useTopicProgress(topicId)
   const { appendSession } = useSessionHistory()
   const [progress, setProgress] = useState(0)
-  const [cardIndex, setCardIndex] = useState(0)
+  const [cardIndex, setCardIndex] = useState(1)
   const startedAt = useRef(new Date().toISOString()).current
 
   const topic = topics.find(t => t.id === topicId)
@@ -59,14 +59,14 @@ export function FlashcardSessionScreenComponent({ topicId, cardIds }: { topicId:
 
   function handleProgressChange(p: number) {
     setProgress(p)
-    setCardIndex(Math.round(p * totalCards))
+    setCardIndex(Math.round(p * totalCards) + 1)
   }
 
   return (
     <SessionPage
       progress={progress}
       onExit={() => navigate({ to: `/topics/${topicId}` })}
-      counter={<Counter current={cardIndex + 1} total={totalCards} prefix="Card" />}
+      counter={<Counter current={cardIndex} total={totalCards} prefix="Card" />}
       tabBar={<TabBar active="study" />}
     >
       <FlashcardDeck

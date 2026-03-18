@@ -23,31 +23,37 @@ describe('useFlashcardSession', () => {
     expect(result.current.isFlipped).toBe(false)
   })
 
-  it('markGotIt() advances to next card and resets flip', () => {
+  it('next() advances to next card and resets flip', () => {
     const { result } = renderHook(() => useFlashcardSession('topic-1', CARDS))
-    act(() => result.current.markGotIt())
+    act(() => result.current.next())
     expect(result.current.currentCard).toEqual(CARDS[1])
     expect(result.current.isFlipped).toBe(false)
   })
 
-  it('markAgain() re-queues card at end', () => {
+  it('prev() goes back to previous card', () => {
     const { result } = renderHook(() => useFlashcardSession('topic-1', CARDS))
-    act(() => result.current.markAgain())
-    // deck is now [fc-2, fc-3, fc-1]
-    expect(result.current.currentCard).toEqual(CARDS[1])
+    act(() => result.current.next())
+    act(() => result.current.prev())
+    expect(result.current.currentCard).toEqual(CARDS[0])
   })
 
-  it('isComplete when all cards marked gotIt', () => {
+  it('prev() does not go below index 0', () => {
     const { result } = renderHook(() => useFlashcardSession('topic-1', CARDS))
-    act(() => result.current.markGotIt())
-    act(() => result.current.markGotIt())
-    act(() => result.current.markGotIt())
+    act(() => result.current.prev())
+    expect(result.current.index).toBe(0)
+  })
+
+  it('isComplete when advanced past last card', () => {
+    const { result } = renderHook(() => useFlashcardSession('topic-1', CARDS))
+    act(() => result.current.next())
+    act(() => result.current.next())
+    act(() => result.current.next())
     expect(result.current.isComplete).toBe(true)
   })
 
-  it('progress reflects fraction of original deck mastered', () => {
+  it('progress reflects fraction of deck seen', () => {
     const { result } = renderHook(() => useFlashcardSession('topic-1', CARDS))
-    act(() => result.current.markGotIt())
+    act(() => result.current.next())
     expect(result.current.progress).toBeCloseTo(1/3)
   })
 

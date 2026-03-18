@@ -18,6 +18,8 @@ import { Route as TopicsTopicIdMcqRouteImport } from './routes/topics/$topicId/m
 import { Route as TopicsTopicIdFlashcardsRouteImport } from './routes/topics/$topicId/flashcards'
 import { Route as TopicsTopicIdFactsRouteImport } from './routes/topics/$topicId/facts'
 import { Route as TopicsTopicIdNavToolIdRouteImport } from './routes/topics/$topicId/nav.$toolId'
+import { Route as TopicsTopicIdMcqCompleteRouteImport } from './routes/topics/$topicId/mcq.complete'
+import { Route as TopicsTopicIdFlashcardsCompleteRouteImport } from './routes/topics/$topicId/flashcards.complete'
 import { Route as TopicsTopicIdFactsCompleteRouteImport } from './routes/topics/$topicId/facts.complete'
 import { Route as TopicsTopicIdModeCompleteRouteImport } from './routes/topics/$topicId/$mode.complete'
 
@@ -66,6 +68,18 @@ const TopicsTopicIdNavToolIdRoute = TopicsTopicIdNavToolIdRouteImport.update({
   path: '/topics/$topicId/nav/$toolId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TopicsTopicIdMcqCompleteRoute =
+  TopicsTopicIdMcqCompleteRouteImport.update({
+    id: '/complete',
+    path: '/complete',
+    getParentRoute: () => TopicsTopicIdMcqRoute,
+  } as any)
+const TopicsTopicIdFlashcardsCompleteRoute =
+  TopicsTopicIdFlashcardsCompleteRouteImport.update({
+    id: '/complete',
+    path: '/complete',
+    getParentRoute: () => TopicsTopicIdFlashcardsRoute,
+  } as any)
 const TopicsTopicIdFactsCompleteRoute =
   TopicsTopicIdFactsCompleteRouteImport.update({
     id: '/complete',
@@ -85,11 +99,13 @@ export interface FileRoutesByFullPath {
   '/progress/': typeof ProgressIndexRoute
   '/quiz/': typeof QuizIndexRoute
   '/topics/$topicId/facts': typeof TopicsTopicIdFactsRouteWithChildren
-  '/topics/$topicId/flashcards': typeof TopicsTopicIdFlashcardsRoute
-  '/topics/$topicId/mcq': typeof TopicsTopicIdMcqRoute
+  '/topics/$topicId/flashcards': typeof TopicsTopicIdFlashcardsRouteWithChildren
+  '/topics/$topicId/mcq': typeof TopicsTopicIdMcqRouteWithChildren
   '/topics/$topicId/': typeof TopicsTopicIdIndexRoute
   '/topics/$topicId/$mode/complete': typeof TopicsTopicIdModeCompleteRoute
   '/topics/$topicId/facts/complete': typeof TopicsTopicIdFactsCompleteRoute
+  '/topics/$topicId/flashcards/complete': typeof TopicsTopicIdFlashcardsCompleteRoute
+  '/topics/$topicId/mcq/complete': typeof TopicsTopicIdMcqCompleteRoute
   '/topics/$topicId/nav/$toolId': typeof TopicsTopicIdNavToolIdRoute
 }
 export interface FileRoutesByTo {
@@ -98,11 +114,13 @@ export interface FileRoutesByTo {
   '/progress': typeof ProgressIndexRoute
   '/quiz': typeof QuizIndexRoute
   '/topics/$topicId/facts': typeof TopicsTopicIdFactsRouteWithChildren
-  '/topics/$topicId/flashcards': typeof TopicsTopicIdFlashcardsRoute
-  '/topics/$topicId/mcq': typeof TopicsTopicIdMcqRoute
+  '/topics/$topicId/flashcards': typeof TopicsTopicIdFlashcardsRouteWithChildren
+  '/topics/$topicId/mcq': typeof TopicsTopicIdMcqRouteWithChildren
   '/topics/$topicId': typeof TopicsTopicIdIndexRoute
   '/topics/$topicId/$mode/complete': typeof TopicsTopicIdModeCompleteRoute
   '/topics/$topicId/facts/complete': typeof TopicsTopicIdFactsCompleteRoute
+  '/topics/$topicId/flashcards/complete': typeof TopicsTopicIdFlashcardsCompleteRoute
+  '/topics/$topicId/mcq/complete': typeof TopicsTopicIdMcqCompleteRoute
   '/topics/$topicId/nav/$toolId': typeof TopicsTopicIdNavToolIdRoute
 }
 export interface FileRoutesById {
@@ -112,11 +130,13 @@ export interface FileRoutesById {
   '/progress/': typeof ProgressIndexRoute
   '/quiz/': typeof QuizIndexRoute
   '/topics/$topicId/facts': typeof TopicsTopicIdFactsRouteWithChildren
-  '/topics/$topicId/flashcards': typeof TopicsTopicIdFlashcardsRoute
-  '/topics/$topicId/mcq': typeof TopicsTopicIdMcqRoute
+  '/topics/$topicId/flashcards': typeof TopicsTopicIdFlashcardsRouteWithChildren
+  '/topics/$topicId/mcq': typeof TopicsTopicIdMcqRouteWithChildren
   '/topics/$topicId/': typeof TopicsTopicIdIndexRoute
   '/topics/$topicId/$mode/complete': typeof TopicsTopicIdModeCompleteRoute
   '/topics/$topicId/facts/complete': typeof TopicsTopicIdFactsCompleteRoute
+  '/topics/$topicId/flashcards/complete': typeof TopicsTopicIdFlashcardsCompleteRoute
+  '/topics/$topicId/mcq/complete': typeof TopicsTopicIdMcqCompleteRoute
   '/topics/$topicId/nav/$toolId': typeof TopicsTopicIdNavToolIdRoute
 }
 export interface FileRouteTypes {
@@ -132,6 +152,8 @@ export interface FileRouteTypes {
     | '/topics/$topicId/'
     | '/topics/$topicId/$mode/complete'
     | '/topics/$topicId/facts/complete'
+    | '/topics/$topicId/flashcards/complete'
+    | '/topics/$topicId/mcq/complete'
     | '/topics/$topicId/nav/$toolId'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -145,6 +167,8 @@ export interface FileRouteTypes {
     | '/topics/$topicId'
     | '/topics/$topicId/$mode/complete'
     | '/topics/$topicId/facts/complete'
+    | '/topics/$topicId/flashcards/complete'
+    | '/topics/$topicId/mcq/complete'
     | '/topics/$topicId/nav/$toolId'
   id:
     | '__root__'
@@ -158,6 +182,8 @@ export interface FileRouteTypes {
     | '/topics/$topicId/'
     | '/topics/$topicId/$mode/complete'
     | '/topics/$topicId/facts/complete'
+    | '/topics/$topicId/flashcards/complete'
+    | '/topics/$topicId/mcq/complete'
     | '/topics/$topicId/nav/$toolId'
   fileRoutesById: FileRoutesById
 }
@@ -167,8 +193,8 @@ export interface RootRouteChildren {
   ProgressIndexRoute: typeof ProgressIndexRoute
   QuizIndexRoute: typeof QuizIndexRoute
   TopicsTopicIdFactsRoute: typeof TopicsTopicIdFactsRouteWithChildren
-  TopicsTopicIdFlashcardsRoute: typeof TopicsTopicIdFlashcardsRoute
-  TopicsTopicIdMcqRoute: typeof TopicsTopicIdMcqRoute
+  TopicsTopicIdFlashcardsRoute: typeof TopicsTopicIdFlashcardsRouteWithChildren
+  TopicsTopicIdMcqRoute: typeof TopicsTopicIdMcqRouteWithChildren
   TopicsTopicIdIndexRoute: typeof TopicsTopicIdIndexRoute
   TopicsTopicIdModeCompleteRoute: typeof TopicsTopicIdModeCompleteRoute
   TopicsTopicIdNavToolIdRoute: typeof TopicsTopicIdNavToolIdRoute
@@ -239,6 +265,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TopicsTopicIdNavToolIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/topics/$topicId/mcq/complete': {
+      id: '/topics/$topicId/mcq/complete'
+      path: '/complete'
+      fullPath: '/topics/$topicId/mcq/complete'
+      preLoaderRoute: typeof TopicsTopicIdMcqCompleteRouteImport
+      parentRoute: typeof TopicsTopicIdMcqRoute
+    }
+    '/topics/$topicId/flashcards/complete': {
+      id: '/topics/$topicId/flashcards/complete'
+      path: '/complete'
+      fullPath: '/topics/$topicId/flashcards/complete'
+      preLoaderRoute: typeof TopicsTopicIdFlashcardsCompleteRouteImport
+      parentRoute: typeof TopicsTopicIdFlashcardsRoute
+    }
     '/topics/$topicId/facts/complete': {
       id: '/topics/$topicId/facts/complete'
       path: '/complete'
@@ -267,14 +307,39 @@ const TopicsTopicIdFactsRouteChildren: TopicsTopicIdFactsRouteChildren = {
 const TopicsTopicIdFactsRouteWithChildren =
   TopicsTopicIdFactsRoute._addFileChildren(TopicsTopicIdFactsRouteChildren)
 
+interface TopicsTopicIdFlashcardsRouteChildren {
+  TopicsTopicIdFlashcardsCompleteRoute: typeof TopicsTopicIdFlashcardsCompleteRoute
+}
+
+const TopicsTopicIdFlashcardsRouteChildren: TopicsTopicIdFlashcardsRouteChildren =
+  {
+    TopicsTopicIdFlashcardsCompleteRoute: TopicsTopicIdFlashcardsCompleteRoute,
+  }
+
+const TopicsTopicIdFlashcardsRouteWithChildren =
+  TopicsTopicIdFlashcardsRoute._addFileChildren(
+    TopicsTopicIdFlashcardsRouteChildren,
+  )
+
+interface TopicsTopicIdMcqRouteChildren {
+  TopicsTopicIdMcqCompleteRoute: typeof TopicsTopicIdMcqCompleteRoute
+}
+
+const TopicsTopicIdMcqRouteChildren: TopicsTopicIdMcqRouteChildren = {
+  TopicsTopicIdMcqCompleteRoute: TopicsTopicIdMcqCompleteRoute,
+}
+
+const TopicsTopicIdMcqRouteWithChildren =
+  TopicsTopicIdMcqRoute._addFileChildren(TopicsTopicIdMcqRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ProgressTopicIdRoute: ProgressTopicIdRoute,
   ProgressIndexRoute: ProgressIndexRoute,
   QuizIndexRoute: QuizIndexRoute,
   TopicsTopicIdFactsRoute: TopicsTopicIdFactsRouteWithChildren,
-  TopicsTopicIdFlashcardsRoute: TopicsTopicIdFlashcardsRoute,
-  TopicsTopicIdMcqRoute: TopicsTopicIdMcqRoute,
+  TopicsTopicIdFlashcardsRoute: TopicsTopicIdFlashcardsRouteWithChildren,
+  TopicsTopicIdMcqRoute: TopicsTopicIdMcqRouteWithChildren,
   TopicsTopicIdIndexRoute: TopicsTopicIdIndexRoute,
   TopicsTopicIdModeCompleteRoute: TopicsTopicIdModeCompleteRoute,
   TopicsTopicIdNavToolIdRoute: TopicsTopicIdNavToolIdRoute,

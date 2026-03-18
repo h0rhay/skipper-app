@@ -8,6 +8,7 @@ import { TabBar } from '../../../components/organisms/TabBar'
 import { ScrollPage } from '../../../components/templates/ScrollPage'
 import { BackHeader } from '../../../components/molecules/BackHeader'
 import { Button } from '../../../components/atoms/Button'
+import { Divider } from '../../../components/atoms/Divider'
 
 const searchSchema = z.object({
   score: z.coerce.number(),
@@ -49,8 +50,8 @@ export function MCQCompleteScreenComponent({ topicId, score, total }: MCQComplet
 
   return (
     <AppShell tabBar={<TabBar active="study" />}>
-      <ScrollPage header={<BackHeader label={topic.title} to={`/topics/${topicId}`} />}>
-        <div className="flex flex-col gap-6 pt-6">
+      <ScrollPage header={<BackHeader label={topic.title} to="/topics/$topicId" params={{ topicId }} />}>
+        <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-1">
             <p className="text-xs font-semibold text-text-muted uppercase tracking-[0.5px]">{topic.title}</p>
             <h1 className="font-heading text-3xl font-medium text-text">MCQ Complete</h1>
@@ -88,6 +89,7 @@ export function MCQCompleteScreenComponent({ topicId, score, total }: MCQComplet
             </div>
           </div>
 
+          <Divider padded />
           <div className="flex flex-col gap-3">
             {isPassing ? (
               <>

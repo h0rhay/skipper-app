@@ -20,29 +20,30 @@ describe('FlashcardDeck', () => {
     expect(screen.getByText(/tap to reveal/i)).toBeInTheDocument()
   })
 
-  it('shows Got it / Again buttons after flipping the card', async () => {
+  it('shows Next button after flipping the card', async () => {
     const user = userEvent.setup()
     render(<FlashcardDeck topicId="01" cards={CARDS} onComplete={() => {}} />)
     await user.click(screen.getByRole('button', { name: /show back/i }))
-    expect(screen.getByRole('button', { name: /got it/i })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /again/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /next/i })).toBeInTheDocument()
   })
 
-  it('calls onComplete when deck is exhausted', async () => {
+  it('calls onComplete when all cards advanced through', async () => {
     const user = userEvent.setup()
     const onComplete = vi.fn()
     render(<FlashcardDeck topicId="01" cards={CARDS} onComplete={onComplete} />)
-    // Card 1: flip + got it
     await user.click(screen.getByRole('button', { name: /show back/i }))
-    await user.click(screen.getByRole('button', { name: /got it/i }))
-    // Card 2: flip + got it
+    await user.click(screen.getByRole('button', { name: /next/i }))
     await user.click(screen.getByRole('button', { name: /show back/i }))
-    await user.click(screen.getByRole('button', { name: /got it/i }))
-    expect(onComplete).toHaveBeenCalledWith({ masteredIds: ['fc-1', 'fc-2'], score: 2, total: 2 })
+    await user.click(screen.getByRole('button', { name: /next/i }))
+    expect(onComplete).toHaveBeenCalled()
   })
 
-  it('shows progress bar', () => {
-    render(<FlashcardDeck topicId="01" cards={CARDS} onComplete={() => {}} />)
-    expect(screen.getByRole('progressbar')).toBeInTheDocument()
+  it('reports progress via onProgressChange', async () => {
+    const user = userEvent.setup()
+    const onProgressChange = vi.fn()
+    render(<FlashcardDeck topicId="01" cards={CARDS} onComplete={() => {}} onProgressChange={onProgressChange} />)
+    await user.click(screen.getByRole('button', { name: /show back/i }))
+    await user.click(screen.getByRole('button', { name: /next/i }))
+    expect(onProgressChange).toHaveBeenCalled()
   })
 })

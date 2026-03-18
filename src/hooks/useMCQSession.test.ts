@@ -63,8 +63,12 @@ describe('useMCQSession', () => {
 
   it('tracks wrongIds', () => {
     const { result } = renderHook(() => useMCQSession('topic-1', QUESTIONS))
-    act(() => { result.current.select(0); result.current.submit(); result.current.next() }) // wrong (correct is 2)
-    act(() => { result.current.select(0); result.current.submit(); result.current.next() }) // correct
+    act(() => result.current.select(0))
+    act(() => result.current.submit())
+    act(() => result.current.next()) // wrong (correct is 2)
+    act(() => result.current.select(0))
+    act(() => result.current.submit())
+    act(() => result.current.next()) // correct
     expect(result.current.wrongIds).toEqual(['q-1'])
   })
 

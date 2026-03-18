@@ -11,16 +11,11 @@ const DEFAULT_TOPIC_PROGRESS: TopicProgress = {
 }
 
 const DEFAULT_USER_PROGRESS: UserProgress = {
-  userId: 'local',
-  topics: {},
-  currentStreak: 0,
-  lastStudiedDate: '',
-  longestStreak: 0,
+  userId: 'local', topics: {}, currentStreak: 0, lastStudiedDate: '', longestStreak: 0,
 }
 
 function loadProgress(): UserProgress {
-  return storage.get<UserProgress>('progress', DEFAULT_USER_PROGRESS)
-    ?? DEFAULT_USER_PROGRESS
+  return storage.get<UserProgress>('progress', DEFAULT_USER_PROGRESS) ?? DEFAULT_USER_PROGRESS
 }
 
 export function useTopicProgress(topicId: string) {
@@ -40,47 +35,23 @@ export function useTopicProgress(topicId: string) {
     })
   }, [topicId])
 
-  const markFactsRead = useCallback(() => {
-    update({ factsRead: true, factsReadAt: new Date().toISOString() })
-  }, [update])
-
-  const updateFlashcards = useCallback((data: { masteredIds: string[]; totalCards: number; lastStudied?: string }) => {
+  const updateFlashcards = useCallback((data: { masteredIds: string[]; totalCards: number }) => {
     const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
-    update({
-      flashcards: {
-        ...data,
-        lastStudied: data.lastStudied ?? new Date().toISOString(),
-        accepted: current.flashcards.accepted,
-      },
-    })
+    update({ flashcards: { ...current.flashcards, ...data, lastStudied: new Date().toISOString() } })
   }, [update, userProgress, topicId])
 
-  const updateMCQ = useCallback((data: { bestScore: number; totalQuestions: number; wrongIds: string[]; lastStudied?: string }) => {
+  const updateMCQ = useCallback((data: { bestScore: number; totalQuestions: number; wrongIds: string[] }) => {
     const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
     update({
       mcq: {
+        ...current.mcq,
         bestScore: Math.max(current.mcq.bestScore, data.bestScore),
         totalQuestions: data.totalQuestions,
         wrongIds: data.wrongIds,
-        lastStudied: data.lastStudied ?? new Date().toISOString(),
-        accepted: current.mcq.accepted,
+        lastStudied: new Date().toISOString(),
       },
     })
   }, [update, userProgress, topicId])
 
-  const markFactsAccepted = useCallback(() => {
-    update({ factsRead: true, factsAccepted: true })
-  }, [update])
-
-  const acceptFlashcards = useCallback(() => {
-    const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
-    update({ flashcards: { ...current.flashcards, accepted: true } })
-  }, [update, userProgress, topicId])
-
-  const acceptMCQ = useCallback(() => {
-    const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
-    update({ mcq: { ...current.mcq, accepted: true } })
-  }, [update, userProgress, topicId])
-
-  return { progress, markFactsRead, updateFlashcards, updateMCQ, markFactsAccepted, acceptFlashcards, acceptMCQ }
+  return { progress, update, updateFlashcards, updateMCQ }
 }

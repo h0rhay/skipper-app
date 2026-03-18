@@ -1,17 +1,11 @@
 import { useWeightedProgress } from '../../../hooks/useWeightedProgress'
+import { useStudyStreak } from '../../../hooks/useStudyStreak'
 
-interface OverallProgressCardProps {
-  variant?: 'compact' | 'full'
-  percentComplete?: number
-  currentStreak?: number
-}
-
-export function OverallProgressCard({ variant = 'full', percentComplete: percentCompleteProp, currentStreak: currentStreakProp }: OverallProgressCardProps) {
-  const { percentComplete: computedPercent } = useWeightedProgress()
-  const percentComplete = percentCompleteProp ?? computedPercent
+export function OverallProgressCard({ variant = 'full' }: { variant?: 'compact' | 'full' }) {
+  const { percentComplete } = useWeightedProgress()
+  const { currentStreak } = useStudyStreak()
 
   if (variant === 'compact') {
-    const streak = currentStreakProp ?? 0
     return (
       <div className="flex items-center justify-between border border-border p-4">
         <div className="flex flex-col gap-1">
@@ -22,7 +16,7 @@ export function OverallProgressCard({ variant = 'full', percentComplete: percent
           </p>
         </div>
         <div className="flex flex-col items-end gap-1">
-          <span className="font-heading text-lg font-medium text-primary">{streak} DAY</span>
+          <span className="font-heading text-lg font-medium text-primary">{currentStreak} DAY</span>
           <span className="text-xs font-semibold text-text-muted tracking-[1.5px]">STREAK</span>
         </div>
       </div>
@@ -37,10 +31,7 @@ export function OverallProgressCard({ variant = 'full', percentComplete: percent
         <span className="font-heading text-base text-text-muted pb-2">% complete</span>
       </div>
       <div className="h-1.5 bg-bg-muted overflow-hidden">
-        <div
-          className="h-full bg-primary transition-[width] duration-300 ease-out"
-          style={{ width: `${percentComplete}%`, minWidth: 0 }}
-        />
+        <div className="h-full bg-primary transition-[width] duration-300 ease-out" style={{ width: `${percentComplete}%` }} />
       </div>
     </div>
   )

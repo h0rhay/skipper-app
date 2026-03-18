@@ -6,8 +6,9 @@ import type { TopicProgress } from '../../../types'
 
 const makeProgress = (overrides: Partial<TopicProgress> = {}): TopicProgress => ({
   factsRead: false,
-  flashcards: { masteredIds: [], totalCards: 0, lastStudied: '' },
-  mcq: { bestScore: 0, totalQuestions: 0, wrongIds: [], lastStudied: '' },
+  factsAccepted: false,
+  flashcards: { masteredIds: [], totalCards: 0, lastStudied: '', accepted: false },
+  mcq: { bestScore: 0, totalQuestions: 0, wrongIds: [], lastStudied: '', accepted: false },
   navTools: {},
   ...overrides,
 })

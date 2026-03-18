@@ -4,14 +4,23 @@ import type { TopicProgress, UserProgress } from '../types'
 
 const DEFAULT_TOPIC_PROGRESS: TopicProgress = {
   factsRead: false,
-  flashcards: { masteredIds: [], totalCards: 0, lastStudied: '' },
-  mcq: { bestScore: 0, totalQuestions: 0, wrongIds: [], lastStudied: '' },
+  factsAccepted: false,
+  flashcards: { masteredIds: [], totalCards: 0, lastStudied: '', accepted: false },
+  mcq: { bestScore: 0, totalQuestions: 0, wrongIds: [], lastStudied: '', accepted: false },
   navTools: {},
 }
 
+const DEFAULT_USER_PROGRESS: UserProgress = {
+  userId: 'local',
+  topics: {},
+  currentStreak: 0,
+  lastStudiedDate: '',
+  longestStreak: 0,
+}
+
 function loadProgress(): UserProgress {
-  return storage.get<UserProgress>('progress', { userId: 'local', topics: {} })
-    ?? { userId: 'local', topics: {} }
+  return storage.get<UserProgress>('progress', DEFAULT_USER_PROGRESS)
+    ?? DEFAULT_USER_PROGRESS
 }
 
 export function useTopicProgress(topicId: string) {
@@ -36,10 +45,11 @@ export function useTopicProgress(topicId: string) {
   }, [update])
 
   const updateFlashcards = useCallback((data: { masteredIds: string[]; totalCards: number }) => {
+    const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
     update({
-      flashcards: { ...data, lastStudied: new Date().toISOString() },
+      flashcards: { ...data, lastStudied: new Date().toISOString(), accepted: current.flashcards.accepted },
     })
-  }, [update])
+  }, [update, userProgress, topicId])
 
   const updateMCQ = useCallback((data: { bestScore: number; totalQuestions: number; wrongIds: string[] }) => {
     const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
@@ -49,6 +59,7 @@ export function useTopicProgress(topicId: string) {
         totalQuestions: data.totalQuestions,
         wrongIds: data.wrongIds,
         lastStudied: new Date().toISOString(),
+        accepted: current.mcq.accepted,
       },
     })
   }, [update, userProgress, topicId])

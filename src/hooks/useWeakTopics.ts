@@ -3,9 +3,17 @@ import { storage } from '../services/storage'
 import topicsData from '../data/topics.json'
 import type { UserProgress, Topic } from '../types'
 
+const DEFAULT_USER_PROGRESS: UserProgress = {
+  userId: 'local',
+  topics: {},
+  currentStreak: 0,
+  lastStudiedDate: '',
+  longestStreak: 0,
+}
+
 export function useWeakTopics() {
   const [userProgress] = useState<UserProgress>(
-    () => storage.get<UserProgress>('progress', { userId: 'local', topics: {} }) ?? { userId: 'local', topics: {} }
+    () => storage.get<UserProgress>('progress', DEFAULT_USER_PROGRESS) ?? DEFAULT_USER_PROGRESS
   )
 
   const weakTopics = useMemo(() => {

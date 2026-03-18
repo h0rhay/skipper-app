@@ -1,5 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { z } from 'zod'
+import { CheckIcon, CircleIcon } from 'lucide-react'
 import { useTopics } from '../../../hooks/useTopics'
 import { useTopicMastery } from '../../../hooks/useTopicMastery'
 import { AppShell } from '../../../components/templates/AppShell'
@@ -35,9 +36,9 @@ export function FlashcardsCompleteScreenComponent({ topicId, masteredIds: master
   const mastered = masteredParam ? masteredParam.split(',').filter(Boolean).length : 0
   const revisit = total - mastered
 
-  function handleLockIn() {
+  function handleContinue() {
     acceptFlashcards()
-    navigate({ to: '/topics/$topicId', params: { topicId } })
+    navigate({ to: '/topics/$topicId/mcq', params: { topicId } })
   }
 
   function handleRunAgain() {
@@ -74,8 +75,27 @@ export function FlashcardsCompleteScreenComponent({ topicId, masteredIds: master
               <span className="text-xs text-text-muted uppercase tracking-[0.5px]">Revisit</span>
             </div>
           </div>
+
+          <div className="flex flex-col border-t border-border pt-4 gap-3">
+            <p className="text-xs font-semibold text-text-muted uppercase tracking-[0.5px]">What's next</p>
+            <div className="flex flex-col">
+              <div className="flex items-center gap-3 py-3 border-b border-border">
+                <CheckIcon size={16} className="text-[var(--color-success)] shrink-0" />
+                <span className="text-sm font-medium text-text">Key Facts</span>
+              </div>
+              <div className="flex items-center gap-3 py-3 border-b border-border">
+                <CheckIcon size={16} className="text-[var(--color-success)] shrink-0" />
+                <span className="text-sm font-medium text-text">Flashcards</span>
+              </div>
+              <div className="flex items-center gap-3 py-3 opacity-40">
+                <CircleIcon size={16} className="text-text-muted shrink-0" />
+                <span className="text-sm text-text-muted">MCQ Quiz</span>
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col gap-3">
-            <Button onClick={handleLockIn} fullWidth>Locked in — I've got this ✓</Button>
+            <Button onClick={handleContinue} fullWidth>Locked in — Continue to MCQ →</Button>
             <Button onClick={handleRunAgain} variant="secondary" fullWidth>Run through again</Button>
           </div>
         </div>

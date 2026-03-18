@@ -1,5 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { z } from 'zod'
+import { CheckIcon } from 'lucide-react'
 import { useTopics } from '../../../hooks/useTopics'
 import { useTopicMastery } from '../../../hooks/useTopicMastery'
 import { AppShell } from '../../../components/templates/AppShell'
@@ -69,6 +70,24 @@ export function MCQCompleteScreenComponent({ topicId, score, total }: MCQComplet
               </span>
             </div>
           </div>
+          <div className="flex flex-col border-t border-border pt-4 gap-3">
+            <p className="text-xs font-semibold text-text-muted uppercase tracking-[0.5px]">Progress</p>
+            <div className="flex flex-col">
+              <div className="flex items-center gap-3 py-3 border-b border-border">
+                <CheckIcon size={16} className="text-[var(--color-success)] shrink-0" />
+                <span className="text-sm font-medium text-text">Key Facts</span>
+              </div>
+              <div className="flex items-center gap-3 py-3 border-b border-border">
+                <CheckIcon size={16} className="text-[var(--color-success)] shrink-0" />
+                <span className="text-sm font-medium text-text">Flashcards</span>
+              </div>
+              <div className="flex items-center gap-3 py-3">
+                <CheckIcon size={16} className={isPassing ? 'text-[var(--color-success)] shrink-0' : 'text-text-muted shrink-0 opacity-40'} />
+                <span className={`text-sm font-medium ${isPassing ? 'text-text' : 'text-text-muted opacity-40'}`}>MCQ Quiz</span>
+              </div>
+            </div>
+          </div>
+
           <div className="flex flex-col gap-3">
             {isPassing ? (
               <>

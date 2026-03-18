@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
-import { CheckIcon } from 'lucide-react'
+import { CheckIcon, CircleIcon } from 'lucide-react'
 import { useTopics } from '../../../hooks/useTopics'
 import { useTopicMastery } from '../../../hooks/useTopicMastery'
 import { AppShell } from '../../../components/templates/AppShell'
@@ -26,9 +26,9 @@ export function FactsCompleteScreenComponent({ topicId }: FactsCompleteScreenCom
 
   const factCount = topic.keyTerms.length
 
-  function handleLockIn() {
+  function handleContinue() {
     acceptFacts()
-    navigate({ to: '/topics/$topicId', params: { topicId } })
+    navigate({ to: '/topics/$topicId/flashcards', params: { topicId } })
   }
 
   function handleReview() {
@@ -51,8 +51,27 @@ export function FactsCompleteScreenComponent({ topicId }: FactsCompleteScreenCom
               <span className="text-sm text-text-secondary">— All covered</span>
             </div>
           </div>
-          <div className="flex flex-col gap-3 pt-4">
-            <Button onClick={handleLockIn} fullWidth>Locked in ✓</Button>
+
+          <div className="flex flex-col border-t border-border pt-4 gap-3">
+            <p className="text-xs font-semibold text-text-muted uppercase tracking-[0.5px]">What's next</p>
+            <div className="flex flex-col">
+              <div className="flex items-center gap-3 py-3 border-b border-border">
+                <CheckIcon size={16} className="text-[var(--color-success)] shrink-0" />
+                <span className="text-sm font-medium text-text">Key Facts</span>
+              </div>
+              <div className="flex items-center gap-3 py-3 border-b border-border opacity-40">
+                <CircleIcon size={16} className="text-text-muted shrink-0" />
+                <span className="text-sm text-text-muted">Flashcards</span>
+              </div>
+              <div className="flex items-center gap-3 py-3 opacity-40">
+                <CircleIcon size={16} className="text-text-muted shrink-0" />
+                <span className="text-sm text-text-muted">MCQ Quiz</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <Button onClick={handleContinue} fullWidth>Locked in ✓ — Continue to Flashcards →</Button>
             <Button onClick={handleReview} variant="secondary" fullWidth>Review again</Button>
           </div>
         </div>

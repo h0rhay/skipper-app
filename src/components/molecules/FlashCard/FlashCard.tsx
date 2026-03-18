@@ -1,3 +1,4 @@
+import type { FC } from 'react'
 import styles from './FlashCard.module.css'
 
 interface FlashCardProps {
@@ -6,14 +7,20 @@ interface FlashCardProps {
   tag?: string
   isFlipped: boolean
   onClick?: () => void
+  Illustration?: FC
 }
 
-export function FlashCard({ front, back, tag = 'FLASHCARD', isFlipped, onClick }: FlashCardProps) {
+export function FlashCard({ front, back, tag = 'FLASHCARD', isFlipped, onClick, Illustration }: FlashCardProps) {
   return (
     <button type="button" className={styles.scene} onClick={onClick} aria-label={isFlipped ? 'Show front' : 'Show back'}>
       <div className={`${styles.card} ${isFlipped ? styles.flipped : ''}`}>
         <div className={`${styles.face} ${styles.front}`}>
           <div className={styles.tag}>{tag}</div>
+          {Illustration && (
+            <div className={styles.illustration} aria-hidden="true">
+              <Illustration />
+            </div>
+          )}
           <p className={styles.question}>{front}</p>
           <div className={styles.hint}>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

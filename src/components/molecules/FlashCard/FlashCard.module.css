@@ -1,3 +1,5 @@
+.illustration { display: flex; justify-content: center; align-items: center; width: 100%; }
+.illustration svg { width: 120px; height: 80px; }
 .scene { perspective: 1000px; width: 100%; background: none; border: none; padding: 0; cursor: pointer; text-align: left; }
 .card { position: relative; width: 100%; min-height: 340px; transform-style: preserve-3d; transition: transform 0.4s ease; }
 .card.flipped { transform: rotateY(180deg); }

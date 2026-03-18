@@ -12,6 +12,9 @@ export const Route = createFileRoute('/quiz/')({
   component: QuizScreen,
 })
 
+// Exported wrapper for testing — intentionally a separate function from the route component
+export function QuizScreenComponent() { return <QuizScreen /> }
+
 const QUIZ_SIZE = 20
 
 function shuffleArray<T>(arr: T[]): T[] {

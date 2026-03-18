@@ -17,7 +17,17 @@ export function FlashCard({ front, back, tag = 'FLASHCARD', isFlipped, onClick, 
           <div className={styles.tag}>{tag}</div>
           {illustrationSrc && (
             <div className={styles.illustration}>
-              <img src={illustrationSrc} alt="" width={160} height={160} />
+              <img
+                src={illustrationSrc}
+                alt=""
+                width={160}
+                height={160}
+                onError={e => {
+                  const img = e.currentTarget as HTMLImageElement
+                  img.style.display = 'none'
+                  if (img.parentElement) img.parentElement.style.display = 'none'
+                }}
+              />
             </div>
           )}
           <p className={styles.question}>{front}</p>

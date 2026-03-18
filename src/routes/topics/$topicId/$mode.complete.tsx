@@ -1,6 +1,9 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { z } from 'zod'
 import { useTopics } from '../../../hooks/useTopics'
+import { AppShell } from '../../../components/templates/AppShell'
+import { TabBar } from '../../../components/organisms/TabBar'
+import { ScrollPage } from '../../../components/templates/ScrollPage'
 import { SessionSummary } from '../../../components/organisms/SessionSummary'
 import type { SessionMode } from '../../../types'
 
@@ -55,14 +58,18 @@ function SessionCompleteScreen() {
   if (!topic) return <div>Topic not found</div>
 
   return (
-    <SessionSummary
-      mode={sessionMode}
-      topicTitle={topic.title}
-      score={score}
-      total={total}
-      wrongIds={wrongIds}
-      onReview={handleReview}
-      onNext={handleNext}
-    />
+    <AppShell tabBar={<TabBar active="study" />}>
+      <ScrollPage>
+        <SessionSummary
+          mode={sessionMode}
+          topicTitle={topic.title}
+          score={score}
+          total={total}
+          wrongIds={wrongIds}
+          onReview={handleReview}
+          onNext={handleNext}
+        />
+      </ScrollPage>
+    </AppShell>
   )
 }

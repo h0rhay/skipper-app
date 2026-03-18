@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@google/genai": "^1.46.0",
+    "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/typography": "^0.5.16",
     "@tanstack/devtools-vite": "latest",
     "@testing-library/dom": "^10.4.1",

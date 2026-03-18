@@ -1,4 +1,3 @@
-import type { FC } from 'react'
 import styles from './FlashCard.module.css'
 
 interface FlashCardProps {
@@ -7,18 +6,18 @@ interface FlashCardProps {
   tag?: string
   isFlipped: boolean
   onClick?: () => void
-  Illustration?: FC
+  illustrationSrc?: string
 }
 
-export function FlashCard({ front, back, tag = 'FLASHCARD', isFlipped, onClick, Illustration }: FlashCardProps) {
+export function FlashCard({ front, back, tag = 'FLASHCARD', isFlipped, onClick, illustrationSrc }: FlashCardProps) {
   return (
     <button type="button" className={styles.scene} onClick={onClick} aria-label={isFlipped ? 'Show front' : 'Show back'}>
       <div className={`${styles.card} ${isFlipped ? styles.flipped : ''}`}>
         <div className={`${styles.face} ${styles.front}`}>
           <div className={styles.tag}>{tag}</div>
-          {Illustration && (
-            <div className={styles.illustration} aria-hidden="true">
-              <Illustration />
+          {illustrationSrc && (
+            <div className={styles.illustration}>
+              <img src={illustrationSrc} alt="" width={160} height={160} />
             </div>
           )}
           <p className={styles.question}>{front}</p>

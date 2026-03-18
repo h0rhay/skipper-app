@@ -3,3 +3,5 @@
 .term:hover { background: var(--color-bg-muted); }
 .chevron { color: var(--color-text-muted); font-size: 18px; }
 .definition { margin: 0; padding: 10px 16px 14px; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: 1.5; background: var(--color-bg-muted); }
+.illustration { display: flex; justify-content: center; padding: 12px 0 8px; }
+.illustration img { width: 200px; height: 200px; object-fit: contain; }

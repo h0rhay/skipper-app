@@ -3,7 +3,7 @@ import { FlashCard } from '../../molecules/FlashCard'
 import { Button } from '../../atoms/Button'
 import { ProgressBar } from '../../atoms/ProgressBar'
 import { useFlashcardSession } from '../../../hooks/useFlashcardSession'
-import { getIllustration } from '../../illustrations'
+import { getCardPath } from '../../illustrations/paths'
 import type { Flashcard } from '../../../types'
 import styles from './FlashcardDeck.module.css'
 
@@ -32,8 +32,6 @@ export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressC
 
   if (!currentCard) return null
 
-  const Illustration = getIllustration(currentCard.id)
-
   return (
     <div className={styles.deck}>
       <ProgressBar value={progress} />
@@ -42,7 +40,7 @@ export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressC
         back={currentCard.back}
         isFlipped={isFlipped}
         onClick={!isFlipped ? flip : undefined}
-        Illustration={Illustration ?? undefined}
+        illustrationSrc={getCardPath(currentCard.id)}
       />
       {isFlipped && (
         <div className={styles.actions}>

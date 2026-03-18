@@ -2,7 +2,9 @@ import { createFileRoute, useNavigate, Outlet, useChildMatches } from '@tanstack
 import { useState } from 'react'
 import { useTopics } from '../../../hooks/useTopics'
 import { useTopicProgress } from '../../../hooks/useTopicProgress'
+import { AppShell } from '../../../components/templates/AppShell'
 import { ScrollPage } from '../../../components/templates/ScrollPage'
+import { TabBar } from '../../../components/organisms/TabBar'
 import { BackHeader } from '../../../components/molecules/BackHeader'
 import { KeyTermRow } from '../../../components/molecules/KeyTermRow'
 import { SafetyNote } from '../../../components/molecules/SafetyNote'
@@ -28,6 +30,7 @@ export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProp
   if (!topic) return <div>Topic not found</div>
 
   return (
+    <AppShell tabBar={<TabBar active="study" />}>
     <ScrollPage header={<BackHeader label={topic.title} to={`/topics/${topicId}`} />}>
       <div className="flex flex-col gap-6">
 
@@ -98,6 +101,7 @@ export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProp
 
       </div>
     </ScrollPage>
+    </AppShell>
   )
 }
 

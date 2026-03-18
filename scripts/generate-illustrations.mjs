@@ -62,16 +62,16 @@ export const IMAGES = [
   { id: "hero-04-safety", type: "hero", ratio: "3:2",
     subject: "A lifebuoy ring mounted on a stanchion, with a crew member in a safety harness clipped to a jackstay wire running along the deck. Rough sea conditions suggested by wave lines." },
 
-  { id: "hero-05-colregs", type: "hero", ratio: "3:2",
+  { id: "hero-05-irpcs-colregs", type: "hero", ratio: "3:2",
     subject: "Two motor vessels at sea in a crossing situation, viewed from slightly above. The vessel coming from the right has a straight arrow showing it holding course. The vessel on the left has a curved arrow showing it giving way to starboard. Both vessels are clearly recognizable boat-shaped silhouettes with wakes." },
 
   { id: "hero-06-position-course-speed", type: "hero", ratio: "3:2",
     subject: "A ship's compass binnacle with the compass rose visible, alongside parallel rulers and pencil on a nautical chart. Depth soundings visible on the chart. Navigation plotting scene." },
 
-  { id: "hero-07-charts", type: "hero", ratio: "3:2",
+  { id: "hero-07-charts-and-publications", type: "hero", ratio: "3:2",
     subject: "An Admiralty nautical chart partially unrolled, showing a coastline, depth soundings, buoy symbols, and a compass rose. Parallel rulers resting diagonally across the chart." },
 
-  { id: "hero-08-instruments", type: "hero", ratio: "3:2",
+  { id: "hero-08-navigational-instruments", type: "hero", ratio: "3:2",
     subject: "Navigational instruments arranged on a chart: parallel rulers, brass dividers, a pencil, and a Portland plotter. Top-down flat-lay view. Clean technical illustration." },
 
   { id: "hero-09-compass", type: "hero", ratio: "3:2",
@@ -83,7 +83,7 @@ export const IMAGES = [
   { id: "hero-11-tides", type: "hero", ratio: "3:2",
     subject: "A coastal cliff face with clear high water and low water marks. A sine-wave tide curve shown alongside. Seabed with exposed rocks at low tide, covered at high tide. Rule of twelfths bars alongside." },
 
-  { id: "hero-12-buoyage", type: "hero", ratio: "3:2",
+  { id: "hero-12-visual-aids-buoyage", type: "hero", ratio: "3:2",
     subject: "A row of five IALA buoys: red can buoy (port), green conical buoy (starboard), black-yellow pillar with two upward cones (north cardinal), yellow X-topmark (special mark), and red-white striped sphere (safe water). Floating on calm sea." },
 
   { id: "hero-13-meteorology", type: "hero", ratio: "3:2",
@@ -105,13 +105,16 @@ export const IMAGES = [
 
   // Topic 01 — Nautical Terms
   { id: "card-01-nautical-terms-fc-0", type: "card", ratio: "1:1",
-    subject: "A sailing boat viewed from directly ahead (head-on). The left half of the hull is clearly the port side, the right half is starboard. A bold arrow points to the left (port) side." },
+    subject: "Top-down aerial view of a sailing boat. The bow points toward the TOP of the image, stern at the bottom. A bold arrow on the LEFT side of the image points LEFT — indicating port, the left side of the vessel when facing forward. The right side of the image is starboard." },
 
   { id: "card-01-nautical-terms-fc-2", type: "card", ratio: "1:1",
     subject: "Side profile of a sailboat hull at the waterline. A bold vertical double-headed arrow shows the distance from the waterline down to the bottom of the keel — the draught measurement." },
 
   { id: "card-01-nautical-terms-fc-3", type: "card", ratio: "1:1",
     subject: "A triangular sail with its three edges clearly shown: the leading vertical edge (luff), the trailing diagonal edge (leech), and the horizontal bottom edge (foot). Clean triangle sail shape." },
+
+  { id: "card-01-nautical-terms-fc-1", type: "card", ratio: "1:1",
+    subject: "Top-down view of a sailing boat. A wind arrow pointing directly downward from the top of the image shows the wind direction. On either side of the wind arrow, two bold dashed lines fan out at approximately 45 degrees — forming a cone-shaped no-go zone directly ahead of the boat. The cone is shaded or hatched to show it is forbidden sailing territory. The boat sits at the bottom of the image, bow pointing toward the cone. A clear label-free diagram showing that sailing directly into wind is impossible within this 45-degree arc on each side." },
 
   { id: "card-01-nautical-terms-fc-4", type: "card", ratio: "1:1",
     subject: "Two manoeuvres shown top-down: a boat turning its bow through the wind (tacking, curved arrow going left through wind direction), and a boat turning its stern through the wind (gybing, curved arrow going right). Wind arrow pointing downward at top." },
@@ -126,6 +129,9 @@ export const IMAGES = [
   { id: "card-02-ropework-fc-1", type: "card", ratio: "1:1",
     subject: "A correctly tied bowline knot shown from the front at slight angle. The anatomy must be exact: a fixed loop hangs at the bottom formed by the bight of the rope. At the top of the loop, the working end passes UP through the bight from behind (the rabbit coming out of the hole), then passes BEHIND and around the standing part of the rope (around the tree), then passes back DOWN through the bight (back down the hole). The standing part continues upward. The result is a secure non-slipping loop. Show the full knot with enough rope either side to make the structure legible. Factually correct enough that a sailor could tie it from this image alone." },
 
+  { id: "card-02-ropework-fc-2", type: "card", ratio: "1:1",
+    subject: "A clove hitch tied around a horizontal guard rail wire or stanchion, with a fender hanging below on its tail. The clove hitch is shown clearly: two diagonal turns crossing over each other on the rail, with the fender's lanyard descending from the lower turn. The correct knot for attaching a fender to a guard rail — quick to tie and easy to adjust height." },
+
   { id: "card-02-ropework-fc-3", type: "card", ratio: "1:1",
     subject: "A rolling hitch tied around a thick spar or rope. Shows the extra turns on the loaded side that give it its gripping power. A load arrow pulling in one direction, the hitch gripping firmly." },
 
@@ -135,6 +141,9 @@ export const IMAGES = [
   // Topic 03 — Anchorwork
   { id: "card-03-anchorwork-fc-0", type: "card", ratio: "1:1",
     subject: "Side view: boat on the surface, chain anchor rode dropping at a shallow angle to an anchor on the seabed. A depth arrow showing the water depth. A longer diagonal arrow showing the scope length — demonstrating a 3:1 ratio." },
+
+  { id: "card-03-anchorwork-fc-1", type: "card", ratio: "1:1",
+    subject: "Side view of a boat at anchor using a warp (rope) rode instead of chain. The rope rode runs from the bow roller at a shallow angle down to the anchor on the seabed. A depth arrow showing water depth, and a longer scope arrow showing the recommended 5:1 rope length ratio. Rope texture clearly distinguished from chain." },
 
   { id: "card-03-anchorwork-fc-2", type: "card", ratio: "1:1",
     subject: "A CQR plough anchor and a Fisherman's anchor side by side. The Fisherman's anchor shows its traditional cross-bar stock design, ideal for rocky or weedy seabeds where other anchors cannot penetrate." },
@@ -169,18 +178,18 @@ export const IMAGES = [
   { id: "card-06-position-course-speed-fc-4", type: "card", ratio: "1:1",
     subject: "Three compass needles or arrows from a single centre point, fanning out slightly: True north pointing straight up, Magnetic north slightly offset by the variation angle, Compass further offset by deviation. Three distinct arrows with small angle arcs between them." },
 
-  // Topic 07 — Charts
-  { id: "card-07-charts-fc-0", type: "card", ratio: "1:1",
+  // Topic 07 — Charts and Publications
+  { id: "card-07-charts-and-publications-fc-0", type: "card", ratio: "1:1",
     subject: "A nautical chart extract showing several depth soundings in fathoms or metres. One sounding has an underline beneath the number, indicating it is a drying height above chart datum — the rock uncovers at low water." },
 
-  { id: "card-07-charts-fc-2", type: "card", ratio: "1:1",
+  { id: "card-07-charts-and-publications-fc-2", type: "card", ratio: "1:1",
     subject: "A lighthouse symbol on a nautical chart with a light description label showing the standard Admiralty format: Fl.R.4s — flash character, colour abbreviation, period in seconds. Clean chart notation illustration." },
 
-  // Topic 08 — Instruments
-  { id: "card-08-instruments-fc-0", type: "card", ratio: "1:1",
+  // Topic 08 — Navigational Instruments
+  { id: "card-08-navigational-instruments-fc-0", type: "card", ratio: "1:1",
     subject: "Parallel rulers on a nautical chart, walking across from a compass rose. The two connected rulers shown stepping sideways to transfer a bearing across the chart. The hinge mechanism clearly visible between the two ruler bars." },
 
-  { id: "card-08-instruments-fc-2", type: "card", ratio: "1:1",
+  { id: "card-08-navigational-instruments-fc-2", type: "card", ratio: "1:1",
     subject: "A Portland plotter (rectangular protractor with a rotating compass rose disc) laid flat on a chart. The rotating disc clearly shown with north mark. A course line drawn through it. Much simpler to use than parallel rulers." },
 
   // Topic 09 — Compass
@@ -210,17 +219,35 @@ export const IMAGES = [
   { id: "card-11-tides-fc-3", type: "card", ratio: "1:1",
     subject: "The Sun, Earth, and Moon shown twice. Top: Sun, Earth, Moon all in a line — spring tides, large tidal range shown by a tall wave. Bottom: Moon at 90 degrees to the Sun-Earth line — neap tides, small tidal range shown by a small wave." },
 
-  // Topic 12 — Buoyage
-  { id: "card-12-buoyage-fc-0", type: "card", ratio: "1:1",
+  // Topic 12 — Visual Aids and Buoyage
+  { id: "card-12-visual-aids-buoyage-fc-0", type: "card", ratio: "1:1",
     subject: "An IALA port-hand lateral mark: a red cylindrical can buoy with a flat top. A channel arrow showing the buoy is kept to the left when entering harbour. Fl.R light pulses shown above." },
 
-  { id: "card-12-buoyage-fc-1", type: "card", ratio: "1:1",
+  { id: "card-12-visual-aids-buoyage-fc-1", type: "card", ratio: "1:1",
     subject: "An IALA starboard-hand lateral mark: a green conical buoy with pointed top. Channel arrow showing the buoy is kept to the right when entering harbour. Fl.G light pulses shown above." },
 
-  { id: "card-12-buoyage-fc-3", type: "card", ratio: "1:1",
-    subject: "A North Cardinal buoy: pillar buoy with black upper half and yellow lower half. Two cone topmarks both pointing UPWARD (north). A north arrow above. Safe water is to the north — pass to the north of this mark." },
+  { id: "card-12-visual-aids-buoyage-fc-2", type: "card", ratio: "1:1",
+    subject: "A preferred channel (junction) mark buoy: red and green horizontal bands on a pillar buoy. A split-channel arrow showing the main channel going one way and the secondary channel the other. A flashing light sequence showing the unique composite group flash Fl(2+1) — two flashes then one flash." },
 
-  { id: "card-12-buoyage-fc-9", type: "card", ratio: "1:1",
+  { id: "card-12-visual-aids-buoyage-fc-3", type: "card", ratio: "1:1",
+    subject: "A North Cardinal pillar buoy. The topmark consists of TWO cones mounted on a single vertical staff — stacked one directly above the other on the same vertical axis, both pointing UPWARD with their points facing up. The lower cone sits immediately below the upper cone on the same staff. They are never side by side. Below the topmarks is the buoy body: black upper half, yellow lower half. A north arrow above the whole assembly. Safe water lies to the north of this mark." },
+
+  { id: "card-12-visual-aids-buoyage-fc-4", type: "card", ratio: "1:1",
+    subject: "Two cardinal buoys side by side for comparison. Left: South Cardinal buoy — yellow upper half, black lower half, two downward-pointing inverted cone topmarks, a south arrow. Right: West Cardinal buoy — black upper, yellow middle band, black lower, two cones pointing toward each other (waist shape), a west arrow. Key visual differences highlighted." },
+
+  { id: "card-12-visual-aids-buoyage-fc-5", type: "card", ratio: "1:1",
+    subject: "An isolated danger mark: a black pillar buoy with red horizontal band. Two black spheres as topmark — stacked vertically. Light pulses showing Fl(2) — the mandatory two-flash light characteristic. This mark sits on top of or near a danger with navigable water all around it." },
+
+  { id: "card-12-visual-aids-buoyage-fc-6", type: "card", ratio: "1:1",
+    subject: "A safe water mark: a red and white vertically striped spherical buoy. A single red spherical topmark on top. Light showing the Mo(A) Morse code sequence — a short flash then long flash. This mark indicates safe navigable water all around." },
+
+  { id: "card-12-visual-aids-buoyage-fc-7", type: "card", ratio: "1:1",
+    subject: "A special mark: a plain yellow X-shaped cross topmark on a yellow buoy of any shape. A single yellow flashing light above it. A question mark nearby indicating it marks something special — pipeline, military exercise area, aquaculture. Not a navigation hazard mark." },
+
+  { id: "card-12-visual-aids-buoyage-fc-8", type: "card", ratio: "1:1",
+    subject: "An emergency wreck marking buoy: a striking buoy with alternating blue and yellow vertical stripes. A blue and yellow flag-style topmark. A quick flashing blue and yellow light alternating. Clearly unlike any other mark type — designed to be immediately recognisable as a newly discovered wreck hazard." },
+
+  { id: "card-12-visual-aids-buoyage-fc-9", type: "card", ratio: "1:1",
     subject: "Two shore structures at different heights: a low front lighthouse and a taller rear lighthouse. A boat approaching from seaward with both lights in perfect vertical alignment — on the correct leading line track entering the harbour." },
 
   // Topic 13 — Meteorology
@@ -229,6 +256,9 @@ export const IMAGES = [
 
   { id: "card-13-meteorology-fc-1", type: "card", ratio: "1:1",
     subject: "Two large ocean waves with white cresting foam on their tops. A heeled sailboat riding the waves. Horizontal streaks showing strong wind from above. Force 5 sea state — fresh breeze with moderate waves." },
+
+  { id: "card-13-meteorology-fc-2", type: "card", ratio: "1:1",
+    subject: "Two compass circles side by side. Left circle: wind direction arrow rotating anticlockwise (backing — from SW to S to SE). Right circle: wind direction arrow rotating clockwise (veering — from SW to W to NW). Bold curved arrows on each circle showing the direction of rotation. A clear comparison of backing versus veering wind shifts." },
 
   { id: "card-13-meteorology-fc-4", type: "card", ratio: "1:1",
     subject: "A tidal stream arrow running from left to right at the bottom of the image. A wind arrow coming from the right (pointing left and downward) — opposing the tide direction. Between them: steep, short, choppy waves with nearly vertical faces. Wind over tide creates dangerous conditions." },
@@ -244,12 +274,18 @@ export const IMAGES = [
   { id: "card-15-restricted-visibility-fc-2", type: "card", ratio: "1:1",
     subject: "Top-down view of a boat in fog. Sound signal source shown forward of the beam — ahead and to one side. Bold arrow showing the boat altering course to avoid — steering well clear. Fog haze lines around the scene." },
 
+  { id: "card-15-restricted-visibility-fc-3", type: "card", ratio: "1:1",
+    subject: "A boat at anchor showing its anchor ball day shape: a single black sphere hanging in the forward part of the vessel where it can best be seen. The classic black ball shape clearly visible. An anchor chain visible at the bow going down into the water. Daytime, at anchor, no power." },
+
   { id: "card-15-restricted-visibility-fc-5", type: "card", ratio: "1:1",
     subject: "A large foghorn or ship's whistle sending one long bold sound wave arc out ahead. A clock face showing the 2-minute interval between blasts. Power vessel in fog sound signal: one prolonged blast every 2 minutes." },
 
   // Topic 16 — Pilotage
   { id: "card-16-pilotage-fc-0", type: "card", ratio: "1:1",
     subject: "Two shore objects in perfect vertical alignment as seen from the approaching boat: a white post in the foreground exactly in front of a church steeple behind it. The boat on the correct transit line. When two objects align, you are exactly on the transit." },
+
+  { id: "card-16-pilotage-fc-1", type: "card", ratio: "1:1",
+    subject: "Two leading lights shown from the approaching vessel: a lower front light and a taller rear light. In the LEFT panel — the lights are perfectly vertically aligned (on the leading line). In the RIGHT panel — the rear light has shifted to one side of the front light (off the leading line). Simple side-by-side comparison showing correct alignment versus being off track." },
 
   { id: "card-16-pilotage-fc-2", type: "card", ratio: "1:1",
     subject: "A headland with rocks extending from it. A lighthouse as the clearing mark. A bearing line running just clear of the outermost rocks. Boat on the safe side. Hazard marking on the dangerous side. Classic clearing bearing pilotage." },
@@ -303,7 +339,7 @@ export const IMAGES = [
     subject: "Six vertical bars showing the Rule of Twelfths tide pattern: 1, 2, 3, 3, 2, 1 twelfths of the tidal range per hour. A smooth cosine tide curve drawn above the bars. The middle hours have the fastest tidal rise or fall." },
 
   { id: "term-08-iala-north-cardinal", type: "term", ratio: "1:1",
-    subject: "A North Cardinal buoy: black upper half, yellow lower half pillar buoy. Two upward-pointing cone topmarks. Bold north arrow. Safe water lies to the north of this mark. Pass it on its north side." },
+    subject: "A North Cardinal pillar buoy. The topmark consists of TWO cones mounted on a single vertical staff — stacked one directly above the other on the same vertical axis, both pointing UPWARD with their points facing up. The lower cone sits immediately below the upper cone on the same staff. They are never side by side. Below the topmarks: black upper half body, yellow lower half body. Bold north arrow above. Safe water lies to the north — pass it on its north side." },
 
   { id: "term-08-iala-south-cardinal", type: "term", ratio: "1:1",
     subject: "A South Cardinal buoy: yellow upper half, black lower half pillar buoy. Two downward-pointing inverted cone topmarks. Bold south arrow. Safe water lies to the south. Pass it on its south side." },

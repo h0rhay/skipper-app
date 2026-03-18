@@ -48,9 +48,9 @@ export function FlashcardSessionScreenComponent({ topicId, cardIds }: { topicId:
       wrongIds,
     })
     navigate({
-      to: '/topics/$topicId/$mode/complete',
-      params: { topicId, mode: 'flashcards' },
-      search: { score: result.score, total: result.total, wrongIds: wrongIds.join(',') },
+      to: '/topics/$topicId/flashcards/complete',
+      params: { topicId },
+      search: { masteredIds: result.masteredIds.join(','), total: result.total },
     })
   }
 

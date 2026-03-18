@@ -8,11 +8,6 @@ describe('useTopics', () => {
     expect(result.current.topics.length).toBe(17)
   })
 
-  it('returns isLoading false after mount', () => {
-    const { result } = renderHook(() => useTopics())
-    expect(result.current.isLoading).toBe(false)
-  })
-
   it('returns a topic by id', () => {
     const { result } = renderHook(() => useTopics())
     const topic = result.current.topics.find(t => t.id === '01-nautical-terms')

@@ -1,44 +1,37 @@
-import { useOverallProgress } from '../../../hooks'
-import { useTopics } from '../../../hooks/useTopics'
-import styles from './OverallProgressCard.module.css'
+import { useWeightedProgress } from '../../../hooks/useWeightedProgress'
+import { useStudyStreak } from '../../../hooks/useStudyStreak'
 
-interface OverallProgressCardProps {
-  variant?: 'compact' | 'full'
-}
-
-export function OverallProgressCard({ variant = 'full' }: OverallProgressCardProps) {
-  const { percentComplete, topicStatuses } = useOverallProgress()
-  const { topics } = useTopics()
-  const completeCount = Object.values(topicStatuses).filter(s => s === 'complete').length
-  const totalCount = topics.length
+export function OverallProgressCard({ variant = 'full' }: { variant?: 'compact' | 'full' }) {
+  const { percentComplete } = useWeightedProgress()
+  const { currentStreak } = useStudyStreak()
 
   if (variant === 'compact') {
     return (
-      <div className={styles.compact}>
-        <div className={styles.compactLeft}>
-          <span className={styles.label}>OVERALL PROGRESS</span>
-          <p className={styles.count}>
-            <span className={styles.countValue}>{completeCount}</span>
-            <span className={styles.countSep}> / {totalCount} topics</span>
+      <div className="flex items-center justify-between border border-border p-4">
+        <div className="flex flex-col gap-1">
+          <span className="text-xs font-bold text-text-muted uppercase tracking-[1px]">OVERALL PROGRESS</span>
+          <p className="m-0">
+            <span className="font-heading text-2xl font-medium text-navy">{percentComplete}</span>
+            <span className="text-base text-text-secondary">% complete</span>
           </p>
         </div>
-        <div className={styles.compactRight}>
-          <span className={styles.streakValue}>Day 1</span>
-          <span className={styles.streakLabel}>STREAK</span>
+        <div className="flex flex-col items-end gap-1">
+          <span className="font-heading text-lg font-medium text-primary">{currentStreak} DAY</span>
+          <span className="text-xs font-semibold text-text-muted tracking-[1.5px]">STREAK</span>
         </div>
       </div>
     )
   }
 
   return (
-    <div className={styles.card}>
-      <span className={styles.label}>OVERALL COMPLETION</span>
-      <div className={styles.percentRow}>
-        <span className={styles.percent}>{percentComplete}</span>
-        <span className={styles.percentSuffix}>% complete</span>
+    <div className="flex flex-col gap-2 pt-5 pb-4">
+      <span className="text-xs font-bold text-text-muted uppercase tracking-[1px]">OVERALL COMPLETION</span>
+      <div className="flex items-end gap-1">
+        <span className="font-heading font-medium text-navy leading-none" style={{ fontSize: '52px' }}>{percentComplete}</span>
+        <span className="font-heading text-base text-text-muted pb-2">% complete</span>
       </div>
-      <div className={styles.barBg}>
-        <div className={styles.barFill} style={{ width: `${percentComplete}%` }} />
+      <div className="h-1.5 bg-bg-muted overflow-hidden">
+        <div className="h-full bg-primary transition-[width] duration-300 ease-out" style={{ width: `${percentComplete}%` }} />
       </div>
     </div>
   )

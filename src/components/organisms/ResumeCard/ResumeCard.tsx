@@ -1,38 +1,67 @@
 import { Link } from '@tanstack/react-router'
-import { useLastSession } from '../../../hooks/useLastSession'
+import { ArrowRight } from 'lucide-react'
+import { useSessionHistory } from '../../../hooks/useSessionHistory'
 import { useTopics } from '../../../hooks/useTopics'
-import styles from './ResumeCard.module.css'
+import { storage } from '../../../services/storage'
+import type { UserProgress, TopicProgress } from '../../../types'
+
+function getNextStep(tp: TopicProgress | undefined): 'facts' | 'flashcards' | 'mcq' | null {
+  if (!tp?.factsAccepted) return 'facts'
+  if (!tp.flashcards.accepted) return 'flashcards'
+  if (!tp.mcq.accepted) return 'mcq'
+  return null // topic complete
+}
 
 export function ResumeCard() {
-  const { session } = useLastSession()
+  const { sessions } = useSessionHistory()
   const { topics } = useTopics()
-  if (!session) return null
-  const topic = topics.find(t => t.id === session.topicId)
+
+  const lastSession = sessions.at(-1)
+  if (!lastSession) return null
+
+  const topic = topics.find(t => t.id === lastSession.topicId)
   if (!topic) return null
 
-  const to = session.mode === 'flashcards'
-    ? '/topics/$topicId/flashcards'
-    : '/topics/$topicId/mcq'
+  const userProgress = storage.get<UserProgress>('progress', { userId: 'local', topics: {}, currentStreak: 0, lastStudiedDate: '', longestStreak: 0 })
+  const tp = userProgress?.topics[topic.id]
+  const nextStep = getNextStep(tp)
 
-  const questionCount = session.mode === 'flashcards'
-    ? topic.flashcards.length
-    : topic.mcqQuestions.length
+  // If topic is fully complete, find the first incomplete topic
+  let resumeTopic = topic
+  let resumeStep = nextStep
+  if (!nextStep) {
+    for (const t of topics) {
+      const step = getNextStep(userProgress?.topics[t.id])
+      if (step) { resumeTopic = t; resumeStep = step; break }
+    }
+  }
+
+  if (!resumeStep) return null
+
+  const toMap = { facts: '/topics/$topicId/facts', flashcards: '/topics/$topicId/flashcards', mcq: '/topics/$topicId/mcq' } as const
+  const labelMap = { facts: 'Key Facts', flashcards: 'Flashcards', mcq: 'MCQ Quiz' }
+  const countMap = {
+    facts: `${resumeTopic.keyTerms?.length ?? 0} key terms`,
+    flashcards: `${resumeTopic.flashcards.length} cards`,
+    mcq: `${resumeTopic.mcqQuestions.length} questions`,
+  }
 
   return (
-    <Link to={to} params={{ topicId: topic.id }} className={styles.card}>
-      <div className={styles.body}>
-        <span className={styles.label}>Continue where you left off</span>
-        <span className={styles.title}>
-          {String(topic.number).padStart(2, '0')} — {topic.title}
+    <Link
+      to={toMap[resumeStep]}
+      params={{ topicId: resumeTopic.id }}
+      className="flex items-center gap-3 bg-sand-gradient px-6 py-4 no-underline"
+    >
+      <div className="flex flex-col gap-1 flex-1 min-w-0">
+        <span className="text-xs font-semibold text-text-muted uppercase tracking-[1px]">Continue where you left off</span>
+        <span className="text-base font-bold text-navy whitespace-nowrap overflow-hidden text-ellipsis">
+          {String(resumeTopic.number).padStart(2, '0')} — {resumeTopic.title}
         </span>
-        <span className={styles.meta}>
-          {topic.description} · {questionCount} {session.mode === 'flashcards' ? 'cards' : 'questions'}
+        <span className="text-sm text-text-secondary whitespace-nowrap overflow-hidden text-ellipsis">
+          {labelMap[resumeStep]} · {countMap[resumeStep]}
         </span>
       </div>
-      <svg className={styles.arrow} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <line x1="5" y1="12" x2="19" y2="12"/>
-        <polyline points="12 5 19 12 12 19"/>
-      </svg>
+      <ArrowRight size={20} className="text-primary shrink-0" aria-hidden="true" />
     </Link>
   )
 }

@@ -1,5 +1,3 @@
-import styles from './SessionStatRow.module.css'
-
 interface SessionStatRowProps {
   label: string
   value: string | number
@@ -7,9 +5,9 @@ interface SessionStatRowProps {
 
 export function SessionStatRow({ label, value }: SessionStatRowProps) {
   return (
-    <div className={styles.row}>
-      <span className={styles.label}>{label}</span>
-      <span className={styles.value}>{value}</span>
+    <div className="flex justify-between items-center px-4 py-2.5 border-b border-border last:border-b-0">
+      <span className="text-sm text-text-secondary">{label}</span>
+      <span className="text-sm font-semibold text-text">{value}</span>
     </div>
   )
 }

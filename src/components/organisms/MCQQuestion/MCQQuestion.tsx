@@ -1,7 +1,7 @@
 import { OptionButton } from '../../atoms/OptionButton'
 import { Button } from '../../atoms/Button'
+import { Divider } from '../../atoms/Divider'
 import type { MCQQuestion as MCQQuestionType } from '../../../types'
-import styles from './MCQQuestion.module.css'
 
 interface MCQQuestionProps {
   question: MCQQuestionType
@@ -14,7 +14,7 @@ interface MCQQuestionProps {
   onNext: () => void
 }
 
-export function MCQQuestion({ question, selectedIndex, isRevealed, isCorrect, explanation, onSelect, onSubmit, onNext }: MCQQuestionProps) {
+export function MCQQuestion({ question, selectedIndex, isRevealed, onSelect, onSubmit, onNext }: MCQQuestionProps) {
   function getOptionState(i: number): 'idle' | 'selected' | 'correct' | 'wrong' {
     if (!isRevealed) return selectedIndex === i ? 'selected' : 'idle'
     if (i === question.correctIndex) return 'correct'
@@ -23,11 +23,12 @@ export function MCQQuestion({ question, selectedIndex, isRevealed, isCorrect, ex
   }
 
   return (
-    <div className={styles.container}>
-      <div className={styles.questionCard}>
-        <p className={styles.question}>{question.question}</p>
+    <div className="flex flex-col gap-4">
+      <div className="bg-bg-muted border border-border p-5">
+        <p className="font-heading text-lg font-medium leading-[1.35] text-navy m-0">{question.question}</p>
       </div>
-      <div className={styles.options}>
+      <Divider />
+      <div className="flex flex-col border border-border overflow-hidden">
         {question.options.map((opt, i) => (
           <OptionButton
             key={i}
@@ -38,15 +39,7 @@ export function MCQQuestion({ question, selectedIndex, isRevealed, isCorrect, ex
           />
         ))}
       </div>
-      {isRevealed && explanation && (
-        <div
-          className={`${styles.explanation} ${isCorrect ? styles.correct : styles.wrong}`}
-          data-state={isCorrect ? 'correct' : 'wrong'}
-        >
-          <p>{explanation}</p>
-        </div>
-      )}
-      <div className={styles.actions}>
+      <div>
         {!isRevealed ? (
           <Button onClick={onSubmit} disabled={selectedIndex === null} fullWidth>Submit</Button>
         ) : (

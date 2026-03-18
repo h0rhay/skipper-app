@@ -1,4 +1,0 @@
-.shell { display: flex; flex-direction: column; height: 100dvh; max-width: 430px; margin: 0 auto; overflow: hidden; background: var(--color-bg); }
-.topNav { flex-shrink: 0; }
-.content { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
-.tabBar { flex-shrink: 0; background: var(--color-bg-card); }

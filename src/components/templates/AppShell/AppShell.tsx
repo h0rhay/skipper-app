@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './AppShell.module.css'
 
 interface AppShellProps {
   children: React.ReactNode
@@ -9,10 +8,10 @@ interface AppShellProps {
 
 export function AppShell({ children, tabBar, topNav }: AppShellProps) {
   return (
-    <div className={styles.shell}>
-      {topNav && <div className={styles.topNav}>{topNav}</div>}
-      <main className={styles.content}>{children}</main>
-      <footer className={styles.tabBar}>{tabBar}</footer>
+    <div className="flex flex-col h-dvh max-w-[768px] mx-auto overflow-hidden bg-bg">
+      {topNav && <div className="shrink-0">{topNav}</div>}
+      <main className="flex-1 overflow-y-auto [-webkit-overflow-scrolling:touch]">{children}</main>
+      <footer className="shrink-0 bg-bg-card">{tabBar}</footer>
     </div>
   )
 }

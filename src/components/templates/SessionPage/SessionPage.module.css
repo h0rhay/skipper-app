@@ -1,7 +1,0 @@
-.page { display: flex; flex-direction: column; height: 100dvh; max-width: 430px; margin: 0 auto; background: var(--color-bg); }
-.progressStrip { flex-shrink: 0; }
-.topBar { display: flex; align-items: center; justify-content: space-between; padding: 16px var(--content-padding-h); border-bottom: 1px solid var(--color-border); flex-shrink: 0; }
-.exitBtn { background: none; border: none; color: var(--color-text); padding: 4px; line-height: 1; cursor: pointer; display: flex; align-items: center; }
-.exitBtn:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; border-radius: 4px; }
-.counter { font-family: var(--font-heading); font-size: var(--font-size-md); font-weight: 500; color: var(--color-text-secondary); }
-.body { flex: 1; overflow-y: auto; padding: var(--space-5) var(--content-padding-h) var(--space-8); }

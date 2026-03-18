@@ -1,34 +1,51 @@
+import { ChevronRight } from 'lucide-react'
 import { Badge } from '../../atoms/Badge'
-import styles from './TopicRow.module.css'
-import type { TopicCompletionStatus } from '../../../types'
+import { cn } from '#/lib/utils'
+import type { TopicCompletionStatus, MasteryTier } from '../../../types'
 
 interface TopicRowProps {
   number: number
   title: string
   status: TopicCompletionStatus
   isSafetyCritical?: boolean
+  tier?: MasteryTier
   onClick: () => void
 }
 
-export function TopicRow({ number, title, status, isSafetyCritical, onClick }: TopicRowProps) {
+export function TopicRow({ number, title, status, isSafetyCritical, tier, onClick }: TopicRowProps) {
   const isInProgress = status === 'partial'
 
   return (
     <button
-      className={`${styles.row} ${isInProgress ? styles.inProgress : ''}`}
+      className={cn(
+        'flex items-center gap-3 w-full px-4 py-3 border-none border-b border-border text-left cursor-pointer transition-colors duration-100 last:border-b-0',
+        isInProgress ? 'bg-warning/10 active:bg-warning/20' : 'bg-bg-card active:bg-bg-muted'
+      )}
       onClick={onClick}
     >
-      <span className={styles.number}>{String(number).padStart(2, '0')}</span>
-      <span className={`${styles.title} ${isInProgress ? styles.titleBold : ''}`}>{title}</span>
-      <span className={styles.meta}>
-        {status === 'partial' && <span className={styles.statusInProgress}>In Progress</span>}
-        {status === 'complete' && <span className={styles.statusComplete}>Complete</span>}
-        {status === 'none' && isSafetyCritical && <Badge label="Critical" variant="danger" />}
-        {status === 'none' && !isSafetyCritical && <span className={styles.statusNone}>Not Started</span>}
+      <span className="font-heading text-md font-medium text-primary min-w-[22px]">
+        {String(number).padStart(2, '0')}
       </span>
-      <svg className={styles.chevron} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <polyline points="9 18 15 12 9 6"/>
-      </svg>
+      <span className={cn('flex-1 text-md text-text', isInProgress ? 'font-semibold' : 'font-normal')}>
+        {title}
+      </span>
+      <span className="flex items-center gap-2">
+        {isSafetyCritical && <Badge label="Critical" variant="danger" />}
+        {tier && tier !== 'none' && (
+          <span className={cn(
+            'text-xs font-semibold uppercase tracking-widest whitespace-nowrap',
+            tier === 'seen' && 'text-primary',
+            tier === 'practised' && 'text-text',
+            (tier === 'passed' || tier === 'mastered') && 'text-[var(--color-success)]',
+          )}>
+            {tier === 'seen' && 'SEEN'}
+            {tier === 'practised' && 'PRACTISED'}
+            {tier === 'passed' && 'PASSED'}
+            {tier === 'mastered' && 'MASTERED'}
+          </span>
+        )}
+      </span>
+      <ChevronRight size={16} className="text-text-muted flex-shrink-0" strokeWidth={2.5} aria-hidden="true" />
     </button>
   )
 }

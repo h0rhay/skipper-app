@@ -12,11 +12,10 @@ describe('useTopicProgress', () => {
     expect(result.current.progress.mcq.bestScore).toBe(0)
   })
 
-  it('markFactsRead sets factsRead to true', () => {
+  it('update() sets factsRead', () => {
     const { result } = renderHook(() => useTopicProgress('05-irpcs-colregs'))
-    act(() => result.current.markFactsRead())
+    act(() => result.current.update({ factsRead: true }))
     expect(result.current.progress.factsRead).toBe(true)
-    expect(result.current.progress.factsReadAt).toBeDefined()
   })
 
   it('updateFlashcards merges mastered IDs', () => {
@@ -25,7 +24,7 @@ describe('useTopicProgress', () => {
     expect(result.current.progress.flashcards.masteredIds).toEqual(['fc-1', 'fc-2'])
   })
 
-  it('updateMCQ overwrites wrongIds (not union)', () => {
+  it('updateMCQ overwrites wrongIds', () => {
     const { result } = renderHook(() => useTopicProgress('05-irpcs-colregs'))
     act(() => result.current.updateMCQ({ bestScore: 8, totalQuestions: 12, wrongIds: ['q-1'] }))
     act(() => result.current.updateMCQ({ bestScore: 9, totalQuestions: 12, wrongIds: ['q-2'] }))
@@ -38,5 +37,13 @@ describe('useTopicProgress', () => {
     act(() => result.current.updateMCQ({ bestScore: 10, totalQuestions: 12, wrongIds: [] }))
     act(() => result.current.updateMCQ({ bestScore: 6, totalQuestions: 12, wrongIds: ['q-1'] }))
     expect(result.current.progress.mcq.bestScore).toBe(10)
+  })
+
+  it('update() does not clobber existing nested state', () => {
+    const { result } = renderHook(() => useTopicProgress('topic-1'))
+    act(() => result.current.updateFlashcards({ masteredIds: ['fc-1'], totalCards: 2 }))
+    act(() => result.current.update({ factsRead: true, factsAccepted: true }))
+    expect(result.current.progress.flashcards.masteredIds).toEqual(['fc-1'])
+    expect(result.current.progress.factsAccepted).toBe(true)
   })
 })

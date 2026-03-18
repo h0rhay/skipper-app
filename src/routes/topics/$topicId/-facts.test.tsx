@@ -42,7 +42,7 @@ describe('KeyFactsScreen', () => {
     renderWithRouter(<KeyFactsScreenComponent topicId="01-nautical-terms" />)
     await waitFor(() => screen.getByRole('button', { name: /mark as read/i }))
     await user.click(screen.getByRole('button', { name: /mark as read/i }))
-    const stored = storage.get<UserProgress>('progress', { userId: 'local', topics: {} })
+    const stored = storage.get<UserProgress>('progress', { userId: 'local', topics: {}, currentStreak: 0, lastStudiedDate: '', longestStreak: 0 })
     expect(stored?.topics['01-nautical-terms']?.factsRead).toBe(true)
   })
 

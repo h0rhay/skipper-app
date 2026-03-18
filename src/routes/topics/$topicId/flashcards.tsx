@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { createFileRoute, useNavigate, Outlet, useChildMatches } from '@tanstack/react-router'
 import { z } from 'zod'
 import { useState, useRef } from 'react'
 import { useTopics } from '../../../hooks/useTopics'
@@ -7,6 +7,7 @@ import { useSessionHistory } from '../../../hooks/useSessionHistory'
 import { SessionPage } from '../../../components/templates/SessionPage'
 import { FlashcardDeck } from '../../../components/organisms/FlashcardDeck'
 import { Counter } from '../../../components/atoms/Counter'
+import { TabBar } from '../../../components/organisms/TabBar'
 
 const searchSchema = z.object({
   mode: z.literal('review').optional(),
@@ -24,7 +25,7 @@ export function FlashcardSessionScreenComponent({ topicId, cardIds }: { topicId:
   const { updateFlashcards } = useTopicProgress(topicId)
   const { appendSession } = useSessionHistory()
   const [progress, setProgress] = useState(0)
-  const [cardIndex, setCardIndex] = useState(0)
+  const [cardIndex, setCardIndex] = useState(1)
   const startedAt = useRef(new Date().toISOString()).current
 
   const topic = topics.find(t => t.id === topicId)
@@ -48,9 +49,9 @@ export function FlashcardSessionScreenComponent({ topicId, cardIds }: { topicId:
       wrongIds,
     })
     navigate({
-      to: '/topics/$topicId/$mode/complete',
-      params: { topicId, mode: 'flashcards' },
-      search: { score: result.score, total: result.total, wrongIds: wrongIds.join(',') },
+      to: '/topics/$topicId/flashcards/complete',
+      params: { topicId },
+      search: { masteredIds: result.masteredIds.join(','), total: result.total },
     })
   }
 
@@ -58,14 +59,15 @@ export function FlashcardSessionScreenComponent({ topicId, cardIds }: { topicId:
 
   function handleProgressChange(p: number) {
     setProgress(p)
-    setCardIndex(Math.round(p * totalCards))
+    setCardIndex(Math.round(p * totalCards) + 1)
   }
 
   return (
     <SessionPage
       progress={progress}
       onExit={() => navigate({ to: `/topics/${topicId}` })}
-      counter={<Counter current={cardIndex + 1} total={totalCards} prefix="Card" />}
+      counter={<Counter current={cardIndex} total={totalCards} prefix="Card" />}
+      tabBar={<TabBar active="study" />}
     >
       <FlashcardDeck
         topicId={topicId}
@@ -82,5 +84,7 @@ function FlashcardSessionScreen() {
   const { topicId } = Route.useParams()
   const search = Route.useSearch()
   const cardIds = search.cardIds ? search.cardIds.split(',') : undefined
+  const childMatches = useChildMatches()
+  if (childMatches.length > 0) return <Outlet />
   return <FlashcardSessionScreenComponent topicId={topicId} cardIds={cardIds} />
 }

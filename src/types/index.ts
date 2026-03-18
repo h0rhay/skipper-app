@@ -29,15 +29,18 @@ export interface Topic {
   flashcards: Flashcard[]
   mcqQuestions: MCQQuestion[]
   navTools: string[]
+  svgDiagramId?: string
 }
 
 export type TopicCompletionStatus = 'none' | 'partial' | 'complete'
 export type SessionMode = 'flashcards' | 'mcq' | 'nav'
+export type MasteryTier = 'none' | 'seen' | 'practised' | 'passed' | 'mastered'
 
 export interface FlashcardProgress {
   masteredIds: string[]
   totalCards: number
   lastStudied: string
+  accepted: boolean
 }
 
 export interface MCQProgress {
@@ -45,6 +48,7 @@ export interface MCQProgress {
   totalQuestions: number
   wrongIds: string[]
   lastStudied: string
+  accepted: boolean
 }
 
 export interface NavToolProgress {
@@ -56,6 +60,7 @@ export interface NavToolProgress {
 export interface TopicProgress {
   factsRead: boolean
   factsReadAt?: string
+  factsAccepted: boolean
   flashcards: FlashcardProgress
   mcq: MCQProgress
   navTools: Record<string, NavToolProgress>
@@ -64,6 +69,9 @@ export interface TopicProgress {
 export interface UserProgress {
   userId: string
   topics: Record<string, TopicProgress>
+  currentStreak: number
+  lastStudiedDate: string
+  longestStreak: number
 }
 
 export interface Session {

@@ -9,7 +9,7 @@ describe('TopicRow', () => {
     expect(screen.getByText('IRPCS / COLREGS')).toBeInTheDocument()
   })
 
-  it('shows critical badge when isSafetyCritical and not started', () => {
+  it('shows critical badge when isSafetyCritical', () => {
     render(<TopicRow number={5} title="IRPCS" status="none" isSafetyCritical onClick={() => {}} />)
     expect(screen.getByText(/critical/i)).toBeInTheDocument()
   })
@@ -22,13 +22,43 @@ describe('TopicRow', () => {
     expect(onClick).toHaveBeenCalledOnce()
   })
 
-  it('shows complete indicator for complete status', () => {
-    render(<TopicRow number={1} title="Nautical Terms" status="complete" onClick={() => {}} />)
-    expect(screen.getByText(/complete/i)).toBeInTheDocument()
+  it('shows SEEN chip when tier=seen', () => {
+    render(<TopicRow number={1} title="Nautical Terms" status="none" tier="seen" onClick={() => {}} />)
+    expect(screen.getByText('SEEN')).toBeInTheDocument()
   })
 
-  it('shows in-progress indicator for partial status', () => {
-    render(<TopicRow number={1} title="Nautical Terms" status="partial" onClick={() => {}} />)
-    expect(screen.getByText(/progress/i)).toBeInTheDocument()
+  it('shows PRACTISED chip when tier=practised', () => {
+    render(<TopicRow number={1} title="Nautical Terms" status="none" tier="practised" onClick={() => {}} />)
+    expect(screen.getByText('PRACTISED')).toBeInTheDocument()
+  })
+
+  it('shows PASSED chip when tier=passed', () => {
+    render(<TopicRow number={1} title="Nautical Terms" status="none" tier="passed" onClick={() => {}} />)
+    expect(screen.getByText('PASSED')).toBeInTheDocument()
+  })
+
+  it('shows MASTERED chip when tier=mastered', () => {
+    render(<TopicRow number={1} title="Nautical Terms" status="none" tier="mastered" onClick={() => {}} />)
+    expect(screen.getByText('MASTERED')).toBeInTheDocument()
+  })
+
+  it('shows no chip when tier=none', () => {
+    render(<TopicRow number={1} title="Nautical Terms" status="none" tier="none" onClick={() => {}} />)
+    expect(screen.queryByText('SEEN')).not.toBeInTheDocument()
+    expect(screen.queryByText('PRACTISED')).not.toBeInTheDocument()
+    expect(screen.queryByText('PASSED')).not.toBeInTheDocument()
+    expect(screen.queryByText('MASTERED')).not.toBeInTheDocument()
+  })
+
+  it('shows no chip when tier is undefined', () => {
+    render(<TopicRow number={1} title="Nautical Terms" status="none" onClick={() => {}} />)
+    expect(screen.queryByText('SEEN')).not.toBeInTheDocument()
+    expect(screen.queryByText('MASTERED')).not.toBeInTheDocument()
+  })
+
+  it('shows CRITICAL badge alongside tier chip for safety-critical topics', () => {
+    render(<TopicRow number={5} title="IRPCS" status="none" isSafetyCritical tier="seen" onClick={() => {}} />)
+    expect(screen.getByText(/critical/i)).toBeInTheDocument()
+    expect(screen.getByText('SEEN')).toBeInTheDocument()
   })
 })

@@ -3,6 +3,14 @@ import { storage } from '../services/storage'
 import topicsData from '../data/topics.json'
 import type { TopicCompletionStatus, UserProgress, TopicProgress } from '../types'
 
+const DEFAULT_USER_PROGRESS: UserProgress = {
+  userId: 'local',
+  topics: {},
+  currentStreak: 0,
+  lastStudiedDate: '',
+  longestStreak: 0,
+}
+
 function isTopicComplete(tp: TopicProgress): boolean {
   return (
     tp.factsRead &&
@@ -23,7 +31,7 @@ function isTopicPartial(tp: TopicProgress): boolean {
 
 export function useOverallProgress() {
   const [userProgress] = useState<UserProgress>(
-    () => storage.get<UserProgress>('progress', { userId: 'local', topics: {} }) ?? { userId: 'local', topics: {} }
+    () => storage.get<UserProgress>('progress', DEFAULT_USER_PROGRESS) ?? DEFAULT_USER_PROGRESS
   )
 
   const topicStatuses = useMemo(() => {

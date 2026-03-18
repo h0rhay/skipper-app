@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react'
 import { FlashCard } from '../../molecules/FlashCard'
 import { Button } from '../../atoms/Button'
-import { ProgressBar } from '../../atoms/ProgressBar'
+import { Divider } from '../../atoms/Divider'
 import { useFlashcardSession } from '../../../hooks/useFlashcardSession'
+import { getCardPath } from '../../illustrations/paths'
 import type { Flashcard } from '../../../types'
-import styles from './FlashcardDeck.module.css'
 
 interface FlashcardDeckProps {
   topicId: string
@@ -15,7 +15,7 @@ interface FlashcardDeckProps {
 }
 
 export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressChange }: FlashcardDeckProps) {
-  const { currentCard, isFlipped, flip, markGotIt, markAgain, progress, isComplete, score, masteredIds } =
+  const { currentCard, isFlipped, flip, next, prev, progress, isComplete, index, total } =
     useFlashcardSession(topicId, cards, cardIds)
 
   const onCompleteRef = useRef(onComplete)
@@ -25,25 +25,28 @@ export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressC
 
   useEffect(() => {
     if (isComplete) {
-      onCompleteRef.current({ masteredIds, score, total: cards.length })
+      onCompleteRef.current({ masteredIds: [], score: 0, total })
     }
-  }, [isComplete, masteredIds, score, cards.length])
+  }, [isComplete, total])
 
   if (!currentCard) return null
 
   return (
-    <div className={styles.deck}>
-      <ProgressBar value={progress} />
+    <div className="flex flex-col gap-5">
       <FlashCard
         front={currentCard.front}
         back={currentCard.back}
         isFlipped={isFlipped}
         onClick={!isFlipped ? flip : undefined}
+        illustrationSrc={getCardPath(currentCard.id) ?? undefined}
       />
+      {isFlipped && <Divider />}
       {isFlipped && (
-        <div className={styles.actions}>
-          <Button onClick={markAgain} variant="secondary" fullWidth>Again</Button>
-          <Button onClick={markGotIt} fullWidth>Got it</Button>
+        <div className="flex gap-3">
+          {index > 0 && (
+            <Button onClick={prev} variant="secondary" fullWidth>Back</Button>
+          )}
+          <Button onClick={next} fullWidth>Next</Button>
         </div>
       )}
     </div>

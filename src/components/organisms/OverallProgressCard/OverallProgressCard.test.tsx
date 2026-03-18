@@ -15,10 +15,9 @@ describe('OverallProgressCard', () => {
     expect(screen.getByText(/overall completion/i)).toBeInTheDocument()
   })
 
-  it('compact variant: shows topic count and streak', () => {
+  it('compact variant: shows overall progress label and streak', () => {
     render(<OverallProgressCard variant="compact" />)
     expect(screen.getByText(/overall progress/i)).toBeInTheDocument()
-    expect(screen.getByText(/topics/i)).toBeInTheDocument()
     expect(screen.getByText(/streak/i)).toBeInTheDocument()
   })
 })

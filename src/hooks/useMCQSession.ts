@@ -1,21 +1,11 @@
-import { useState, useCallback, useMemo, useRef } from 'react'
+import { useState } from 'react'
 import type { MCQQuestion } from '../types'
 
-export function useMCQSession(
-  _topicId: string,
-  allQuestions: MCQQuestion[]
-) {
-  const questions = useMemo(() => allQuestions, [allQuestions])
-
+export function useMCQSession(_topicId: string, questions: MCQQuestion[]) {
   const [index, setIndex] = useState(0)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
   const [isRevealed, setIsRevealed] = useState(false)
   const [wrongIds, setWrongIds] = useState<string[]>([])
-
-  // Refs to always have current values in callbacks
-  const selectedIndexRef = useRef<number | null>(null)
-  const isRevealedRef = useRef(false)
-  const indexRef = useRef(0)
 
   const currentQuestion = questions[index] ?? null
   const isComplete = index >= questions.length
@@ -24,38 +14,23 @@ export function useMCQSession(
   const isCorrect = isRevealed && selectedIndex === currentQuestion?.correctIndex
   const explanation = isRevealed ? (currentQuestion?.explanation ?? '') : ''
 
-  const select = useCallback((i: number) => {
-    if (!isRevealedRef.current) {
-      setSelectedIndex(i)
-      selectedIndexRef.current = i
-    }
-  }, [])
-
-  const submit = useCallback(() => {
-    if (selectedIndexRef.current === null || isRevealedRef.current) return
-    setIsRevealed(true)
-    isRevealedRef.current = true
-    const currentQ = questions[indexRef.current] ?? null
-    if (selectedIndexRef.current !== currentQ?.correctIndex) {
-      setWrongIds(prev => [...prev, currentQ!.id])
-    }
-  }, [questions])
-
-  const next = useCallback(() => {
-    setIndex(i => {
-      const newIndex = i + 1
-      indexRef.current = newIndex
-      return newIndex
-    })
-    setSelectedIndex(null)
-    selectedIndexRef.current = null
-    setIsRevealed(false)
-    isRevealedRef.current = false
-  }, [])
-
-  return {
-    currentQuestion, selectedIndex, select, submit, next,
-    isRevealed, isCorrect, explanation,
-    progress, isComplete, score, wrongIds,
+  function select(i: number) {
+    if (!isRevealed) setSelectedIndex(i)
   }
+
+  function submit() {
+    if (selectedIndex === null || isRevealed) return
+    setIsRevealed(true)
+    if (selectedIndex !== currentQuestion?.correctIndex) {
+      setWrongIds(prev => [...prev, currentQuestion!.id])
+    }
+  }
+
+  function next() {
+    setIndex(i => i + 1)
+    setSelectedIndex(null)
+    setIsRevealed(false)
+  }
+
+  return { currentQuestion, selectedIndex, select, submit, next, isRevealed, isCorrect, explanation, progress, isComplete, score, wrongIds }
 }

@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { createFileRoute, useNavigate, Outlet, useChildMatches } from '@tanstack/react-router'
 import { z } from 'zod'
 import { useState, useRef } from 'react'
 import { useTopics } from '../../../hooks/useTopics'
@@ -82,5 +82,7 @@ function FlashcardSessionScreen() {
   const { topicId } = Route.useParams()
   const search = Route.useSearch()
   const cardIds = search.cardIds ? search.cardIds.split(',') : undefined
+  const childMatches = useChildMatches()
+  if (childMatches.length > 0) return <Outlet />
   return <FlashcardSessionScreenComponent topicId={topicId} cardIds={cardIds} />
 }

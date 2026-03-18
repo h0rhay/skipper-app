@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { createFileRoute, useNavigate, Outlet, useChildMatches } from '@tanstack/react-router'
 import { z } from 'zod'
 import { useEffect, useRef } from 'react'
 import { useTopics } from '../../../hooks/useTopics'
@@ -104,5 +104,7 @@ function MCQSessionScreen() {
   const { topicId } = Route.useParams()
   const search = Route.useSearch()
   const questionIds = search.questionIds ? search.questionIds.split(',') : undefined
+  const childMatches = useChildMatches()
+  if (childMatches.length > 0) return <Outlet />
   return <MCQSessionScreenComponent topicId={topicId} questionIds={questionIds} />
 }

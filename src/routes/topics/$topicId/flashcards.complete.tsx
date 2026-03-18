@@ -18,9 +18,13 @@ export const Route = createFileRoute('/topics/$topicId/flashcards/complete')({
   component: FlashcardsCompleteScreen,
 })
 
-function FlashcardsCompleteScreen() {
-  const { topicId } = Route.useParams()
-  const { masteredIds: masteredParam, total } = Route.useSearch()
+interface FlashcardsCompleteScreenComponentProps {
+  topicId: string
+  masteredIds?: string
+  total: number
+}
+
+export function FlashcardsCompleteScreenComponent({ topicId, masteredIds: masteredParam, total }: FlashcardsCompleteScreenComponentProps) {
   const navigate = useNavigate()
   const { topics } = useTopics()
   const { acceptFlashcards } = useTopicMastery(topicId)
@@ -78,4 +82,10 @@ function FlashcardsCompleteScreen() {
       </ScrollPage>
     </AppShell>
   )
+}
+
+function FlashcardsCompleteScreen() {
+  const { topicId } = Route.useParams()
+  const { masteredIds, total } = Route.useSearch()
+  return <FlashcardsCompleteScreenComponent topicId={topicId} masteredIds={masteredIds} total={total} />
 }

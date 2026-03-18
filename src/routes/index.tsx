@@ -19,8 +19,7 @@ export function HomeScreenComponent() {
   const { percentComplete, topicTiers } = useWeightedProgress()
   const { currentStreak, recordStudyDay } = useStudyStreak()
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => { recordStudyDay() }, [])
+  useEffect(() => { recordStudyDay() }, [recordStudyDay])
 
   return (
     <AppShell topNav={<TopNav />} tabBar={<TabBar active="study" />}>

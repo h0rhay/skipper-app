@@ -28,8 +28,8 @@ function loadStreak(): StreakFields {
 export function computeStreak(current: StreakFields, today: string): StreakFields {
   if (current.lastStudiedDate === today) return current
 
-  const last = current.lastStudiedDate ? new Date(current.lastStudiedDate) : null
-  const todayDate = new Date(today)
+  const last = current.lastStudiedDate ? new Date(current.lastStudiedDate + 'T00:00:00Z') : null
+  const todayDate = new Date(today + 'T00:00:00Z')
   const diffDays = last ? Math.round((todayDate.getTime() - last.getTime()) / 86_400_000) : null
 
   const newStreak = diffDays === 1 ? current.currentStreak + 1 : 1

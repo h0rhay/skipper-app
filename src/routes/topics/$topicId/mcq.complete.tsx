@@ -23,7 +23,6 @@ interface MCQCompleteScreenComponentProps {
   topicId: string
   score: number
   total: number
-  wrongIds?: string
 }
 
 export function MCQCompleteScreenComponent({ topicId, score, total }: MCQCompleteScreenComponentProps) {
@@ -95,6 +94,6 @@ export function MCQCompleteScreenComponent({ topicId, score, total }: MCQComplet
 
 function MCQCompleteScreen() {
   const { topicId } = Route.useParams()
-  const { score, total, wrongIds } = Route.useSearch()
-  return <MCQCompleteScreenComponent topicId={topicId} score={score} total={total} wrongIds={wrongIds} />
+  const { score, total } = Route.useSearch()
+  return <MCQCompleteScreenComponent topicId={topicId} score={score} total={total} />
 }

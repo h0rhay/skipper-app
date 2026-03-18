@@ -40,6 +40,12 @@ describe('deriveTier', () => {
     expect(deriveTier(tp)).toBe('practised')
   })
 
+  it('stays practised at 69% MCQ score', () => {
+    // bestScore: 69, totalQuestions: 100 → 69% < 70%
+    const tp = { ...base, factsAccepted: true, flashcards: { ...base.flashcards, accepted: true }, mcq: { ...base.mcq, accepted: true, bestScore: 69, totalQuestions: 100 } }
+    expect(deriveTier(tp)).toBe('practised')
+  })
+
   it('does NOT reach seen if flashcards skipped to MCQ', () => {
     // mcq accepted but flashcards not accepted → still 'seen'
     const tp = { ...base, factsAccepted: true, mcq: { ...base.mcq, accepted: true, bestScore: 10, totalQuestions: 10 } }

@@ -12,8 +12,11 @@ export const Route = createFileRoute('/topics/$topicId/facts/complete')({
   component: FactsCompleteScreen,
 })
 
-function FactsCompleteScreen() {
-  const { topicId } = Route.useParams()
+interface FactsCompleteScreenComponentProps {
+  topicId: string
+}
+
+export function FactsCompleteScreenComponent({ topicId }: FactsCompleteScreenComponentProps) {
   const navigate = useNavigate()
   const { topics } = useTopics()
   const { acceptFacts } = useTopicMastery(topicId)
@@ -56,4 +59,9 @@ function FactsCompleteScreen() {
       </ScrollPage>
     </AppShell>
   )
+}
+
+function FactsCompleteScreen() {
+  const { topicId } = Route.useParams()
+  return <FactsCompleteScreenComponent topicId={topicId} />
 }

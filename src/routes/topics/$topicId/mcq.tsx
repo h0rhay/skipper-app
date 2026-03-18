@@ -68,8 +68,8 @@ export function MCQSessionScreenComponent({ topicId, questionIds }: MCQSessionSc
       wrongIds: wrongIdsRef.current,
     })
     navigate({
-      to: '/topics/$topicId/$mode/complete',
-      params: { topicId, mode: 'mcq' },
+      to: '/topics/$topicId/mcq/complete',
+      params: { topicId },
       search: { score: scoreRef.current, total: topicQuestionsLengthRef.current, wrongIds: wrongIdsRef.current.join(',') },
     })
   }, [isComplete, updateMCQ, appendSession, navigate, topicId, startedAt])

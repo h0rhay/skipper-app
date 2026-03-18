@@ -12,8 +12,6 @@ export const Route = createFileRoute('/quiz/')({
   component: QuizScreen,
 })
 
-export { QuizScreen as QuizScreenComponent }
-
 const QUIZ_SIZE = 20
 
 function shuffleArray<T>(arr: T[]): T[] {

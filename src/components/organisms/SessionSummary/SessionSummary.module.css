@@ -1,0 +1,28 @@
+.container { display: flex; flex-direction: column; gap: 20px; padding: 24px; }
+
+.topicTag { font-family: var(--font-body); font-size: var(--font-size-xs); font-weight: 700; letter-spacing: 1.5px; color: var(--color-text-muted); text-transform: uppercase; }
+.title { font-family: var(--font-heading); font-size: 32px; font-weight: 500; color: var(--color-text); letter-spacing: -0.5px; margin: 0; }
+
+.scoreBox { display: flex; flex-direction: column; gap: 4px; padding: 20px 0 16px; border-bottom: 1px solid var(--color-border); }
+.scoreRow { display: flex; align-items: flex-end; gap: 8px; }
+.scoreNum { font-family: var(--font-heading); font-size: 64px; font-weight: 500; color: var(--color-text); line-height: 1; }
+.scoreDenom { font-family: var(--font-heading); font-size: 24px; font-weight: 300; color: var(--color-text-muted); margin-bottom: 8px; }
+.scoreLabel { font-family: var(--font-body); font-size: var(--font-size-md); color: var(--color-text-tertiary); margin: 0; }
+.pctBadge { display: flex; align-items: center; gap: 8px; background: var(--color-sand); padding: 8px 12px; margin-top: 4px; }
+.pctNum { font-family: var(--font-heading); font-size: var(--font-size-xl); font-weight: 700; color: var(--color-primary); }
+.pctMsg { font-family: var(--font-body); font-size: var(--font-size-md); color: var(--color-text-tertiary); }
+
+.breakdown { display: flex; border: 1px solid var(--color-border); }
+.breakdownItem { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 16px 8px; }
+.breakdownNum { font-family: var(--font-body); font-size: 28px; font-weight: 700; }
+.breakdownNum[data-variant="correct"] { color: var(--color-primary); }
+.breakdownNum[data-variant="wrong"] { color: var(--color-error); }
+.breakdownNum[data-variant="pct"] { color: var(--color-text); }
+.breakdownLabel { font-family: var(--font-body); font-size: 11px; color: var(--color-text-muted); }
+.breakdownDivider { width: 1px; background: var(--color-border); }
+
+.actions { display: flex; flex-direction: column; gap: 10px; padding-top: 4px; }
+.secondaryBtn { height: 52px; background: var(--color-bg-card); border: 1px solid var(--color-border); font-family: var(--font-body); font-size: var(--font-size-base); font-weight: 600; color: var(--color-text-secondary); cursor: pointer; transition: background 0.15s; }
+.secondaryBtn:hover { background: var(--color-bg-muted); }
+.primaryBtn { height: 52px; background: var(--color-primary); border: none; font-family: var(--font-body); font-size: var(--font-size-base); font-weight: 700; color: #fff; cursor: pointer; transition: background 0.15s; }
+.primaryBtn:hover { background: var(--color-primary-hover); }

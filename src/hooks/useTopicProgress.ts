@@ -44,25 +44,43 @@ export function useTopicProgress(topicId: string) {
     update({ factsRead: true, factsReadAt: new Date().toISOString() })
   }, [update])
 
-  const updateFlashcards = useCallback((data: { masteredIds: string[]; totalCards: number }) => {
+  const updateFlashcards = useCallback((data: { masteredIds: string[]; totalCards: number; lastStudied?: string }) => {
     const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
     update({
-      flashcards: { ...data, lastStudied: new Date().toISOString(), accepted: current.flashcards.accepted },
+      flashcards: {
+        ...data,
+        lastStudied: data.lastStudied ?? new Date().toISOString(),
+        accepted: current.flashcards.accepted,
+      },
     })
   }, [update, userProgress, topicId])
 
-  const updateMCQ = useCallback((data: { bestScore: number; totalQuestions: number; wrongIds: string[] }) => {
+  const updateMCQ = useCallback((data: { bestScore: number; totalQuestions: number; wrongIds: string[]; lastStudied?: string }) => {
     const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
     update({
       mcq: {
         bestScore: Math.max(current.mcq.bestScore, data.bestScore),
         totalQuestions: data.totalQuestions,
         wrongIds: data.wrongIds,
-        lastStudied: new Date().toISOString(),
+        lastStudied: data.lastStudied ?? new Date().toISOString(),
         accepted: current.mcq.accepted,
       },
     })
   }, [update, userProgress, topicId])
 
-  return { progress, markFactsRead, updateFlashcards, updateMCQ }
+  const markFactsAccepted = useCallback(() => {
+    update({ factsRead: true, factsAccepted: true })
+  }, [update])
+
+  const acceptFlashcards = useCallback(() => {
+    const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
+    update({ flashcards: { ...current.flashcards, accepted: true } })
+  }, [update, userProgress, topicId])
+
+  const acceptMCQ = useCallback(() => {
+    const current = userProgress.topics[topicId] ?? DEFAULT_TOPIC_PROGRESS
+    update({ mcq: { ...current.mcq, accepted: true } })
+  }, [update, userProgress, topicId])
+
+  return { progress, markFactsRead, updateFlashcards, updateMCQ, markFactsAccepted, acceptFlashcards, acceptMCQ }
 }

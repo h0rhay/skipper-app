@@ -22,14 +22,11 @@ export function deriveTier(tp: TopicProgress | null | undefined): MasteryTier {
 }
 
 export function useTopicMastery(topicId: string) {
-  const { progress, markFactsRead, updateFlashcards, updateMCQ } = useTopicProgress(topicId)
+  const { progress, markFactsRead, updateFlashcards, updateMCQ, markFactsAccepted, acceptFlashcards, acceptMCQ } = useTopicProgress(topicId)
   const tier = deriveTier(progress)
   const weight = TIER_WEIGHT[tier]
 
-  // Stubs for accept callbacks — will be wired to real implementations in Task 5
-  const acceptFacts: () => void = markFactsRead
-  const acceptFlashcards: () => void = () => undefined
-  const acceptMCQ: () => void = () => undefined
+  const acceptFacts: () => void = markFactsAccepted
 
-  return { tier, weight, acceptFacts, acceptFlashcards, acceptMCQ, updateFlashcards, updateMCQ }
+  return { tier, weight, acceptFacts, acceptFlashcards, acceptMCQ, updateFlashcards, updateMCQ, markFactsRead }
 }

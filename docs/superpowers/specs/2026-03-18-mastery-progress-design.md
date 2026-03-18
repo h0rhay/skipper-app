@@ -93,6 +93,13 @@ Derives the tier for a topic from existing progress fields.
 }
 ```
 
+The accept callbacks call into `useTopicProgress`'s existing `update()` mechanism. Because `flashcards` and `mcq` are nested objects in `TopicProgress`, the patch must use a **deep merge** (spread the existing nested object, then overwrite `accepted`). The current `update()` uses a shallow merge — it must be extended to deep-merge one level for these nested fields to avoid clobbering `masteredIds`, `totalCards`, `bestScore`, etc.:
+
+```typescript
+// Example patch strategy
+update({ flashcards: { ...progress.flashcards, accepted: true } })
+```
+
 ### `useWeightedProgress()`
 Replaces `useOverallProgress` for the home/progress screens.
 
@@ -118,6 +125,8 @@ Replaces `useOverallProgress` for the home/progress screens.
 ## Completion Screens
 
 Each study mode navigates to a dedicated results screen on completion. All three follow the same visual rhythm: summary at top, primary CTA, secondary CTA.
+
+**Route strategy:** Three separate route files under `src/routes/topics/$topicId/` — `facts.complete.tsx`, `flashcards.complete.tsx`, and `mcq.complete.tsx`. The existing shared `$mode.complete.tsx` pattern is replaced. Each screen is a standalone component; they do not share a single branching organism. This matches the distinct content and CTA logic of each mode.
 
 ### Facts Complete (`/topics/:topicId/facts/complete`)
 

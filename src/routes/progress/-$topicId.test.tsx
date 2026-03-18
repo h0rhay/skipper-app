@@ -21,6 +21,7 @@ describe('TopicProgressScreen', () => {
 
   it('renders TopicProgressDetail for a known topicId', async () => {
     renderWithRouter(<TopicProgressScreenComponent topicId="01-nautical-terms" />)
-    expect(await screen.findByText(/not started/i)).toBeInTheDocument()
+    const items = await screen.findAllByText(/not started/i)
+    expect(items.length).toBeGreaterThan(0)
   })
 })

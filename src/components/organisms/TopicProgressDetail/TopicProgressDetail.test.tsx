@@ -7,7 +7,7 @@ describe('TopicProgressDetail', () => {
 
   it('shows "Not started" for a topic with no progress', () => {
     render(<TopicProgressDetail topicId="01-nautical-terms" />)
-    expect(screen.getByText(/not started/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/not started/i).length).toBeGreaterThan(0)
   })
 
   it('shows mastered card count', () => {

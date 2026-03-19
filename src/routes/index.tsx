@@ -25,7 +25,7 @@ function HomeScreen() {
       <div className="pb-6 flex flex-col gap-6">
         <div className="relative overflow-hidden h-72 flex items-end px-6 pb-5">
           <img
-            src="/illustrations/card-13-meteorology-fc-1.png"
+            src="/illustrations/hero-14-passage-planning.png"
             alt=""
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover object-center"

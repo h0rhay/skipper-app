@@ -23,7 +23,7 @@ function HomeScreen() {
   return (
     <AppShell topNav={<TopNav />} tabBar={<TabBar active="study" />}>
       <div className="pb-6 flex flex-col gap-6">
-        <div className="relative overflow-hidden h-72 flex items-end justify-center px-6 pb-5">
+        <div className="relative overflow-hidden h-72 flex items-center justify-center px-6">
           <img
             src="/illustrations/hero-14-passage-planning.png"
             alt=""

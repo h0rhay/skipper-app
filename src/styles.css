@@ -161,7 +161,12 @@ button { cursor: pointer; font-family: inherit; }
 /* ─── Hero image ─────────────────────────────────────────────── */
 [data-theme='dark'] .hero-image, .dark .hero-image {
   filter: invert(1);
-  opacity: 0.3;
+  opacity: 0.25;
+}
+
+/* ─── TabBar ─────────────────────────────────────────────────── */
+[data-theme='dark'] .tab-inactive, .dark .tab-inactive {
+  color: var(--color-navy);
 }
 
 /* ─── Sand gradient ──────────────────────────────────────────── */

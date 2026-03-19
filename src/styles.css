@@ -161,6 +161,7 @@ button { cursor: pointer; font-family: inherit; }
 /* ─── Hero image ─────────────────────────────────────────────── */
 [data-theme='dark'] .hero-image, .dark .hero-image {
   filter: invert(1);
+  opacity: 0.3;
 }
 
 /* ─── Sand gradient ──────────────────────────────────────────── */

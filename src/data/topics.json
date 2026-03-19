@@ -5,7 +5,7 @@
     "title": "Nautical Terms",
     "description": "This topic covers the essential vocabulary of a sailing yacht: hull geometry, structural parts above and below deck, the standing and running rigging, points of sailing relative to the wind, and the main rig types encountered on cruising and racing yachts.",
     "isSafetyCritical": false,
-    "summary": "This topic covers the essential vocabulary of a sailing yacht: hull geometry, structural parts above and below deck, the standing and running rigging, points of sailing relative to the wind, and the main rig types encountered on cruising and racing yachts. Proficiency with these terms is a prerequisite for every other aspect of the Day Skipper syllabus.",
+    "summary": "Sailing has its own language — and using the right word under pressure can matter. This topic builds the vocabulary you'll need for the whole Day Skipper syllabus.\n\n• Hull geometry: bow, stern, port, starboard, beam, freeboard, draught\n• Structural parts above and below deck — deck fittings, keel, rudder, chainplates\n• Standing rigging vs running rigging: what holds the mast up vs what controls the sails\n• Points of sailing: close-hauled, reaching, running — and what each means for sail trim\n• Rig types: sloop, ketch, yawl — and what you're likely to find on a cruising yacht\n\nIf someone shouts \"ease the kicker\" or \"bear away\" at a critical moment, you need to know immediately what to do.",
     "keyTerms": [
       {
         "term": "Bow",
@@ -370,7 +370,7 @@
     "title": "Ropework",
     "description": "This topic covers the properties and construction of synthetic ropes used aboard sailing yachts, the correct techniques for securing ropes to cleats and winches, and the principal knots used in sailing with their specific applications.",
     "isSafetyCritical": false,
-    "summary": "This topic covers the properties and construction of synthetic ropes used aboard sailing yachts, the correct techniques for securing ropes to cleats and winches, and the principal knots used in sailing with their specific applications. Understanding which knot to use in which situation is a practical safety skill as well as a knowledge-test topic.",
+    "summary": "Good ropework separates a competent crew from a dangerous one. The wrong knot in the wrong place can jam, slip, or fail at the worst possible moment.\n\n• Rope construction and materials: why nylon stretches but polyester doesn't — and when that matters\n• Cleating and winching: correct techniques that prevent jams and slipped loads\n• The essential knots: bowline, figure of eight, round turn and two half hitches, cleat hitch — and exactly when to use each\n• The rolling hitch: how to take load off a jammed rope or sheet under tension\n\nKnowing your knots cold is both a practical safety skill and a knowledge-test requirement.",
     "keyTerms": [
       {
         "term": "Polyester",
@@ -542,7 +542,7 @@
     "title": "Anchorwork",
     "description": "This topic covers the main anchor types used on cruising yachts, the principles of scope calculation for chain and warp, how to select a suitable anchorage, and the practical considerations for anchoring safely including swinging room, seabed type, and tidal awareness.",
     "isSafetyCritical": false,
-    "summary": "This topic covers the main anchor types used on cruising yachts, the principles of scope calculation for chain and warp, how to select a suitable anchorage, and the practical considerations for anchoring safely including swinging room, seabed type, and tidal awareness. Correct anchoring technique is important both for safety and for environmental reasons.",
+    "summary": "Anchoring well is both an art and a science. A well-set anchor gives you a safe night's sleep; a dragging one can put you on the rocks.\n\n• Anchor types: CQR, Bruce, Danforth — how they grip in different seabed conditions\n• Scope calculation: how much chain or warp to let out for the depth and the conditions\n• Choosing an anchorage: shelter, seabed type, swinging room, and tidal range\n• Practical checks: snubber, anchor light, drag alarm, and when to re-anchor\n• Environmental responsibility: why you should never anchor on seagrass or sensitive habitats",
     "keyTerms": [
       {
         "term": "Scope",
@@ -701,7 +701,7 @@
     "title": "Safety",
     "description": "Safety is a foundational topic in the RYA Day Skipper syllabus.",
     "isSafetyCritical": true,
-    "summary": "Safety is a foundational topic in the RYA Day Skipper syllabus. It covers the equipment required on board a pleasure vessel, personal protective gear for the crew, fire prevention and fighting, and what to do in an emergency.",
+    "summary": "Safety isn't just a syllabus topic — it's the mindset that defines a good skipper. This covers what you need on board, how to use it, and what to do when things go wrong.\n\n• Required equipment: flares, lifebuoys, jackstays, EPIRBs, fire extinguishers\n• Personal protective gear: lifejackets, harnesses, tethers — and when each is mandatory\n• Fire prevention and fighting: the three fire types and the right extinguisher for each\n• Emergency procedures: man overboard recovery, abandon ship, Mayday calls, distress signals\n• Pre-departure briefing: making sure everyone on board knows where the equipment is",
     "keyTerms": [
       {
         "term": "Lifejacket",
@@ -936,7 +936,7 @@
     "title": "IRPCS/COLREGS: International Regulations for Preventing Collisions at Sea",
     "description": "The International Regulations for Preventing Collisions at Sea (IRPCS) — commonly called COLREGS — are a set of internationally agreed rules that govern how vessels must behave to avoid collisions.",
     "isSafetyCritical": true,
-    "summary": "The International Regulations for Preventing Collisions at Sea (IRPCS) — commonly called COLREGS — are a set of internationally agreed rules that govern how vessels must behave to avoid collisions. They are given force in UK law by the Merchant Shipping (Distress Signals and Prevention of Collisions) Regulations 1996 (MSN 1781 M+F).",
+    "summary": "The COLREGs are the rules of the road at sea — internationally agreed and legally binding. Knowing them is not optional.\n\n• The stand-on/give-way hierarchy: who gives way in crossing, overtaking, and head-on situations\n• The vessel hierarchy: sail, power, fishing, restricted in ability, not under command — who takes priority\n• Lights and shapes: what they mean at night and in daylight\n• Sound signals: one short blast, two blasts, five short blasts — what each means\n• Rule 5 (Lookout) and Rule 8 (Action to Avoid Collision): the two rules you'll always need",
     "keyTerms": [
       {
         "term": "IRPCS",
@@ -1116,7 +1116,7 @@
     "title": "Position, Course and Speed",
     "description": "This topic defines the fundamental units and concepts of marine navigation: how position is expressed using latitude and longitude, how the nautical mile and the knot relate to the Earth's geometry, and the four types of bearing (true, magnetic, compass, and relative).",
     "isSafetyCritical": false,
-    "summary": "This topic defines the fundamental units and concepts of marine navigation: how position is expressed using latitude and longitude, how the nautical mile and the knot relate to the Earth's geometry, and the four types of bearing (true, magnetic, compass, and relative). These definitions underpin all chartwork and passage planning.",
+    "summary": "Every navigation problem starts with the same three questions: where am I, where am I going, and how fast? This topic defines the language used to answer them.\n\n• Latitude and longitude: how position is expressed on the globe and plotted on a chart\n• The nautical mile: one minute of latitude — tied directly to the Earth's geometry\n• The knot: one nautical mile per hour — the universal unit of speed at sea\n• Four types of bearing: true, magnetic, compass, and relative — and how they differ\n\nThese definitions underpin every chartwork problem in the rest of the syllabus.",
     "keyTerms": [
       {
         "term": "Latitude",
@@ -1275,7 +1275,7 @@
     "title": "Navigational Charts and Publications",
     "description": "Navigational charts are the fundamental tool of coastal navigation.",
     "isSafetyCritical": true,
-    "summary": "Navigational charts are the fundamental tool of coastal navigation. British Admiralty (UKHO) charts use standardised symbols and abbreviations defined in NP5011 (Chart 5011).",
+    "summary": "A chart is a compressed picture of the sea, coastline, and hazards — designed to be read quickly and accurately, often in rough conditions.\n\n• Chart types and scales: choosing the right chart for passage planning vs harbour entry\n• Symbols and abbreviations: the NP5011 library — soundings, rocks, wrecks, lights, anchorages\n• Tidal information: tidal diamonds, stream atlases, and how to use them on passage\n• Keeping charts current: Notices to Mariners, Small Craft Editions, and digital charts\n\nAn out-of-date chart isn't just inconvenient — it can be genuinely dangerous.",
     "keyTerms": [
       {
         "term": "Chart Datum (CD)",
@@ -1438,7 +1438,7 @@
     "title": "Navigational Drawing Instruments",
     "description": "This topic covers the instruments used at the chart table for plotting positions, transferring bearings, and measuring distance on a nautical chart.",
     "isSafetyCritical": false,
-    "summary": "This topic covers the instruments used at the chart table for plotting positions, transferring bearings, and measuring distance on a nautical chart. The principal tools are parallel rulers (walking or rolling), dividers, and proprietary plotters (such as the Portland or Breton plotter).",
+    "summary": "Chart table tools are simple and low-tech — but using them accurately is a skill that needs practice before you're at sea in a seaway.\n\n• Parallel rulers (walking and rolling): transferring a bearing from compass rose to chart\n• Dividers: measuring distances against the latitude scale — never the longitude scale\n• Portland and Breton plotters: all-in-one tools that combine both functions\n• Common errors: parallax, misreading the compass rose, forgetting to check the scale\n\nSlow is smooth; smooth is fast — especially when the boat is heeled and the chart is sliding.",
     "keyTerms": [
       {
         "term": "Parallel rulers",
@@ -1559,7 +1559,7 @@
     "title": "Compass",
     "description": "The compass is the primary instrument for steering and taking bearings at sea.",
     "isSafetyCritical": true,
-    "summary": "The compass is the primary instrument for steering and taking bearings at sea. Navigators must understand three north references — True North (geographic), Magnetic North (compass rose), and Compass North (the ship's compass reading) — and be able to convert between them.",
+    "summary": "The compass is your most reliable instrument — it needs no power, no signal, and no satellite. But you must understand and correct what it tells you.\n\n• True North vs Magnetic North vs Compass North — the three norths and why they differ\n• Variation: the difference between true and magnetic (varies by location, changes annually)\n• Deviation: the difference between magnetic and compass (caused by the boat's own ironwork)\n• Converting between the three: applying the mnemonic \"TVMDC\" — and whether to add or subtract\n\nGetting variation and deviation right is the single most common source of error in chartwork exam questions.",
     "keyTerms": [
       {
         "term": "True North",
@@ -1682,7 +1682,7 @@
     "title": "Chartwork",
     "description": "Chartwork is the practical application of navigation on the chart.",
     "isSafetyCritical": true,
-    "summary": "Chartwork is the practical application of navigation on the chart. It encompasses plotting positions (by latitude/longitude, by bearing and distance, or by GPS), tracking the vessel's progress using dead reckoning and estimated position, fixing position visually using cross bearings and transits, and planning a course to steer that accounts for tidal stream and leeway.",
+    "summary": "Chartwork is where navigation theory becomes practical. It's the core skill of the Day Skipper course — plotting where you are, where you've been, and where you need to go.\n\n• Dead reckoning: estimating position from course steered, speed made good, and time elapsed\n• Estimated position: applying tidal stream and leeway to a DR position\n• Fixing position: cross bearings, transits, and running fixes — and which to trust most\n• Course to steer: calculating a heading that accounts for tidal set and leeway to make good the intended track",
     "keyTerms": [
       {
         "term": "DR (Dead Reckoning)",
@@ -1847,7 +1847,7 @@
     "title": "Tides and Tidal Streams",
     "description": "Tides are the regular rise and fall of sea level caused primarily by the gravitational pull of the Moon and Sun.",
     "isSafetyCritical": true,
-    "summary": "Tides are the regular rise and fall of sea level caused primarily by the gravitational pull of the Moon and Sun. Understanding tidal heights is essential for calculating the depth of water over shoals, under bridges, and at harbour entrances.",
+    "summary": "Tides are one of the forces that make coastal sailing fundamentally different from any other environment. Get them right and you save time and fuel; get them wrong and you go aground.\n\n• Causes of tides: the gravitational pull of the Moon and Sun — spring and neap cycles\n• Tidal height: calculating how much water is above chart datum at any given time\n• The Rule of Twelfths: a quick mental calculation for tidal height between HW and LW\n• Tidal streams: finding rate and direction from tidal diamonds and stream atlases\n• Key datums: MHWS, MLWS, MHWN, MLWN — what they mean for clearances and berth planning",
     "keyTerms": [
       {
         "term": "Chart Datum (CD)",
@@ -2023,7 +2023,7 @@
     "title": "Visual Aids to Navigation — Lighthouse and Beacon Light Characteristics, IALA Buoyage System",
     "description": "The IALA Maritime Buoyage System divides the world into two regions.",
     "isSafetyCritical": true,
-    "summary": "The IALA Maritime Buoyage System divides the world into two regions. Region A covers Europe, Africa, Russia, India, Australia, and New Zealand; Region B covers the Americas, Japan, South Korea, the Philippines, and Canada.",
+    "summary": "Marks and lights tell a story — once you know how to read them. The IALA system is consistent across almost all of the world's waters.\n\n• Lateral marks: port and starboard channel edges — red to port, green to starboard in Region A\n• Cardinal marks: north, south, east, west — indicating which side of a hazard to pass\n• Special marks, isolated danger marks, safe water marks — and how to tell them apart\n• Light characteristics: the flashing pattern tells you what the mark is (Q, VQ, Iso, Fl, Oc)\n• Lighthouses: identifying a light by its characteristic from the chart and almanac",
     "keyTerms": [
       {
         "term": "IALA Region A",
@@ -2257,7 +2257,7 @@
     "title": "Meteorology",
     "description": "Understanding weather is fundamental to safe passage planning.",
     "isSafetyCritical": true,
-    "summary": "Understanding weather is fundamental to safe passage planning. Day Skipper students must be able to obtain and interpret marine weather forecasts (including the Shipping Forecast), understand pressure systems, fronts, and their associated weather, interpret the Beaufort wind scale, recognise land and sea breeze effects, and understand the significance of deteriorating weather for a vessel underway.",
+    "summary": "Weather is the single biggest variable in passage planning. Understanding what's coming — and what it means for your boat — is what separates the cautious skipper from the unlucky one.\n\n• Pressure systems: highs, lows, and fronts — their typical wind patterns and weather\n• Fronts: what a cold front, warm front, and occlusion look like, feel like, and bring\n• The Beaufort scale: sea states from F0 to F12 and the wind speeds that produce them\n• Marine forecasts: Shipping Forecast, Coastguard, VHF, apps — and how to interpret each\n• Local effects: sea breezes, land breezes, coastal acceleration, and fog formation",
     "keyTerms": [
       {
         "term": "Isobar",
@@ -2415,7 +2415,7 @@
     "title": "Passage Planning",
     "description": "Passage planning is the process of preparing systematically for a voyage — from initial appraisal through to arrival.",
     "isSafetyCritical": true,
-    "summary": "Passage planning is the process of preparing systematically for a voyage — from initial appraisal through to arrival. Good passage planning considers the navigational environment, weather, tidal windows, hazards, and contingency options.",
+    "summary": "A well-planned passage runs smoothly; an unplanned one depends on luck. The APEM framework gives you a structure to prepare for any voyage — from a day sail to a cross-Channel passage.\n\n• Appraise: gather information — charts, tidal windows, weather forecasts, port details\n• Plan: choose the route, calculate courses and distances, identify waypoints and hazards\n• Execute: departure checks, safety briefing, engine checks, crew watch system\n• Monitor: regular position checks, updating the ETA, adjusting to changing conditions\n\nA good plan always includes at least two contingency harbours — and a decision point for turning back.",
     "keyTerms": [
       {
         "term": "Waypoint (WPT)",
@@ -2570,7 +2570,7 @@
     "title": "Navigation in Restricted Visibility",
     "description": "Restricted visibility occurs whenever visibility is reduced by fog, mist, falling snow, heavy rain, sandstorms, or any other similar cause.",
     "isSafetyCritical": true,
-    "summary": "Restricted visibility occurs whenever visibility is reduced by fog, mist, falling snow, heavy rain, sandstorms, or any other similar cause. It is one of the most hazardous conditions a skipper can encounter because: - Other vessels may not be seen until dangerously close.",
+    "summary": "Fog is the condition that makes experienced skippers most nervous — and for good reason. Visibility can drop to metres without warning, and the COLREG response is non-negotiable.\n\n• Rule 19: the specific rules that apply in restricted visibility — safe speed, lookout, action\n• Safe speed: how to judge it in reduced visibility — much slower than you might think\n• Sound signals: the correct fog signal for your vessel, and what others' signals mean\n• Radar: target detection, closest point of approach, and the limits of what it can tell you\n• Decision-making: when to anchor, heave-to, or press on — and how to alert other vessels",
     "keyTerms": [
       {
         "term": "Restricted visibility",
@@ -2703,7 +2703,7 @@
     "title": "Pilotage — Transits, Leading Lines, IALA Buoyage, Sailing Directions, Harbour Entry",
     "description": "Pilotage is the art of inshore navigation using visual references — marks, transits, depth contours, bearings, and buoys — to navigate safely along the coast and in and out of harbour.",
     "isSafetyCritical": true,
-    "summary": "Pilotage is the art of inshore navigation using visual references — marks, transits, depth contours, bearings, and buoys — to navigate safely along the coast and in and out of harbour. Because the navigator is close to hazards, good advance planning is essential: a well-constructed pilotage plan allows the skipper to navigate from the deck without having to go below to work out the next move.",
+    "summary": "Pilotage is inshore navigation by eye — reading the water, the marks, and the transits rather than working at the chart table. When you're close to rocks, there's no time to go below.\n\n• Building a pilotage plan: written notes prepared before departure, not improvised at the helm\n• Transits and leading marks: two objects in line that confirm you're exactly on track\n• Clearing bearings: compass bearings that keep you on the safe side of a charted hazard\n• Depth contour pilotage: using the echosounder to follow a known depth line into harbour\n• Tidal gate awareness: the windows when an entrance is navigable — and the cost of mistiming",
     "keyTerms": [
       {
         "term": "Transit",
@@ -2857,7 +2857,7 @@
     "title": "Marine Environment",
     "description": "This topic covers the responsibilities of the skipper and crew to protect the marine environment: pollution prevention (oil, garbage, sewage), environmentally responsible anchoring, and an awareness of the international framework (MARPOL) governing vessel discharges.",
     "isSafetyCritical": true,
-    "summary": "This topic covers the responsibilities of the skipper and crew to protect the marine environment: pollution prevention (oil, garbage, sewage), environmentally responsible anchoring, and an awareness of the international framework (MARPOL) governing vessel discharges. The Day Skipper syllabus expects a working knowledge of what is and is not permitted to discharge at sea under UK/international law.",
+    "summary": "Looking after the sea is part of the job — and the rules are clear.\n\n• MARPOL: the international treaty governing discharges at sea — what's banned and where\n• Garbage: no plastics overboard, ever; other waste has strict zone and distance restrictions\n• Oil and bilge water: the 15ppm rule and what treatment is required before discharge\n• Sewage: holding tank requirements in coastal and inland waters\n• Anchoring responsibly: how to avoid damaging seagrass beds, coral, and sensitive seabeds",
     "keyTerms": [
       {
         "term": "MARPOL",

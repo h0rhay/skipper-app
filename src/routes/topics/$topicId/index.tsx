@@ -1,6 +1,7 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useTopics } from '../../../hooks/useTopics'
 import { useTopicProgress } from '../../../hooks/useTopicProgress'
+import { useImagePreload } from '../../../hooks/useImagePreload'
 import { AppShell } from '../../../components/templates/AppShell'
 import { ScrollPage } from '../../../components/templates/ScrollPage'
 import { TabBar } from '../../../components/organisms/TabBar'
@@ -8,6 +9,7 @@ import { TopicHeader } from '../../../components/organisms/TopicHeader'
 import { StudyModeList } from '../../../components/organisms/StudyModeList'
 import { BackHeader } from '../../../components/molecules/BackHeader'
 import { Divider } from '../../../components/atoms/Divider'
+import { getHeroPath, getHeroPlaceholder, getCardPath, getCardPlaceholder } from '../../../components/illustrations/paths'
 
 export const Route = createFileRoute('/topics/$topicId/')({
   component: TopicDetailScreen,
@@ -19,6 +21,7 @@ interface TopicDetailScreenComponentProps {
 
 export function TopicDetailScreenComponent({ topicId }: TopicDetailScreenComponentProps) {
   const navigate = useNavigate()
+  const preload = useImagePreload()
   const { topics } = useTopics()
   const { progress } = useTopicProgress(topicId)
 
@@ -26,6 +29,12 @@ export function TopicDetailScreenComponent({ topicId }: TopicDetailScreenCompone
   if (!topic) return <div>Topic not found</div>
 
   function handleModeSelect(mode: string) {
+    if (mode === 'facts') {
+      preload([getHeroPath(topicId), getHeroPlaceholder(topicId)])
+    } else if (mode === 'flashcards') {
+      const firstCard = topic.flashcards[0]
+      if (firstCard) preload([getCardPath(firstCard.id), getCardPlaceholder(firstCard.id)])
+    }
     navigate({ to: `/topics/${topicId}/${mode}` })
   }
 

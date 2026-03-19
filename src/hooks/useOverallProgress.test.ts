@@ -18,9 +18,10 @@ describe('useOverallProgress', () => {
       topics: {
         '05-irpcs-colregs': {
           factsRead: true,
+          factsAccepted: true,
           factsReadAt: '2026-03-17T00:00:00Z',
-          flashcards: { masteredIds: ['fc-1', 'fc-2', 'fc-3'], totalCards: 3, lastStudied: '2026-03-17T00:00:00Z' },
-          mcq: { bestScore: 9, totalQuestions: 12, wrongIds: [], lastStudied: '2026-03-17T00:00:00Z' },
+          flashcards: { masteredIds: ['fc-1', 'fc-2', 'fc-3'], totalCards: 3, accepted: true, lastStudied: '2026-03-17T00:00:00Z' },
+          mcq: { bestScore: 9, totalQuestions: 12, accepted: true, wrongIds: [], lastStudied: '2026-03-17T00:00:00Z' },
           navTools: {}
         }
       }

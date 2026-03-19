@@ -1,14 +1,21 @@
-// Maps topic IDs, card IDs, and term names to generated illustration paths.
-// Images live in public/illustrations/ and are served as static assets.
+// Maps topic IDs, card IDs, and term names to illustration public IDs.
+// Uses Cloudinary for optimised delivery when VITE_CLOUDINARY_CLOUD_NAME is set,
+// falling back to local static assets in development.
 //
 // Add an entry here when a new image is generated. getCardPath returns null
 // for cards without images so the caller never needs to guess.
 
-// Hero image for each topic's facts page
-export function getHeroPath(topicId: string): string {
-  return `/illustrations/hero-${topicId}.png`
-}
+import { imgUrl, placeholderUrl } from '#/lib/cloudinary'
 
+const heroId = (topicId: string) => `skipper/illustrations/hero-${topicId}`
+const cardId = (cardId: string) => `skipper/illustrations/card-${cardId}`
+const termId = (name: string) => `skipper/illustrations/${name}`
+
+// ─── Hero ─────────────────────────────────────────────────────
+export const getHeroPath = (topicId: string) => imgUrl(heroId(topicId))
+export const getHeroPlaceholder = (topicId: string) => placeholderUrl(heroId(topicId))
+
+// ─── Card ─────────────────────────────────────────────────────
 // Exhaustive list of card IDs that have generated images.
 // Update this when running scripts/generate-illustrations.mjs.
 const CARD_IMAGES = new Set([
@@ -84,31 +91,39 @@ const CARD_IMAGES = new Set([
   '17-marine-environment-fc-3',
 ])
 
-// Returns the illustration path for a card, or null if none exists.
-export function getCardPath(cardId: string): string | null {
-  return CARD_IMAGES.has(cardId) ? `/illustrations/card-${cardId}.png` : null
+export const getCardPath = (id: string): string | null =>
+  CARD_IMAGES.has(id) ? imgUrl(cardId(id)) : null
+
+export const getCardPlaceholder = (id: string): string | null =>
+  CARD_IMAGES.has(id) ? placeholderUrl(cardId(id)) : null
+
+// ─── Term ─────────────────────────────────────────────────────
+// Maps term text (case-insensitive) to its illustration filename.
+const TERM_FILENAMES: Record<string, string> = {
+  'bowline':            'term-01-bowline',
+  'clove hitch':        'term-01-clove-hitch',
+  'rolling hitch':      'term-01-rolling-hitch',
+  'figure of eight':    'term-01-figure-of-eight',
+  'keel':               'term-01-keel',
+  'tacking':            'term-01-tacking',
+  'scope':              'term-02-scope',
+  'bruce anchor':       'term-02-bruce-anchor',
+  'danforth anchor':    'term-02-danforth-anchor',
+  'variation':          'term-05-variation',
+  'deviation':          'term-05-deviation',
+  'cocked hat':         'term-06-cocked-hat',
+  'rule of twelfths':   'term-07-rule-of-twelfths',
+  'cardinal mark':      'term-08-iala-north-cardinal',
+  'wind over tide':     'term-09-wind-over-tide',
+  'transit':            'term-10-transit',
 }
 
-// Per-term illustration — keyed by term text (case-insensitive)
-const TERM_MAP: Record<string, string> = {
-  'bowline':            '/illustrations/term-01-bowline.png',
-  'clove hitch':        '/illustrations/term-01-clove-hitch.png',
-  'rolling hitch':      '/illustrations/term-01-rolling-hitch.png',
-  'figure of eight':    '/illustrations/term-01-figure-of-eight.png',
-  'keel':               '/illustrations/term-01-keel.png',
-  'tacking':            '/illustrations/term-01-tacking.png',
-  'scope':              '/illustrations/term-02-scope.png',
-  'bruce anchor':       '/illustrations/term-02-bruce-anchor.png',
-  'danforth anchor':    '/illustrations/term-02-danforth-anchor.png',
-  'variation':          '/illustrations/term-05-variation.png',
-  'deviation':          '/illustrations/term-05-deviation.png',
-  'cocked hat':         '/illustrations/term-06-cocked-hat.png',
-  'rule of twelfths':   '/illustrations/term-07-rule-of-twelfths.png',
-  'cardinal mark':      '/illustrations/term-08-iala-north-cardinal.png',
-  'wind over tide':     '/illustrations/term-09-wind-over-tide.png',
-  'transit':            '/illustrations/term-10-transit.png',
+export const getTermPath = (term: string): string | null => {
+  const file = TERM_FILENAMES[term.toLowerCase()]
+  return file ? imgUrl(termId(file)) : null
 }
 
-export function getTermPath(term: string): string | null {
-  return TERM_MAP[term.toLowerCase()] ?? null
+export const getTermPlaceholder = (term: string): string | null => {
+  const file = TERM_FILENAMES[term.toLowerCase()]
+  return file ? placeholderUrl(termId(file)) : null
 }

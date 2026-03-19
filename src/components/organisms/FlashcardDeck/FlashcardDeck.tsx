@@ -3,7 +3,8 @@ import { FlashCard } from '../../molecules/FlashCard'
 import { Button } from '../../atoms/Button'
 import { Divider } from '../../atoms/Divider'
 import { useFlashcardSession } from '../../../hooks/useFlashcardSession'
-import { getCardPath } from '../../illustrations/paths'
+import { useImagePreload } from '../../../hooks/useImagePreload'
+import { getCardPath, getCardPlaceholder } from '../../illustrations/paths'
 import type { Flashcard } from '../../../types'
 
 interface FlashcardDeckProps {
@@ -15,13 +16,20 @@ interface FlashcardDeckProps {
 }
 
 export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressChange }: FlashcardDeckProps) {
-  const { currentCard, isFlipped, flip, next, prev, progress, isComplete, index, total } =
+  const { currentCard, nextCard, isFlipped, flip, next, prev, progress, isComplete, index, total } =
     useFlashcardSession(topicId, cards, cardIds)
+
+  const preload = useImagePreload()
 
   const onCompleteRef = useRef(onComplete)
   useEffect(() => { onCompleteRef.current = onComplete }, [onComplete])
 
   useEffect(() => { onProgressChange?.(progress) }, [progress, onProgressChange])
+
+  useEffect(() => {
+    if (!nextCard) return
+    preload([getCardPath(nextCard.id), getCardPlaceholder(nextCard.id)])
+  }, [nextCard, preload])
 
   useEffect(() => {
     if (isComplete) {
@@ -39,6 +47,7 @@ export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressC
         isFlipped={isFlipped}
         onClick={!isFlipped ? flip : undefined}
         illustrationSrc={getCardPath(currentCard.id) ?? undefined}
+        illustrationLqip={getCardPlaceholder(currentCard.id)}
       />
       {isFlipped && <Divider />}
       {isFlipped && (

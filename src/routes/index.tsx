@@ -9,6 +9,8 @@ import { TopicList } from '../components/organisms/TopicList'
 import { Label } from '../components/atoms/Label'
 import { Divider } from '../components/atoms/Divider'
 import { useStudyStreak } from '../hooks/useStudyStreak'
+import { useImagePreload } from '../hooks/useImagePreload'
+import { getHeroPath, getHeroPlaceholder } from '../components/illustrations/paths'
 
 export const Route = createFileRoute('/')({
   component: HomeScreen,
@@ -16,6 +18,7 @@ export const Route = createFileRoute('/')({
 
 function HomeScreen() {
   const navigate = useNavigate()
+  const preload = useImagePreload()
   const { recordStudyDay } = useStudyStreak()
 
   useEffect(() => { recordStudyDay() }, [recordStudyDay])
@@ -37,7 +40,10 @@ function HomeScreen() {
         <Divider />
         <ResumeCard />
         <Label>All Topics</Label>
-        <TopicList onTopicClick={id => navigate({ to: '/topics/$topicId', params: { topicId: id } })} />
+        <TopicList onTopicClick={id => {
+          preload([getHeroPath(id), getHeroPlaceholder(id)])
+          navigate({ to: '/topics/$topicId', params: { topicId: id } })
+        }} />
         </div>
       </div>
     </AppShell>

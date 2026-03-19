@@ -2,6 +2,8 @@ import { Link } from '@tanstack/react-router'
 import { ArrowRight } from 'lucide-react'
 import { useSessionHistory } from '../../../hooks/useSessionHistory'
 import { useTopics } from '../../../hooks/useTopics'
+import { useImagePreload } from '../../../hooks/useImagePreload'
+import { getHeroPath, getHeroPlaceholder, getCardPath, getCardPlaceholder } from '../../illustrations/paths'
 import { storage } from '../../../services/storage'
 import type { UserProgress, TopicProgress } from '../../../types'
 
@@ -15,6 +17,7 @@ function getNextStep(tp: TopicProgress | undefined): 'facts' | 'flashcards' | 'm
 export function ResumeCard() {
   const { sessions } = useSessionHistory()
   const { topics } = useTopics()
+  const preload = useImagePreload()
 
   const lastSession = sessions.at(-1)
   if (!lastSession) return null
@@ -46,11 +49,22 @@ export function ResumeCard() {
     mcq: `${resumeTopic.mcqQuestions.length} questions`,
   }
 
+  function handlePreload() {
+    if (resumeStep === 'facts') {
+      preload([getHeroPath(resumeTopic.id), getHeroPlaceholder(resumeTopic.id)])
+    } else if (resumeStep === 'flashcards') {
+      const firstCard = resumeTopic.flashcards[0]
+      if (firstCard) preload([getCardPath(firstCard.id), getCardPlaceholder(firstCard.id)])
+    }
+  }
+
   return (
     <Link
       to={toMap[resumeStep]}
       params={{ topicId: resumeTopic.id }}
       className="flex items-center gap-3 bg-sand-gradient px-6 py-4 no-underline"
+      onMouseEnter={handlePreload}
+      onTouchStart={handlePreload}
     >
       <div className="flex flex-col gap-1 flex-1 min-w-0">
         <span className="text-xs font-semibold text-text-muted uppercase tracking-[1px]">Continue where you left off</span>

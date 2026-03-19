@@ -14,12 +14,13 @@ interface TopicRowProps {
 
 export function TopicRow({ number, title, status, isSafetyCritical, tier, onClick }: TopicRowProps) {
   const isInProgress = status === 'partial'
+  const isComplete = tier === 'passed' || tier === 'mastered'
 
   return (
     <button
       className={cn(
         'flex items-center gap-3 w-full px-4 py-3 border-none border-b border-border text-left cursor-pointer transition-colors duration-100 last:border-b-0',
-        isInProgress ? 'bg-warning/10 active:bg-warning/20' : 'bg-bg-card active:bg-bg-muted'
+        isComplete ? 'bg-sage-gradient' : isInProgress ? 'bg-warning/10 active:bg-warning/20' : 'bg-bg-card active:bg-bg-muted'
       )}
       onClick={onClick}
     >

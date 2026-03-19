@@ -1,4 +1,5 @@
 import { cn } from '#/lib/utils'
+import { ProgressiveImg } from '../../atoms/ProgressiveImg/ProgressiveImg'
 
 interface FlashCardProps {
   front: string
@@ -7,9 +8,10 @@ interface FlashCardProps {
   isFlipped: boolean
   onClick?: () => void
   illustrationSrc?: string
+  illustrationLqip?: string | null
 }
 
-export function FlashCard({ front, back, tag = 'FLASHCARD', isFlipped, onClick, illustrationSrc }: FlashCardProps) {
+export function FlashCard({ front, back, tag = 'FLASHCARD', isFlipped, onClick, illustrationSrc, illustrationLqip }: FlashCardProps) {
   return (
     <button
       type="button"
@@ -19,23 +21,23 @@ export function FlashCard({ front, back, tag = 'FLASHCARD', isFlipped, onClick, 
     >
       <div
         className={cn(
-          'relative w-full min-h-[340px] [transform-style:preserve-3d] transition-transform duration-400 ease-in-out',
+          'grid w-full [transform-style:preserve-3d] transition-transform duration-400 ease-in-out',
           isFlipped && '[transform:rotateY(180deg)]'
         )}
       >
         {/* Front face */}
-        <div className="absolute inset-0 [backface-visibility:hidden] flex flex-col justify-center gap-4 p-8 px-6 border border-border bg-bg-card">
+        <div className="[grid-area:1/1] [backface-visibility:hidden] flex flex-col justify-center gap-4 p-8 px-6 border border-border bg-bg-card">
           <div className="inline-flex self-start px-2 py-1 bg-primary/7 text-xs font-semibold text-primary tracking-widest">
             {tag}
           </div>
           {illustrationSrc && (
-            <div className="flex justify-center items-center w-full">
-              <img
-                src={illustrationSrc}
-                alt=""
-                className="w-full h-auto"
-              />
-            </div>
+            <ProgressiveImg
+              src={illustrationSrc}
+              lqip={illustrationLqip}
+              alt=""
+              width={1024}
+              height={1024}
+            />
           )}
           <p className="font-heading text-xl font-medium text-navy leading-snug m-0">{front}</p>
           <div className="flex items-center justify-center gap-1.5 text-text-muted text-sm">
@@ -48,7 +50,7 @@ export function FlashCard({ front, back, tag = 'FLASHCARD', isFlipped, onClick, 
         </div>
 
         {/* Back face */}
-        <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center gap-4 p-8 px-6 border border-border bg-primary/5">
+        <div className="[grid-area:1/1] [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center gap-4 p-8 px-6 border border-border bg-primary/5">
           <p className="font-heading text-xl font-medium text-navy leading-snug m-0 text-center w-full">{back}</p>
         </div>
       </div>

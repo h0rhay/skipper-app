@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { cn } from '#/lib/utils'
-import { getTermPath } from '../../illustrations/paths'
+import { getTermPath, getTermPlaceholder } from '../../illustrations/paths'
+import { ProgressiveImg } from '../../atoms/ProgressiveImg/ProgressiveImg'
 
 interface KeyTermRowProps {
   term: string
@@ -15,6 +16,7 @@ export function KeyTermRow({ term, definition, isOpen, onToggle }: KeyTermRowPro
   const open = isOpen !== undefined ? isOpen : selfOpen
   const handleToggle = onToggle ?? (() => setSelfOpen(v => !v))
   const illustrationSrc = getTermPath(term)
+  const illustrationLqip = getTermPlaceholder(term)
 
   return (
     <div className="border-b border-border last:border-b-0">
@@ -36,7 +38,14 @@ export function KeyTermRow({ term, definition, isOpen, onToggle }: KeyTermRowPro
       <div hidden={!open} className="bg-bg-muted px-4 pb-3.5 pt-2 text-sm text-text-secondary leading-relaxed">
         {illustrationSrc && (
           <div className="flex justify-center py-3 pb-2">
-            <img src={illustrationSrc} alt={term} width={200} height={200} className="w-[200px] h-[200px] object-contain" />
+            <ProgressiveImg
+              src={illustrationSrc}
+              lqip={illustrationLqip}
+              alt={term}
+              width={1024}
+              height={1024}
+              className="w-[200px] object-contain"
+            />
           </div>
         )}
         <p className="m-0">{definition}</p>

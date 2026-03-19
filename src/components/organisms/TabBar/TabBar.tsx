@@ -18,7 +18,7 @@ export function TabBar({ active }: TabBarProps) {
             to={to}
             className={cn(
               'flex-1 flex flex-col items-center justify-center gap-1 font-body text-xs font-semibold tracking-[0.5px] uppercase no-underline transition-[background,color] duration-150 rounded-[26px]',
-              active === key ? 'bg-navy text-white' : 'text-text-muted tab-inactive'
+              active === key ? 'bg-navy text-white tab-active' : 'text-text-muted tab-inactive'
             )}
             activeProps={{}}
             activeOptions={key === 'study' ? { exact: true, includeSearch: false } : undefined}

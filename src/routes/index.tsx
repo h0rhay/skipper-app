@@ -28,7 +28,7 @@ function HomeScreen() {
             src="/illustrations/hero-14-passage-planning.png"
             alt=""
             aria-hidden="true"
-            className="absolute inset-0 w-full h-full object-cover object-center opacity-50 dark:invert"
+            className="absolute inset-0 w-full h-full object-cover object-center opacity-50 hero-image"
           />
           <h1 className="relative font-heading text-3xl font-medium text-navy tracking-[-1px] leading-[1.05]">Day Skipper<br />Theory</h1>
         </div>

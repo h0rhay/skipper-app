@@ -158,6 +158,11 @@ button { cursor: pointer; font-family: inherit; }
   --button-height: var(--height-button);
 }
 
+/* ─── Hero image ─────────────────────────────────────────────── */
+[data-theme='dark'] .hero-image, .dark .hero-image {
+  filter: invert(1);
+}
+
 /* ─── Sand gradient ──────────────────────────────────────────── */
 .bg-sand-gradient {
   background: linear-gradient(135deg, #FFF8E8 0%, #FFF3CD 40%, #FFEEBB 80%, #FFF5D6 100%);

@@ -169,7 +169,7 @@ button { cursor: pointer; font-family: inherit; }
   color: var(--color-navy);
 }
 [data-theme='dark'] .tab-active, .dark .tab-active {
-  color: var(--color-navy);
+  color: #0A2540 !important;
 }
 
 /* ─── Sand gradient ──────────────────────────────────────────── */

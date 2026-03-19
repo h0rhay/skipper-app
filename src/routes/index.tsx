@@ -23,14 +23,14 @@ function HomeScreen() {
   return (
     <AppShell topNav={<TopNav />} tabBar={<TabBar active="study" />}>
       <div className="pb-6 flex flex-col gap-6">
-        <div className="relative overflow-hidden h-72 flex items-center justify-center px-6">
+        <div className="relative overflow-hidden h-72 flex items-center px-6">
           <img
             src="/illustrations/hero-14-passage-planning.png"
             alt=""
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover object-center opacity-50"
           />
-          <h1 className="relative font-heading text-3xl font-medium text-navy tracking-[-1px] leading-[1.05] text-center">Day Skipper<br />Theory</h1>
+          <h1 className="relative font-heading text-3xl font-medium text-navy tracking-[-1px] leading-[1.05]">Day Skipper<br />Theory</h1>
         </div>
         <div className="px-6 flex flex-col gap-6">
         <OverallProgressCard variant="compact" />

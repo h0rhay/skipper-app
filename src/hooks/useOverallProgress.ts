@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react'
 import { storage } from '../services/storage'
 import topicsData from '../data/topics.json'
-import type { TopicCompletionStatus, UserProgress, TopicProgress } from '../types'
+import { deriveTier } from './useTopicMastery'
+import type { TopicCompletionStatus, UserProgress } from '../types'
 
 const DEFAULT_USER_PROGRESS: UserProgress = {
   userId: 'local',
@@ -9,24 +10,6 @@ const DEFAULT_USER_PROGRESS: UserProgress = {
   currentStreak: 0,
   lastStudiedDate: '',
   longestStreak: 0,
-}
-
-function isTopicComplete(tp: TopicProgress): boolean {
-  return (
-    tp.factsRead &&
-    tp.flashcards.masteredIds.length >= tp.flashcards.totalCards &&
-    tp.flashcards.totalCards > 0 &&
-    tp.mcq.totalQuestions > 0 &&
-    (tp.mcq.bestScore / tp.mcq.totalQuestions) >= 0.7
-  )
-}
-
-function isTopicPartial(tp: TopicProgress): boolean {
-  return (
-    tp.factsRead ||
-    tp.flashcards.masteredIds.length > 0 ||
-    tp.mcq.bestScore > 0
-  )
 }
 
 export function useOverallProgress() {
@@ -38,11 +21,10 @@ export function useOverallProgress() {
     const statuses: Record<string, TopicCompletionStatus> = {}
     for (const topic of topicsData) {
       const tp = userProgress.topics[topic.id]
-      if (!tp) {
-        statuses[topic.id] = 'none'
-      } else if (isTopicComplete(tp)) {
+      const tier = tp ? deriveTier(tp) : 'none'
+      if (tier === 'passed' || tier === 'mastered') {
         statuses[topic.id] = 'complete'
-      } else if (isTopicPartial(tp)) {
+      } else if (tier !== 'none') {
         statuses[topic.id] = 'partial'
       } else {
         statuses[topic.id] = 'none'
@@ -58,5 +40,16 @@ export function useOverallProgress() {
     return Math.round((complete / total) * 100)
   }, [topicStatuses])
 
-  return { topicStatuses, percentComplete }
+  const topicStepPercents = useMemo(() => {
+    const out: Record<string, number> = {}
+    for (const topic of topicsData) {
+      const tp = userProgress.topics[topic.id]
+      if (!tp) { out[topic.id] = 0; continue }
+      const done = [tp.factsAccepted, tp.flashcards.accepted, tp.mcq.accepted].filter(Boolean).length
+      out[topic.id] = Math.round((done / 3) * 100)
+    }
+    return out
+  }, [userProgress])
+
+  return { topicStatuses, percentComplete, topicStepPercents }
 }

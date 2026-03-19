@@ -180,6 +180,14 @@ button { cursor: pointer; font-family: inherit; }
   background: linear-gradient(135deg, #2D281E 0%, #2D2A1E 50%, #332E1A 100%);
 }
 
+/* ─── Sage gradient (completed topics) ──────────────────────── */
+.bg-sage-gradient {
+  background: linear-gradient(135deg, #EDFAF3 0%, #D6F5E6 40%, #C5F0DA 80%, #E0F7EC 100%);
+}
+[data-theme='dark'] .bg-sage-gradient, .dark .bg-sage-gradient {
+  background: linear-gradient(135deg, #1B2D23 0%, #1A2C21 50%, #1F3328 100%);
+}
+
 /* ─── Dark mode ──────────────────────────────────────────────── */
 [data-theme='dark'], .dark {
   --color-primary: #58A6FF;

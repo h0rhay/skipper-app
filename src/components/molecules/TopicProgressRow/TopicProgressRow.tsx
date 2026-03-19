@@ -1,13 +1,19 @@
+import { cn } from '#/lib/utils'
+
 interface TopicProgressRowProps {
   title: string
   percent?: number
+  isComplete?: boolean
   onClick: () => void
 }
 
-export function TopicProgressRow({ title, percent = 0, onClick }: TopicProgressRowProps) {
+export function TopicProgressRow({ title, percent = 0, isComplete = false, onClick }: TopicProgressRowProps) {
   return (
     <button
-      className="flex flex-col gap-1 w-full p-0 bg-transparent border-none text-left cursor-pointer"
+      className={cn(
+        'flex flex-col gap-1 w-full p-0 bg-transparent border-none text-left cursor-pointer',
+        isComplete && 'bg-sage-gradient'
+      )}
       onClick={onClick}
     >
       <span className="text-sm font-semibold text-text">{title}</span>

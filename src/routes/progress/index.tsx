@@ -16,14 +16,7 @@ export const Route = createFileRoute('/progress/')({
 export function ProgressScreenComponent() {
   const navigate = useNavigate()
   const { topics } = useTopics()
-  const { topicStatuses } = useOverallProgress()
-
-  function statusToPercent(id: string): number {
-    const s = topicStatuses[id]
-    if (s === 'complete') return 100
-    if (s === 'partial') return 40
-    return 0
-  }
+  const { topicStatuses, topicStepPercents } = useOverallProgress()
 
   return (
     <AppShell tabBar={<TabBar active="progress" />}>
@@ -37,7 +30,8 @@ export function ProgressScreenComponent() {
                 <TopicProgressRow
                   key={topic.id}
                   title={topic.title}
-                  percent={statusToPercent(topic.id)}
+                  percent={topicStepPercents[topic.id] ?? 0}
+                  isComplete={topicStatuses[topic.id] === 'complete'}
                   onClick={() => navigate({ to: '/progress/$topicId', params: { topicId: topic.id } })}
                 />
               ))}

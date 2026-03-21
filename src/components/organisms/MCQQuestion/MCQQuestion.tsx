@@ -14,7 +14,7 @@ interface MCQQuestionProps {
   onNext: () => void
 }
 
-export function MCQQuestion({ question, selectedIndex, isRevealed, onSelect, onSubmit, onNext }: MCQQuestionProps) {
+export function MCQQuestion({ question, selectedIndex, isRevealed, isCorrect, explanation, onSelect, onSubmit, onNext }: MCQQuestionProps) {
   function getOptionState(i: number): 'idle' | 'selected' | 'correct' | 'wrong' {
     if (!isRevealed) return selectedIndex === i ? 'selected' : 'idle'
     if (i === question.correctIndex) return 'correct'
@@ -39,6 +39,11 @@ export function MCQQuestion({ question, selectedIndex, isRevealed, onSelect, onS
           />
         ))}
       </div>
+      {isRevealed && explanation && (
+        <div data-state={isCorrect ? 'correct' : 'wrong'} className="border border-border p-4 text-sm">
+          {explanation}
+        </div>
+      )}
       <div>
         {!isRevealed ? (
           <Button onClick={onSubmit} disabled={selectedIndex === null} fullWidth>Submit</Button>

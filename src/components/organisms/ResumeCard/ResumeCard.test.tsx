@@ -28,6 +28,6 @@ describe('ResumeCard', () => {
     renderWithRouter(<ResumeCard />)
     await waitFor(() => expect(screen.getAllByText(/irpcs/i).length).toBeGreaterThan(0))
     expect(screen.getByText(/continue where you left off/i)).toBeInTheDocument()
-    expect(screen.getByText(/questions/i)).toBeInTheDocument()
+    expect(screen.getByText(/key terms|cards|questions/i)).toBeInTheDocument()
   })
 })

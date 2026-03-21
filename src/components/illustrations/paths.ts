@@ -113,9 +113,17 @@ const TERM_FILENAMES: Record<string, string> = {
   'deviation':          'term-05-deviation',
   'cocked hat':         'term-06-cocked-hat',
   'rule of twelfths':   'term-07-rule-of-twelfths',
-  'cardinal mark':      'term-08-iala-north-cardinal',
-  'wind over tide':     'term-09-wind-over-tide',
-  'transit':            'term-10-transit',
+  'round turn and two half hitches': 'term-01-round-turn-two-half-hitches',
+  'reef knot':                        'term-01-reef-knot',
+  'sheet bend':                       'term-01-sheet-bend',
+  'delta anchor':                     'term-02-delta-anchor',
+  'cqr anchor':                       'term-02-cqr-anchor',
+  'fisherman\'s anchor':              'term-02-fishermans-anchor',
+  'cardinal mark':                    'term-08-iala-north-cardinal',
+  'south cardinal mark':              'term-08-iala-south-cardinal',
+  'wind over tide':                   'term-09-wind-over-tide',
+  'low pressure':                     'term-09-low-pressure',
+  'transit':                          'term-10-transit',
 }
 
 export const getTermPath = (term: string): string | null => {

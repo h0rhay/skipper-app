@@ -2042,6 +2042,10 @@
         "definition": "A black-and-yellow mark indicating the safe side to pass relative to a danger; four types: N, S, E, W"
       },
       {
+        "term": "South cardinal mark",
+        "definition": "A yellow and black buoy (black band above yellow) with two downward-pointing cones as topmark. Pass to the south of the hazard it marks. Shows VQ(6)+LFl or Q(6)+LFl white light."
+      },
+      {
         "term": "Isolated danger mark",
         "definition": "A black-and-red mark placed over a danger surrounded by navigable water; topmark two black spheres"
       },
@@ -2302,6 +2306,10 @@
       {
         "term": "Veering",
         "definition": "Wind changing direction clockwise (e.g., NE to SE)"
+      },
+      {
+        "term": "Low pressure",
+        "definition": "A depression — an area where atmospheric pressure is lower than the surrounding air. Winds circulate anticlockwise (Northern Hemisphere), bringing unsettled weather, cloud, and rain. Associated with frontal systems and deteriorating conditions."
       },
       {
         "term": "Wind over tide",

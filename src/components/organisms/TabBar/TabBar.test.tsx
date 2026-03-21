@@ -22,7 +22,7 @@ describe('TabBar', () => {
   it('marks the active tab', async () => {
     renderWithRouter(<TabBar active="progress" />)
     await waitFor(() => expect(screen.getByText('PROGRESS')).toBeInTheDocument())
-    expect(screen.getByText('PROGRESS').closest('a')).toHaveClass('active')
-    expect(screen.getByText('STUDY').closest('a')).not.toHaveClass('active')
+    expect(screen.getByText('PROGRESS').closest('a')).toHaveClass('tab-active')
+    expect(screen.getByText('STUDY').closest('a')).not.toHaveClass('tab-active')
   })
 })

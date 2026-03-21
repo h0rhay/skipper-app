@@ -13,6 +13,15 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
+// Load .env.local if present
+const __envPath = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", ".env.local");
+if (fs.existsSync(__envPath)) {
+  for (const line of fs.readFileSync(__envPath, "utf8").split("\n")) {
+    const match = line.match(/^([^#=]+)=(.*)$/);
+    if (match) process.env[match[1].trim()] ??= match[2].trim();
+  }
+}
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.join(__dirname, "..", "public", "illustrations");
 if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -344,6 +353,15 @@ export const IMAGES = [
   { id: "term-01-figure-of-eight", type: "term", ratio: "1:1",
     subject: "A figure-of-eight stopper knot at the end of a rope. The distinctive figure-8 shape clearly shown. The rope end exits at the bottom. Prevents the rope pulling through a block or fairlead." },
 
+  { id: "term-01-round-turn-two-half-hitches", type: "term", ratio: "1:1",
+    subject: "A round turn and two half hitches tied to a metal ring or rail. The rope makes a FULL ROUND TURN (going around the ring twice, completing a full 360° loop plus continuing on), then TWO HALF HITCHES around the standing part — the working end crosses over the standing part, passes under and through, then repeats a second time. The two half hitches form a clove hitch around the standing part. The round turn takes the load; the hitches secure it. A sailor must be able to identify and tie this from the illustration. Show the complete rope path including both turns around the ring and both half hitches clearly." },
+
+  { id: "term-01-reef-knot", type: "term", ratio: "1:1",
+    subject: "A reef knot joining two rope ends of the same diameter. The correct structure: LEFT over RIGHT then RIGHT over LEFT. The knot forms two interlocking bights that lie flat and symmetrical. Each tail exits PARALLEL to its own standing part (if the tails point away at an angle it is a granny knot — do not draw a granny knot). The two loops interlock like a chain link. Both tails and both standing parts are visible. A flat, compact knot with a characteristic square, symmetrical appearance. Factually correct enough that a sailor could identify it from this image alone." },
+
+  { id: "term-01-sheet-bend", type: "term", ratio: "1:1",
+    subject: "A sheet bend joining two ropes of DIFFERENT diameters. The THICKER rope forms a simple bight (a U-shaped loop). The THINNER rope's working end passes UP through the bight from below, then passes behind both legs of the bight (going around the back of the bight), then tucks back under itself — under only the thinner rope where it entered, NOT under the thick bight. The result: both tails exit on the SAME SIDE of the knot. The thick rope remains a bight; the thin rope wraps around it. Show the diameter difference clearly. Factually correct enough that a sailor could tie it from this image alone." },
+
   { id: "term-01-keel", type: "term", ratio: "1:1",
     subject: "Side profile cross-section of a sailing yacht hull showing the keel as the deep fin projecting below the hull. Ballast indicated by its heavy solid appearance. Provides stability and prevents sideways drift." },
 
@@ -358,6 +376,15 @@ export const IMAGES = [
 
   { id: "term-02-danforth-anchor", type: "term", ratio: "1:1",
     subject: "A Danforth anchor shown from the side. Two large flat parallel flukes on a pivoting stock. Stows flat. Excellent in sand and mud. The flat fluke design clearly visible." },
+
+  { id: "term-02-delta-anchor", type: "term", ratio: "1:1",
+    subject: "A Delta anchor shown from the side. A rigid (non-hinged) plough-type anchor. The plough head is a flat triangular delta shape — wider at the back, tapering to a point at the front. A single straight shank extends forward from the crown of the plough head. No moving parts or hinges — the shank connects directly and rigidly to the plough body. The plough blade is solid and fixed. Self-launching design — the centre of gravity is forward. Clearly a plough shape, clearly has no hinge. Factually correct enough that a sailor could identify it." },
+
+  { id: "term-02-cqr-anchor", type: "term", ratio: "1:1",
+    subject: "A CQR plough anchor shown from the side. A plough-type anchor with a distinctive HINGED JOINT between the shank and the plough head — this pivot allows the plough head to swing approximately 30 degrees side to side. The shank is long and straight. The plough head resembles a farmer's plough blade: curved underside, angled to dig into the seabed. The hinge/pivot joint is clearly visible where shank meets plough — this is the defining feature. Different from a Delta anchor which has no hinge. Factually correct enough that a sailor could identify it." },
+
+  { id: "term-02-fishermans-anchor", type: "term", ratio: "1:1",
+    subject: "A Fisherman's anchor (Admiralty pattern) shown from the side. Traditional design with these exact features: a long vertical SHANK; a horizontal STOCK (crossbar) at the TOP of the shank, perpendicular to it, forming a T or cross shape; a RING at the very top for the rode; at the BOTTOM of the shank, two ARMS extending diagonally outward at about 45 degrees in the plane perpendicular to the stock; each arm ending in a FLUKE — a flat triangular palm-shaped blade. When the anchor lies on the seabed, one fluke points up ready to dig in. The stock keeps it from rolling over. Clearly distinct from modern plough or claw anchors. Factually correct — a sailor must recognise it." },
 
   { id: "term-05-variation", type: "term", ratio: "1:1",
     subject: "A compass rose showing True North (straight up) and Magnetic North (a few degrees to one side). A clear arc between the two north arrows labelled as Variation. The angular difference between geographic and magnetic north." },

@@ -21,7 +21,23 @@ cloudinary.config({
 const illustrationsDir = join(__dirname, '../public/illustrations')
 const files = readdirSync(illustrationsDir).filter(f => /\.(png|jpg|jpeg|webp|svg)$/i.test(f))
 
-console.log(`Found ${files.length} files to upload...\n`)
+// Fetch all existing public IDs from Cloudinary up front
+process.stdout.write('Fetching existing assets from Cloudinary...')
+const existing = new Set()
+let nextCursor = undefined
+do {
+  const res = await cloudinary.api.resources({
+    type: 'upload',
+    prefix: 'skipper/illustrations/',
+    max_results: 500,
+    next_cursor: nextCursor,
+  })
+  for (const r of res.resources) existing.add(r.public_id)
+  nextCursor = res.next_cursor
+} while (nextCursor)
+console.log(` ${existing.size} found.\n`)
+
+console.log(`Found ${files.length} local files...\n`)
 
 let uploaded = 0
 let skipped = 0
@@ -31,21 +47,21 @@ for (const file of files) {
   const publicId = `skipper/illustrations/${name}`
   const filePath = join(illustrationsDir, file)
 
+  if (existing.has(publicId)) {
+    console.log(`- skipped   ${publicId}`)
+    skipped++
+    continue
+  }
+
   try {
     const result = await cloudinary.uploader.upload(filePath, {
       public_id: publicId,
-      overwrite: false,
       resource_type: 'image',
     })
     console.log(`✓ uploaded  ${publicId} (${result.bytes} bytes)`)
     uploaded++
   } catch (err) {
-    if (err?.error?.http_code === 400 && err?.error?.message?.includes('already exists')) {
-      console.log(`- skipped   ${publicId} (already exists)`)
-      skipped++
-    } else {
-      console.error(`✗ failed    ${publicId}:`, err?.error?.message ?? err)
-    }
+    console.error(`✗ failed    ${publicId}:`, err?.error?.message ?? err)
   }
 }
 

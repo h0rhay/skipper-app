@@ -345,22 +345,28 @@ export const IMAGES = [
     subject: "A bowline knot shown as the primary subject. The classic loop-at-end-of-rope knot structure: the bight, the rabbit hole, the tree, and the rabbit. Most important knot in sailing. Clear and accurate rope path." },
 
   { id: "term-01-clove-hitch", type: "term", ratio: "1:1",
-    subject: "A clove hitch tied around a round guardrail or post. Two diagonal turns crossing each other on the rail. Quick to tie. Used for fenders. Classic knot illustration." },
+    reference: "references/clove-hitch.jpg",
+    subject: "A clove hitch tied around a round wooden dock post or stainless steel rail. Reproduce the exact rope structure from the reference photograph. The defining feature: two diagonal strands form a clear X-shaped crossing on the face of the post. Both the standing part and working end exit on the same side of the post. Two parallel rope wraps sit snug against each other. Tight, compact and symmetric." },
 
   { id: "term-01-rolling-hitch", type: "term", ratio: "1:1",
-    subject: "A rolling hitch tied around a thicker rope, with the load direction shown by an arrow. Extra turn on the load side creates the gripping action. Used to take the strain off a loaded rope." },
+    reference: "references/rolling-hitch.jpg",
+    subject: "A rolling hitch tied around a thicker rope. Reproduce the exact rope structure from the reference photograph. The thinner rope makes three wraps: two tight wraps clustered together on the load side, plus one separate locking half hitch on the other side. Visually asymmetric — the double-wrap cluster is the defining feature." },
 
   { id: "term-01-figure-of-eight", type: "term", ratio: "1:1",
-    subject: "A figure-of-eight stopper knot at the end of a rope. The distinctive figure-8 shape clearly shown. The rope end exits at the bottom. Prevents the rope pulling through a block or fairlead." },
+    reference: "references/figure-of-eight.jpg",
+    subject: "A figure-of-eight stopper knot at the end of a rope. Reproduce the exact rope structure from the reference photograph. Two distinct round lobes separated by a central diagonal crossing — the shape of the numeral 8. Standing part exits the top lobe upward; tail exits the bottom lobe downward." },
 
   { id: "term-01-round-turn-two-half-hitches", type: "term", ratio: "1:1",
-    subject: "A round turn and two half hitches tied to a metal ring or rail. The rope makes a FULL ROUND TURN (going around the ring twice, completing a full 360° loop plus continuing on), then TWO HALF HITCHES around the standing part — the working end crosses over the standing part, passes under and through, then repeats a second time. The two half hitches form a clove hitch around the standing part. The round turn takes the load; the hitches secure it. A sailor must be able to identify and tie this from the illustration. Show the complete rope path including both turns around the ring and both half hitches clearly." },
+    reference: "references/round-turn-two-half-hitches.jpg",
+    subject: "A round turn and two half hitches on a metal ring. Reproduce the exact rope structure from the reference photograph. Two complete parallel bands wrap around the ring (the round turn), then two neat half-hitch loops sit in a column on the standing part. Clearly two-part structure." },
 
   { id: "term-01-reef-knot", type: "term", ratio: "1:1",
-    subject: "A reef knot joining two rope ends of the same diameter. The correct structure: LEFT over RIGHT then RIGHT over LEFT. The knot forms two interlocking bights that lie flat and symmetrical. Each tail exits PARALLEL to its own standing part (if the tails point away at an angle it is a granny knot — do not draw a granny knot). The two loops interlock like a chain link. Both tails and both standing parts are visible. A flat, compact knot with a characteristic square, symmetrical appearance. Factually correct enough that a sailor could identify it from this image alone." },
+    reference: "references/reef-knot.jpg",
+    subject: "A reef knot joining two ropes of equal diameter. Reproduce the exact rope structure from the reference photograph. Two symmetrical interlocking bights lying flat and parallel. Each rope's standing part and tail emerge from the same side of their own bight. Flat, compact, symmetric — not a granny knot." },
 
   { id: "term-01-sheet-bend", type: "term", ratio: "1:1",
-    subject: "A sheet bend joining two ropes of DIFFERENT diameters. The THICKER rope forms a simple bight (a U-shaped loop). The THINNER rope's working end passes UP through the bight from below, then passes behind both legs of the bight (going around the back of the bight), then tucks back under itself — under only the thinner rope where it entered, NOT under the thick bight. The result: both tails exit on the SAME SIDE of the knot. The thick rope remains a bight; the thin rope wraps around it. Show the diameter difference clearly. Factually correct enough that a sailor could tie it from this image alone." },
+    reference: "references/sheet-bend.jpg",
+    subject: "A sheet bend joining a thick rope and a thin rope. Reproduce the exact rope structure from the reference photograph. The thick rope forms a U-shaped bight as the foundation. The thin rope passes through the bight, wraps around the outside of both legs, then tucks under its own standing part. Both tails exit on the same side. Diameter difference clearly visible." },
 
   { id: "term-01-keel", type: "term", ratio: "1:1",
     subject: "Side profile cross-section of a sailing yacht hull showing the keel as the deep fin projecting below the hull. Ballast indicated by its heavy solid appearance. Provides stability and prevents sideways drift." },
@@ -427,13 +433,30 @@ async function generate(image) {
 
   const prompt = `${image.subject}\n\n${STYLE}`;
 
+  // Build contents: if a reference image is provided, send it alongside the prompt
+  let contents;
+  if (image.reference) {
+    const refPath = path.join(__dirname, image.reference);
+    const refData = fs.readFileSync(refPath).toString("base64");
+    contents = [{
+      role: "user",
+      parts: [
+        { inlineData: { mimeType: "image/jpeg", data: refData } },
+        { text: `This is a reference photograph of the correct knot. Use it as the source of truth for the rope path, structure and appearance.\n\n${prompt}` },
+      ],
+    }];
+  } else {
+    contents = prompt;
+  }
+
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3.1-flash-image-preview",
-      contents: prompt,
+      contents,
       config: {
         responseModalities: ["TEXT", "IMAGE"],
         imageConfig: { aspectRatio: image.ratio },
+        temperature: 0,
       },
     });
 

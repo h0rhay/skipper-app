@@ -1,6 +1,10 @@
 // One-time bulk upload: node scripts/upload-to-cloudinary.mjs
 // Reads all files in public/illustrations/ and uploads to Cloudinary under
 // skipper/illustrations/{name-without-ext}, skipping files already uploaded.
+//
+// Options:
+//   --id <name>   Upload/overwrite a single file by name (without extension)
+//   --force       Overwrite all files even if they already exist on Cloudinary
 
 import { v2 as cloudinary } from 'cloudinary'
 import { config } from 'dotenv'
@@ -18,26 +22,38 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 })
 
+const args = process.argv.slice(2)
+const idFlag = args.indexOf('--id')
+const force = args.includes('--force')
+const singleId = idFlag !== -1 ? args[idFlag + 1] : null
+
 const illustrationsDir = join(__dirname, '../public/illustrations')
-const files = readdirSync(illustrationsDir).filter(f => /\.(png|jpg|jpeg|webp|svg)$/i.test(f))
+let files = readdirSync(illustrationsDir).filter(f => /\.(png|jpg|jpeg|webp|svg)$/i.test(f))
 
-// Fetch all existing public IDs from Cloudinary up front
-process.stdout.write('Fetching existing assets from Cloudinary...')
+if (singleId) {
+  files = files.filter(f => basename(f, extname(f)) === singleId)
+  if (!files.length) { console.error(`No local file found for id: ${singleId}`); process.exit(1) }
+}
+
+// Fetch existing public IDs from Cloudinary (skip when forcing all)
 const existing = new Set()
-let nextCursor = undefined
-do {
-  const res = await cloudinary.api.resources({
-    type: 'upload',
-    prefix: 'skipper/illustrations/',
-    max_results: 500,
-    next_cursor: nextCursor,
-  })
-  for (const r of res.resources) existing.add(r.public_id)
-  nextCursor = res.next_cursor
-} while (nextCursor)
-console.log(` ${existing.size} found.\n`)
+if (!force) {
+  process.stdout.write('Fetching existing assets from Cloudinary...')
+  let nextCursor = undefined
+  do {
+    const res = await cloudinary.api.resources({
+      type: 'upload',
+      prefix: 'skipper/illustrations/',
+      max_results: 500,
+      next_cursor: nextCursor,
+    })
+    for (const r of res.resources) existing.add(r.public_id)
+    nextCursor = res.next_cursor
+  } while (nextCursor)
+  console.log(` ${existing.size} found.\n`)
+}
 
-console.log(`Found ${files.length} local files...\n`)
+console.log(`Found ${files.length} local file(s)...\n`)
 
 let uploaded = 0
 let skipped = 0
@@ -47,7 +63,7 @@ for (const file of files) {
   const publicId = `skipper/illustrations/${name}`
   const filePath = join(illustrationsDir, file)
 
-  if (existing.has(publicId)) {
+  if (!force && !singleId && existing.has(publicId)) {
     console.log(`- skipped   ${publicId}`)
     skipped++
     continue
@@ -56,6 +72,8 @@ for (const file of files) {
   try {
     const result = await cloudinary.uploader.upload(filePath, {
       public_id: publicId,
+      overwrite: true,
+      invalidate: true,
       resource_type: 'image',
     })
     console.log(`✓ uploaded  ${publicId} (${result.bytes} bytes)`)

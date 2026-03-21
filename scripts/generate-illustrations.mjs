@@ -456,6 +456,7 @@ async function generate(image) {
       config: {
         responseModalities: ["TEXT", "IMAGE"],
         imageConfig: { aspectRatio: image.ratio },
+        temperature: 0,
       },
     });
 

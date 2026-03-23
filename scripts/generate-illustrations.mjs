@@ -421,7 +421,7 @@ export const IMAGES = [
 
   // Topic 04 — Safety equipment
   { id: "term-04-lifejacket", type: "term", ratio: "1:1",
-    subject: "A modern offshore lifejacket (150N gas-inflation type). Key features: a large bladder/tube that inflates around the collar and chest, a crotch strap, oral inflation tube, and a firing mechanism (manual pull cord and auto-inflation pill). Shown inflated, side-facing view. Clearly distinct from a buoyancy aid — the collar bladder wraps around the neck to turn an unconscious wearer face-up." },
+    subject: "A modern offshore lifejacket (150N gas-inflation type), shown inflated, side-facing view. Key features: the large horseshoe-shaped inflated collar bladder wrapping around the neck and chest, a crotch strap, a manual firing handle on the front. A small thin tube is present for top-up inflation — shown as a simple narrow tube tucked discreetly to the side, not prominent. Focus on the overall silhouette and the distinctive horseshoe collar. Clearly distinct from a buoyancy aid." },
 
   { id: "term-04-buoyancy-aid", type: "term", ratio: "1:1",
     subject: "A foam buoyancy aid vest (50N class). Key features: a close-fitting foam-filled vest with zip or buckle fastening, open at the sides, no neck collar bladder. Shown front-facing view. Clearly distinct from a lifejacket — no gas bladder, no inflation mechanism, worn like a vest." },

@@ -16,7 +16,7 @@ interface FlashcardDeckProps {
 }
 
 export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressChange }: FlashcardDeckProps) {
-  const { currentCard, nextCard, isFlipped, flip, next, progress, isComplete, index, total, cards: sessionCards } =
+  const { currentCard, nextCard, isFlipped, flip, next, progress, isComplete, total, cards: sessionCards } =
     useFlashcardSession(topicId, cards, cardIds)
 
   const preload = useImagePreload()

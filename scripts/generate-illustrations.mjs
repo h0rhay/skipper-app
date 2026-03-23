@@ -212,7 +212,8 @@ export const IMAGES = [
     subject: "A globe with latitude lines circling it. One degree of latitude arc highlighted with a bold bracket on the surface. Below it, a zoomed-in view showing that one minute of arc along the latitude scale equals one nautical mile. The latitude scale on the side of the globe with tick marks." },
 
   { id: "card-06-position-course-speed-fc-3", type: "card", ratio: "1:1",
-    subject: "A flat section of nautical chart showing vertical meridian lines. At the top of the chart (towards the pole) the lines are clearly closer together. At the bottom (towards the equator) the same lines are further apart. A horizontal double-headed arrow at the top shows a short distance between two meridians. The same arrow at the bottom shows a much wider gap for the same two meridians. Demonstrates that one degree of longitude is not a fixed distance — it varies with latitude." },
+    reference: "references/meridians-longitude.png",
+    subject: "Reproduce the structure from the reference diagram. A globe or sphere showing vertical meridian lines running from north pole to south pole. The lines are evenly spaced at the equator but converge and meet at both poles. Show the convergence clearly — wide spacing at the equator narrowing to a point at the top and bottom. This demonstrates why the longitude scale cannot be used for measuring distance: the spacing changes with latitude." },
 
   { id: "card-06-position-course-speed-fc-4", type: "card", ratio: "1:1",
     subject: "Three compass needles or arrows from a single centre point, fanning out slightly: True north pointing straight up, Magnetic north slightly offset by the variation angle, Compass further offset by deviation. Three distinct arrows with small angle arcs between them." },

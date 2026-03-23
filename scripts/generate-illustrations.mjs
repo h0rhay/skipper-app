@@ -419,6 +419,31 @@ export const IMAGES = [
   { id: "term-10-transit", type: "term", ratio: "1:1",
     subject: "Viewed from the boat approaching a harbour: a red and white striped leading beacon in the foreground, with a church tower perfectly aligned behind it. When these two objects are vertically aligned, the boat is exactly on the transit line — the most accurate pilotage method." },
 
+  // Topic 04 — Safety equipment
+  { id: "term-04-lifejacket", type: "term", ratio: "1:1",
+    reference: "references/lifejacket.jpg",
+    subject: "A modern offshore lifejacket (150N gas-inflation type). Reproduce the exact shape from the reference photograph. Key features: a large bladder/tube that inflates around the collar and chest, a crotch strap, oral inflation tube, and a firing mechanism (manual pull cord and auto-inflation pill). Shown inflated, side-facing view. Clearly distinct from a buoyancy aid — the collar bladder wraps around the neck to turn an unconscious wearer face-up." },
+
+  { id: "term-04-buoyancy-aid", type: "term", ratio: "1:1",
+    reference: "references/buoyancy-aid.jpg",
+    subject: "A foam buoyancy aid vest (50N class). Reproduce the exact shape from the reference photograph. Key features: a close-fitting foam-filled vest with zip or buckle fastening, open at the sides, no neck collar bladder. Shown front-facing view. Clearly distinct from a lifejacket — no gas bladder, no inflation mechanism, worn like a vest." },
+
+  { id: "term-04-epirb", type: "term", ratio: "1:1",
+    reference: "references/epirb.jpg",
+    subject: "An EPIRB (Emergency Position-Indicating Radio Beacon). Reproduce the exact shape from the reference photograph. Key features: a cylindrical/rectangular unit with a domed antenna at the top, typically orange and white housing, a bracket for vessel mounting. Shown in a side or three-quarter view. The device that transmits a distress signal via satellite when activated or when it floats free." },
+
+  { id: "term-04-plb", type: "term", ratio: "1:1",
+    reference: "references/plb.jpg",
+    subject: "A PLB (Personal Locator Beacon). Reproduce the exact shape from the reference photograph. Key features: a compact handheld unit, smaller than an EPIRB, with a fold-out antenna at the top, typically bright orange housing. Shown in a side or three-quarter view. A personal distress device that transmits position via satellite — worn by an individual crew member." },
+
+  { id: "term-04-liferaft", type: "term", ratio: "1:1",
+    reference: "references/liferaft.jpg",
+    subject: "A valise-packed liferaft canister. Reproduce the exact shape from the reference photograph. Key features: a rigid fibreglass or hard-shell canister with a mounting bracket, connected to the vessel by a painter line. Shown side view. When thrown overboard and the painter is pulled, the liferaft inflates. Clearly a packed, ready-to-deploy unit — not an inflated raft." },
+
+  { id: "term-04-parachute-flare", type: "term", ratio: "1:1",
+    reference: "references/parachute-flare.jpg",
+    subject: "A parachute rocket flare. Reproduce the exact shape from the reference photograph. Key features: a cylindrical tube approximately 30cm long, with a firing cap at one end and launch instructions on the body. Shown side view. This is the handheld rocket type that fires a red flare skyward on a parachute — for long-range distress signalling. Distinct from a handheld flare." },
+
 ];
 
 // ─── GENERATOR ───────────────────────────────────────────────────────────────

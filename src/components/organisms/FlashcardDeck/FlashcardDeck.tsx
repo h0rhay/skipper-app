@@ -16,7 +16,7 @@ interface FlashcardDeckProps {
 }
 
 export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressChange }: FlashcardDeckProps) {
-  const { currentCard, nextCard, isFlipped, flip, next, prev, progress, isComplete, index, total } =
+  const { currentCard, nextCard, isFlipped, flip, next, progress, isComplete, index, total } =
     useFlashcardSession(topicId, cards, cardIds)
 
   const preload = useImagePreload()
@@ -45,18 +45,13 @@ export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressC
         front={currentCard.front}
         back={currentCard.back}
         isFlipped={isFlipped}
-        onClick={!isFlipped ? flip : undefined}
+        onClick={flip}
         illustrationSrc={getCardPath(currentCard.id) ?? undefined}
         illustrationLqip={getCardPlaceholder(currentCard.id)}
       />
       {isFlipped && <Divider />}
       {isFlipped && (
-        <div className="flex gap-3">
-          {index > 0 && (
-            <Button onClick={prev} variant="secondary" fullWidth>Back</Button>
-          )}
-          <Button onClick={next} fullWidth>Next</Button>
-        </div>
+        <Button onClick={next} fullWidth>Next</Button>
       )}
     </div>
   )

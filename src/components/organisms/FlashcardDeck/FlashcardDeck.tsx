@@ -33,9 +33,10 @@ export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressC
 
   useEffect(() => {
     if (isComplete) {
-      onCompleteRef.current({ masteredIds: [], score: 0, total })
+      const masteredIds = cards.map(c => c.id)
+      onCompleteRef.current({ masteredIds, score: total, total })
     }
-  }, [isComplete, total])
+  }, [isComplete, total, cards])
 
   if (!currentCard) return null
 

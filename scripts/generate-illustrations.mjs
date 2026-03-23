@@ -177,17 +177,29 @@ export const IMAGES = [
     subject: "A parachute rocket flare being fired with a large prohibition circle-and-cross symbol overlaid on it. A helicopter silhouette visible nearby in the background. Danger: never fire flares toward helicopters." },
 
   // Topic 05 — IRPCS/COLREGS
+  { id: "card-05-irpcs-colregs-fc-0", type: "card", ratio: "1:1",
+    subject: "Two vessels at sea viewed from above. An observer's boat at the bottom, an approaching vessel at the top-right. A compass bearing line is drawn from the observer to the approaching vessel — and a second identical line shows the bearing has not changed over time. The constant bearing indicates a risk of collision. Bold arrows show both vessels on converging courses." },
+
   { id: "card-05-irpcs-colregs-fc-1", type: "card", ratio: "1:1",
     subject: "Two motor vessels crossing paths, viewed from above. The vessel coming from the right has a bold straight arrow — it is the stand-on vessel. The vessel on the left has a curved arrow turning to starboard — it is the give-way vessel." },
 
   { id: "card-05-irpcs-colregs-fc-2", type: "card", ratio: "1:1",
     subject: "Two motor vessels heading directly toward each other, viewed from above. Both vessels have bold curved arrows showing them both turning to starboard simultaneously — passing port to port. The classic head-on rule." },
 
+  { id: "card-05-irpcs-colregs-fc-3", type: "card", ratio: "1:1",
+    subject: "A vertical stack of five vessel silhouettes viewed from above, arranged top to bottom in order of right-of-way priority. At the top: a vessel with crane equipment (restricted in ability to manoeuvre). Below it: a vessel with diving operations gear. Then a fishing trawler with nets out. Then a sailing vessel under sail. At the bottom: a motor vessel — the lowest priority. Clearly a hierarchy diagram, each vessel distinct and recognisable." },
+
   { id: "card-05-irpcs-colregs-fc-4", type: "card", ratio: "1:1",
     subject: "A sailing vessel with mainsail and headsail visible, but also with a motor wake at the stern showing it is motoring. An inverted black cone day shape hanging from the forestay — the required signal for a sailing vessel under engine." },
 
+  { id: "card-05-irpcs-colregs-fc-5", type: "card", ratio: "1:1",
+    subject: "Two vessels viewed from above. One vessel at the top of the image travels in a straight line — a bold unbroken arrow extends ahead of it, showing it holds its course and speed without any deviation. This is the stand-on vessel. A second vessel lower in the image has a curved arrow swinging wide to starboard, giving way. The two vessels are clearly separate and distinct, each drawn as a single clean hull shape. Simple top-down diagram." },
+
   { id: "card-05-irpcs-colregs-fc-6", type: "card", ratio: "1:1",
     subject: "A narrow channel with steep banks. A large container ship filling almost the full width of the channel with no room to deviate. A small sailing dinghy tucked right against the bank, getting out of the way. Shows why power does not automatically give way to sail in narrow channels." },
+
+  { id: "card-05-irpcs-colregs-fc-7", type: "card", ratio: "1:1",
+    subject: "A ship's horn or whistle viewed from the side, emitting five short sharp blasts shown as bold radiating lines. The five blasts are distinct and emphatic. This is the danger/doubt signal — clearly not a long blast or short pair." },
 
   // Topic 06 — Position, Course and Speed
   { id: "card-06-position-course-speed-fc-0", type: "card", ratio: "1:1",
@@ -397,6 +409,21 @@ export const IMAGES = [
 
   { id: "term-05-deviation", type: "term", ratio: "1:1",
     subject: "A compass inside a boat, with the compass needle pulled away from magnetic north by local magnetic influences from the boat's engine and metal fittings. Two arrows from centre: magnetic north and the deviated compass reading, with a small arc showing the deviation angle." },
+
+  { id: "term-05-motoring-cone", type: "term", ratio: "1:1",
+    subject: "A single black cone day shape, shown hanging apex-downward from a line. Clean, geometric — a perfect cone with the point facing down. This is the day shape a sailing vessel must display when motoring. Shown large and clear, centered, with plenty of white space. No vessel, no rigging — just the cone shape itself, boldly rendered." },
+
+  { id: "term-05-lights-power-vessel", type: "term", ratio: "1:1",
+    subject: "A simplified power vessel shown as a clean hull profile at night. Navigation lights shown as solid circles in their correct positions: a masthead steaming light (forward, elevated on the mast), a second higher masthead light further aft (for vessels over 50m — shown for clarity), green starboard sidelight on the bow, red port sidelight on the bow, and a stern light aft. Dotted arc lines indicate each light's sector of visibility. Technical diagram style — like an Admiralty publication illustration." },
+
+  { id: "term-05-lights-sailing-vessel", type: "term", ratio: "1:1",
+    subject: "A sailing vessel under sail shown as a clean hull and sail profile. Navigation lights shown as solid circles: green starboard sidelight on the bow, red port sidelight on the bow, and a white stern light aft. No masthead steaming light — this is a sailing vessel under sail only. Dotted arc lines show each light's sector. Technical diagram style." },
+
+  { id: "term-05-anchor-ball", type: "term", ratio: "1:1",
+    subject: "A single solid black ball day shape, hung from the forestay of a vessel. The ball is a perfect solid circle. This is the day shape for a vessel at anchor. Shown large and clear, centered against white space. No other shapes, no vessel detail beyond a simple bow suggestion — emphasis on the ball itself." },
+
+  { id: "term-05-nuc-shapes", type: "term", ratio: "1:1",
+    subject: "Two solid black balls arranged in a vertical line, hung from a mast. These are the day shapes for a vessel Not Under Command (NUC). The two balls are clearly separated vertically. Clean, centered diagram — bold solid circles against white. A sailor must instantly recognise this as NUC day shapes." },
 
   { id: "term-06-cocked-hat", type: "term", ratio: "1:1",
     subject: "Three position lines on a chart, each from a different landmark, crossing to form a small triangle — the cocked hat. The position is placed at the corner of the triangle nearest the charted danger. Rocks visible nearby." },

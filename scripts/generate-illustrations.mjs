@@ -212,7 +212,7 @@ export const IMAGES = [
     subject: "A globe with latitude lines circling it. One degree of latitude arc highlighted with a bold bracket on the surface. Below it, a zoomed-in view showing that one minute of arc along the latitude scale equals one nautical mile. The latitude scale on the side of the globe with tick marks." },
 
   { id: "card-06-position-course-speed-fc-3", type: "card", ratio: "1:1",
-    subject: "A globe viewed from the side showing meridian lines (lines of longitude) converging dramatically as they approach the north and south poles. The spacing between meridians is wide at the equator and narrows to a point at the poles. A bracket or callout highlights the unequal spacing — showing why you cannot measure accurate distances on the longitude scale." },
+    subject: "A flat section of nautical chart showing vertical meridian lines. At the top of the chart (towards the pole) the lines are clearly closer together. At the bottom (towards the equator) the same lines are further apart. A horizontal double-headed arrow at the top shows a short distance between two meridians. The same arrow at the bottom shows a much wider gap for the same two meridians. Demonstrates that one degree of longitude is not a fixed distance — it varies with latitude." },
 
   { id: "card-06-position-course-speed-fc-4", type: "card", ratio: "1:1",
     subject: "Three compass needles or arrows from a single centre point, fanning out slightly: True north pointing straight up, Magnetic north slightly offset by the variation angle, Compass further offset by deviation. Three distinct arrows with small angle arcs between them." },
@@ -435,7 +435,7 @@ export const IMAGES = [
     subject: "Two vessels viewed from above. A smaller overtaking vessel approaches from behind and to the side of a larger vessel — coming from within the 135° stern sector shown as a dotted arc behind the overtaken vessel. A curved arrow on the overtaking vessel shows it must keep clear and manoeuvre around. Simple, clear top-down diagram of the overtaking rule." },
 
   { id: "term-05-tss", type: "term", ratio: "1:1",
-    subject: "A Traffic Separation Scheme viewed from above. Two parallel shipping lanes — bold arrows in each lane showing one-way traffic flow in opposite directions. A separation zone (hatched area) between the lanes. Small vessel crossing the lanes at a right angle shown for scale. Clean diagram style, like an Admiralty chart inset." },
+    subject: "A Traffic Separation Scheme viewed from above. Two parallel shipping lanes — bold arrows in each lane showing one-way traffic flow in opposite directions. A separation zone (hatched area) between the lanes. A large tanker ship silhouette in each lane, travelling in the correct direction. A small vessel crossing the lanes at a right angle shown for scale. Clean diagram style, like an Admiralty chart inset." },
 
   { id: "term-05-tricolour-light", type: "term", ratio: "1:1",
     subject: "A sailing vessel mast viewed from the side and slightly ahead, at night. A single tricolour light at the very top of the mast — shown as one light combining three sectors: red to port, green to starboard, white to stern. Dotted arc lines show the three sectors radiating from the single masthead fitting. No sidelights shown on the hull — the tricolour replaces all three. Technical diagram style." },
@@ -444,7 +444,7 @@ export const IMAGES = [
     subject: "Three position lines on a chart, each from a different landmark, crossing to form a small triangle — the cocked hat. The position is placed at the corner of the triangle nearest the charted danger. Rocks visible nearby." },
 
   { id: "term-06-latitude", type: "term", ratio: "1:1",
-    subject: "A globe with bold horizontal lines circling it — parallels of latitude. The equator is the widest line at the middle. Lines above and below are smaller circles, evenly spaced. The angle of latitude is shown as an arc measured from the centre of the earth up from the equator plane to a point on the surface. Clean technical globe illustration." },
+    subject: "A simple diagram showing a vertical cross-section of the Earth as a circle. The equator is a horizontal line through the middle. A point on the surface is marked, with a line from the Earth's centre to that point. A clear arc shows the angle between the equator and that line — this is the latitude angle. Horizontal parallel lines above and below the equator represent parallels of latitude. Clean geometric diagram, no globe shading — pure line art." },
 
   { id: "term-06-longitude", type: "term", ratio: "1:1",
     subject: "A globe showing meridian lines — vertical lines of longitude running from pole to pole. All lines converge at the north and south poles. The prime meridian (0°) is highlighted. The angle of longitude is shown as an arc at the equator measured from the prime meridian. Shows clearly why meridians converge — the spacing is widest at the equator and zero at the poles." },

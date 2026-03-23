@@ -34,7 +34,7 @@ export function TopicHeader({ topic, progress }: TopicHeaderProps) {
         </div>
         <div className="flex-1 flex flex-col gap-1 px-3 py-3.5 border-r border-border">
           <span className="font-heading text-2xl font-medium text-navy">{masteredCards}/{termsCount}</span>
-          <span className="text-xs font-semibold text-text-muted tracking-[1px]">TERMS</span>
+          <span className="text-xs font-semibold text-text-muted tracking-[1px]">FLASHCARDS</span>
         </div>
         <div className="flex-1 flex flex-col gap-1 px-3 py-3.5">
           <span className="font-heading text-2xl font-medium text-navy">{questionsCount}</span>

@@ -193,7 +193,7 @@ export const IMAGES = [
     subject: "A sailing vessel with mainsail and headsail visible, but also with a motor wake at the stern showing it is motoring. An inverted black cone day shape hanging from the forestay — the required signal for a sailing vessel under engine." },
 
   { id: "card-05-irpcs-colregs-fc-5", type: "card", ratio: "1:1",
-    subject: "Two vessels at sea viewed from above. The stand-on vessel has a bold straight arrow showing it holding its course and speed — no deviation. The give-way vessel has a large curved arrow swinging away to avoid it. The stand-on vessel's path is unbroken and purposeful." },
+    subject: "Two vessels viewed from above. One vessel at the top of the image travels in a straight line — a bold unbroken arrow extends ahead of it, showing it holds its course and speed without any deviation. This is the stand-on vessel. A second vessel lower in the image has a curved arrow swinging wide to starboard, giving way. The two vessels are clearly separate and distinct, each drawn as a single clean hull shape. Simple top-down diagram." },
 
   { id: "card-05-irpcs-colregs-fc-6", type: "card", ratio: "1:1",
     subject: "A narrow channel with steep banks. A large container ship filling almost the full width of the channel with no room to deviate. A small sailing dinghy tucked right against the bank, getting out of the way. Shows why power does not automatically give way to sail in narrow channels." },

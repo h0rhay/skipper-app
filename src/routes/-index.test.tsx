@@ -3,7 +3,7 @@ import { createRootRoute, createRouter, RouterProvider, createMemoryHistory } fr
 import { Route } from './index'
 
 function renderWithRouter() {
-  const rootRoute = createRootRoute({ component: () => <RouterProvider router={router} /> })
+  createRootRoute({ component: () => <RouterProvider router={router} /> })
   const router = createRouter({
     routeTree: Route.addChildren([]),
     history: createMemoryHistory({ initialEntries: ['/'] }),

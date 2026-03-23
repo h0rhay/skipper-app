@@ -27,5 +27,5 @@ export function useFlashcardSession(_topicId: string, allCards: Flashcard[], car
 
   const nextCard = cards[index + 1] ?? null
 
-  return { currentCard, nextCard, isFlipped, flip, next, prev, progress, isComplete, index, total: cards.length }
+  return { currentCard, nextCard, isFlipped, flip, next, prev, progress, isComplete, index, total: cards.length, cards }
 }

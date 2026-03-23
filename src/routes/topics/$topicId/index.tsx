@@ -32,7 +32,7 @@ export function TopicDetailScreenComponent({ topicId }: TopicDetailScreenCompone
     if (mode === 'facts') {
       preload([getHeroPath(topicId), getHeroPlaceholder(topicId)])
     } else if (mode === 'flashcards') {
-      const firstCard = topic.flashcards[0]
+      const firstCard = topic!.flashcards[0]
       if (firstCard) preload([getCardPath(firstCard.id), getCardPlaceholder(firstCard.id)])
     }
     navigate({ to: `/topics/${topicId}/${mode}` })

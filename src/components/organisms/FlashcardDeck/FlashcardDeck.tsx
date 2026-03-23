@@ -16,7 +16,7 @@ interface FlashcardDeckProps {
 }
 
 export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressChange }: FlashcardDeckProps) {
-  const { currentCard, nextCard, isFlipped, flip, next, progress, isComplete, index, total } =
+  const { currentCard, nextCard, isFlipped, flip, next, progress, isComplete, total, cards: sessionCards } =
     useFlashcardSession(topicId, cards, cardIds)
 
   const preload = useImagePreload()
@@ -33,9 +33,9 @@ export function FlashcardDeck({ topicId, cards, cardIds, onComplete, onProgressC
 
   useEffect(() => {
     if (isComplete) {
-      onCompleteRef.current({ masteredIds: [], score: 0, total })
+      onCompleteRef.current({ masteredIds: sessionCards.map(c => c.id), score: total, total })
     }
-  }, [isComplete, total])
+  }, [isComplete, total, sessionCards])
 
   if (!currentCard) return null
 

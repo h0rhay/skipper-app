@@ -211,8 +211,14 @@ export const IMAGES = [
   { id: "card-06-position-course-speed-fc-2", type: "card", ratio: "1:1",
     subject: "A globe with latitude lines circling it. One degree of latitude arc highlighted with a bold bracket on the surface. Below it, a zoomed-in view showing that one minute of arc along the latitude scale equals one nautical mile. The latitude scale on the side of the globe with tick marks." },
 
+  { id: "card-06-position-course-speed-fc-3", type: "card", ratio: "1:1",
+    subject: "A globe viewed from the side showing meridian lines (lines of longitude) converging dramatically as they approach the north and south poles. The spacing between meridians is wide at the equator and narrows to a point at the poles. A bracket or callout highlights the unequal spacing — showing why you cannot measure accurate distances on the longitude scale." },
+
   { id: "card-06-position-course-speed-fc-4", type: "card", ratio: "1:1",
     subject: "Three compass needles or arrows from a single centre point, fanning out slightly: True north pointing straight up, Magnetic north slightly offset by the variation angle, Compass further offset by deviation. Three distinct arrows with small angle arcs between them." },
+
+  { id: "card-06-position-course-speed-fc-6", type: "card", ratio: "1:1",
+    subject: "A vessel viewed from above. The bow points upward. A bearing line extends from the bow to an object ahead-right. A protractor arc at the bow shows the angle measured clockwise from the bow — this is the relative bearing. A second example shows a bearing to an object on the port side with the angle measured from the bow. Clearly different from a compass bearing measured from north." },
 
   // Topic 07 — Charts and Publications
   { id: "card-07-charts-and-publications-fc-1", type: "card", ratio: "1:1",
@@ -425,8 +431,26 @@ export const IMAGES = [
   { id: "term-05-nuc-shapes", type: "term", ratio: "1:1",
     subject: "Two solid black balls arranged in a vertical line, hung from a mast. These are the day shapes for a vessel Not Under Command (NUC). The two balls are clearly separated vertically. Clean, centered diagram — bold solid circles against white. A sailor must instantly recognise this as NUC day shapes." },
 
+  { id: "term-05-overtaking", type: "term", ratio: "1:1",
+    subject: "Two vessels viewed from above. A smaller overtaking vessel approaches from behind and to the side of a larger vessel — coming from within the 135° stern sector shown as a dotted arc behind the overtaken vessel. A curved arrow on the overtaking vessel shows it must keep clear and manoeuvre around. Simple, clear top-down diagram of the overtaking rule." },
+
+  { id: "term-05-tss", type: "term", ratio: "1:1",
+    subject: "A Traffic Separation Scheme viewed from above. Two parallel shipping lanes — bold arrows in each lane showing one-way traffic flow in opposite directions. A separation zone (hatched area) between the lanes. Small vessel crossing the lanes at a right angle shown for scale. Clean diagram style, like an Admiralty chart inset." },
+
+  { id: "term-05-tricolour-light", type: "term", ratio: "1:1",
+    subject: "A sailing vessel mast viewed from the side and slightly ahead, at night. A single tricolour light at the very top of the mast — shown as one light combining three sectors: red to port, green to starboard, white to stern. Dotted arc lines show the three sectors radiating from the single masthead fitting. No sidelights shown on the hull — the tricolour replaces all three. Technical diagram style." },
+
   { id: "term-06-cocked-hat", type: "term", ratio: "1:1",
     subject: "Three position lines on a chart, each from a different landmark, crossing to form a small triangle — the cocked hat. The position is placed at the corner of the triangle nearest the charted danger. Rocks visible nearby." },
+
+  { id: "term-06-latitude", type: "term", ratio: "1:1",
+    subject: "A globe with bold horizontal lines circling it — parallels of latitude. The equator is the widest line at the middle. Lines above and below are smaller circles, evenly spaced. The angle of latitude is shown as an arc measured from the centre of the earth up from the equator plane to a point on the surface. Clean technical globe illustration." },
+
+  { id: "term-06-longitude", type: "term", ratio: "1:1",
+    subject: "A globe showing meridian lines — vertical lines of longitude running from pole to pole. All lines converge at the north and south poles. The prime meridian (0°) is highlighted. The angle of longitude is shown as an arc at the equator measured from the prime meridian. Shows clearly why meridians converge — the spacing is widest at the equator and zero at the poles." },
+
+  { id: "term-06-relative-bearing", type: "term", ratio: "1:1",
+    subject: "A vessel viewed from directly above, bow pointing upward. A protractor arc is centred on the vessel, measured from the bow (0° at the bow, 090° to starboard beam, 180° at the stern, 270° to port beam). A bearing line points to an object at about 045° — the angle labelled clearly as a relative bearing from the bow. Contrasted with a north arrow to show it is NOT measured from north. Simple, clean diagram." },
 
   { id: "term-07-rule-of-twelfths", type: "term", ratio: "1:1",
     subject: "Six vertical bars showing the Rule of Twelfths tide pattern: 1, 2, 3, 3, 2, 1 twelfths of the tidal range per hour. A smooth cosine tide curve drawn above the bars. The middle hours have the fastest tidal rise or fall." },

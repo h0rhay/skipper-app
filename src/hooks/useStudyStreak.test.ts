@@ -1,5 +1,4 @@
-import { renderHook, act } from '@testing-library/react'
-import { vi, describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect } from 'vitest'
 
 // We test the pure streak logic separately from React
 import { computeStreak } from './useStudyStreak'

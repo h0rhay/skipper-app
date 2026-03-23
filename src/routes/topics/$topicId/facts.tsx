@@ -37,8 +37,8 @@ export function KeyFactsScreenComponent({ topicId }: KeyFactsScreenComponentProp
     setOpenTerm(next)
     // When opening a term, preload the next term in the list that has an image
     if (next) {
-      const idx = topic.keyTerms.findIndex(kt => kt.term === next)
-      const nextTerm = topic.keyTerms[idx + 1]?.term
+      const idx = topic!.keyTerms.findIndex(kt => kt.term === next)
+      const nextTerm = topic!.keyTerms[idx + 1]?.term
       if (nextTerm) preload([getTermPath(nextTerm), getTermPlaceholder(nextTerm)])
     }
   }

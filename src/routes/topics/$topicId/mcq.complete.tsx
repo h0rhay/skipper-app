@@ -95,7 +95,7 @@ export function MCQCompleteScreenComponent({ topicId, score, total }: MCQComplet
               <>
                 <Button onClick={handleAccept} fullWidth>Accept Pass ✓</Button>
                 {!isPerfect && (
-                  <Button onClick={handleRetry} variant="secondary" fullWidth>Go for 100% →</Button>
+                  <Button onClick={handleRetry} variant="secondary" fullWidth>Go for 100%</Button>
                 )}
               </>
             ) : (

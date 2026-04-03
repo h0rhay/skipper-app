@@ -97,7 +97,7 @@ export function FlashcardsCompleteScreenComponent({ topicId, masteredIds: master
 
           <Divider padded />
           <div className="flex flex-col gap-3">
-            <Button onClick={handleContinue} fullWidth>Locked in — Continue to MCQ →</Button>
+            <Button onClick={handleContinue} fullWidth>Locked in, Continue to MCQ</Button>
             <Button onClick={handleRunAgain} variant="secondary" fullWidth>Run through again</Button>
           </div>
         </div>

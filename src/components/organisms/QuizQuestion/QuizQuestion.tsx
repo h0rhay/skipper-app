@@ -1,4 +1,5 @@
 import { cn } from '#/lib/utils'
+import { Button } from '../../atoms/Button/Button'
 import { Divider } from '../../atoms/Divider'
 import type { MCQQuestion } from '../../../types'
 
@@ -86,20 +87,13 @@ export function QuizQuestion({
       {/* Action button */}
       <div>
         {!revealed ? (
-          <button
-            className="w-full h-[52px] bg-bg-card border border-border font-body text-base font-bold text-text cursor-pointer transition-[background] duration-150 disabled:opacity-40 disabled:cursor-not-allowed hover:not-disabled:bg-bg-muted"
-            onClick={onSubmit}
-            disabled={selectedIndex === null}
-          >
+          <Button onClick={onSubmit} variant="secondary" fullWidth disabled={selectedIndex === null}>
             Submit Answer
-          </button>
+          </Button>
         ) : (
-          <button
-            className="w-full h-[52px] bg-primary border-none font-body text-base font-bold text-white cursor-pointer transition-[background] duration-150 hover:bg-[var(--color-primary-hover)]"
-            onClick={onNext}
-          >
-            {isLast ? 'See Results' : 'Next Question →'}
-          </button>
+          <Button onClick={onNext} fullWidth>
+            {isLast ? 'See Results' : 'Next Question'}
+          </Button>
         )}
       </div>
     </div>

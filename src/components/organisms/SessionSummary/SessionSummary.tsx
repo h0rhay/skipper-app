@@ -1,3 +1,4 @@
+import { Button } from '../../atoms/Button/Button'
 import type { SessionMode } from '../../../types'
 
 interface SessionSummaryProps {
@@ -55,19 +56,13 @@ export function SessionSummary({ mode, topicTitle, score, total, wrongIds, onRev
       {/* CTAs */}
       <div className="flex flex-col gap-[10px] pt-1">
         {hasWeak && (
-          <button
-            className="h-[52px] bg-bg-card border border-border font-body text-base font-semibold text-text-secondary cursor-pointer transition-[background] duration-150 hover:bg-bg-muted"
-            onClick={onReview}
-          >
+          <Button onClick={onReview} variant="secondary" fullWidth>
             {reviewLabel}
-          </button>
+          </Button>
         )}
-        <button
-          className="h-[52px] bg-primary border-none font-body text-base font-bold text-white cursor-pointer transition-[background] duration-150 hover:bg-[var(--color-primary-hover)]"
-          onClick={onNext}
-        >
-          Next Topic →
-        </button>
+        <Button onClick={onNext} fullWidth>
+          Next Topic
+        </Button>
       </div>
     </div>
   )

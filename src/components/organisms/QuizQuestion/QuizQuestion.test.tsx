@@ -42,7 +42,7 @@ describe('QuizQuestion', () => {
 
   it('shows Next button after reveal', () => {
     render(<QuizQuestion question={mockQuestion} questionNumber={1} selectedIndex={1} revealed={true} onSelect={() => {}} onSubmit={() => {}} onNext={() => {}} isLast={false}/>)
-    expect(screen.getByText('Next Question →')).toBeInTheDocument()
+    expect(screen.getByText('Next Question')).toBeInTheDocument()
   })
 
   it('shows See Results on last question after reveal', () => {

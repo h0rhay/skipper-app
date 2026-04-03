@@ -1,3 +1,4 @@
+import { ChevronRight } from 'lucide-react'
 import { cn } from '#/lib/utils'
 import { buttonVariants } from '#/components/ui/button'
 
@@ -26,6 +27,7 @@ export function Button({ children, onClick, variant = 'primary', disabled = fals
       disabled={disabled}
     >
       {children}
+      <ChevronRight className="ml-1 size-5" />
     </button>
   )
 }

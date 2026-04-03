@@ -73,7 +73,7 @@ export function FactsCompleteScreenComponent({ topicId }: FactsCompleteScreenCom
 
           <Divider padded />
           <div className="flex flex-col gap-3">
-            <Button onClick={handleContinue} fullWidth>Locked in ✓ — Continue to Flashcards →</Button>
+            <Button onClick={handleContinue} fullWidth>Locked in ✓ Continue to Flashcards</Button>
             <Button onClick={handleReview} variant="secondary" fullWidth>Review again</Button>
           </div>
         </div>

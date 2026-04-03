@@ -87,7 +87,7 @@ export function QuizQuestion({
       {/* Action button */}
       <div>
         {!revealed ? (
-          <Button onClick={onSubmit} variant="secondary" fullWidth disabled={selectedIndex === null} hideChevron>
+          <Button onClick={onSubmit} variant="secondary" fullWidth disabled={selectedIndex === null}>
             Submit Answer
           </Button>
         ) : (

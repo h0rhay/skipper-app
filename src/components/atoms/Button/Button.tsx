@@ -8,10 +8,9 @@ interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'ghost'
   disabled?: boolean
   fullWidth?: boolean
-  hideChevron?: boolean
 }
 
-export function Button({ children, onClick, variant = 'primary', disabled = false, fullWidth = false, hideChevron = false }: ButtonProps) {
+export function Button({ children, onClick, variant = 'primary', disabled = false, fullWidth = false }: ButtonProps) {
   const shadcnVariant = variant === 'primary' ? 'default' : variant === 'secondary' ? 'outline' : 'ghost'
   return (
     <button
@@ -28,7 +27,7 @@ export function Button({ children, onClick, variant = 'primary', disabled = fals
       disabled={disabled}
     >
       {children}
-      {!hideChevron && <ChevronRight className="ml-1 size-5" />}
+      <ChevronRight className="ml-1 size-5" />
     </button>
   )
 }

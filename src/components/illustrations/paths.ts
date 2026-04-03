@@ -112,9 +112,9 @@ const TERM_FILENAMES: Record<string, string> = {
   'figure of eight':    'term-01-figure-of-eight',
   'keel':               'term-01-keel',
   'tacking':            'term-01-tacking',
-  'scope':              'term-02-scope',
-  'bruce anchor':       'term-02-bruce-anchor',
-  'danforth anchor':    'term-02-danforth-anchor',
+  'scope':              'term-03-scope',
+  'bruce anchor':       'term-03-bruce-anchor',
+  'danforth anchor':    'term-03-danforth-anchor',
   'variation':          'term-05-variation',
   'deviation':          'term-05-deviation',
   'cocked hat':         'term-06-cocked-hat',
@@ -122,9 +122,9 @@ const TERM_FILENAMES: Record<string, string> = {
   'round turn and two half hitches': 'term-01-round-turn-two-half-hitches',
   'reef knot':                        'term-01-reef-knot',
   'sheet bend':                       'term-01-sheet-bend',
-  'delta anchor':                     'term-02-delta-anchor',
-  'cqr anchor':                       'term-02-cqr-anchor',
-  'fisherman\'s anchor':              'term-02-fishermans-anchor',
+  'delta anchor':                     'term-03-delta-anchor',
+  'cqr anchor':                       'term-03-cqr-anchor',
+  'fisherman\'s anchor':              'term-03-fishermans-anchor',
   'lifejacket':                        'term-04-lifejacket',
   'buoyancy aid':                      'term-04-buoyancy-aid',
   'epirb':                             'term-04-epirb',
@@ -157,11 +157,47 @@ const TERM_FILENAMES: Record<string, string> = {
   'compass bearing':                   'card-06-position-course-speed-fc-4',
   'relative bearing':                  'term-06-relative-bearing',
 
+  // Topic 01 — Nautical Terms (reuse flashcard images)
+  'draught':                           'card-01-nautical-terms-fc-2',
+  'leech':                             'card-01-nautical-terms-fc-3',
+  'luff':                              'card-01-nautical-terms-fc-3',
+  'port':                              'card-01-nautical-terms-fc-0',
+
+  // Topic 04 — Safety (reuse flashcard image)
+  'harness':                           'card-04-safety-fc-0',
+
+  // Topic 07 — Charts and Publications (reuse flashcard images)
+  'rock awash':                        'card-07-charts-and-publications-fc-1',
+  'sounding':                          'card-07-charts-and-publications-fc-0',
+
+  // Topic 08 — Navigational Instruments (reuse flashcard images)
+  'breton plotter':                    'card-08-navigational-instruments-fc-2',
+  'parallel rulers':                   'card-08-navigational-instruments-fc-0',
+  'portland plotter':                  'card-08-navigational-instruments-fc-2',
+
   'cardinal mark':                     'term-08-iala-north-cardinal',
   'south cardinal mark':               'term-08-iala-south-cardinal',
   'wind over tide':                    'term-09-wind-over-tide',
   'low pressure':                      'term-09-low-pressure',
+
+  // Topic 10 — Chartwork (reuse flashcard image)
+  'fix':                               'card-10-chartwork-fc-1',
   'transit':                           'term-10-transit',
+
+  // Topic 12 — IALA Buoyage (reuse flashcard images)
+  'emergency wreck marking buoy':      'card-12-visual-aids-buoyage-fc-8',
+  'isolated danger mark':              'card-12-visual-aids-buoyage-fc-5',
+  'safe water mark':                   'card-12-visual-aids-buoyage-fc-6',
+  'special mark':                      'card-12-visual-aids-buoyage-fc-7',
+
+  // Topic 14 — Passage Planning (reuse flashcard image)
+  'clearing bearing':                  'card-14-passage-planning-fc-1',
+
+  // Topic 16 — Pilotage (reuse flashcard images)
+  'leading line':                      'card-16-pilotage-fc-1',
+
+  // Topic 17 — Marine Environment (reuse flashcard image)
+  'marpol':                            'card-17-marine-environment-fc-0',
 }
 
 export const getTermPath = (term: string): string | null => {

@@ -17,9 +17,12 @@ __unconfig*
 
 # Archived / local-only directories
 archived-resources/
+designs/
+docs/
+research/
+syllabus/
 transcripts/
 .superpowers/
-research/
 scripts/references/
 
 # Editor

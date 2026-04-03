@@ -100,7 +100,7 @@ export function TopicProgressDetail({ topicId }: TopicProgressDetailProps) {
 
       {nextStep && (
         <Button onClick={handleContinue} fullWidth>
-          Continue →
+          Continue
         </Button>
       )}
     </div>

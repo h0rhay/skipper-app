@@ -48,7 +48,7 @@ export function MCQQuestion({ question, selectedIndex, isRevealed, isCorrect, ex
         {!isRevealed ? (
           <Button onClick={onSubmit} disabled={selectedIndex === null} fullWidth>Submit</Button>
         ) : (
-          <Button onClick={onNext} fullWidth>Next →</Button>
+          <Button onClick={onNext} fullWidth>Next</Button>
         )}
       </div>
     </div>

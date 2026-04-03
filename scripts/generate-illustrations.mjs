@@ -393,22 +393,22 @@ export const IMAGES = [
   { id: "term-01-tacking", type: "term", ratio: "1:1",
     subject: "Top-down view of a sailboat. Wind arrow pointing downward. The boat shown in three positions: approaching close-hauled on port tack, bow passing through the wind (dashed), then sailing close-hauled on starboard tack. Curved arrow tracing the tack manoeuvre." },
 
-  { id: "term-02-scope", type: "term", ratio: "1:1",
+  { id: "term-03-scope", type: "term", ratio: "1:1",
     subject: "Side view showing a boat at anchor. Chain dropping from the bow roller at a shallow angle to the anchor on the seabed. Depth measurement shown vertically. Scope (total chain length) shown diagonally. Illustrating the 3:1 scope ratio concept." },
 
-  { id: "term-02-bruce-anchor", type: "term", ratio: "1:1",
+  { id: "term-03-bruce-anchor", type: "term", ratio: "1:1",
     subject: "A Bruce claw anchor shown from the side. Three curved claws radiating from a central shank. The distinctive claw shape clearly shown. Good all-round anchor, easy to self-launch from bow roller." },
 
-  { id: "term-02-danforth-anchor", type: "term", ratio: "1:1",
+  { id: "term-03-danforth-anchor", type: "term", ratio: "1:1",
     subject: "A Danforth anchor shown from the side. Two large flat parallel flukes on a pivoting stock. Stows flat. Excellent in sand and mud. The flat fluke design clearly visible." },
 
-  { id: "term-02-delta-anchor", type: "term", ratio: "1:1",
+  { id: "term-03-delta-anchor", type: "term", ratio: "1:1",
     subject: "A Delta anchor shown from the side. A rigid (non-hinged) plough-type anchor. The plough head is a flat triangular delta shape — wider at the back, tapering to a point at the front. A single straight shank extends forward from the crown of the plough head. No moving parts or hinges — the shank connects directly and rigidly to the plough body. The plough blade is solid and fixed. Self-launching design — the centre of gravity is forward. Clearly a plough shape, clearly has no hinge. Factually correct enough that a sailor could identify it." },
 
-  { id: "term-02-cqr-anchor", type: "term", ratio: "1:1",
+  { id: "term-03-cqr-anchor", type: "term", ratio: "1:1",
     subject: "A CQR plough anchor shown from the side. A plough-type anchor with a distinctive HINGED JOINT between the shank and the plough head — this pivot allows the plough head to swing approximately 30 degrees side to side. The shank is long and straight. The plough head resembles a farmer's plough blade: curved underside, angled to dig into the seabed. The hinge/pivot joint is clearly visible where shank meets plough — this is the defining feature. Different from a Delta anchor which has no hinge. Factually correct enough that a sailor could identify it." },
 
-  { id: "term-02-fishermans-anchor", type: "term", ratio: "1:1",
+  { id: "term-03-fishermans-anchor", type: "term", ratio: "1:1",
     subject: "A Fisherman's anchor (Admiralty pattern) shown from the side. Traditional design with these exact features: a long vertical SHANK; a horizontal STOCK (crossbar) at the TOP of the shank, perpendicular to it, forming a T or cross shape; a RING at the very top for the rode; at the BOTTOM of the shank, two ARMS extending diagonally outward at about 45 degrees in the plane perpendicular to the stock; each arm ending in a FLUKE — a flat triangular palm-shaped blade. When the anchor lies on the seabed, one fluke points up ready to dig in. The stock keeps it from rolling over. Clearly distinct from modern plough or claw anchors. Factually correct — a sailor must recognise it." },
 
   { id: "term-05-variation", type: "term", ratio: "1:1",

@@ -1,4 +1,6 @@
-# Skipper
+# Skipper App
+
+![Skipper App](public/illustrations/hero-14-passage-planning.png)
 
 A quick-fire learning app for RYA Day Skipper sailing theory. Built for anyone preparing for the Day Skipper theory exam, covering all the core topics from nautical terms and navigation to weather, tides, and passage planning.
 
